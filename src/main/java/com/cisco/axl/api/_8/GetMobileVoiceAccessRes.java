@@ -1,0 +1,129 @@
+
+package com.cisco.axl.api._8;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for GetMobileVoiceAccessRes complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="GetMobileVoiceAccessRes">
+ *   &lt;complexContent>
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIResponse">
+ *       &lt;sequence>
+ *         &lt;element name="return">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="mobileVoiceAccess" type="{http://www.cisco.com/AXL/API/8.5}RMobileVoiceAccess"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/extension>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "GetMobileVoiceAccessRes", propOrder = {
+    "_return"
+})
+public class GetMobileVoiceAccessRes
+    extends APIResponse
+{
+
+    @XmlElement(name = "return", required = true)
+    protected GetMobileVoiceAccessRes.Return _return;
+
+    /**
+     * Gets the value of the return property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link GetMobileVoiceAccessRes.Return }
+     *     
+     */
+    public GetMobileVoiceAccessRes.Return getReturn() {
+        return _return;
+    }
+
+    /**
+     * Sets the value of the return property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link GetMobileVoiceAccessRes.Return }
+     *     
+     */
+    public void setReturn(GetMobileVoiceAccessRes.Return value) {
+        this._return = value;
+    }
+
+
+    /**
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="mobileVoiceAccess" type="{http://www.cisco.com/AXL/API/8.5}RMobileVoiceAccess"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
+     */
+    @XmlAccessorType(XmlAccessType.FIELD)
+    @XmlType(name = "", propOrder = {
+        "mobileVoiceAccess"
+    })
+    public static class Return {
+
+        @XmlElement(required = true)
+        protected RMobileVoiceAccess mobileVoiceAccess;
+
+        /**
+         * Gets the value of the mobileVoiceAccess property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link RMobileVoiceAccess }
+         *     
+         */
+        public RMobileVoiceAccess getMobileVoiceAccess() {
+            return mobileVoiceAccess;
+        }
+
+        /**
+         * Sets the value of the mobileVoiceAccess property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link RMobileVoiceAccess }
+         *     
+         */
+        public void setMobileVoiceAccess(RMobileVoiceAccess value) {
+            this.mobileVoiceAccess = value;
+        }
+
+    }
+
+}

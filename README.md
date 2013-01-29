@@ -11,8 +11,12 @@ Phone information, updating speeddials are the first steps of this project which
 Requirements
 ------------
 
-This is a Java project, you do need Maven and the schema (WSDL) from the "AXL SQL toolkit" downloaded from the CUCM administration console.
-Use `wsimport` to generate the consumer classes.
+This is a Java project, you do need Maven.
+
+AXL SOAP web services
+---------------------
+
+The schema (WSDL) from the "AXL SQL toolkit" downloaded from the CUCM administration console has been put into this repository for convenience (in the folder `cucm_schema`), the consumer classes have been generated using the command `wsimport -keep -b cucm_schema/current/AXLSOAP.xsd -Xnocompile  -s src/main/java -d bin -verbose cucm_schema/current/AXLAPI.wsdl`.
 
 Installation
 ------------
