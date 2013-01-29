@@ -34,6 +34,11 @@ public class PhoneResource {
     }
     
     @GET
+    /**
+     * Get phone information from a directory number
+     * @param dirn directory number
+     * @return 
+     */
     public Phone get(@QueryParam("dirn") IntParam dirn) {
         String phoneName = this.findPhoneByDirN(dirn.toString());
         if(phoneName == null) {
@@ -42,10 +47,15 @@ public class PhoneResource {
         return getPhoneInfo(phoneName);
     }
 
-    private String findPhoneByDirN(String lineNumber) {
+    /**
+     * Find the name of a phone by its directory number
+     * @param dirn directory number to search for
+     * @return Phone name as a String, null if it couldn't be found
+     */
+    private String findPhoneByDirN(String dirn) {
         try {
             ExecuteSQLQueryReq sql = new ExecuteSQLQueryReq();
-            sql.setSql("SELECT D.Name FROM NumPlan NP, DeviceNumPlanMap DNPMap, Device D WHERE NP.DNorPattern = '" + lineNumber + "' AND DNPMap.fkNumPlan = NP.pkid AND D.pkid = DNPMap.fkDevice");
+            sql.setSql("SELECT D.Name FROM NumPlan NP, DeviceNumPlanMap DNPMap, Device D WHERE NP.DNorPattern = '" + dirn + "' AND DNPMap.fkNumPlan = NP.pkid AND D.pkid = DNPMap.fkDevice");
 
             ExecuteSQLQueryRes res = this.axlService.executeSQLQuery(sql);
             for(Object o : res.getReturn().getRow()) {
