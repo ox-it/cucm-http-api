@@ -1,5 +1,8 @@
 *.class
 
+target/
+nb-configuration.xml
+
 # Package Files #
 *.jar
 *.war
