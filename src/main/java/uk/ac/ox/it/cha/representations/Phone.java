@@ -1,5 +1,6 @@
 package uk.ac.ox.it.cha.representations;
 
+import com.cisco.axl.api._8.GetPhoneRes;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
@@ -23,6 +24,22 @@ public class Phone {
     @JsonProperty
     private String uuid;
 
+    public Phone() {
+        
+    }
+    
+    /**
+     * Build a Phone object from a GetPhoneRes object
+     * @param gpr GetPhoneRes object
+     */
+    public Phone(GetPhoneRes gpr) {
+        this.description = gpr.getReturn().getPhone().getDescription();
+        this.model = gpr.getReturn().getPhone().getModel();
+        this.name = gpr.getReturn().getPhone().getName();
+        this.product = gpr.getReturn().getPhone().getProduct();
+        this.uuid = gpr.getReturn().getPhone().getUuid();
+    }
+    
     /* GETTERS and SETTERS */
     
     public String getProduct() {

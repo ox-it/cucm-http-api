@@ -60,17 +60,16 @@ public class PhoneResource {
         return null;
     }
     
+    /**
+     * Get phone information by phone name
+     * @param phoneName name of the phone
+     * @return Phone object
+     */
     private Phone getPhoneInfo(String phoneName) {
-        Phone p = new Phone();
         GetPhoneReq axlParams = new GetPhoneReq();
         axlParams.setName(phoneName);
         GetPhoneRes getPhoneResponse = this.axlService.getPhone(axlParams);
-        p.setDescription(getPhoneResponse.getReturn().getPhone().getDescription());
-        p.setModel(getPhoneResponse.getReturn().getPhone().getModel());
-        p.setName(getPhoneResponse.getReturn().getPhone().getName());
-        p.setProduct(getPhoneResponse.getReturn().getPhone().getProduct());
-        p.setUuid(getPhoneResponse.getReturn().getPhone().getUuid());
-        return p;
+        return new Phone(getPhoneResponse);
     }
     
 }
