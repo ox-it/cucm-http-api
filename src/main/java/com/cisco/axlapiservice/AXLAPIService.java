@@ -1,7 +1,5 @@
-
 package com.cisco.axlapiservice;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.logging.Logger;
 import javax.xml.namespace.QName;
@@ -17,7 +15,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "AXLAPIService", targetNamespace = "http://www.cisco.com/AXLAPIService/", wsdlLocation = "file:/Users/martinfilliau/Documents/Projects/cucm-http-api/cucm_schema/current/AXLAPI.wsdl")
+@WebServiceClient(name = "AXLAPIService", targetNamespace = "http://www.cisco.com/AXLAPIService/", wsdlLocation = "src/main/resources/cucm_schema/current/AXLAPI.wsdl")
 public class AXLAPIService
     extends Service
 {
@@ -26,16 +24,7 @@ public class AXLAPIService
     private final static Logger logger = Logger.getLogger(com.cisco.axlapiservice.AXLAPIService.class.getName());
 
     static {
-        URL url = null;
-        try {
-            URL baseUrl;
-            baseUrl = com.cisco.axlapiservice.AXLAPIService.class.getResource(".");
-            url = new URL(baseUrl, "file:/Users/martinfilliau/Documents/Projects/cucm-http-api/cucm_schema/current/AXLAPI.wsdl");
-        } catch (MalformedURLException e) {
-            logger.warning("Failed to create URL for the wsdl Location: 'file:/Users/martinfilliau/Documents/Projects/cucm-http-api/cucm_schema/current/AXLAPI.wsdl', retrying as a local file");
-            logger.warning(e.getMessage());
-        }
-        AXLAPISERVICE_WSDL_LOCATION = url;
+        AXLAPISERVICE_WSDL_LOCATION = AXLAPIService.class.getResource("cucm_schema/current/AXLAPI.wsdl");
     }
 
     public AXLAPIService(URL wsdlLocation, QName serviceName) {
