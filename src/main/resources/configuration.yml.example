@@ -1,0 +1,9 @@
+cucm:
+  host: HOST
+  user: USER
+  password: PASSWORD
+logging:
+  level: INFO
+  console:
+    enabled: true
+    threshold: ALL

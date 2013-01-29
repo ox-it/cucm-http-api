@@ -12,3 +12,6 @@ nb-configuration.xml
 
 .DS_Store
 
+# Configuration
+src/main/resources/configuration.yml
+
