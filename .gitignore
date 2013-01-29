@@ -1,9 +1,14 @@
 *.class
 
 target/
+build/
+dist/
 nb-configuration.xml
 
 # Package Files #
 *.jar
 *.war
 *.ear
+
+.DS_Store
+
