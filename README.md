@@ -48,3 +48,10 @@ Code architecture
 `uk.ac.ox.it.cha.resources` contains the resources of the application, defined by a path.
 
 `uk.ac.ox.it.cha.services` contains managed objects to access external resources (e.g. the SOAP web service).
+
+Examples
+--------
+
+`curl http://127.0.0.1:8080/phone?dirn=14015` (GET) gives information on the phone associated with this directory number (only one phone atm).
+
+`curl -H "Accept: application/json" -H "Content-Type: application/json" -X POST --data @data.json http://127.0.0.1:8080/phone/speeddials?dirn=14015` (POST) updates the speeddials information (e.g. data.json: `[{"index": "2", "dirn": "13710"},{"index": "9", "dirn": "13710"}]`)

@@ -4,10 +4,16 @@ import com.cisco.axl.api._8.ExecuteSQLQueryReq;
 import com.cisco.axl.api._8.ExecuteSQLQueryRes;
 import com.cisco.axl.api._8.GetPhoneReq;
 import com.cisco.axl.api._8.GetPhoneRes;
+import com.cisco.axl.api._8.StandardResponse;
+import com.cisco.axl.api._8.UpdatePhoneReq;
+import com.cisco.axl.api._8.XSpeeddial;
 import com.cisco.axlapiservice.AXLPort;
 import com.yammer.dropwizard.jersey.params.IntParam;
+import java.util.List;
+import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
@@ -17,6 +23,7 @@ import javax.ws.rs.core.Response;
 import javax.xml.ws.soap.SOAPFaultException;
 import org.w3c.dom.Node;
 import uk.ac.ox.it.cha.representations.Phone;
+import uk.ac.ox.it.cha.representations.Speeddial;
 
 /**
  *
@@ -45,6 +52,32 @@ public class PhoneResource {
             throw new WebApplicationException(Response.Status.NOT_FOUND);
         }
         return getPhoneInfo(phoneName);
+    }
+    
+    /**
+     * Update the speeddials for the given directory number
+     * @param dirn query parameter: dir number
+     * @param speeddials list of Speeddial
+     * @return response code from the SOAP web service
+     */
+    @POST
+    @Path("/speeddials")
+    public Response updateSpeeddials(@QueryParam("dirn") IntParam dirn,
+            @Valid List<Speeddial> speeddials) {
+        String phoneName = this.findPhoneByDirN(dirn.toString());
+        if(phoneName == null) {
+            throw new WebApplicationException(Response.Status.NOT_FOUND);
+        }
+        
+        UpdatePhoneReq upr = new UpdatePhoneReq();
+        upr.setName(phoneName);
+        UpdatePhoneReq.Speeddials sds = new UpdatePhoneReq.Speeddials();
+        for(Speeddial sd : speeddials) {
+            sds.getSpeeddial().add(sd.getXSpeeddial());
+        }
+        upr.setSpeeddials(sds);
+        StandardResponse response = this.axlService.updatePhone(upr);
+        return Response.ok(response.getReturn()).build();
     }
 
     /**
