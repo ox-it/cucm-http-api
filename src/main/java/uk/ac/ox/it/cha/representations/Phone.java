@@ -1,7 +1,12 @@
 package uk.ac.ox.it.cha.representations;
 
 import com.cisco.axl.api._8.GetPhoneRes;
+import com.cisco.axl.api._8.RPhone;
+import com.cisco.axl.api._8.RPhoneLine;
+import com.cisco.axl.api._8.RSpeeddial;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -23,6 +28,13 @@ public class Phone {
     
     @JsonProperty
     private String uuid;
+    
+    @JsonProperty
+    private List<String> dirns;
+    
+    @JsonProperty
+    private List<Speeddial> speeddials;
+
 
     public Phone() {
         
@@ -33,11 +45,22 @@ public class Phone {
      * @param gpr GetPhoneRes object
      */
     public Phone(GetPhoneRes gpr) {
-        this.description = gpr.getReturn().getPhone().getDescription();
-        this.model = gpr.getReturn().getPhone().getModel();
-        this.name = gpr.getReturn().getPhone().getName();
-        this.product = gpr.getReturn().getPhone().getProduct();
-        this.uuid = gpr.getReturn().getPhone().getUuid();
+        RPhone phone = gpr.getReturn().getPhone();
+        this.description = phone.getDescription();
+        this.model = phone.getModel();
+        this.name = phone.getName();
+        this.product = phone.getProduct();
+        this.uuid = phone.getUuid();
+        RPhone.Lines lines = phone.getLines();
+        this.dirns = new ArrayList<String>();
+        for (RPhoneLine l : lines.getLine()) {
+            this.dirns.add(l.getDirn().getPattern());            
+        }
+        RPhone.Speeddials sds = phone.getSpeeddials();
+        this.speeddials = new ArrayList<Speeddial>();
+        for (RSpeeddial sd : sds.getSpeeddial()) {
+            this.speeddials.add(new Speeddial(sd));
+        }
     }
     
     /* GETTERS and SETTERS */
@@ -82,5 +105,19 @@ public class Phone {
         this.uuid = uuid;
     }
     
+    public List<String> getDirns() {
+        return dirns;
+    }
+
+    public void setDirns(List<String> dirns) {
+        this.dirns = dirns;
+    }
     
+    public List<Speeddial> getSpeeddials() {
+        return speeddials;
+    }
+
+    public void setSpeeddials(List<Speeddial> speeddials) {
+        this.speeddials = speeddials;
+    }
 }
