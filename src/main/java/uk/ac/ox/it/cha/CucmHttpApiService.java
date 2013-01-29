@@ -8,6 +8,7 @@ import com.yammer.dropwizard.config.Environment;
 import javax.xml.ws.BindingProvider;
 import uk.ac.ox.it.cha.configuration.AppConfiguration;
 import uk.ac.ox.it.cha.configuration.CucmConfiguration;
+import uk.ac.ox.it.cha.resources.PhoneResource;
 import uk.ac.ox.it.cha.services.CucmAxlService;
 
 
@@ -26,6 +27,7 @@ class CucmHttpApiService extends Service<AppConfiguration> {
     public void run(AppConfiguration configuration, Environment environment) throws Exception {
         AXLPort axl = initAxlService(configuration.getCucm());
         environment.manage(new CucmAxlService(axl));
+        environment.addResource(new PhoneResource(axl));
     }
     
     /**
