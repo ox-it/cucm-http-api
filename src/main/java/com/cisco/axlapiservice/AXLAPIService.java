@@ -24,7 +24,8 @@ public class AXLAPIService
     private final static Logger logger = Logger.getLogger(com.cisco.axlapiservice.AXLAPIService.class.getName());
 
     static {
-        AXLAPISERVICE_WSDL_LOCATION = AXLAPIService.class.getResource("cucm_schema/current/AXLAPI.wsdl");
+        AXLAPISERVICE_WSDL_LOCATION = AXLAPIService.class.getClassLoader()
+                .getResource("cucm_schema/current/AXLAPI.wsdl");
     }
 
     public AXLAPIService(URL wsdlLocation, QName serviceName) {
