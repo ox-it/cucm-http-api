@@ -9,6 +9,7 @@ import com.cisco.axl.api._8.UpdatePhoneReq;
 import com.cisco.axl.api._8.XSpeeddial;
 import com.cisco.axlapiservice.AXLPort;
 import com.yammer.dropwizard.jersey.params.IntParam;
+import java.util.ArrayList;
 import java.util.List;
 import javax.validation.Valid;
 import javax.ws.rs.Consumes;
@@ -46,12 +47,16 @@ public class PhoneResource {
      * @param dirn directory number
      * @return 
      */
-    public Phone get(@QueryParam("dirn") IntParam dirn) {
-        String phoneName = this.findPhoneByDirN(dirn.toString());
-        if(phoneName == null) {
+    public List<Phone> get(@QueryParam("dirn") IntParam dirn) {
+        List<String> phoneNames = this.findPhonesByDirN(dirn.toString());
+        if(phoneNames.isEmpty()) {
             throw new WebApplicationException(Response.Status.NOT_FOUND);
         }
-        return getPhoneInfo(phoneName);
+        List<Phone> phones = new ArrayList<Phone>();
+        for(String phoneName : phoneNames) {
+            phones.add(getPhoneInfo(phoneName));
+        }
+        return phones;
     }
     
     /**
@@ -63,12 +68,36 @@ public class PhoneResource {
     @POST
     @Path("/speeddials")
     public Response updateSpeeddials(@QueryParam("dirn") IntParam dirn,
+            @QueryParam("phone") String phone,
             @Valid List<Speeddial> speeddials) {
-        String phoneName = this.findPhoneByDirN(dirn.toString());
-        if(phoneName == null) {
-            throw new WebApplicationException(Response.Status.NOT_FOUND);
+        if(phone != null && dirn != null) {
+            return Response.status(Response.Status.BAD_REQUEST)
+                    .entity("You have to specify either the 'phone' or 'dirn' param, not both of them.")
+                    .build();
         }
-        
+        if(phone != null) {
+            String response = updateSpeeddialyByPhone(phone, speeddials);
+            return Response.ok(response).build();
+        } else {
+            List<String> phoneNames = this.findPhonesByDirN(dirn.toString());
+            if(phoneNames.isEmpty()) {
+                throw new WebApplicationException(Response.Status.NOT_FOUND);
+            }
+            StringBuilder sb = new StringBuilder();
+            for(String name : phoneNames) {
+                sb.append(updateSpeeddialyByPhone(name, speeddials));
+            }
+            return Response.ok(sb.toString()).build();
+        }
+    }
+    
+    /**
+     * Do an update phone request to the given phone name to update speeddials
+     * @param phoneName name of the phone
+     * @param speeddials list of speeddials
+     * @return String representing the UUID of this action
+     */
+    private String updateSpeeddialyByPhone(String phoneName, List<Speeddial> speeddials) {
         UpdatePhoneReq upr = new UpdatePhoneReq();
         upr.setName(phoneName);
         UpdatePhoneReq.Speeddials sds = new UpdatePhoneReq.Speeddials();
@@ -77,15 +106,16 @@ public class PhoneResource {
         }
         upr.setSpeeddials(sds);
         StandardResponse response = this.axlService.updatePhone(upr);
-        return Response.ok(response.getReturn()).build();
+        return response.getReturn();
     }
 
     /**
      * Find the name of a phone by its directory number
      * @param dirn directory number to search for
-     * @return Phone name as a String, null if it couldn't be found
+     * @return list of phone name as a String, null if it couldn't be found
      */
-    private String findPhoneByDirN(String dirn) {
+    private List<String> findPhonesByDirN(String dirn) {
+        List<String> phones = new ArrayList<String>();
         try {
             ExecuteSQLQueryReq sql = new ExecuteSQLQueryReq();
             sql.setSql("SELECT D.Name FROM NumPlan NP, DeviceNumPlanMap DNPMap, Device D WHERE NP.DNorPattern = '" + dirn + "' AND DNPMap.fkNumPlan = NP.pkid AND D.pkid = DNPMap.fkDevice");
@@ -93,14 +123,15 @@ public class PhoneResource {
             ExecuteSQLQueryRes res = this.axlService.executeSQLQuery(sql);
             for(Object o : res.getReturn().getRow()) {
                 com.sun.org.apache.xerces.internal.dom.ElementNSImpl element = (com.sun.org.apache.xerces.internal.dom.ElementNSImpl) o;
+                Node n;
                 for(int i = 0; i < element.getChildNodes().getLength(); i++) {
-                    Node n = element.getChildNodes().item(i);
-                    return n.getTextContent();
+                    n = element.getChildNodes().item(i);
+                    phones.add(n.getTextContent());
                 }
             }
         } catch (SOAPFaultException sfe) {
         }
-        return null;
+        return phones;
     }
     
     /**
