@@ -15,3 +15,5 @@ nb-configuration.xml
 # Configuration
 src/main/resources/configuration.yml
 
+# Docs
+docs/build/
