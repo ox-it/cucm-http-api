@@ -28,6 +28,7 @@ Developer
 .. toctree::
     :glob:
 
+    developer/overview
     developer/*
 
 Indices and tables
