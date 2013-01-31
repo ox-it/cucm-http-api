@@ -11,6 +11,7 @@ import uk.ac.ox.it.cha.auth.AppAuthenticator;
 import uk.ac.ox.it.cha.auth.User;
 import uk.ac.ox.it.cha.configuration.AppConfiguration;
 import uk.ac.ox.it.cha.configuration.CucmConfiguration;
+import uk.ac.ox.it.cha.health.CucmAxlServiceHealthCheck;
 import uk.ac.ox.it.cha.resources.PhoneResource;
 import uk.ac.ox.it.cha.services.CucmAxlService;
 
@@ -32,6 +33,7 @@ class CucmHttpApiService extends Service<AppConfiguration> {
         environment.manage(new CucmAxlService(axl));
         environment.addProvider(new BasicAuthProvider<User>(new AppAuthenticator(configuration.getApiauth()), "PROTECTED"));
         environment.addResource(new PhoneResource(axl));
+        environment.addHealthCheck(new CucmAxlServiceHealthCheck(axl));
     }
     
     /**
