@@ -4,7 +4,7 @@ cucm:
   password: PASSWORD
 apiauth:
   user: user
-  password: password
+  password: passwordhashedsha256
 logging:
   level: INFO
   console:

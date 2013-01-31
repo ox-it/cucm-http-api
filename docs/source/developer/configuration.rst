@@ -20,8 +20,10 @@ Section "apiauth"
 This section is about credentials to connect to this application using HTTP basic auth.
 
  * ``user`` is the name of the user that will have to be use when attempting to do a basic auth
- * ``password`` is plain text password
- 
+ * ``password`` is a SHA-256 hash of the password
+
+The hash of the password can be generated with ``echo -n "password" | shasum -a 256``.
+
 Section "logging" (optional)
 ----------------------------
 
