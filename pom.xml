@@ -78,5 +78,10 @@
             <artifactId>dropwizard-client</artifactId>
             <version>0.6.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.yammer.dropwizard</groupId>
+            <artifactId>dropwizard-auth</artifactId>
+            <version>0.6.1</version>
+        </dependency>
     </dependencies>
 </project>

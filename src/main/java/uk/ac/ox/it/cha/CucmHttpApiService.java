@@ -3,9 +3,12 @@ package uk.ac.ox.it.cha;
 import com.cisco.axlapiservice.AXLAPIService;
 import com.cisco.axlapiservice.AXLPort;
 import com.yammer.dropwizard.Service;
-import com.yammer.dropwizard.config.Bootstrap;
 import com.yammer.dropwizard.config.Environment;
+import com.yammer.dropwizard.auth.basic.BasicAuthProvider;
+import com.yammer.dropwizard.config.Bootstrap;
 import javax.xml.ws.BindingProvider;
+import uk.ac.ox.it.cha.auth.AppAuthenticator;
+import uk.ac.ox.it.cha.auth.User;
 import uk.ac.ox.it.cha.configuration.AppConfiguration;
 import uk.ac.ox.it.cha.configuration.CucmConfiguration;
 import uk.ac.ox.it.cha.resources.PhoneResource;
@@ -27,6 +30,7 @@ class CucmHttpApiService extends Service<AppConfiguration> {
     public void run(AppConfiguration configuration, Environment environment) throws Exception {
         AXLPort axl = initAxlService(configuration.getCucm());
         environment.manage(new CucmAxlService(axl));
+        environment.addProvider(new BasicAuthProvider<User>(new AppAuthenticator(configuration.getApiauth()), "PROTECTED"));
         environment.addResource(new PhoneResource(axl));
     }
     

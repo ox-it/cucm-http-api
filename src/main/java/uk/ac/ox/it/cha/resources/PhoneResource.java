@@ -9,6 +9,7 @@ import com.cisco.axl.api._8.UpdatePhoneReq;
 import com.cisco.axl.api._8.XSpeeddial;
 import com.cisco.axlapiservice.AXLPort;
 import com.yammer.dropwizard.jersey.params.IntParam;
+import com.yammer.dropwizard.auth.Auth;
 import java.util.ArrayList;
 import java.util.List;
 import javax.validation.Valid;
@@ -23,6 +24,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.xml.ws.soap.SOAPFaultException;
 import org.w3c.dom.Node;
+import uk.ac.ox.it.cha.auth.User;
 import uk.ac.ox.it.cha.representations.Phone;
 import uk.ac.ox.it.cha.representations.Speeddial;
 
@@ -47,7 +49,7 @@ public class PhoneResource {
      * @param dirn directory number
      * @return 
      */
-    public List<Phone> get(@QueryParam("dirn") IntParam dirn) {
+    public List<Phone> get(@QueryParam("dirn") IntParam dirn, @Auth User user) {
         List<String> phoneNames = this.findPhonesByDirN(dirn.toString());
         if(phoneNames.isEmpty()) {
             throw new WebApplicationException(Response.Status.NOT_FOUND);
@@ -69,7 +71,8 @@ public class PhoneResource {
     @Path("/speeddials")
     public Response updateSpeeddials(@QueryParam("dirn") IntParam dirn,
             @QueryParam("phone") String phone,
-            @Valid List<Speeddial> speeddials) {
+            @Valid List<Speeddial> speeddials,
+            @Auth User user) {
         if(phone != null && dirn != null) {
             return Response.status(Response.Status.BAD_REQUEST)
                     .entity("You have to specify either the 'phone' or 'dirn' param, not both of them.")

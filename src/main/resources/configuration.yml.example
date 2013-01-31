@@ -2,6 +2,9 @@ cucm:
   host: HOST
   user: USER
   password: PASSWORD
+apiauth:
+  user: user
+  password: password
 logging:
   level: INFO
   console:

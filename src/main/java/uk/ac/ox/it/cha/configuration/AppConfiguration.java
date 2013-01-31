@@ -15,9 +15,17 @@ public class AppConfiguration extends Configuration {
     @JsonProperty
     @NotNull
     CucmConfiguration cucm = new CucmConfiguration();
+    
+    @Valid
+    @JsonProperty
+    @NotNull
+    ApiAuth apiauth = new ApiAuth();
 
     public CucmConfiguration getCucm() {
         return cucm;
     }
     
+    public ApiAuth getApiauth() {
+        return apiauth;
+    }
 }
