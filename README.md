@@ -4,7 +4,7 @@ cucm-http-api
 Objectives
 ----------
 
-The aim of this project is to provide a simple HTTP API (with a JSON output) to expose some services from CUCM / AXL APIs.
+The aim of this project is to provide a simple, technical HTTP API (with a JSON output) to expose some services from CUCM / AXL APIs.
 
 Phone information, updating speeddials are the first steps of this project which will have full documentation.
 
@@ -48,6 +48,11 @@ Code architecture
 `uk.ac.ox.it.cha.resources` contains the resources of the application, defined by a path.
 
 `uk.ac.ox.it.cha.services` contains managed objects to access external resources (e.g. the SOAP web service).
+
+Security considerations
+-----------------------
+
+It is not recommended to expose this API (which remains technical) to a wide audience, it has been developed as a middleware. The recommended configuration (see `src/main/resources/configuration.yml.example`) is to bind the host to a local interface.
 
 Examples
 --------

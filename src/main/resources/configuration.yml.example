@@ -7,3 +7,5 @@ logging:
   console:
     enabled: true
     threshold: ALL
+http:
+  bindHost: localhost
