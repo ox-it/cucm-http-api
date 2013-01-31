@@ -21,8 +21,8 @@ All these calls require basic auth.
 
     .. sourcecode:: http
 
-		HTTP/1.1 200 OK
-		Content-Type: application/json
+        HTTP/1.1 200 OK
+        Content-Type: application/json
 
         [
           {
@@ -63,10 +63,20 @@ All these calls require basic auth.
 
     .. sourcecode:: http
 
-		POST /phone/speeddials?phone=name HTTP/1.1
-		Host: 127.0.0.1
-		Accept: application/json
+        POST /phone/speeddials?phone=name HTTP/1.1
+        Host: 127.0.0.1
+        Accept: application/json
         Content-Type: application/json
+        [
+            {
+                "index": "0",
+                "dirn": "11"
+            },
+            {
+                "index": "1",
+                "dirn": "22"
+            },
+        ]
 
     **Example response**:
 
@@ -78,7 +88,7 @@ All these calls require basic auth.
 
     :query phone: unique name of the phone to update
     :type phone: string
-    :query dirn: filter by a specific type in the hierarchy of types (will search within subtypes too)
+    :query dirn: directory number (all phones of this directory number will be updated)
     :type dirn: int
     
     :statuscode 200: request done

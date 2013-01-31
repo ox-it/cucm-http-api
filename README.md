@@ -14,31 +14,19 @@ Features
 * List all phones associated to a directory number, get details on every phone (including speeddials configuration)
 * Update speeddials for a phone or for all phones associated with a directory number
 
-Requirements
-------------
+Quick installation and running
+------------------------------
 
-This Java project requires Maven.
+Requires Java (version 6+) and Maven (version 2+).
+
+Run `mvn clean install` at the root of the project. This will build a "fat" JAR (shaded JAR containing all its dependencies).
+
+You can run the application by `java -jar target/cucm-http-api-1.0-SNAPSHOT.jar server src/main/resources/configuration.yml` at the root of the project. (This assumes that you have set up your configuration file at `src/main/resources/configuration.yml`, see `src/main/resources/configuration.yml.example` for a sample configuration.)
 
 AXL SOAP web services
 ---------------------
 
 The schema (WSDL) from the "AXL SQL toolkit" downloaded from the CUCM administration console has been put into this repository for convenience (in the folder `cucm_schema`), the consumer classes have been generated using the command `wsimport -keep -b cucm_schema/current/AXLSOAP.xsd -Xnocompile  -s src/main/java -d bin -verbose cucm_schema/current/AXLAPI.wsdl`.
-
-Installation
-------------
-
-Run `mvn clean install` at the root of the project.
-
-Running
--------
-
-You can run the application via the "fat" jar provided using supervisor or circus with the following command line:
-`java -jar target/cucm-http-api-1.0-SNAPSHOT.jar server src/main/resources/configuration.yml`
-
-Configuration
---------------
-
-You do need to configure the domain of CUCM, its user and password, see the sample configuration at `src/main/resources/configuration.yml.example`.
 
 Examples
 --------

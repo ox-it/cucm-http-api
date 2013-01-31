@@ -6,22 +6,6 @@
 Welcome to cucm-http-api documentation!
 =======================================
 
-HTTP API
------------------
-
-.. toctree::
-    :glob:
-
-    http_api/*
-
-Internal API
------------------
-
-.. toctree::
-    :glob:
-
-    api/*
-
 Developer
 ----------
 
@@ -31,10 +15,17 @@ Developer
     developer/overview
     developer/*
 
+HTTP API
+-----------------
+
+.. toctree::
+    :glob:
+
+    http_api/*
+
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

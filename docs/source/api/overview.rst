@@ -1,4 +1,0 @@
-Overview
-=========
-
-Internal API
