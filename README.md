@@ -1,6 +1,8 @@
 cucm-http-api
 =============
 
+[Online documentation](https://cucm-http-api.readthedocs.org)
+
 Objectives
 ----------
 
