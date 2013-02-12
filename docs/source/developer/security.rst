@@ -24,7 +24,7 @@ Protecting resources
 
 See `Dropwizard auth documentation <http://dropwizard.codahale.com/manual/auth/>`_ for more details, resources should include a parameter annotated ``@Auth`` as shown in the example below.
 
-.. code:: java
+.. code-block:: java
 
   @GET
   public List<Phone> get(@QueryParam("dirn") IntParam dirn, @Auth User user) {
