@@ -3,6 +3,8 @@ cucm-http-api
 
 [Online documentation](https://cucm-http-api.readthedocs.org)
 
+[![Build Status](https://secure.travis-ci.org/ox-it/cucm-http-api.png)](http://travis-ci.org/ox-it/cucm-http-api)
+
 Objectives
 ----------
 
