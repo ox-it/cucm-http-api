@@ -62,6 +62,36 @@ public class Phone {
             this.speeddials.add(new Speeddial(sd));
         }
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null)
+            return false;
+        if (o == this)
+            return true;
+        if (o instanceof Phone) {
+            return this.hashCode() == o.hashCode();
+        } 
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 59 * hash + (this.product != null ? this.product.hashCode() : 0);
+        hash = 59 * hash + (this.description != null ? this.description.hashCode() : 0);
+        hash = 59 * hash + (this.model != null ? this.model.hashCode() : 0);
+        hash = 59 * hash + (this.name != null ? this.name.hashCode() : 0);
+        hash = 59 * hash + (this.uuid != null ? this.uuid.hashCode() : 0);
+        hash = 59 * hash + (this.dirns != null ? this.dirns.hashCode() : 0);
+        hash = 59 * hash + (this.speeddials != null ? this.speeddials.hashCode() : 0);
+        return hash;
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getName() + " [" + this.getName() + "]";
+    }
     
     /* GETTERS and SETTERS */
     
