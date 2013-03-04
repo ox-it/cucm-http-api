@@ -40,12 +40,6 @@ public class PhoneTest {
         List<String> dirns = new ArrayList<String>();
         dirns.add("dirn");
         phone.setDirns(dirns);
-        
-        Phone p = fromJson(jsonFixture("fixtures/phone.json"), Phone.class);
-        System.out.println(p.equals(phone));
-        System.out.println(p.hashCode());
-        System.out.println(phone.hashCode());
-        
         assertThat("a Phone can be deserialized from JSON",
                 fromJson(jsonFixture("fixtures/phone.json"), Phone.class),
                 is(phone));
