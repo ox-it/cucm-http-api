@@ -25,6 +25,11 @@ Run `mvn clean install` at the root of the project. This will build a "fat" JAR 
 
 You can run the application by `java -jar target/cucm-http-api-1.0-SNAPSHOT.jar server src/main/resources/configuration.yml` at the root of the project. (This assumes that you have set up your configuration file at `src/main/resources/configuration.yml`, see `src/main/resources/configuration.yml.example` for a sample configuration.)
 
+Tests
+-----
+
+Run `mvn test` at the root of the project.
+
 AXL SOAP web services
 ---------------------
 
