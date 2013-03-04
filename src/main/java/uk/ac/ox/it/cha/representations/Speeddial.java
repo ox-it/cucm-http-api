@@ -25,7 +25,44 @@ public class Speeddial {
         this.index = sd.getIndex();
         this.dirn = sd.getDirn();
     }
+    
+    @JsonIgnore
+    public XSpeeddial getXSpeeddial() {
+        XSpeeddial xs = new XSpeeddial();
+        xs.setAsciiLabel(this.dirn);
+        xs.setDirn(this.dirn);
+        xs.setIndex(this.index);
+        xs.setLabel(this.dirn);
+        return xs;
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (o == null)
+            return false;
+        if (o == this)
+            return true;
+        if (o instanceof Speeddial) {
+            return this.hashCode() == o.hashCode();
+        } 
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 41 * hash + (this.index != null ? this.index.hashCode() : 0);
+        hash = 41 * hash + (this.dirn != null ? this.dirn.hashCode() : 0);
+        return hash;
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getName() + " [" + this.getIndex() + "=>" + this.getDirn() + "]";
+    }
+    
+    /* GETTERS and SETTERS */
+    
     public String getIndex() {
         return index;
     }
@@ -42,13 +79,5 @@ public class Speeddial {
         this.dirn = dirn;
     }
     
-    @JsonIgnore
-    public XSpeeddial getXSpeeddial() {
-        XSpeeddial xs = new XSpeeddial();
-        xs.setAsciiLabel(this.dirn);
-        xs.setDirn(this.dirn);
-        xs.setIndex(this.index);
-        xs.setLabel(this.dirn);
-        return xs;
-    }
+    
 }
