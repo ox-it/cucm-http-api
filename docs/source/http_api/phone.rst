@@ -38,12 +38,12 @@ All these calls require basic auth.
               {
               	"index": "1",
                 "dirn": "11",
-  				"label": "office"
+                "label": "office"
               },
               {
                 "index": "2",
                 "dirn": "22",
-  				"label": "home"
+                "label": "home"
               },
               
             ]
