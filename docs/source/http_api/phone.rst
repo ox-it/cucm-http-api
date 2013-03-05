@@ -36,13 +36,16 @@ All these calls require basic auth.
             ],
             "speeddials": [
               {
-                "index": "0",
-                "dirn": "11"
+              	"index": "1",
+                "dirn": "11",
+  				"label": "office"
               },
               {
-                "index": "1",
-                "dirn": "22"
+                "index": "2",
+                "dirn": "22",
+  				"label": "home"
               },
+              
             ]
           }
         ]

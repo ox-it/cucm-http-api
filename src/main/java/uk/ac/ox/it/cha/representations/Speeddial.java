@@ -17,6 +17,9 @@ public class Speeddial {
     @JsonProperty
     private String dirn;
     
+    @JsonProperty
+    private String label;
+
     public Speeddial() {
         
     }
@@ -24,15 +27,16 @@ public class Speeddial {
     public Speeddial(RSpeeddial sd) {
         this.index = sd.getIndex();
         this.dirn = sd.getDirn();
+        this.label = sd.getLabel();
     }
     
     @JsonIgnore
     public XSpeeddial getXSpeeddial() {
         XSpeeddial xs = new XSpeeddial();
-        xs.setAsciiLabel(this.dirn);
         xs.setDirn(this.dirn);
         xs.setIndex(this.index);
-        xs.setLabel(this.dirn);
+        xs.setAsciiLabel(this.label);
+        xs.setLabel(this.label);
         return xs;
     }
 
@@ -79,5 +83,11 @@ public class Speeddial {
         this.dirn = dirn;
     }
     
-    
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
 }
