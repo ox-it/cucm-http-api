@@ -4,18 +4,13 @@ import com.cisco.axl.api._8.ExecuteSQLQueryReq;
 import com.cisco.axl.api._8.ExecuteSQLQueryRes;
 import com.cisco.axl.api._8.GetPhoneReq;
 import com.cisco.axl.api._8.GetPhoneRes;
-import com.cisco.axl.api._8.StandardResponse;
-import com.cisco.axl.api._8.UpdatePhoneReq;
-import com.cisco.axl.api._8.XSpeeddial;
 import com.cisco.axlapiservice.AXLPort;
 import com.yammer.dropwizard.jersey.params.IntParam;
 import com.yammer.dropwizard.auth.Auth;
 import java.util.ArrayList;
 import java.util.List;
-import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
-import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
@@ -26,7 +21,6 @@ import javax.xml.ws.soap.SOAPFaultException;
 import org.w3c.dom.Node;
 import uk.ac.ox.it.cha.auth.User;
 import uk.ac.ox.it.cha.representations.Phone;
-import uk.ac.ox.it.cha.representations.Speeddial;
 
 /**
  *
@@ -59,57 +53,6 @@ public class PhoneResource {
             phones.add(getPhoneInfo(phoneName));
         }
         return phones;
-    }
-    
-    /**
-     * Update the speeddials for the given directory number
-     * @param dirn query parameter: dir number
-     * @param speeddials list of Speeddial
-     * @return response code from the SOAP web service
-     */
-    @POST
-    @Path("/speeddials")
-    public Response updateSpeeddials(@QueryParam("dirn") IntParam dirn,
-            @QueryParam("phone") String phone,
-            @Valid List<Speeddial> speeddials,
-            @Auth User user) {
-        if(phone != null && dirn != null) {
-            return Response.status(Response.Status.BAD_REQUEST)
-                    .entity("You have to specify either the 'phone' or 'dirn' param, not both of them.")
-                    .build();
-        }
-        if(phone != null) {
-            String response = updateSpeeddialyByPhone(phone, speeddials);
-            return Response.ok(response).build();
-        } else {
-            List<String> phoneNames = this.findPhonesByDirN(dirn.toString());
-            if(phoneNames.isEmpty()) {
-                throw new WebApplicationException(Response.Status.NOT_FOUND);
-            }
-            StringBuilder sb = new StringBuilder();
-            for(String name : phoneNames) {
-                sb.append(updateSpeeddialyByPhone(name, speeddials));
-            }
-            return Response.ok(sb.toString()).build();
-        }
-    }
-    
-    /**
-     * Do an update phone request to the given phone name to update speeddials
-     * @param phoneName name of the phone
-     * @param speeddials list of speeddials
-     * @return String representing the UUID of this action
-     */
-    private String updateSpeeddialyByPhone(String phoneName, List<Speeddial> speeddials) {
-        UpdatePhoneReq upr = new UpdatePhoneReq();
-        upr.setName(phoneName);
-        UpdatePhoneReq.Speeddials sds = new UpdatePhoneReq.Speeddials();
-        for(Speeddial sd : speeddials) {
-            sds.getSpeeddial().add(sd.getXSpeeddial());
-        }
-        upr.setSpeeddials(sds);
-        StandardResponse response = this.axlService.updatePhone(upr);
-        return response.getReturn();
     }
 
     /**
