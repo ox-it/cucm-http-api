@@ -20,6 +20,8 @@ Phone
 
 .. java:type:: public class Phone
 
+   Represents a Phone
+
    :author: martinfilliau
 
 Constructors

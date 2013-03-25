@@ -16,7 +16,10 @@ import uk.ac.ox.it.cha.resources.PhoneResource;
 import uk.ac.ox.it.cha.resources.SpeeddialsResource;
 import uk.ac.ox.it.cha.services.CucmAxlService;
 
-
+/**
+ * Main entry point of the application
+ * @author martinfilliau
+ */
 class CucmHttpApiService extends Service<AppConfiguration> {
 
     public static void main(String[] args) throws Exception {

@@ -36,6 +36,10 @@ CucmHttpApiService
 
 .. java:type::  class CucmHttpApiService extends Service<AppConfiguration>
 
+   Main entry point of the application
+
+   :author: martinfilliau
+
 Methods
 -------
 initialize

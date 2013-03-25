@@ -14,6 +14,8 @@ Speeddial
 
 .. java:type:: public class Speeddial
 
+   Represents a Speed dial
+
    :author: martinfilliau
 
 Constructors
@@ -29,6 +31,10 @@ Speeddial
 
 .. java:constructor:: public Speeddial(RSpeeddial sd)
    :outertype: Speeddial
+
+   Construct a Speeddial object from CUCM
+
+   :param sd: RSpeeddial object from CUCM
 
 Methods
 -------
@@ -61,6 +67,10 @@ getXSpeeddial
 
 .. java:method:: @JsonIgnore public XSpeeddial getXSpeeddial()
    :outertype: Speeddial
+
+   Get an XSpeeddial object (used in queries made to CUCM)
+
+   :return: XSpeeddial object
 
 hashCode
 ^^^^^^^^

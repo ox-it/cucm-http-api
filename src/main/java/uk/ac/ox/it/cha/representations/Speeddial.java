@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- *
+ * Represents a Speed dial
  * @author martinfilliau
  */
 public class Speeddial {
@@ -24,12 +24,21 @@ public class Speeddial {
         
     }
     
+    /**
+     * Construct a Speeddial object from CUCM
+     * @param sd RSpeeddial object from CUCM
+     */
     public Speeddial(RSpeeddial sd) {
         this.index = sd.getIndex();
         this.dirn = sd.getDirn();
         this.label = sd.getLabel();
     }
     
+    /**
+     * Get an XSpeeddial object (used in 
+     * queries made to CUCM)
+     * @return XSpeeddial object
+     */
     @JsonIgnore
     public XSpeeddial getXSpeeddial() {
         XSpeeddial xs = new XSpeeddial();
