@@ -22,6 +22,14 @@ HTTP API
     :glob:
 
     http_api/*
+    
+API
+-----
+
+.. toctree::
+    :glob:
+    
+    api/packages
 
 Indices and tables
 ==================

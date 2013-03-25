@@ -1,2 +1,4 @@
 Sphinx
 sphinxcontrib-httpdomain
+javasphinx
+
