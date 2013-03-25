@@ -9,7 +9,7 @@
     <url>https://github.com/ox-it/cucm-http-api</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <dropwizard.version>0.6.1</dropwizard.version>
+        <dropwizard.version>0.6.2</dropwizard.version>
     </properties>
     <build>
         <plugins>
