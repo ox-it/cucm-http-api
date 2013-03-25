@@ -46,7 +46,7 @@ public class PhoneResource {
      */
     @GET
     public List<Phone> get(@QueryParam("dirn") IntParam dirn, @Auth User user) {
-        List<String> phoneNames = this.findPhonesByDirN(dirn.toString());
+        List<String> phoneNames = this.findPhonesByDirN(dirn.get());
         if(phoneNames.isEmpty()) {
             throw new WebApplicationException(Response.Status.NOT_FOUND);
         }
@@ -62,11 +62,12 @@ public class PhoneResource {
      * @param dirn directory number to search for
      * @return list of phone name as a String, null if it couldn't be found
      */
-    private List<String> findPhonesByDirN(String dirn) {
+    private List<String> findPhonesByDirN(int dirn) {
         List<String> phones = new ArrayList<String>();
         try {
             ExecuteSQLQueryReq sql = new ExecuteSQLQueryReq();
-            sql.setSql("SELECT D.Name FROM NumPlan NP, DeviceNumPlanMap DNPMap, Device D WHERE NP.DNorPattern = '" + dirn + "' AND DNPMap.fkNumPlan = NP.pkid AND D.pkid = DNPMap.fkDevice");
+            sql.setSql("SELECT D.Name FROM NumPlan NP, DeviceNumPlanMap DNPMap, Device D WHERE NP.DNorPattern = '" + Integer.toString(dirn)
+                    + "' AND DNPMap.fkNumPlan = NP.pkid AND D.pkid = DNPMap.fkDevice");
 
             ExecuteSQLQueryRes res = this.axlService.executeSQLQuery(sql);
             for(Object o : res.getReturn().getRow()) {
