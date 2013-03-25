@@ -17,7 +17,8 @@ import uk.ac.ox.it.cha.auth.User;
 import uk.ac.ox.it.cha.representations.Speeddial;
 
 /**
- *
+ * Speed dials resource
+ * Allow operations on speed dials
  * @author martinfilliau
  */
 @Path("/speeddials")
@@ -32,9 +33,10 @@ public class SpeeddialsResource {
     }
 
     /**
-     * Update the speeddials for the given directory number
-     * @param dirn query parameter: dir number
+     * Update the speed dials for the given phone name
+     * @param phone name of the phone to update
      * @param speeddials list of Speeddial
+     * @param user authenticated user
      * @return response code from the SOAP web service
      */
     @POST

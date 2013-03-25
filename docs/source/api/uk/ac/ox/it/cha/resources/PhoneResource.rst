@@ -48,6 +48,8 @@ PhoneResource
 
 .. java:type:: @Path @Produces @Consumes public class PhoneResource
 
+   Phone resource Expose information about phones
+
    :author: martinfilliau
 
 Constructors
@@ -69,4 +71,6 @@ get
    Get phone information from a directory number
 
    :param dirn: directory number
+   :param user: authenticated user
+   :return: list of phones corresponding to this directory number
 

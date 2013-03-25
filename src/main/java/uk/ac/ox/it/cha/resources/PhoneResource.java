@@ -23,7 +23,8 @@ import uk.ac.ox.it.cha.auth.User;
 import uk.ac.ox.it.cha.representations.Phone;
 
 /**
- *
+ * Phone resource
+ * Expose information about phones
  * @author martinfilliau
  */
 @Path("/phone")
@@ -37,12 +38,13 @@ public class PhoneResource {
         this.axlService = axlService;
     }
     
-    @GET
     /**
      * Get phone information from a directory number
      * @param dirn directory number
-     * @return 
+     * @param user authenticated user
+     * @return list of phones corresponding to this directory number
      */
+    @GET
     public List<Phone> get(@QueryParam("dirn") IntParam dirn, @Auth User user) {
         List<String> phoneNames = this.findPhonesByDirN(dirn.toString());
         if(phoneNames.isEmpty()) {

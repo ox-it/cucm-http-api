@@ -36,6 +36,8 @@ SpeeddialsResource
 
 .. java:type:: @Path @Produces @Consumes public class SpeeddialsResource
 
+   Speed dials resource Allow operations on speed dials
+
    :author: martinfilliau
 
 Constructors
@@ -54,9 +56,10 @@ updateSpeeddials
 .. java:method:: @POST public Response updateSpeeddials(String phone, List<Speeddial> speeddials, User user)
    :outertype: SpeeddialsResource
 
-   Update the speeddials for the given directory number
+   Update the speed dials for the given phone name
 
-   :param dirn: query parameter: dir number
+   :param phone: name of the phone to update
    :param speeddials: list of Speeddial
+   :param user: authenticated user
    :return: response code from the SOAP web service
 

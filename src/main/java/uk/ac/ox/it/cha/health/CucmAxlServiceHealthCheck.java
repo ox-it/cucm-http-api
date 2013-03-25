@@ -6,7 +6,7 @@ import com.cisco.axlapiservice.AXLPort;
 import com.yammer.metrics.core.HealthCheck;
 
 /**
- *
+ * Health check to CUCM AXL Service
  * @author martinfilliau
  */
 public class CucmAxlServiceHealthCheck extends HealthCheck {
@@ -17,11 +17,12 @@ public class CucmAxlServiceHealthCheck extends HealthCheck {
         super("CucmAxlService");
         this.service = service;
     }
-    
-    @Override
+
     /**
      * Make a query to get the OS version
+     * @return healthy if there was no exception else unhealthy
      */
+    @Override
     protected Result check() throws Exception {   
         try {
             GetOSVersionRes res = this.service.getOSVersion(new GetOSVersionReq());

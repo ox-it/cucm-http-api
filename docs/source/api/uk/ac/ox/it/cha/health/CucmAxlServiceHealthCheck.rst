@@ -14,6 +14,8 @@ CucmAxlServiceHealthCheck
 
 .. java:type:: public class CucmAxlServiceHealthCheck extends HealthCheck
 
+   Health check to CUCM AXL Service
+
    :author: martinfilliau
 
 Constructors
@@ -31,4 +33,8 @@ check
 
 .. java:method:: @Override protected Result check() throws Exception
    :outertype: CucmAxlServiceHealthCheck
+
+   Make a query to get the OS version
+
+   :return: healthy if there was no exception else unhealthy
 
