@@ -23,6 +23,14 @@ HTTP API
 
     http_api/*
     
+CUCM calls
+----------
+
+.. toctree::
+    :glob:
+    
+    cucm_calls/*
+    
 API
 -----
 
