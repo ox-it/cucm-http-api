@@ -33,7 +33,7 @@ Run `mvn test` at the root of the project.
 AXL SOAP web services
 ---------------------
 
-The schema (WSDL) from the "AXL SQL toolkit" downloaded from the CUCM administration console has been put into this repository for convenience (in the folder `cucm_schema`), the consumer classes have been generated using the command `wsimport -keep -b cucm_schema/current/AXLSOAP.xsd -Xnocompile  -s src/main/java -d bin -verbose cucm_schema/current/AXLAPI.wsdl`.
+The schema (WSDL) from the "AXL SQL toolkit" downloaded from the CUCM administration console has been put into this repository for convenience (in the folder `cucm_schema`), the consumer classes have been generated using the command `wsimport -keep -b src/main/resources/cucm_schema/8.0/AXLSOAP.xsd -Xnocompile  -s src/main/java -d bin -verbose src/main/resources/cucm_schema/8.0/AXLAPI.wsdl`.
 
 Examples
 --------
