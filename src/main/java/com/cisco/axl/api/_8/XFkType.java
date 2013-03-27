@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlValue;
  * &lt;complexType name="XFkType">
  *   &lt;simpleContent>
  *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/extension>
  *   &lt;/simpleContent>
  * &lt;/complexType>

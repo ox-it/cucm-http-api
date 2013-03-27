@@ -1,5 +1,7 @@
+
 package com.cisco.axlapiservice;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.logging.Logger;
 import javax.xml.namespace.QName;
@@ -15,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "AXLAPIService", targetNamespace = "http://www.cisco.com/AXLAPIService/", wsdlLocation = "src/main/resources/cucm_schema/current/AXLAPI.wsdl")
+@WebServiceClient(name = "AXLAPIService", targetNamespace = "http://www.cisco.com/AXLAPIService/", wsdlLocation = "src/main/resources/cucm_schema/8.0/AXLAPI.wsdl")
 public class AXLAPIService
     extends Service
 {
@@ -25,7 +27,7 @@ public class AXLAPIService
 
     static {
         AXLAPISERVICE_WSDL_LOCATION = AXLAPIService.class.getClassLoader()
-                .getResource("cucm_schema/current/AXLAPI.wsdl");
+                .getResource("cucm_schema/8.0/AXLAPI.wsdl");
     }
 
     public AXLAPIService(URL wsdlLocation, QName serviceName) {

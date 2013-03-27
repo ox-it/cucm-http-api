@@ -22,25 +22,25 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *       &lt;sequence minOccurs="0">
  *         &lt;element name="pattern" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="usage" type="{http://www.cisco.com/AXL/API/8.5}XPatternUsage" minOccurs="0"/>
- *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="usage" type="{http://www.cisco.com/AXL/API/8.0}XPatternUsage" minOccurs="0"/>
+ *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}Name" minOccurs="0"/>
- *         &lt;element name="pickupNotification" type="{http://www.cisco.com/AXL/API/8.5}XPickupNotification" minOccurs="0"/>
- *         &lt;element name="pickupNotificationTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *         &lt;element name="pickupNotification" type="{http://www.cisco.com/AXL/API/8.0}XPickupNotification" minOccurs="0"/>
+ *         &lt;element name="pickupNotificationTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *         &lt;element name="callInfoForPickupNotification" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="callingPartyInfo" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *                   &lt;element name="calledPartyInfo" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *                   &lt;element name="callingPartyInfo" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *                   &lt;element name="calledPartyInfo" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -301,8 +301,8 @@ public class LCallPickupGroup {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="callingPartyInfo" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
-     *         &lt;element name="calledPartyInfo" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+     *         &lt;element name="callingPartyInfo" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+     *         &lt;element name="calledPartyInfo" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

@@ -19,30 +19,30 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateIpPhoneServicesReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
- *           &lt;element name="serviceName" type="{http://www.cisco.com/AXL/API/8.5}UniqueString128"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
+ *           &lt;element name="serviceName" type="{http://www.cisco.com/AXL/API/8.0}UniqueString128"/>
  *         &lt;/choice>
- *         &lt;element name="newServiceName" type="{http://www.cisco.com/AXL/API/8.5}UniqueString128" minOccurs="0"/>
- *         &lt;element name="asciiServiceName" type="{http://www.cisco.com/AXL/API/8.5}UniqueString128" minOccurs="0"/>
- *         &lt;element name="serviceDescription" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
+ *         &lt;element name="newServiceName" type="{http://www.cisco.com/AXL/API/8.0}UniqueString128" minOccurs="0"/>
+ *         &lt;element name="asciiServiceName" type="{http://www.cisco.com/AXL/API/8.0}UniqueString128" minOccurs="0"/>
+ *         &lt;element name="serviceDescription" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
  *         &lt;element name="serviceUrl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="secureServiceUrl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="serviceCategory" type="{http://www.cisco.com/AXL/API/8.5}XPhoneServiceCategory" minOccurs="0"/>
- *         &lt;element name="serviceType" type="{http://www.cisco.com/AXL/API/8.5}XPhoneService" minOccurs="0"/>
+ *         &lt;element name="serviceCategory" type="{http://www.cisco.com/AXL/API/8.0}XPhoneServiceCategory" minOccurs="0"/>
+ *         &lt;element name="serviceType" type="{http://www.cisco.com/AXL/API/8.0}XPhoneService" minOccurs="0"/>
  *         &lt;element name="serviceVendor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="serviceVersion" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="enabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *         &lt;element name="enabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *         &lt;choice minOccurs="0">
  *           &lt;sequence minOccurs="0">
  *             &lt;element name="removeParameters" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="parameter" type="{http://www.cisco.com/AXL/API/8.5}XIpPhoneServicesParameter" maxOccurs="unbounded"/>
+ *                       &lt;element name="parameter" type="{http://www.cisco.com/AXL/API/8.0}XIpPhoneServicesParameter" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -51,9 +51,9 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;element name="addParameters" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="parameter" type="{http://www.cisco.com/AXL/API/8.5}XIpPhoneServicesParameter" maxOccurs="unbounded"/>
+ *                       &lt;element name="parameter" type="{http://www.cisco.com/AXL/API/8.0}XIpPhoneServicesParameter" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -63,9 +63,9 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;element name="parameters" minOccurs="0">
  *             &lt;complexType>
  *               &lt;complexContent>
- *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="parameter" type="{http://www.cisco.com/AXL/API/8.5}XIpPhoneServicesParameter" maxOccurs="unbounded"/>
+ *                     &lt;element name="parameter" type="{http://www.cisco.com/AXL/API/8.0}XIpPhoneServicesParameter" maxOccurs="unbounded"/>
  *                   &lt;/sequence>
  *                 &lt;/extension>
  *               &lt;/complexContent>
@@ -493,9 +493,9 @@ public class UpdateIpPhoneServicesReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="parameter" type="{http://www.cisco.com/AXL/API/8.5}XIpPhoneServicesParameter" maxOccurs="unbounded"/>
+     *         &lt;element name="parameter" type="{http://www.cisco.com/AXL/API/8.0}XIpPhoneServicesParameter" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -554,9 +554,9 @@ public class UpdateIpPhoneServicesReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="parameter" type="{http://www.cisco.com/AXL/API/8.5}XIpPhoneServicesParameter" maxOccurs="unbounded"/>
+     *         &lt;element name="parameter" type="{http://www.cisco.com/AXL/API/8.0}XIpPhoneServicesParameter" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -615,9 +615,9 @@ public class UpdateIpPhoneServicesReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="parameter" type="{http://www.cisco.com/AXL/API/8.5}XIpPhoneServicesParameter" maxOccurs="unbounded"/>
+     *         &lt;element name="parameter" type="{http://www.cisco.com/AXL/API/8.0}XIpPhoneServicesParameter" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

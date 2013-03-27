@@ -2,8 +2,6 @@
 package com.cisco.axl.api._8;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -22,132 +20,85 @@ import javax.xml.bind.annotation.XmlValue;
  * <pre>
  * &lt;complexType name="UpdateSipTrunkReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.5}UniqueString128" minOccurs="0"/>
- *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="callingSearchSpaceName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="devicePoolName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="commonDeviceConfigName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="networkLocation" type="{http://www.cisco.com/AXL/API/8.5}XNetworkLocation" minOccurs="0"/>
- *         &lt;element name="locationName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="mediaResourceListName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="networkHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.5}XMOHAudioSourceId" minOccurs="0"/>
- *         &lt;element name="userHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.5}XMOHAudioSourceId" minOccurs="0"/>
- *         &lt;element name="automatedAlternateRoutingCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="aarNeighborhoodName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="packetCaptureMode" type="{http://www.cisco.com/AXL/API/8.5}XPacketCaptureMode" minOccurs="0"/>
- *         &lt;element name="packetCaptureDuration" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="mlppDomainId" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="mlppIndicationStatus" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="preemption" type="{http://www.cisco.com/AXL/API/8.5}XPreemption" minOccurs="0"/>
- *         &lt;element name="useTrustedRelayPoint" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="retryVideoCallAsAudio" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="securityProfileName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="sipProfileName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="cgpnTransformationCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="useDevicePoolCgpnTransformCss" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="geoLocationName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="geoLocationFilterName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="sendGeoLocation" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="cdpnTransformationCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="useDevicePoolCdpnTransformCss" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="unattendedPort" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="transmitUtf8" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="subscribeCallingSearchSpaceName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="rerouteCallingSearchSpaceName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="referCallingSearchSpaceName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="mtpRequired" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="presenceGroupName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="unknownPrefix" type="{http://www.cisco.com/AXL/API/8.5}String16" minOccurs="0"/>
- *         &lt;element name="destinationAddress" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="destAddrIsSrv" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="destinationport" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="tkSipCodec" type="{http://www.cisco.com/AXL/API/8.5}XSIPCodec" minOccurs="0"/>
+ *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.0}UniqueString128" minOccurs="0"/>
+ *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="callingSearchSpaceName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="devicePoolName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="commonDeviceConfigName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="networkLocation" type="{http://www.cisco.com/AXL/API/8.0}XNetworkLocation" minOccurs="0"/>
+ *         &lt;element name="locationName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="mediaResourceListName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="networkHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.0}XMOHAudioSourceId" minOccurs="0"/>
+ *         &lt;element name="userHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.0}XMOHAudioSourceId" minOccurs="0"/>
+ *         &lt;element name="automatedAlternateRoutingCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="aarNeighborhoodName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="packetCaptureMode" type="{http://www.cisco.com/AXL/API/8.0}XPacketCaptureMode" minOccurs="0"/>
+ *         &lt;element name="packetCaptureDuration" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="mlppDomainId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+ *         &lt;element name="mlppIndicationStatus" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="preemption" type="{http://www.cisco.com/AXL/API/8.0}XPreemption" minOccurs="0"/>
+ *         &lt;element name="useTrustedRelayPoint" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="retryVideoCallAsAudio" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="securityProfileName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="sipProfileName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="cgpnTransformationCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="useDevicePoolCgpnTransformCss" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="geoLocationName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="geoLocationFilterName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="sendGeoLocation" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="cdpnTransformationCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="useDevicePoolCdpnTransformCss" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="unattendedPort" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="transmitUtf8" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="subscribeCallingSearchSpaceName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="rerouteCallingSearchSpaceName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="referCallingSearchSpaceName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="mtpRequired" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="presenceGroupName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="unknownPrefix" type="{http://www.cisco.com/AXL/API/8.0}String16" minOccurs="0"/>
+ *         &lt;element name="destinationAddress" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="destAddrIsSrv" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="destinationport" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="tkSipCodec" type="{http://www.cisco.com/AXL/API/8.0}XSIPCodec" minOccurs="0"/>
  *         &lt;element name="sigDigits" minOccurs="0">
  *           &lt;complexType>
  *             &lt;simpleContent>
- *               &lt;extension base="&lt;http://www.cisco.com/AXL/API/8.5>XInteger">
+ *               &lt;extension base="&lt;http://www.cisco.com/AXL/API/8.0>XInteger">
  *                 &lt;attribute name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *               &lt;/extension>
  *             &lt;/simpleContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="connectedNamePresentation" type="{http://www.cisco.com/AXL/API/8.5}XPresentationBit" minOccurs="0"/>
- *         &lt;element name="connectedPartyIdPresentation" type="{http://www.cisco.com/AXL/API/8.5}XPresentationBit" minOccurs="0"/>
- *         &lt;element name="callingPartySelection" type="{http://www.cisco.com/AXL/API/8.5}XCallingPartySelection" minOccurs="0"/>
- *         &lt;element name="callingname" type="{http://www.cisco.com/AXL/API/8.5}XPresentationBit" minOccurs="0"/>
- *         &lt;element name="callingLineIdPresentation" type="{http://www.cisco.com/AXL/API/8.5}XPresentationBit" minOccurs="0"/>
- *         &lt;element name="prefixDn" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="callerName" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="callerIdDn" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="acceptInboundRdnis" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="acceptOutboundRdnis" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="srtpAllowed" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="srtpFallbackAllowed" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="isPaiEnabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="sipPrivacy" type="{http://www.cisco.com/AXL/API/8.5}XSipPrivacy" minOccurs="0"/>
- *         &lt;element name="isRpidEnabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="sipAssertedType" type="{http://www.cisco.com/AXL/API/8.5}XSipAssertedType" minOccurs="0"/>
+ *         &lt;element name="connectedNamePresentation" type="{http://www.cisco.com/AXL/API/8.0}XPresentationBit" minOccurs="0"/>
+ *         &lt;element name="connectedPartyIdPresentation" type="{http://www.cisco.com/AXL/API/8.0}XPresentationBit" minOccurs="0"/>
+ *         &lt;element name="callingPartySelection" type="{http://www.cisco.com/AXL/API/8.0}XCallingPartySelection" minOccurs="0"/>
+ *         &lt;element name="callingname" type="{http://www.cisco.com/AXL/API/8.0}XPresentationBit" minOccurs="0"/>
+ *         &lt;element name="callingLineIdPresentation" type="{http://www.cisco.com/AXL/API/8.0}XPresentationBit" minOccurs="0"/>
+ *         &lt;element name="prefixDn" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="callerName" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="callerIdDn" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="acceptInboundRdnis" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="acceptOutboundRdnis" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="srtpAllowed" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="srtpFallbackAllowed" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="isPaiEnabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="sipPrivacy" type="{http://www.cisco.com/AXL/API/8.0}XSipPrivacy" minOccurs="0"/>
+ *         &lt;element name="isRpidEnabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="sipAssertedType" type="{http://www.cisco.com/AXL/API/8.0}XSipAssertedType" minOccurs="0"/>
  *         &lt;element name="destinationAddressIpv6" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="dtmfSignalingMethod" type="{http://www.cisco.com/AXL/API/8.5}XDTMFSignaling" minOccurs="0"/>
- *         &lt;element name="routeClassSignalling" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="sipTrunkType" type="{http://www.cisco.com/AXL/API/8.5}XTrunkService" minOccurs="0"/>
- *         &lt;element name="pstnAccess" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="imeE164TransformationName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="useImePublicIpPort" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="useDevicePoolCntdPnTransformationCss" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="cntdPnTransformationCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="useDevicePoolCgpnTransformCssUnkn" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="sipNormalizationScriptName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="runOnEveryNode" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;choice minOccurs="0">
- *           &lt;sequence minOccurs="0">
- *             &lt;element name="removeDestinations" minOccurs="0">
- *               &lt;complexType>
- *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
- *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="destination" type="{http://www.cisco.com/AXL/API/8.5}XSipTrunkDestination" maxOccurs="16" minOccurs="0"/>
- *                     &lt;/sequence>
- *                   &lt;/extension>
- *                 &lt;/complexContent>
- *               &lt;/complexType>
- *             &lt;/element>
- *             &lt;element name="addDestinations" minOccurs="0">
- *               &lt;complexType>
- *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
- *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="destination" type="{http://www.cisco.com/AXL/API/8.5}XSipTrunkDestination" maxOccurs="16" minOccurs="0"/>
- *                     &lt;/sequence>
- *                   &lt;/extension>
- *                 &lt;/complexContent>
- *               &lt;/complexType>
- *             &lt;/element>
- *           &lt;/sequence>
- *           &lt;element name="destinations" minOccurs="0">
- *             &lt;complexType>
- *               &lt;complexContent>
- *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
- *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="destination" type="{http://www.cisco.com/AXL/API/8.5}XSipTrunkDestination" maxOccurs="16" minOccurs="0"/>
- *                   &lt;/sequence>
- *                 &lt;/extension>
- *               &lt;/complexContent>
- *             &lt;/complexType>
- *           &lt;/element>
- *         &lt;/choice>
+ *         &lt;element name="dtmfSignalingMethod" type="{http://www.cisco.com/AXL/API/8.0}XDTMFSignaling" minOccurs="0"/>
+ *         &lt;element name="routeClassSignalling" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="sipTrunkType" type="{http://www.cisco.com/AXL/API/8.0}XTrunkService" minOccurs="0"/>
+ *         &lt;element name="pstnAccess" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="imeE164TransformationName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="useImePublicIpPort" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="useDevicePoolCntdPnTransformationCss" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="cntdPnTransformationCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="useDevicePoolCgpnTransformCssUnkn" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *         &lt;element name="unknownStripDigits" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
- *         &lt;element name="cgpnTransformationUnknownCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="tunneledProtocol" type="{http://www.cisco.com/AXL/API/8.5}XTunneledProtocol" minOccurs="0"/>
- *         &lt;element name="asn1RoseOidEncoding" type="{http://www.cisco.com/AXL/API/8.5}XASN1RoseOidEncoding" minOccurs="0"/>
- *         &lt;element name="qsigVariant" type="{http://www.cisco.com/AXL/API/8.5}XQSIGVariant" minOccurs="0"/>
- *         &lt;element name="pathReplacementSupport" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="enableQsigUtf8" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="scriptParameters" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="scriptTraceEnabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="trunkTrafficSecure" type="{http://www.cisco.com/AXL/API/8.5}XSIPTrunkCallLegSecurity" minOccurs="0"/>
+ *         &lt;element name="cgpnTransformationUnknownCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -225,21 +176,8 @@ import javax.xml.bind.annotation.XmlValue;
     "useDevicePoolCntdPnTransformationCss",
     "cntdPnTransformationCssName",
     "useDevicePoolCgpnTransformCssUnkn",
-    "sipNormalizationScriptName",
-    "runOnEveryNode",
-    "removeDestinations",
-    "addDestinations",
-    "destinations",
     "unknownStripDigits",
-    "cgpnTransformationUnknownCssName",
-    "tunneledProtocol",
-    "asn1RoseOidEncoding",
-    "qsigVariant",
-    "pathReplacementSupport",
-    "enableQsigUtf8",
-    "scriptParameters",
-    "scriptTraceEnabled",
-    "trunkTrafficSecure"
+    "cgpnTransformationUnknownCssName"
 })
 public class UpdateSipTrunkReq
     extends NameAndGUIDRequest
@@ -271,7 +209,7 @@ public class UpdateSipTrunkReq
     @XmlElementRef(name = "packetCaptureDuration", type = JAXBElement.class)
     protected JAXBElement<String> packetCaptureDuration;
     @XmlElementRef(name = "mlppDomainId", type = JAXBElement.class)
-    protected JAXBElement<String> mlppDomainId;
+    protected JAXBElement<Integer> mlppDomainId;
     @XmlElement(defaultValue = "Off")
     protected String mlppIndicationStatus;
     @XmlElement(defaultValue = "Default")
@@ -312,6 +250,7 @@ public class UpdateSipTrunkReq
     protected String unknownPrefix;
     protected String destinationAddress;
     protected String destAddrIsSrv;
+    @XmlElement(defaultValue = "5060")
     protected String destinationport;
     @XmlElement(defaultValue = "711ulaw")
     protected String tkSipCodec;
@@ -365,32 +304,10 @@ public class UpdateSipTrunkReq
     protected JAXBElement<XFkType> cntdPnTransformationCssName;
     @XmlElement(defaultValue = "true")
     protected String useDevicePoolCgpnTransformCssUnkn;
-    @XmlElementRef(name = "sipNormalizationScriptName", type = JAXBElement.class)
-    protected JAXBElement<XFkType> sipNormalizationScriptName;
-    @XmlElement(defaultValue = "false")
-    protected String runOnEveryNode;
-    protected UpdateSipTrunkReq.RemoveDestinations removeDestinations;
-    protected UpdateSipTrunkReq.AddDestinations addDestinations;
-    protected UpdateSipTrunkReq.Destinations destinations;
     @XmlElementRef(name = "unknownStripDigits", type = JAXBElement.class)
     protected JAXBElement<BigInteger> unknownStripDigits;
     @XmlElementRef(name = "cgpnTransformationUnknownCssName", type = JAXBElement.class)
     protected JAXBElement<XFkType> cgpnTransformationUnknownCssName;
-    @XmlElement(defaultValue = "None")
-    protected String tunneledProtocol;
-    @XmlElement(defaultValue = "No Changes")
-    protected String asn1RoseOidEncoding;
-    @XmlElement(defaultValue = "No Changes")
-    protected String qsigVariant;
-    @XmlElement(defaultValue = "false")
-    protected String pathReplacementSupport;
-    @XmlElement(defaultValue = "false")
-    protected String enableQsigUtf8;
-    protected String scriptParameters;
-    @XmlElement(defaultValue = "false")
-    protected String scriptTraceEnabled;
-    @XmlElement(defaultValue = "When using both sRTP and TLS")
-    protected String trunkTrafficSecure;
 
     /**
      * Gets the value of the newName property.
@@ -733,10 +650,10 @@ public class UpdateSipTrunkReq
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public JAXBElement<String> getMlppDomainId() {
+    public JAXBElement<Integer> getMlppDomainId() {
         return mlppDomainId;
     }
 
@@ -745,11 +662,11 @@ public class UpdateSipTrunkReq
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setMlppDomainId(JAXBElement<String> value) {
-        this.mlppDomainId = ((JAXBElement<String> ) value);
+    public void setMlppDomainId(JAXBElement<Integer> value) {
+        this.mlppDomainId = ((JAXBElement<Integer> ) value);
     }
 
     /**
@@ -2001,126 +1918,6 @@ public class UpdateSipTrunkReq
     }
 
     /**
-     * Gets the value of the sipNormalizationScriptName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link XFkType }{@code >}
-     *     
-     */
-    public JAXBElement<XFkType> getSipNormalizationScriptName() {
-        return sipNormalizationScriptName;
-    }
-
-    /**
-     * Sets the value of the sipNormalizationScriptName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link XFkType }{@code >}
-     *     
-     */
-    public void setSipNormalizationScriptName(JAXBElement<XFkType> value) {
-        this.sipNormalizationScriptName = ((JAXBElement<XFkType> ) value);
-    }
-
-    /**
-     * Gets the value of the runOnEveryNode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRunOnEveryNode() {
-        return runOnEveryNode;
-    }
-
-    /**
-     * Sets the value of the runOnEveryNode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRunOnEveryNode(String value) {
-        this.runOnEveryNode = value;
-    }
-
-    /**
-     * Gets the value of the removeDestinations property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UpdateSipTrunkReq.RemoveDestinations }
-     *     
-     */
-    public UpdateSipTrunkReq.RemoveDestinations getRemoveDestinations() {
-        return removeDestinations;
-    }
-
-    /**
-     * Sets the value of the removeDestinations property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UpdateSipTrunkReq.RemoveDestinations }
-     *     
-     */
-    public void setRemoveDestinations(UpdateSipTrunkReq.RemoveDestinations value) {
-        this.removeDestinations = value;
-    }
-
-    /**
-     * Gets the value of the addDestinations property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UpdateSipTrunkReq.AddDestinations }
-     *     
-     */
-    public UpdateSipTrunkReq.AddDestinations getAddDestinations() {
-        return addDestinations;
-    }
-
-    /**
-     * Sets the value of the addDestinations property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UpdateSipTrunkReq.AddDestinations }
-     *     
-     */
-    public void setAddDestinations(UpdateSipTrunkReq.AddDestinations value) {
-        this.addDestinations = value;
-    }
-
-    /**
-     * Gets the value of the destinations property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UpdateSipTrunkReq.Destinations }
-     *     
-     */
-    public UpdateSipTrunkReq.Destinations getDestinations() {
-        return destinations;
-    }
-
-    /**
-     * Sets the value of the destinations property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UpdateSipTrunkReq.Destinations }
-     *     
-     */
-    public void setDestinations(UpdateSipTrunkReq.Destinations value) {
-        this.destinations = value;
-    }
-
-    /**
      * Gets the value of the unknownStripDigits property.
      * 
      * @return
@@ -2168,381 +1965,6 @@ public class UpdateSipTrunkReq
         this.cgpnTransformationUnknownCssName = ((JAXBElement<XFkType> ) value);
     }
 
-    /**
-     * Gets the value of the tunneledProtocol property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTunneledProtocol() {
-        return tunneledProtocol;
-    }
-
-    /**
-     * Sets the value of the tunneledProtocol property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTunneledProtocol(String value) {
-        this.tunneledProtocol = value;
-    }
-
-    /**
-     * Gets the value of the asn1RoseOidEncoding property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAsn1RoseOidEncoding() {
-        return asn1RoseOidEncoding;
-    }
-
-    /**
-     * Sets the value of the asn1RoseOidEncoding property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAsn1RoseOidEncoding(String value) {
-        this.asn1RoseOidEncoding = value;
-    }
-
-    /**
-     * Gets the value of the qsigVariant property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getQsigVariant() {
-        return qsigVariant;
-    }
-
-    /**
-     * Sets the value of the qsigVariant property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setQsigVariant(String value) {
-        this.qsigVariant = value;
-    }
-
-    /**
-     * Gets the value of the pathReplacementSupport property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPathReplacementSupport() {
-        return pathReplacementSupport;
-    }
-
-    /**
-     * Sets the value of the pathReplacementSupport property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPathReplacementSupport(String value) {
-        this.pathReplacementSupport = value;
-    }
-
-    /**
-     * Gets the value of the enableQsigUtf8 property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getEnableQsigUtf8() {
-        return enableQsigUtf8;
-    }
-
-    /**
-     * Sets the value of the enableQsigUtf8 property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setEnableQsigUtf8(String value) {
-        this.enableQsigUtf8 = value;
-    }
-
-    /**
-     * Gets the value of the scriptParameters property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getScriptParameters() {
-        return scriptParameters;
-    }
-
-    /**
-     * Sets the value of the scriptParameters property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setScriptParameters(String value) {
-        this.scriptParameters = value;
-    }
-
-    /**
-     * Gets the value of the scriptTraceEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getScriptTraceEnabled() {
-        return scriptTraceEnabled;
-    }
-
-    /**
-     * Sets the value of the scriptTraceEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setScriptTraceEnabled(String value) {
-        this.scriptTraceEnabled = value;
-    }
-
-    /**
-     * Gets the value of the trunkTrafficSecure property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTrunkTrafficSecure() {
-        return trunkTrafficSecure;
-    }
-
-    /**
-     * Sets the value of the trunkTrafficSecure property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTrunkTrafficSecure(String value) {
-        this.trunkTrafficSecure = value;
-    }
-
-
-    /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
-     *       &lt;sequence minOccurs="0">
-     *         &lt;element name="destination" type="{http://www.cisco.com/AXL/API/8.5}XSipTrunkDestination" maxOccurs="16" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-        "destination"
-    })
-    public static class AddDestinations
-        extends XCommonMembersExtension
-    {
-
-        protected List<XSipTrunkDestination> destination;
-
-        /**
-         * Gets the value of the destination property.
-         * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the destination property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getDestination().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link XSipTrunkDestination }
-         * 
-         * 
-         */
-        public List<XSipTrunkDestination> getDestination() {
-            if (destination == null) {
-                destination = new ArrayList<XSipTrunkDestination>();
-            }
-            return this.destination;
-        }
-
-    }
-
-
-    /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
-     *       &lt;sequence minOccurs="0">
-     *         &lt;element name="destination" type="{http://www.cisco.com/AXL/API/8.5}XSipTrunkDestination" maxOccurs="16" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-        "destination"
-    })
-    public static class Destinations
-        extends XCommonMembersExtension
-    {
-
-        protected List<XSipTrunkDestination> destination;
-
-        /**
-         * Gets the value of the destination property.
-         * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the destination property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getDestination().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link XSipTrunkDestination }
-         * 
-         * 
-         */
-        public List<XSipTrunkDestination> getDestination() {
-            if (destination == null) {
-                destination = new ArrayList<XSipTrunkDestination>();
-            }
-            return this.destination;
-        }
-
-    }
-
-
-    /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
-     *       &lt;sequence minOccurs="0">
-     *         &lt;element name="destination" type="{http://www.cisco.com/AXL/API/8.5}XSipTrunkDestination" maxOccurs="16" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-        "destination"
-    })
-    public static class RemoveDestinations
-        extends XCommonMembersExtension
-    {
-
-        protected List<XSipTrunkDestination> destination;
-
-        /**
-         * Gets the value of the destination property.
-         * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the destination property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getDestination().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link XSipTrunkDestination }
-         * 
-         * 
-         */
-        public List<XSipTrunkDestination> getDestination() {
-            if (destination == null) {
-                destination = new ArrayList<XSipTrunkDestination>();
-            }
-            return this.destination;
-        }
-
-    }
-
 
     /**
      * <p>Java class for anonymous complex type.
@@ -2552,7 +1974,7 @@ public class UpdateSipTrunkReq
      * <pre>
      * &lt;complexType>
      *   &lt;simpleContent>
-     *     &lt;extension base="&lt;http://www.cisco.com/AXL/API/8.5>XInteger">
+     *     &lt;extension base="&lt;http://www.cisco.com/AXL/API/8.0>XInteger">
      *       &lt;attribute name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean" />
      *     &lt;/extension>
      *   &lt;/simpleContent>

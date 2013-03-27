@@ -23,62 +23,62 @@ import javax.xml.bind.annotation.XmlValue;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}UniqueString128"/>
- *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.5}XProduct"/>
- *         &lt;element name="class" type="{http://www.cisco.com/AXL/API/8.5}XClass"/>
- *         &lt;element name="protocol" type="{http://www.cisco.com/AXL/API/8.5}XDeviceProtocol"/>
- *         &lt;element name="protocolSide" type="{http://www.cisco.com/AXL/API/8.5}XProtocolSide"/>
- *         &lt;element name="callingSearchSpaceName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="devicePoolName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="commonDeviceConfigName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="networkLocation" type="{http://www.cisco.com/AXL/API/8.5}XNetworkLocation" minOccurs="0"/>
- *         &lt;element name="locationName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="networkLocale" type="{http://www.cisco.com/AXL/API/8.5}XCountry" minOccurs="0"/>
- *         &lt;element name="mediaResourceListName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="automatedAlternateRoutingCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="aarNeighborhoodName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="loadInformation" type="{http://www.cisco.com/AXL/API/8.5}XLoadInformation" minOccurs="0"/>
- *         &lt;element name="vendorConfig" type="{http://www.cisco.com/AXL/API/8.5}XVendorConfig" minOccurs="0"/>
- *         &lt;element name="mlppDomainId" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="mlppIndicationStatus" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="mlppPreemption" type="{http://www.cisco.com/AXL/API/8.5}XPreemption" minOccurs="0"/>
- *         &lt;element name="useTrustedRelayPoint" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="cgpnTransformationCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="useDevicePoolCgpnTransformCss" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="geoLocationName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="redirectInboundNumberIe" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="calledPlan" type="{http://www.cisco.com/AXL/API/8.5}XNumberingPlan"/>
- *         &lt;element name="calledPri" type="{http://www.cisco.com/AXL/API/8.5}XPriOfNumber"/>
- *         &lt;element name="callerIdDn" type="{http://www.cisco.com/AXL/API/8.5}String255"/>
- *         &lt;element name="callingPartySelection" type="{http://www.cisco.com/AXL/API/8.5}XCallingPartySelection"/>
- *         &lt;element name="callingPlan" type="{http://www.cisco.com/AXL/API/8.5}XNumberingPlan"/>
- *         &lt;element name="callingPri" type="{http://www.cisco.com/AXL/API/8.5}XPriOfNumber"/>
- *         &lt;element name="chanIE" type="{http://www.cisco.com/AXL/API/8.5}XPRIChanIE"/>
- *         &lt;element name="clockReference" type="{http://www.cisco.com/AXL/API/8.5}XClockReference"/>
- *         &lt;element name="dChannelEnable" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="channelSelectionOrder" type="{http://www.cisco.com/AXL/API/8.5}XTrunkSelectionOrder"/>
- *         &lt;element name="displayIe" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="pcmType" type="{http://www.cisco.com/AXL/API/8.5}XEncode"/>
- *         &lt;element name="csuParam" type="{http://www.cisco.com/AXL/API/8.5}XCSUParam"/>
- *         &lt;element name="firstDelay" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="interfaceIdPresent" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="interfaceId" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="intraDelay" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="mcdnEnable" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="redirectOutboundNumberIe" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="numDigitsToStrip" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="passingPrecedenceLevelThrough" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
+ *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}UniqueString128"/>
+ *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.0}XProduct"/>
+ *         &lt;element name="class" type="{http://www.cisco.com/AXL/API/8.0}XClass"/>
+ *         &lt;element name="protocol" type="{http://www.cisco.com/AXL/API/8.0}XDeviceProtocol"/>
+ *         &lt;element name="protocolSide" type="{http://www.cisco.com/AXL/API/8.0}XProtocolSide"/>
+ *         &lt;element name="callingSearchSpaceName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="devicePoolName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="commonDeviceConfigName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="networkLocation" type="{http://www.cisco.com/AXL/API/8.0}XNetworkLocation" minOccurs="0"/>
+ *         &lt;element name="locationName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="networkLocale" type="{http://www.cisco.com/AXL/API/8.0}XCountry" minOccurs="0"/>
+ *         &lt;element name="mediaResourceListName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="automatedAlternateRoutingCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="aarNeighborhoodName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="loadInformation" type="{http://www.cisco.com/AXL/API/8.0}XLoadInformation" minOccurs="0"/>
+ *         &lt;element name="vendorConfig" type="{http://www.cisco.com/AXL/API/8.0}XVendorConfig" minOccurs="0"/>
+ *         &lt;element name="mlppDomainId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+ *         &lt;element name="mlppIndicationStatus" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="mlppPreemption" type="{http://www.cisco.com/AXL/API/8.0}XPreemption" minOccurs="0"/>
+ *         &lt;element name="useTrustedRelayPoint" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="cgpnTransformationCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="useDevicePoolCgpnTransformCss" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="geoLocationName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="redirectInboundNumberIe" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="calledPlan" type="{http://www.cisco.com/AXL/API/8.0}XNumberingPlan"/>
+ *         &lt;element name="calledPri" type="{http://www.cisco.com/AXL/API/8.0}XPriOfNumber"/>
+ *         &lt;element name="callerIdDn" type="{http://www.cisco.com/AXL/API/8.0}String255"/>
+ *         &lt;element name="callingPartySelection" type="{http://www.cisco.com/AXL/API/8.0}XCallingPartySelection"/>
+ *         &lt;element name="callingPlan" type="{http://www.cisco.com/AXL/API/8.0}XNumberingPlan"/>
+ *         &lt;element name="callingPri" type="{http://www.cisco.com/AXL/API/8.0}XPriOfNumber"/>
+ *         &lt;element name="chanIE" type="{http://www.cisco.com/AXL/API/8.0}XPRIChanIE"/>
+ *         &lt;element name="clockReference" type="{http://www.cisco.com/AXL/API/8.0}XClockReference"/>
+ *         &lt;element name="dChannelEnable" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="channelSelectionOrder" type="{http://www.cisco.com/AXL/API/8.0}XTrunkSelectionOrder"/>
+ *         &lt;element name="displayIe" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="pcmType" type="{http://www.cisco.com/AXL/API/8.0}XEncode"/>
+ *         &lt;element name="csuParam" type="{http://www.cisco.com/AXL/API/8.0}XCSUParam"/>
+ *         &lt;element name="firstDelay" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="interfaceIdPresent" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="interfaceId" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="intraDelay" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="mcdnEnable" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="redirectOutboundNumberIe" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="numDigitsToStrip" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="passingPrecedenceLevelThrough" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
  *         &lt;element name="prefix" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="callingLinePresentationBit" type="{http://www.cisco.com/AXL/API/8.5}XPresentationBit"/>
- *         &lt;element name="connectedLineIdPresentation" type="{http://www.cisco.com/AXL/API/8.5}XPresentationBit"/>
- *         &lt;element name="priProtocol" type="{http://www.cisco.com/AXL/API/8.5}XPriProtocol"/>
- *         &lt;element name="securityAccessLevel" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="sendCallingNameInFacilityIe" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="sendExLeadingCharInDispIe" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="sendRestart" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="setupNonIsdnPi" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
+ *         &lt;element name="callingLinePresentationBit" type="{http://www.cisco.com/AXL/API/8.0}XPresentationBit"/>
+ *         &lt;element name="connectedLineIdPresentation" type="{http://www.cisco.com/AXL/API/8.0}XPresentationBit"/>
+ *         &lt;element name="priProtocol" type="{http://www.cisco.com/AXL/API/8.0}XPriProtocol"/>
+ *         &lt;element name="securityAccessLevel" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="sendCallingNameInFacilityIe" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="sendExLeadingCharInDispIe" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="sendRestart" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="setupNonIsdnPi" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
  *         &lt;element name="sigDigits">
  *           &lt;complexType>
  *             &lt;simpleContent>
@@ -88,39 +88,39 @@ import javax.xml.bind.annotation.XmlValue;
  *             &lt;/simpleContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="span" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="statusPoll" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="smdiBasePort" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="GClearEnable" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="packetCaptureMode" type="{http://www.cisco.com/AXL/API/8.5}XPacketCaptureMode" minOccurs="0"/>
- *         &lt;element name="packetCaptureDuration" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="transmitUtf8" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="v150" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="asn1RoseOidEncoding" type="{http://www.cisco.com/AXL/API/8.5}XASN1RoseOidEncoding" minOccurs="0"/>
- *         &lt;element name="qsigVariant" type="{http://www.cisco.com/AXL/API/8.5}XQSIGVariant" minOccurs="0"/>
- *         &lt;element name="unattendedPort" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="cdpnTransformationCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="useDevicePoolCdpnTransformCss" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="nationalPrefix" type="{http://www.cisco.com/AXL/API/8.5}String16" minOccurs="0"/>
- *         &lt;element name="internationalPrefix" type="{http://www.cisco.com/AXL/API/8.5}String16" minOccurs="0"/>
- *         &lt;element name="unknownPrefix" type="{http://www.cisco.com/AXL/API/8.5}String16" minOccurs="0"/>
- *         &lt;element name="subscriberPrefix" type="{http://www.cisco.com/AXL/API/8.5}String16" minOccurs="0"/>
- *         &lt;element name="geoLocationFilterName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="routeClassSignalling" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="nationalStripDigits" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="internationalStripDigits" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="unknownStripDigits" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="subscriberStripDigits" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="nationalTransformationCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="internationalTransformationCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="unknownTransformationCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="subscriberTransformationCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="pstnAccess" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="imeE164TransformationName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="useDevicePoolCgpnTransformCssNatl" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="useDevicePoolCgpnTransformCssIntl" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="useDevicePoolCgpnTransformCssUnkn" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="useDevicePoolCgpnTransformCssSubs" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *         &lt;element name="span" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="statusPoll" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="smdiBasePort" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="GClearEnable" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="packetCaptureMode" type="{http://www.cisco.com/AXL/API/8.0}XPacketCaptureMode" minOccurs="0"/>
+ *         &lt;element name="packetCaptureDuration" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="transmitUtf8" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="v150" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="asn1RoseOidEncoding" type="{http://www.cisco.com/AXL/API/8.0}XASN1RoseOidEncoding" minOccurs="0"/>
+ *         &lt;element name="qsigVariant" type="{http://www.cisco.com/AXL/API/8.0}XQSIGVariant" minOccurs="0"/>
+ *         &lt;element name="unattendedPort" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="cdpnTransformationCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="useDevicePoolCdpnTransformCss" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="nationalPrefix" type="{http://www.cisco.com/AXL/API/8.0}String16" minOccurs="0"/>
+ *         &lt;element name="internationalPrefix" type="{http://www.cisco.com/AXL/API/8.0}String16" minOccurs="0"/>
+ *         &lt;element name="unknownPrefix" type="{http://www.cisco.com/AXL/API/8.0}String16" minOccurs="0"/>
+ *         &lt;element name="subscriberPrefix" type="{http://www.cisco.com/AXL/API/8.0}String16" minOccurs="0"/>
+ *         &lt;element name="geoLocationFilterName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="routeClassSignalling" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="nationalStripDigits" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="internationalStripDigits" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="unknownStripDigits" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="subscriberStripDigits" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="nationalTransformationCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="internationalTransformationCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="unknownTransformationCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="subscriberTransformationCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="pstnAccess" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="imeE164TransformationName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="useDevicePoolCgpnTransformCssNatl" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="useDevicePoolCgpnTransformCssIntl" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="useDevicePoolCgpnTransformCssUnkn" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="useDevicePoolCgpnTransformCssSubs" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *       &lt;/sequence>
  *       &lt;attribute name="ctiid" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" />
  *     &lt;/restriction>
@@ -256,7 +256,7 @@ public class XGatewayEndpointDigitalPri {
     protected JAXBElement<XLoadInformation> loadInformation;
     protected XVendorConfig vendorConfig;
     @XmlElementRef(name = "mlppDomainId", type = JAXBElement.class)
-    protected JAXBElement<String> mlppDomainId;
+    protected JAXBElement<Integer> mlppDomainId;
     @XmlElement(defaultValue = "Off")
     protected String mlppIndicationStatus;
     @XmlElement(defaultValue = "Default")
@@ -817,10 +817,10 @@ public class XGatewayEndpointDigitalPri {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public JAXBElement<String> getMlppDomainId() {
+    public JAXBElement<Integer> getMlppDomainId() {
         return mlppDomainId;
     }
 
@@ -829,11 +829,11 @@ public class XGatewayEndpointDigitalPri {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setMlppDomainId(JAXBElement<String> value) {
-        this.mlppDomainId = ((JAXBElement<String> ) value);
+    public void setMlppDomainId(JAXBElement<Integer> value) {
+        this.mlppDomainId = ((JAXBElement<Integer> ) value);
     }
 
     /**

@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="ExecuteSQLUpdateReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;element name="sql" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>

@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddDialPlanReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="dialPlan" type="{http://www.cisco.com/AXL/API/8.5}XDialPlan"/>
+ *         &lt;element name="dialPlan" type="{http://www.cisco.com/AXL/API/8.0}XDialPlan"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

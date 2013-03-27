@@ -20,13 +20,13 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}UniqueName128"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}UniqueName128"/>
  *         &lt;element name="members" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
- *               &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *               &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XUserGroupMember" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XUserGroupMember" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/extension>
  *             &lt;/complexContent>
@@ -35,9 +35,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *         &lt;element name="userRoles" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
- *               &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *               &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="userRole" type="{http://www.cisco.com/AXL/API/8.5}XUserGroupRoles" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="userRole" type="{http://www.cisco.com/AXL/API/8.0}XUserGroupRoles" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/extension>
  *             &lt;/complexContent>
@@ -145,9 +145,9 @@ public class XUserGroup {
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XUserGroupMember" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XUserGroupMember" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -206,9 +206,9 @@ public class XUserGroup {
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="userRole" type="{http://www.cisco.com/AXL/API/8.5}XUserGroupRoles" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="userRole" type="{http://www.cisco.com/AXL/API/8.0}XUserGroupRoles" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddUserReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="user" type="{http://www.cisco.com/AXL/API/8.5}XUser"/>
+ *         &lt;element name="user" type="{http://www.cisco.com/AXL/API/8.0}XUser"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

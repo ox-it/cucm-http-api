@@ -17,17 +17,17 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateLocationReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="kbits" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="videoKbits" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="kbits" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="videoKbits" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *         &lt;element name="relatedLocations" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="relatedLocation" type="{http://www.cisco.com/AXL/API/8.5}XLocationRelationship" maxOccurs="unbounded"/>
+ *                   &lt;element name="relatedLocation" type="{http://www.cisco.com/AXL/API/8.0}XLocationRelationship" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -165,7 +165,7 @@ public class UpdateLocationReq
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="relatedLocation" type="{http://www.cisco.com/AXL/API/8.5}XLocationRelationship" maxOccurs="unbounded"/>
+     *         &lt;element name="relatedLocation" type="{http://www.cisco.com/AXL/API/8.0}XLocationRelationship" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

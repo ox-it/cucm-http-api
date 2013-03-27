@@ -26,28 +26,28 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *       &lt;sequence minOccurs="0">
  *         &lt;element name="pattern" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}Name"/>
  *         &lt;element name="members" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
- *               &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *               &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XPickupGroupMember" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XPickupGroupMember" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/extension>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="pickupNotification" type="{http://www.cisco.com/AXL/API/8.5}XPickupNotification" minOccurs="0"/>
- *         &lt;element name="pickupNotificationTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *         &lt;element name="pickupNotification" type="{http://www.cisco.com/AXL/API/8.0}XPickupNotification" minOccurs="0"/>
+ *         &lt;element name="pickupNotificationTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *         &lt;element name="callInfoForPickupNotification" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="callingPartyInfo" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *                   &lt;element name="calledPartyInfo" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *                   &lt;element name="callingPartyInfo" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *                   &lt;element name="calledPartyInfo" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -291,8 +291,8 @@ public class XCallPickupGroup {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="callingPartyInfo" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
-     *         &lt;element name="calledPartyInfo" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+     *         &lt;element name="callingPartyInfo" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+     *         &lt;element name="calledPartyInfo" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -372,9 +372,9 @@ public class XCallPickupGroup {
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XPickupGroupMember" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XPickupGroupMember" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

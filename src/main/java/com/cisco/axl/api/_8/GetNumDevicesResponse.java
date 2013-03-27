@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}GetNumDevicesRes">
- *       &lt;attribute name="class" type="{http://www.cisco.com/AXL/API/8.5}Name128" />
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}GetNumDevicesRes">
+ *       &lt;attribute name="class" type="{http://www.cisco.com/AXL/API/8.0}Name128" />
  *     &lt;/extension>
  *   &lt;/complexContent>
  * &lt;/complexType>

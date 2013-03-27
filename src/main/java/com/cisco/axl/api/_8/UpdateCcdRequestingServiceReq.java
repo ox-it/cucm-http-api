@@ -18,22 +18,22 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateCcdRequestingServiceReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="isActivated" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="learnedPatternPrefix" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="pstnPrefix" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="isActivated" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="learnedPatternPrefix" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="pstnPrefix" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *         &lt;choice minOccurs="0">
  *           &lt;sequence minOccurs="0">
  *             &lt;element name="removeAssociatedTrunks" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="associatedTrunk" type="{http://www.cisco.com/AXL/API/8.5}XCcdRequestingServiceMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="associatedTrunk" type="{http://www.cisco.com/AXL/API/8.0}XCcdRequestingServiceMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -42,9 +42,9 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;element name="addAssociatedTrunks" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="associatedTrunk" type="{http://www.cisco.com/AXL/API/8.5}XCcdRequestingServiceMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="associatedTrunk" type="{http://www.cisco.com/AXL/API/8.0}XCcdRequestingServiceMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -54,9 +54,9 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;element name="associatedTrunks" minOccurs="0">
  *             &lt;complexType>
  *               &lt;complexContent>
- *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="associatedTrunk" type="{http://www.cisco.com/AXL/API/8.5}XCcdRequestingServiceMember" maxOccurs="unbounded"/>
+ *                     &lt;element name="associatedTrunk" type="{http://www.cisco.com/AXL/API/8.0}XCcdRequestingServiceMember" maxOccurs="unbounded"/>
  *                   &lt;/sequence>
  *                 &lt;/extension>
  *               &lt;/complexContent>
@@ -323,9 +323,9 @@ public class UpdateCcdRequestingServiceReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="associatedTrunk" type="{http://www.cisco.com/AXL/API/8.5}XCcdRequestingServiceMember" maxOccurs="unbounded"/>
+     *         &lt;element name="associatedTrunk" type="{http://www.cisco.com/AXL/API/8.0}XCcdRequestingServiceMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -384,9 +384,9 @@ public class UpdateCcdRequestingServiceReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="associatedTrunk" type="{http://www.cisco.com/AXL/API/8.5}XCcdRequestingServiceMember" maxOccurs="unbounded"/>
+     *         &lt;element name="associatedTrunk" type="{http://www.cisco.com/AXL/API/8.0}XCcdRequestingServiceMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -445,9 +445,9 @@ public class UpdateCcdRequestingServiceReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="associatedTrunk" type="{http://www.cisco.com/AXL/API/8.5}XCcdRequestingServiceMember" maxOccurs="unbounded"/>
+     *         &lt;element name="associatedTrunk" type="{http://www.cisco.com/AXL/API/8.0}XCcdRequestingServiceMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

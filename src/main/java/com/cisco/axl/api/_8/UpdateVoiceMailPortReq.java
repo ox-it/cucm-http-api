@@ -17,24 +17,24 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateVoiceMailPortReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.5}UniqueString128" minOccurs="0"/>
- *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="callingSearchSpaceName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="devicePoolName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="commonDeviceConfigName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="locationName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="useTrustedRelayPoint" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="securityProfileName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="geoLocationName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="automatedAlternateRoutingCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.0}UniqueString128" minOccurs="0"/>
+ *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="callingSearchSpaceName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="devicePoolName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="commonDeviceConfigName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="locationName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="useTrustedRelayPoint" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="securityProfileName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="geoLocationName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="automatedAlternateRoutingCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *         &lt;element name="dnPattern" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="routePartition" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="dnCallingSearchSpace" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="aarNeighborhoodName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="callerIdDisplay" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="callerIdDisplayAscii" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *         &lt;element name="routePartition" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="dnCallingSearchSpace" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="aarNeighborhoodName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="callerIdDisplay" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="callerIdDisplayAscii" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *         &lt;element name="externalMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>

@@ -18,11 +18,11 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence minOccurs="0">
  *         &lt;choice>
  *           &lt;element name="domainName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *           &lt;element name="gatewayUuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="gatewayUuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *         &lt;/choice>
- *         &lt;element name="unit" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="subunit" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="endpoint" type="{http://www.cisco.com/AXL/API/8.5}XGatewayEndpointDigitalBri"/>
+ *         &lt;element name="unit" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="subunit" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="endpoint" type="{http://www.cisco.com/AXL/API/8.0}XGatewayEndpointDigitalBri"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

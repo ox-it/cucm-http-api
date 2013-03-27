@@ -17,24 +17,24 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateSafForwarderReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="clientLabel" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="safSecurityProfile" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="ipAddress" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="port" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="safReconnectInterval" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="safNotificationsWindowSize" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="clientLabel" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="safSecurityProfile" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="ipAddress" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="port" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="safReconnectInterval" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="safNotificationsWindowSize" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *         &lt;choice minOccurs="0">
  *           &lt;sequence minOccurs="0">
  *             &lt;element name="removeAssociatedCucms" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.5}XSafForwarderMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.0}XSafForwarderMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -43,9 +43,9 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;element name="addAssociatedCucms" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.5}XSafForwarderMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.0}XSafForwarderMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -55,9 +55,9 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;element name="associatedCucms" minOccurs="0">
  *             &lt;complexType>
  *               &lt;complexContent>
- *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.5}XSafForwarderMember" maxOccurs="unbounded"/>
+ *                     &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.0}XSafForwarderMember" maxOccurs="unbounded"/>
  *                   &lt;/sequence>
  *                 &lt;/extension>
  *               &lt;/complexContent>
@@ -378,9 +378,9 @@ public class UpdateSafForwarderReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.5}XSafForwarderMember" maxOccurs="unbounded"/>
+     *         &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.0}XSafForwarderMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -439,9 +439,9 @@ public class UpdateSafForwarderReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.5}XSafForwarderMember" maxOccurs="unbounded"/>
+     *         &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.0}XSafForwarderMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -500,9 +500,9 @@ public class UpdateSafForwarderReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.5}XSafForwarderMember" maxOccurs="unbounded"/>
+     *         &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.0}XSafForwarderMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

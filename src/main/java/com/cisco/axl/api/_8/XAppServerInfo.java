@@ -18,9 +18,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="appServerName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="appServerContent" type="{http://www.cisco.com/AXL/API/8.5}XAppServerContent"/>
- *         &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.5}XContent" minOccurs="0"/>
+ *         &lt;element name="appServerName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="appServerContent" type="{http://www.cisco.com/AXL/API/8.0}XAppServerContent"/>
+ *         &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.0}XContent" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

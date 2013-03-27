@@ -15,14 +15,14 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateInterClusterServiceProfileReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
- *           &lt;element name="interClusterService" type="{http://www.cisco.com/AXL/API/8.5}XInterClusterService"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
+ *           &lt;element name="interClusterService" type="{http://www.cisco.com/AXL/API/8.0}XInterClusterService"/>
  *         &lt;/choice>
- *         &lt;element name="isActivated" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="sipTrunkName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="isActivated" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="sipTrunkName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

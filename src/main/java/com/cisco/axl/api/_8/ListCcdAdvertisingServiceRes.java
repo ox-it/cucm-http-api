@@ -17,14 +17,14 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="ListCcdAdvertisingServiceRes">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIResponse">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIResponse">
  *       &lt;sequence>
  *         &lt;element name="return">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="ccdAdvertisingService" type="{http://www.cisco.com/AXL/API/8.5}LCcdAdvertisingService" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="ccdAdvertisingService" type="{http://www.cisco.com/AXL/API/8.0}LCcdAdvertisingService" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -84,7 +84,7 @@ public class ListCcdAdvertisingServiceRes
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="ccdAdvertisingService" type="{http://www.cisco.com/AXL/API/8.5}LCcdAdvertisingService" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="ccdAdvertisingService" type="{http://www.cisco.com/AXL/API/8.0}LCcdAdvertisingService" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

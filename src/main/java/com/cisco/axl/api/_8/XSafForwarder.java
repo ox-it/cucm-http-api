@@ -19,20 +19,20 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String255"/>
- *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="clientLabel" type="{http://www.cisco.com/AXL/API/8.5}String255"/>
- *         &lt;element name="safSecurityProfile" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="ipAddress" type="{http://www.cisco.com/AXL/API/8.5}String255"/>
- *         &lt;element name="port" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="safReconnectInterval" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="safNotificationsWindowSize" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String255"/>
+ *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="clientLabel" type="{http://www.cisco.com/AXL/API/8.0}String255"/>
+ *         &lt;element name="safSecurityProfile" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="ipAddress" type="{http://www.cisco.com/AXL/API/8.0}String255"/>
+ *         &lt;element name="port" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="safReconnectInterval" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="safNotificationsWindowSize" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *         &lt;element name="associatedCucms" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
- *               &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *               &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.5}XSafForwarderMember" maxOccurs="unbounded"/>
+ *                   &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.0}XSafForwarderMember" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/extension>
  *             &lt;/complexContent>
@@ -298,9 +298,9 @@ public class XSafForwarder {
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.5}XSafForwarderMember" maxOccurs="unbounded"/>
+     *         &lt;element name="associatedCucm" type="{http://www.cisco.com/AXL/API/8.0}XSafForwarderMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

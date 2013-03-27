@@ -17,19 +17,19 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="serviceName" type="{http://www.cisco.com/AXL/API/8.5}UniqueString128" minOccurs="0"/>
- *         &lt;element name="asciiServiceName" type="{http://www.cisco.com/AXL/API/8.5}UniqueString128" minOccurs="0"/>
- *         &lt;element name="serviceDescription" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
+ *         &lt;element name="serviceName" type="{http://www.cisco.com/AXL/API/8.0}UniqueString128" minOccurs="0"/>
+ *         &lt;element name="asciiServiceName" type="{http://www.cisco.com/AXL/API/8.0}UniqueString128" minOccurs="0"/>
+ *         &lt;element name="serviceDescription" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
  *         &lt;element name="serviceUrl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="secureServiceUrl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="serviceCategory" type="{http://www.cisco.com/AXL/API/8.5}XPhoneServiceCategory" minOccurs="0"/>
- *         &lt;element name="serviceType" type="{http://www.cisco.com/AXL/API/8.5}XPhoneService" minOccurs="0"/>
+ *         &lt;element name="serviceCategory" type="{http://www.cisco.com/AXL/API/8.0}XPhoneServiceCategory" minOccurs="0"/>
+ *         &lt;element name="serviceType" type="{http://www.cisco.com/AXL/API/8.0}XPhoneService" minOccurs="0"/>
  *         &lt;element name="serviceVendor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="serviceVersion" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="enabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="enterpriseSubscription" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *         &lt;element name="enabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="enterpriseSubscription" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>

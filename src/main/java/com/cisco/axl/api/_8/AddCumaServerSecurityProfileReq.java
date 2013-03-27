@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddCumaServerSecurityProfileReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="cumaServerSecurityProfile" type="{http://www.cisco.com/AXL/API/8.5}XCumaServerSecurityProfile"/>
+ *         &lt;element name="cumaServerSecurityProfile" type="{http://www.cisco.com/AXL/API/8.0}XCumaServerSecurityProfile"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

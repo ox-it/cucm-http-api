@@ -20,14 +20,14 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *           &lt;sequence>
- *             &lt;element name="processNodeName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
+ *             &lt;element name="processNodeName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
  *             &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *             &lt;element name="service" type="{http://www.cisco.com/AXL/API/8.5}XService"/>
+ *             &lt;element name="service" type="{http://www.cisco.com/AXL/API/8.0}XService"/>
  *           &lt;/sequence>
  *         &lt;/choice>
- *         &lt;element name="returnedTags" type="{http://www.cisco.com/AXL/API/8.5}RServiceParameter" minOccurs="0"/>
+ *         &lt;element name="returnedTags" type="{http://www.cisco.com/AXL/API/8.0}RServiceParameter" minOccurs="0"/>
  *       &lt;/sequence>
  *       &lt;attribute name="sequence" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" />
  *     &lt;/restriction>

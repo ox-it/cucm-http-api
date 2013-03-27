@@ -20,18 +20,18 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * <pre>
  * &lt;complexType name="UpdateRouteGroupReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
  *         &lt;element name="newName" type="{http://www.w3.org/2001/XMLSchema}Name" minOccurs="0"/>
- *         &lt;element name="distributionAlgorithm" type="{http://www.cisco.com/AXL/API/8.5}XDistributeAlgorithm" minOccurs="0"/>
+ *         &lt;element name="distributionAlgorithm" type="{http://www.cisco.com/AXL/API/8.0}XDistributeAlgorithm" minOccurs="0"/>
  *         &lt;choice minOccurs="0">
  *           &lt;sequence minOccurs="0">
  *             &lt;element name="removeMembers" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XRouteGroupMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XRouteGroupMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -40,9 +40,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *             &lt;element name="addMembers" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XRouteGroupMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XRouteGroupMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -52,9 +52,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *           &lt;element name="members" minOccurs="0">
  *             &lt;complexType>
  *               &lt;complexContent>
- *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XRouteGroupMember" maxOccurs="unbounded"/>
+ *                     &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XRouteGroupMember" maxOccurs="unbounded"/>
  *                   &lt;/sequence>
  *                 &lt;/extension>
  *               &lt;/complexContent>
@@ -219,9 +219,9 @@ public class UpdateRouteGroupReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XRouteGroupMember" maxOccurs="unbounded"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XRouteGroupMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -280,9 +280,9 @@ public class UpdateRouteGroupReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XRouteGroupMember" maxOccurs="unbounded"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XRouteGroupMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -341,9 +341,9 @@ public class UpdateRouteGroupReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XRouteGroupMember" maxOccurs="unbounded"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XRouteGroupMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

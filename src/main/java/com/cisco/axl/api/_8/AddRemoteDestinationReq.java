@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddRemoteDestinationReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="remoteDestination" type="{http://www.cisco.com/AXL/API/8.5}XRemoteDestination"/>
+ *         &lt;element name="remoteDestination" type="{http://www.cisco.com/AXL/API/8.0}XRemoteDestination"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

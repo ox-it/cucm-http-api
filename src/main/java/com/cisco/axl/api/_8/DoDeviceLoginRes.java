@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="DoDeviceLoginRes">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}StandardResponse">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}StandardResponse">
  *     &lt;/extension>
  *   &lt;/complexContent>
  * &lt;/complexType>

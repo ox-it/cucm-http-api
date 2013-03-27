@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddPhoneSecurityProfileReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="phoneSecurityProfile" type="{http://www.cisco.com/AXL/API/8.5}XPhoneSecurityProfile"/>
+ *         &lt;element name="phoneSecurityProfile" type="{http://www.cisco.com/AXL/API/8.0}XPhoneSecurityProfile"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

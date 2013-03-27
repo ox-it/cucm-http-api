@@ -19,19 +19,19 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="phoneType" type="{http://www.cisco.com/AXL/API/8.5}XModel"/>
- *         &lt;element name="protocol" type="{http://www.cisco.com/AXL/API/8.5}XDeviceProtocol"/>
+ *         &lt;element name="phoneType" type="{http://www.cisco.com/AXL/API/8.0}XModel"/>
+ *         &lt;element name="protocol" type="{http://www.cisco.com/AXL/API/8.0}XDeviceProtocol"/>
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="deviceSecurityMode" type="{http://www.cisco.com/AXL/API/8.5}XDeviceSecurityMode" minOccurs="0"/>
- *         &lt;element name="authenticationMode" type="{http://www.cisco.com/AXL/API/8.5}XAuthenticationMode" minOccurs="0"/>
- *         &lt;element name="keySize" type="{http://www.cisco.com/AXL/API/8.5}XKeySize" minOccurs="0"/>
- *         &lt;element name="tftpEncryptedConfig" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="nonceValidityTime" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="transportType" type="{http://www.cisco.com/AXL/API/8.5}XTransport" minOccurs="0"/>
- *         &lt;element name="sipPhonePort" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="enableDigestAuthentication" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="excludeDigestCredentials" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *         &lt;element name="deviceSecurityMode" type="{http://www.cisco.com/AXL/API/8.0}XDeviceSecurityMode" minOccurs="0"/>
+ *         &lt;element name="authenticationMode" type="{http://www.cisco.com/AXL/API/8.0}XAuthenticationMode" minOccurs="0"/>
+ *         &lt;element name="keySize" type="{http://www.cisco.com/AXL/API/8.0}XKeySize" minOccurs="0"/>
+ *         &lt;element name="tftpEncryptedConfig" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="nonceValidityTime" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="transportType" type="{http://www.cisco.com/AXL/API/8.0}XTransport" minOccurs="0"/>
+ *         &lt;element name="sipPhonePort" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="enableDigestAuthentication" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="excludeDigestCredentials" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

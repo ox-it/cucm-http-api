@@ -17,10 +17,10 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateDateTimeGroupReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
  *         &lt;element name="newName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="timeZone" type="{http://www.cisco.com/AXL/API/8.5}XTimeZone" minOccurs="0"/>
+ *         &lt;element name="timeZone" type="{http://www.cisco.com/AXL/API/8.0}XTimeZone" minOccurs="0"/>
  *         &lt;element name="separator" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="dateformat" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="timeFormat" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -29,9 +29,9 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;element name="removePhoneNtpReferences" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.5}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
+ *                       &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.0}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -40,9 +40,9 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;element name="addPhoneNtpReferences" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.5}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
+ *                       &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.0}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -52,9 +52,9 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;element name="phoneNtpReferences" minOccurs="0">
  *             &lt;complexType>
  *               &lt;complexContent>
- *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.5}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
+ *                     &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.0}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
  *                   &lt;/sequence>
  *                 &lt;/extension>
  *               &lt;/complexContent>
@@ -295,9 +295,9 @@ public class UpdateDateTimeGroupReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.5}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
+     *         &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.0}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -356,9 +356,9 @@ public class UpdateDateTimeGroupReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.5}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
+     *         &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.0}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -417,9 +417,9 @@ public class UpdateDateTimeGroupReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.5}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
+     *         &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.0}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

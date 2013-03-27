@@ -20,8 +20,8 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence minOccurs="0">
  *         &lt;element name="pattern" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="minimumSecurityLevel" type="{http://www.cisco.com/AXL/API/8.5}XDeviceSecurityMode"/>
+ *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="minimumSecurityLevel" type="{http://www.cisco.com/AXL/API/8.0}XDeviceSecurityMode"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

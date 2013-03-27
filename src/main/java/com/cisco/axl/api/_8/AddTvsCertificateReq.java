@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddTvsCertificateReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="tvsCertificate" type="{http://www.cisco.com/AXL/API/8.5}XTvsCertificate"/>
+ *         &lt;element name="tvsCertificate" type="{http://www.cisco.com/AXL/API/8.0}XTvsCertificate"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

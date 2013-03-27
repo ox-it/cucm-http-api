@@ -19,11 +19,10 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence minOccurs="0">
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="callManagerGroupName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="routeListEnabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="runOnEveryNode" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *         &lt;element name="callManagerGroupName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="routeListEnabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -36,8 +35,7 @@ import javax.xml.bind.annotation.XmlType;
     "name",
     "description",
     "callManagerGroupName",
-    "routeListEnabled",
-    "runOnEveryNode"
+    "routeListEnabled"
 })
 public class LRouteList {
 
@@ -45,7 +43,6 @@ public class LRouteList {
     protected String description;
     protected XFkType callManagerGroupName;
     protected String routeListEnabled;
-    protected String runOnEveryNode;
     @XmlAttribute
     protected String uuid;
 
@@ -143,30 +140,6 @@ public class LRouteList {
      */
     public void setRouteListEnabled(String value) {
         this.routeListEnabled = value;
-    }
-
-    /**
-     * Gets the value of the runOnEveryNode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRunOnEveryNode() {
-        return runOnEveryNode;
-    }
-
-    /**
-     * Sets the value of the runOnEveryNode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRunOnEveryNode(String value) {
-        this.runOnEveryNode = value;
     }
 
     /**

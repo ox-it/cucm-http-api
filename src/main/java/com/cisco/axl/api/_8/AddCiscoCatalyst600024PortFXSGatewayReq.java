@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddCiscoCatalyst600024PortFXSGatewayReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="ciscoCatalyst600024PortFXSGateway" type="{http://www.cisco.com/AXL/API/8.5}XCiscoCatalyst600024PortFXSGateway"/>
+ *         &lt;element name="ciscoCatalyst600024PortFXSGateway" type="{http://www.cisco.com/AXL/API/8.0}XCiscoCatalyst600024PortFXSGateway"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

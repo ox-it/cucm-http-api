@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddLineGroupReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="lineGroup" type="{http://www.cisco.com/AXL/API/8.5}XLineGroup"/>
+ *         &lt;element name="lineGroup" type="{http://www.cisco.com/AXL/API/8.0}XLineGroup"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

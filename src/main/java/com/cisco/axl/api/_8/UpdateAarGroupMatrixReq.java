@@ -14,16 +14,16 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateAarGroupMatrixReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *           &lt;sequence>
- *             &lt;element name="aarGroupFromName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *             &lt;element name="aarGroupToName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
+ *             &lt;element name="aarGroupFromName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *             &lt;element name="aarGroupToName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
  *           &lt;/sequence>
  *         &lt;/choice>
- *         &lt;element name="prefixDigit" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
+ *         &lt;element name="prefixDigit" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

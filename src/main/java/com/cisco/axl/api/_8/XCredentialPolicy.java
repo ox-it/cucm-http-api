@@ -17,17 +17,17 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String255"/>
- *         &lt;element name="failedLogon" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="resetFailedLogonAttempts" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="lockoutDuration" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="credChangeDuration" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="credExpiresAfter" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="minCredLength" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="prevCredStoredNum" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="inactiveDaysAllowed" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="expiryWarningDays" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="trivialCredCheck" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String255"/>
+ *         &lt;element name="failedLogon" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="resetFailedLogonAttempts" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="lockoutDuration" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="credChangeDuration" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="credExpiresAfter" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="minCredLength" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="prevCredStoredNum" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="inactiveDaysAllowed" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="expiryWarningDays" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="trivialCredCheck" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

@@ -16,15 +16,15 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateRegionReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *         &lt;element name="relatedRegions" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="relatedRegion" type="{http://www.cisco.com/AXL/API/8.5}XRegionRelationship" maxOccurs="unbounded"/>
+ *                   &lt;element name="relatedRegion" type="{http://www.cisco.com/AXL/API/8.0}XRegionRelationship" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -109,7 +109,7 @@ public class UpdateRegionReq
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="relatedRegion" type="{http://www.cisco.com/AXL/API/8.5}XRegionRelationship" maxOccurs="unbounded"/>
+     *         &lt;element name="relatedRegion" type="{http://www.cisco.com/AXL/API/8.0}XRegionRelationship" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

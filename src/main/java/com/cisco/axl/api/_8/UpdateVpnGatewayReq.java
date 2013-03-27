@@ -16,17 +16,17 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateVpnGatewayReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="url" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
+ *         &lt;element name="url" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
  *         &lt;element name="certificates" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="certificate" type="{http://www.cisco.com/AXL/API/8.5}XVpnGatewayMember" maxOccurs="10"/>
+ *                   &lt;element name="certificate" type="{http://www.cisco.com/AXL/API/8.0}XVpnGatewayMember" maxOccurs="10"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -163,7 +163,7 @@ public class UpdateVpnGatewayReq
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="certificate" type="{http://www.cisco.com/AXL/API/8.5}XVpnGatewayMember" maxOccurs="10"/>
+     *         &lt;element name="certificate" type="{http://www.cisco.com/AXL/API/8.0}XVpnGatewayMember" maxOccurs="10"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

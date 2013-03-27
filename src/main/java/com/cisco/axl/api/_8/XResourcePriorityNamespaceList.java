@@ -18,14 +18,14 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String50"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String50"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="members" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
- *               &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *               &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XResourcePriorityNamespaceListMember" maxOccurs="unbounded"/>
+ *                   &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XResourcePriorityNamespaceListMember" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/extension>
  *             &lt;/complexContent>
@@ -132,9 +132,9 @@ public class XResourcePriorityNamespaceList {
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XResourcePriorityNamespaceListMember" maxOccurs="unbounded"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XResourcePriorityNamespaceListMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

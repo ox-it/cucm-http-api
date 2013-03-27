@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddResourcePriorityNamespaceReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="resourcePriorityNamespace" type="{http://www.cisco.com/AXL/API/8.5}XResourcePriorityNamespace"/>
+ *         &lt;element name="resourcePriorityNamespace" type="{http://www.cisco.com/AXL/API/8.0}XResourcePriorityNamespace"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

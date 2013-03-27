@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddAppServerInfoReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="appServerInfo" type="{http://www.cisco.com/AXL/API/8.5}XAppServerInfo"/>
+ *         &lt;element name="appServerInfo" type="{http://www.cisco.com/AXL/API/8.0}XAppServerInfo"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

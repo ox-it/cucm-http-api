@@ -32,7 +32,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="role" type="{http://www.cisco.com/AXL/API/8.5}XCertificateRole" maxOccurs="unbounded"/>
+ *                   &lt;element name="role" type="{http://www.cisco.com/AXL/API/8.0}XCertificateRole" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -43,7 +43,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="service" type="{http://www.cisco.com/AXL/API/8.5}XTvsCertificateService" maxOccurs="unbounded"/>
+ *                   &lt;element name="service" type="{http://www.cisco.com/AXL/API/8.0}XTvsCertificateService" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -283,7 +283,7 @@ public class XTvsCertificate {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="role" type="{http://www.cisco.com/AXL/API/8.5}XCertificateRole" maxOccurs="unbounded"/>
+     *         &lt;element name="role" type="{http://www.cisco.com/AXL/API/8.0}XCertificateRole" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -342,7 +342,7 @@ public class XTvsCertificate {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="service" type="{http://www.cisco.com/AXL/API/8.5}XTvsCertificateService" maxOccurs="unbounded"/>
+     *         &lt;element name="service" type="{http://www.cisco.com/AXL/API/8.0}XTvsCertificateService" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

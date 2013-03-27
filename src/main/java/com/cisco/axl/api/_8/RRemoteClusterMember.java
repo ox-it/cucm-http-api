@@ -16,10 +16,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="enabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="remoteIpAddress1" type="{http://www.cisco.com/AXL/API/8.5}String15" minOccurs="0"/>
- *         &lt;element name="remoteIpAddress2" type="{http://www.cisco.com/AXL/API/8.5}String15" minOccurs="0"/>
- *         &lt;element name="remoteIpAddress3" type="{http://www.cisco.com/AXL/API/8.5}String15" minOccurs="0"/>
+ *         &lt;element name="enabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="remoteIpAddress1" type="{http://www.cisco.com/AXL/API/8.0}String15" minOccurs="0"/>
+ *         &lt;element name="remoteIpAddress2" type="{http://www.cisco.com/AXL/API/8.0}String15" minOccurs="0"/>
+ *         &lt;element name="remoteIpAddress3" type="{http://www.cisco.com/AXL/API/8.0}String15" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

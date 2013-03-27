@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="ExecuteSQLQueryRes">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIResponse">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIResponse">
  *       &lt;sequence>
  *         &lt;element name="return">
  *           &lt;complexType>

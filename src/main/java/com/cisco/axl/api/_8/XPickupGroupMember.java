@@ -16,16 +16,16 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="priority" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="priority" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *         &lt;choice>
- *           &lt;element name="pickupGroupName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
+ *           &lt;element name="pickupGroupName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
  *           &lt;element name="pickupDnAndPartition">
  *             &lt;complexType>
  *               &lt;complexContent>
  *                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="dnPattern" type="{http://www.cisco.com/AXL/API/8.5}String255"/>
- *                     &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *                     &lt;element name="dnPattern" type="{http://www.cisco.com/AXL/API/8.0}String255"/>
+ *                     &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *                   &lt;/sequence>
  *                 &lt;/restriction>
  *               &lt;/complexContent>
@@ -135,8 +135,8 @@ public class XPickupGroupMember {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="dnPattern" type="{http://www.cisco.com/AXL/API/8.5}String255"/>
-     *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+     *         &lt;element name="dnPattern" type="{http://www.cisco.com/AXL/API/8.0}String255"/>
+     *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

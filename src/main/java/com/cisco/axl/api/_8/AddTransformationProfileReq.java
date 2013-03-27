@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddTransformationProfileReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="transformationProfile" type="{http://www.cisco.com/AXL/API/8.5}XTransformationProfile"/>
+ *         &lt;element name="transformationProfile" type="{http://www.cisco.com/AXL/API/8.0}XTransformationProfile"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

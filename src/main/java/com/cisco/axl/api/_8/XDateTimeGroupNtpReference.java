@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="phoneNtpName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="selectionOrder" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="phoneNtpName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="selectionOrder" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

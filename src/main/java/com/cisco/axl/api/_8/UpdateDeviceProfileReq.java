@@ -19,34 +19,34 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateDeviceProfileReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.5}UniqueString128" minOccurs="0"/>
- *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="userHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.5}XMOHAudioSourceId" minOccurs="0"/>
- *         &lt;element name="vendorConfig" type="{http://www.cisco.com/AXL/API/8.5}XVendorConfig" minOccurs="0"/>
- *         &lt;element name="mlppDomainId" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="mlppIndicationStatus" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="preemption" type="{http://www.cisco.com/AXL/API/8.5}XPreemption" minOccurs="0"/>
+ *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.0}UniqueString128" minOccurs="0"/>
+ *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="userHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.0}XMOHAudioSourceId" minOccurs="0"/>
+ *         &lt;element name="vendorConfig" type="{http://www.cisco.com/AXL/API/8.0}XVendorConfig" minOccurs="0"/>
+ *         &lt;element name="mlppDomainId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+ *         &lt;element name="mlppIndicationStatus" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="preemption" type="{http://www.cisco.com/AXL/API/8.0}XPreemption" minOccurs="0"/>
  *         &lt;element name="lines" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;choice>
- *                   &lt;element name="line" type="{http://www.cisco.com/AXL/API/8.5}XPhoneLine" maxOccurs="unbounded"/>
- *                   &lt;element name="lineIdentifier" type="{http://www.cisco.com/AXL/API/8.5}XNumplanIdentifier" maxOccurs="unbounded"/>
+ *                   &lt;element name="line" type="{http://www.cisco.com/AXL/API/8.0}XPhoneLine" maxOccurs="unbounded"/>
+ *                   &lt;element name="lineIdentifier" type="{http://www.cisco.com/AXL/API/8.0}XNumplanIdentifier" maxOccurs="unbounded"/>
  *                 &lt;/choice>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="phoneTemplateName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="phoneTemplateName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *         &lt;element name="speeddials" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="speeddial" type="{http://www.cisco.com/AXL/API/8.5}XSpeeddial" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="speeddial" type="{http://www.cisco.com/AXL/API/8.0}XSpeeddial" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -57,7 +57,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="busyLampField" type="{http://www.cisco.com/AXL/API/8.5}XBusyLampField" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="busyLampField" type="{http://www.cisco.com/AXL/API/8.0}XBusyLampField" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -68,7 +68,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="blfDirectedCallPark" type="{http://www.cisco.com/AXL/API/8.5}XBLFDirectedCallPark" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="blfDirectedCallPark" type="{http://www.cisco.com/AXL/API/8.0}XBLFDirectedCallPark" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -79,37 +79,36 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="addOnModule" type="{http://www.cisco.com/AXL/API/8.5}XAddOnModule" maxOccurs="2" minOccurs="0"/>
+ *                   &lt;element name="addOnModule" type="{http://www.cisco.com/AXL/API/8.0}XAddOnModule" maxOccurs="2" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="userlocale" type="{http://www.cisco.com/AXL/API/8.5}XUserLocale" minOccurs="0"/>
- *         &lt;element name="singleButtonBarge" type="{http://www.cisco.com/AXL/API/8.5}XBarge" minOccurs="0"/>
- *         &lt;element name="joinAcrossLines" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="loginUserId" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="ignorePresentationIndicators" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="dndOption" type="{http://www.cisco.com/AXL/API/8.5}XDNDOption" minOccurs="0"/>
- *         &lt;element name="dndRingSetting" type="{http://www.cisco.com/AXL/API/8.5}XRingSetting" minOccurs="0"/>
- *         &lt;element name="dndStatus" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="emccCallingSearchSpace" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="alwaysUsePrimeLine" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="alwaysUsePrimeLineForVoiceMessage" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="softkeyTemplateName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="callInfoPrivacyStatus" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
+ *         &lt;element name="userlocale" type="{http://www.cisco.com/AXL/API/8.0}XUserLocale" minOccurs="0"/>
+ *         &lt;element name="singleButtonBarge" type="{http://www.cisco.com/AXL/API/8.0}XBarge" minOccurs="0"/>
+ *         &lt;element name="joinAcrossLines" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="loginUserId" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="ignorePresentationIndicators" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="dndOption" type="{http://www.cisco.com/AXL/API/8.0}XDNDOption" minOccurs="0"/>
+ *         &lt;element name="dndRingSetting" type="{http://www.cisco.com/AXL/API/8.0}XRingSetting" minOccurs="0"/>
+ *         &lt;element name="dndStatus" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="emccCallingSearchSpace" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="alwaysUsePrimeLine" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="alwaysUsePrimeLineForVoiceMessage" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="softkeyTemplateName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="callInfoPrivacyStatus" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
  *         &lt;element name="services" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="service" type="{http://www.cisco.com/AXL/API/8.5}XSubscribedService" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="service" type="{http://www.cisco.com/AXL/API/8.0}XSubscribedService" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="featureControlPolicy" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -146,8 +145,7 @@ import javax.xml.bind.annotation.XmlType;
     "alwaysUsePrimeLineForVoiceMessage",
     "softkeyTemplateName",
     "callInfoPrivacyStatus",
-    "services",
-    "featureControlPolicy"
+    "services"
 })
 public class UpdateDeviceProfileReq
     extends NameAndGUIDRequest
@@ -159,7 +157,7 @@ public class UpdateDeviceProfileReq
     protected JAXBElement<String> userHoldMohAudioSourceId;
     protected XVendorConfig vendorConfig;
     @XmlElementRef(name = "mlppDomainId", type = JAXBElement.class)
-    protected JAXBElement<String> mlppDomainId;
+    protected JAXBElement<Integer> mlppDomainId;
     @XmlElement(defaultValue = "Off")
     protected String mlppIndicationStatus;
     @XmlElement(defaultValue = "Default")
@@ -197,8 +195,6 @@ public class UpdateDeviceProfileReq
     @XmlElement(defaultValue = "Default")
     protected String callInfoPrivacyStatus;
     protected UpdateDeviceProfileReq.Services services;
-    @XmlElementRef(name = "featureControlPolicy", type = JAXBElement.class)
-    protected JAXBElement<XFkType> featureControlPolicy;
 
     /**
      * Gets the value of the newName property.
@@ -301,10 +297,10 @@ public class UpdateDeviceProfileReq
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public JAXBElement<String> getMlppDomainId() {
+    public JAXBElement<Integer> getMlppDomainId() {
         return mlppDomainId;
     }
 
@@ -313,11 +309,11 @@ public class UpdateDeviceProfileReq
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setMlppDomainId(JAXBElement<String> value) {
-        this.mlppDomainId = ((JAXBElement<String> ) value);
+    public void setMlppDomainId(JAXBElement<Integer> value) {
+        this.mlppDomainId = ((JAXBElement<Integer> ) value);
     }
 
     /**
@@ -848,30 +844,6 @@ public class UpdateDeviceProfileReq
         this.services = value;
     }
 
-    /**
-     * Gets the value of the featureControlPolicy property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link XFkType }{@code >}
-     *     
-     */
-    public JAXBElement<XFkType> getFeatureControlPolicy() {
-        return featureControlPolicy;
-    }
-
-    /**
-     * Sets the value of the featureControlPolicy property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link XFkType }{@code >}
-     *     
-     */
-    public void setFeatureControlPolicy(JAXBElement<XFkType> value) {
-        this.featureControlPolicy = ((JAXBElement<XFkType> ) value);
-    }
-
 
     /**
      * <p>Java class for anonymous complex type.
@@ -883,7 +855,7 @@ public class UpdateDeviceProfileReq
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="addOnModule" type="{http://www.cisco.com/AXL/API/8.5}XAddOnModule" maxOccurs="2" minOccurs="0"/>
+     *         &lt;element name="addOnModule" type="{http://www.cisco.com/AXL/API/8.0}XAddOnModule" maxOccurs="2" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -942,7 +914,7 @@ public class UpdateDeviceProfileReq
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="blfDirectedCallPark" type="{http://www.cisco.com/AXL/API/8.5}XBLFDirectedCallPark" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="blfDirectedCallPark" type="{http://www.cisco.com/AXL/API/8.0}XBLFDirectedCallPark" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1001,7 +973,7 @@ public class UpdateDeviceProfileReq
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="busyLampField" type="{http://www.cisco.com/AXL/API/8.5}XBusyLampField" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="busyLampField" type="{http://www.cisco.com/AXL/API/8.0}XBusyLampField" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1060,8 +1032,8 @@ public class UpdateDeviceProfileReq
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;choice>
-     *         &lt;element name="line" type="{http://www.cisco.com/AXL/API/8.5}XPhoneLine" maxOccurs="unbounded"/>
-     *         &lt;element name="lineIdentifier" type="{http://www.cisco.com/AXL/API/8.5}XNumplanIdentifier" maxOccurs="unbounded"/>
+     *         &lt;element name="line" type="{http://www.cisco.com/AXL/API/8.0}XPhoneLine" maxOccurs="unbounded"/>
+     *         &lt;element name="lineIdentifier" type="{http://www.cisco.com/AXL/API/8.0}XNumplanIdentifier" maxOccurs="unbounded"/>
      *       &lt;/choice>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1151,7 +1123,7 @@ public class UpdateDeviceProfileReq
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="service" type="{http://www.cisco.com/AXL/API/8.5}XSubscribedService" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="service" type="{http://www.cisco.com/AXL/API/8.0}XSubscribedService" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1210,7 +1182,7 @@ public class UpdateDeviceProfileReq
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="speeddial" type="{http://www.cisco.com/AXL/API/8.5}XSpeeddial" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="speeddial" type="{http://www.cisco.com/AXL/API/8.0}XSpeeddial" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddImeEnrolledPatternGroupReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="imeEnrolledPatternGroup" type="{http://www.cisco.com/AXL/API/8.5}XImeEnrolledPatternGroup"/>
+ *         &lt;element name="imeEnrolledPatternGroup" type="{http://www.cisco.com/AXL/API/8.0}XImeEnrolledPatternGroup"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

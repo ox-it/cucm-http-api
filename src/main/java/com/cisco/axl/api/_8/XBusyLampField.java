@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="blfDest" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;choice>
  *           &lt;sequence>
- *             &lt;element name="blfDirn" type="{http://www.cisco.com/AXL/API/8.5}String255"/>
+ *             &lt;element name="blfDirn" type="{http://www.cisco.com/AXL/API/8.0}String255"/>
  *             &lt;element name="routePartition" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *           &lt;/sequence>
  *         &lt;/choice>
@@ -32,13 +32,13 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="feature" type="{http://www.cisco.com/AXL/API/8.5}XBLFSDOption" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="feature" type="{http://www.cisco.com/AXL/API/8.0}XBLFSDOption" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -246,7 +246,7 @@ public class XBusyLampField {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="feature" type="{http://www.cisco.com/AXL/API/8.5}XBLFSDOption" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="feature" type="{http://www.cisco.com/AXL/API/8.0}XBLFSDOption" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

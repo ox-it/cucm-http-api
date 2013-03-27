@@ -14,15 +14,15 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateRemoteClusterReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
- *           &lt;element name="clusterId" type="{http://www.cisco.com/AXL/API/8.5}String255"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
+ *           &lt;element name="clusterId" type="{http://www.cisco.com/AXL/API/8.0}String255"/>
  *         &lt;/choice>
- *         &lt;element name="emcc" type="{http://www.cisco.com/AXL/API/8.5}XRemoteClusterMember" minOccurs="0"/>
- *         &lt;element name="pstnAccess" type="{http://www.cisco.com/AXL/API/8.5}XRemoteClusterMember" minOccurs="0"/>
- *         &lt;element name="rsvpAgent" type="{http://www.cisco.com/AXL/API/8.5}XRemoteClusterMember" minOccurs="0"/>
+ *         &lt;element name="emcc" type="{http://www.cisco.com/AXL/API/8.0}XRemoteClusterMember" minOccurs="0"/>
+ *         &lt;element name="pstnAccess" type="{http://www.cisco.com/AXL/API/8.0}XRemoteClusterMember" minOccurs="0"/>
+ *         &lt;element name="rsvpAgent" type="{http://www.cisco.com/AXL/API/8.0}XRemoteClusterMember" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

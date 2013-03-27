@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddCallingPartyTransformationPatternReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="callingPartyTransformationPattern" type="{http://www.cisco.com/AXL/API/8.5}XCallingPartyTransformationPattern"/>
+ *         &lt;element name="callingPartyTransformationPattern" type="{http://www.cisco.com/AXL/API/8.0}XCallingPartyTransformationPattern"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

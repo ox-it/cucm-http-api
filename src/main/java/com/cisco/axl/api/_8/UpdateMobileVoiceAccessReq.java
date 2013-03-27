@@ -18,22 +18,22 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateMobileVoiceAccessReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *           &lt;element name="pattern" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;/choice>
  *         &lt;element name="newPattern" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *         &lt;choice minOccurs="0">
  *           &lt;sequence minOccurs="0">
  *             &lt;element name="removeLocales" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="locale" type="{http://www.cisco.com/AXL/API/8.5}XMobileVoiceMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="locale" type="{http://www.cisco.com/AXL/API/8.0}XMobileVoiceMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -42,9 +42,9 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;element name="addLocales" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="locale" type="{http://www.cisco.com/AXL/API/8.5}XMobileVoiceMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="locale" type="{http://www.cisco.com/AXL/API/8.0}XMobileVoiceMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -54,9 +54,9 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;element name="locales" minOccurs="0">
  *             &lt;complexType>
  *               &lt;complexContent>
- *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="locale" type="{http://www.cisco.com/AXL/API/8.5}XMobileVoiceMember" maxOccurs="unbounded"/>
+ *                     &lt;element name="locale" type="{http://www.cisco.com/AXL/API/8.0}XMobileVoiceMember" maxOccurs="unbounded"/>
  *                   &lt;/sequence>
  *                 &lt;/extension>
  *               &lt;/complexContent>
@@ -271,9 +271,9 @@ public class UpdateMobileVoiceAccessReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="locale" type="{http://www.cisco.com/AXL/API/8.5}XMobileVoiceMember" maxOccurs="unbounded"/>
+     *         &lt;element name="locale" type="{http://www.cisco.com/AXL/API/8.0}XMobileVoiceMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -332,9 +332,9 @@ public class UpdateMobileVoiceAccessReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="locale" type="{http://www.cisco.com/AXL/API/8.5}XMobileVoiceMember" maxOccurs="unbounded"/>
+     *         &lt;element name="locale" type="{http://www.cisco.com/AXL/API/8.0}XMobileVoiceMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -393,9 +393,9 @@ public class UpdateMobileVoiceAccessReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="locale" type="{http://www.cisco.com/AXL/API/8.5}XMobileVoiceMember" maxOccurs="unbounded"/>
+     *         &lt;element name="locale" type="{http://www.cisco.com/AXL/API/8.0}XMobileVoiceMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

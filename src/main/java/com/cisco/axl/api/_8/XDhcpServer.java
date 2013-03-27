@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="processNodeName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
+ *         &lt;element name="processNodeName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
  *         &lt;element name="primaryDnsIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="secondaryDnsIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="primaryTftpServerIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -25,10 +25,10 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="bootstrapServerIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="domainName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="tftpServerName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="arpCacheTimeout" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="ipAddressLeaseTime" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="renewalTime" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="rebindingTime" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="arpCacheTimeout" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="ipAddressLeaseTime" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="renewalTime" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="rebindingTime" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

@@ -14,14 +14,14 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateIvrUserLocaleReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
- *           &lt;element name="userLocale" type="{http://www.cisco.com/AXL/API/8.5}XUserLocale"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
+ *           &lt;element name="userLocale" type="{http://www.cisco.com/AXL/API/8.0}XUserLocale"/>
  *         &lt;/choice>
- *         &lt;element name="newUserLocale" type="{http://www.cisco.com/AXL/API/8.5}XUserLocale" minOccurs="0"/>
- *         &lt;element name="orderIndex" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *         &lt;element name="newUserLocale" type="{http://www.cisco.com/AXL/API/8.0}XUserLocale" minOccurs="0"/>
+ *         &lt;element name="orderIndex" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

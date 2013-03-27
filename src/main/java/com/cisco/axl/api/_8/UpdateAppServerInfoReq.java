@@ -16,14 +16,14 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateAppServerInfoReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *         &lt;/choice>
- *         &lt;element name="appServerName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="appServerContent" type="{http://www.cisco.com/AXL/API/8.5}XAppServerContent" minOccurs="0"/>
- *         &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.5}XContent" minOccurs="0"/>
+ *         &lt;element name="appServerName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="appServerContent" type="{http://www.cisco.com/AXL/API/8.0}XAppServerContent" minOccurs="0"/>
+ *         &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.0}XContent" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

@@ -19,9 +19,9 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence minOccurs="0">
  *         &lt;element name="domainName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.5}XProduct" minOccurs="0"/>
- *         &lt;element name="protocol" type="{http://www.cisco.com/AXL/API/8.5}XDeviceProtocol" minOccurs="0"/>
- *         &lt;element name="callManagerGroupName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.0}XProduct" minOccurs="0"/>
+ *         &lt;element name="protocol" type="{http://www.cisco.com/AXL/API/8.0}XDeviceProtocol" minOccurs="0"/>
+ *         &lt;element name="callManagerGroupName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *         &lt;element name="units" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
@@ -32,8 +32,8 @@ import javax.xml.bind.annotation.XmlType;
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                           &lt;sequence minOccurs="0">
- *                             &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *                             &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.5}XMGCPSlotModule" minOccurs="0"/>
+ *                             &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *                             &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.0}XMGCPSlotModule" minOccurs="0"/>
  *                             &lt;element name="subunits" minOccurs="0">
  *                               &lt;complexType>
  *                                 &lt;complexContent>
@@ -44,9 +44,9 @@ import javax.xml.bind.annotation.XmlType;
  *                                           &lt;complexContent>
  *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                                               &lt;sequence minOccurs="0">
- *                                                 &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *                                                 &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.5}XMGCPVic" minOccurs="0"/>
- *                                                 &lt;element name="beginPort" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *                                                 &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *                                                 &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.0}XMGCPVic" minOccurs="0"/>
+ *                                                 &lt;element name="beginPort" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *                                               &lt;/sequence>
  *                                             &lt;/restriction>
  *                                           &lt;/complexContent>
@@ -68,7 +68,7 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;/complexType>
  *         &lt;/element>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -280,8 +280,8 @@ public class LVg224 {
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                 &lt;sequence minOccurs="0">
-     *                   &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
-     *                   &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.5}XMGCPSlotModule" minOccurs="0"/>
+     *                   &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+     *                   &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.0}XMGCPSlotModule" minOccurs="0"/>
      *                   &lt;element name="subunits" minOccurs="0">
      *                     &lt;complexType>
      *                       &lt;complexContent>
@@ -292,9 +292,9 @@ public class LVg224 {
      *                                 &lt;complexContent>
      *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                                     &lt;sequence minOccurs="0">
-     *                                       &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
-     *                                       &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.5}XMGCPVic" minOccurs="0"/>
-     *                                       &lt;element name="beginPort" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+     *                                       &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+     *                                       &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.0}XMGCPVic" minOccurs="0"/>
+     *                                       &lt;element name="beginPort" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
      *                                     &lt;/sequence>
      *                                   &lt;/restriction>
      *                                 &lt;/complexContent>
@@ -361,8 +361,8 @@ public class LVg224 {
          *   &lt;complexContent>
          *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *       &lt;sequence minOccurs="0">
-         *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
-         *         &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.5}XMGCPSlotModule" minOccurs="0"/>
+         *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+         *         &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.0}XMGCPSlotModule" minOccurs="0"/>
          *         &lt;element name="subunits" minOccurs="0">
          *           &lt;complexType>
          *             &lt;complexContent>
@@ -373,9 +373,9 @@ public class LVg224 {
          *                       &lt;complexContent>
          *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *                           &lt;sequence minOccurs="0">
-         *                             &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
-         *                             &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.5}XMGCPVic" minOccurs="0"/>
-         *                             &lt;element name="beginPort" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+         *                             &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+         *                             &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.0}XMGCPVic" minOccurs="0"/>
+         *                             &lt;element name="beginPort" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
          *                           &lt;/sequence>
          *                         &lt;/restriction>
          *                       &lt;/complexContent>
@@ -494,9 +494,9 @@ public class LVg224 {
              *             &lt;complexContent>
              *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
              *                 &lt;sequence minOccurs="0">
-             *                   &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
-             *                   &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.5}XMGCPVic" minOccurs="0"/>
-             *                   &lt;element name="beginPort" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+             *                   &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+             *                   &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.0}XMGCPVic" minOccurs="0"/>
+             *                   &lt;element name="beginPort" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
              *                 &lt;/sequence>
              *               &lt;/restriction>
              *             &lt;/complexContent>
@@ -553,9 +553,9 @@ public class LVg224 {
                  *   &lt;complexContent>
                  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
                  *       &lt;sequence minOccurs="0">
-                 *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
-                 *         &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.5}XMGCPVic" minOccurs="0"/>
-                 *         &lt;element name="beginPort" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+                 *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+                 *         &lt;element name="product" type="{http://www.cisco.com/AXL/API/8.0}XMGCPVic" minOccurs="0"/>
+                 *         &lt;element name="beginPort" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
                  *       &lt;/sequence>
                  *     &lt;/restriction>
                  *   &lt;/complexContent>

@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddConferenceBridgeReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="conferenceBridge" type="{http://www.cisco.com/AXL/API/8.5}XConferenceBridge"/>
+ *         &lt;element name="conferenceBridge" type="{http://www.cisco.com/AXL/API/8.0}XConferenceBridge"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

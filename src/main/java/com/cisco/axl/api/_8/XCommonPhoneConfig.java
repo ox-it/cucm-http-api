@@ -19,22 +19,21 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}UniqueString50"/>
- *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="unlockPwd" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="dndOption" type="{http://www.cisco.com/AXL/API/8.5}XDNDOption" minOccurs="0"/>
- *         &lt;element name="dndAlertingType" type="{http://www.cisco.com/AXL/API/8.5}XRingSetting" minOccurs="0"/>
- *         &lt;element name="backgroundImage" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="phonePersonalization" type="{http://www.cisco.com/AXL/API/8.5}XPhonePersonalization" minOccurs="0"/>
- *         &lt;element name="phoneServiceDisplay" type="{http://www.cisco.com/AXL/API/8.5}XPhoneServiceDisplay" minOccurs="0"/>
- *         &lt;element name="sshUserId" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="sshPwd" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="vendorConfig" type="{http://www.cisco.com/AXL/API/8.5}XVendorConfig" minOccurs="0"/>
- *         &lt;element name="alwaysUsePrimeLine" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="alwaysUsePrimeLineForVoiceMessage" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="vpnGroupName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="vpnProfileName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="featureControlPolicy" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}UniqueString50"/>
+ *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="unlockPwd" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="dndOption" type="{http://www.cisco.com/AXL/API/8.0}XDNDOption" minOccurs="0"/>
+ *         &lt;element name="dndAlertingType" type="{http://www.cisco.com/AXL/API/8.0}XRingSetting" minOccurs="0"/>
+ *         &lt;element name="backgroundImage" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="phonePersonalization" type="{http://www.cisco.com/AXL/API/8.0}XPhonePersonalization" minOccurs="0"/>
+ *         &lt;element name="phoneServiceDisplay" type="{http://www.cisco.com/AXL/API/8.0}XPhoneServiceDisplay" minOccurs="0"/>
+ *         &lt;element name="sshUserId" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="sshPwd" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="vendorConfig" type="{http://www.cisco.com/AXL/API/8.0}XVendorConfig" minOccurs="0"/>
+ *         &lt;element name="alwaysUsePrimeLine" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="alwaysUsePrimeLineForVoiceMessage" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="vpnGroupName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="vpnProfileName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -59,8 +58,7 @@ import javax.xml.bind.annotation.XmlType;
     "alwaysUsePrimeLine",
     "alwaysUsePrimeLineForVoiceMessage",
     "vpnGroupName",
-    "vpnProfileName",
-    "featureControlPolicy"
+    "vpnProfileName"
 })
 public class XCommonPhoneConfig {
 
@@ -89,8 +87,6 @@ public class XCommonPhoneConfig {
     protected JAXBElement<XFkType> vpnGroupName;
     @XmlElementRef(name = "vpnProfileName", type = JAXBElement.class)
     protected JAXBElement<XFkType> vpnProfileName;
-    @XmlElementRef(name = "featureControlPolicy", type = JAXBElement.class)
-    protected JAXBElement<XFkType> featureControlPolicy;
 
     /**
      * Gets the value of the name property.
@@ -450,30 +446,6 @@ public class XCommonPhoneConfig {
      */
     public void setVpnProfileName(JAXBElement<XFkType> value) {
         this.vpnProfileName = ((JAXBElement<XFkType> ) value);
-    }
-
-    /**
-     * Gets the value of the featureControlPolicy property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link XFkType }{@code >}
-     *     
-     */
-    public JAXBElement<XFkType> getFeatureControlPolicy() {
-        return featureControlPolicy;
-    }
-
-    /**
-     * Sets the value of the featureControlPolicy property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link XFkType }{@code >}
-     *     
-     */
-    public void setFeatureControlPolicy(JAXBElement<XFkType> value) {
-        this.featureControlPolicy = ((JAXBElement<XFkType> ) value);
     }
 
 }

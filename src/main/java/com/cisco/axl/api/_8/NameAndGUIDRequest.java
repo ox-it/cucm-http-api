@@ -17,11 +17,11 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="NameAndGUIDRequest">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String100"/>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String100"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/extension>
@@ -88,7 +88,6 @@ import javax.xml.bind.annotation.XmlType;
     UpdatePhysicalLocationReq.class,
     UpdateDirectoryLookupDialRulesReq.class,
     UpdateGeoLocationFilterReq.class,
-    UpdateSoftKeySetReq.class,
     UpdateTimePeriodReq.class,
     UpdateRoutePartitionReq.class,
     UpdateRegionReq.class,
@@ -113,7 +112,6 @@ import javax.xml.bind.annotation.XmlType;
     UpdateGatewayEndpointDigitalAccessPriReq.class,
     UpdateSoftKeyTemplateReq.class,
     UpdateVoiceMailProfileReq.class,
-    UpdateMobilityProfileReq.class,
     UpdateMtpReq.class,
     UpdateCssReq.class,
     UpdateH323GatewayReq.class,

@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="serverName" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
+ *         &lt;element name="serverName" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
  *         &lt;element name="phoneLicenseFeature" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
@@ -28,7 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  *                   &lt;element name="unitsUsed" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
  *                   &lt;element name="unitsRemaining" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
  *                   &lt;element name="unitsPending" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
- *                   &lt;element name="status" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *                   &lt;element name="status" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -42,7 +42,7 @@ import javax.xml.bind.annotation.XmlType;
  *                   &lt;element name="unitsAuthorized" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
  *                   &lt;element name="unitsUsed" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
  *                   &lt;element name="unitsRemaining" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
- *                   &lt;element name="status" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *                   &lt;element name="status" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -53,8 +53,8 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="swVersion" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *                   &lt;element name="status" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *                   &lt;element name="swVersion" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *                   &lt;element name="status" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -192,7 +192,7 @@ public class XLicenseUnitReport {
      *         &lt;element name="unitsAuthorized" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
      *         &lt;element name="unitsUsed" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
      *         &lt;element name="unitsRemaining" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
-     *         &lt;element name="status" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+     *         &lt;element name="status" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -331,7 +331,7 @@ public class XLicenseUnitReport {
      *         &lt;element name="unitsUsed" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
      *         &lt;element name="unitsRemaining" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
      *         &lt;element name="unitsPending" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" minOccurs="0"/>
-     *         &lt;element name="status" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+     *         &lt;element name="status" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -493,8 +493,8 @@ public class XLicenseUnitReport {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="swVersion" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
-     *         &lt;element name="status" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+     *         &lt;element name="swVersion" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+     *         &lt;element name="status" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

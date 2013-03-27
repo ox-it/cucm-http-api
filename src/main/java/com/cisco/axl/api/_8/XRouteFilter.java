@@ -19,13 +19,13 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="dialPlanName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
+ *         &lt;element name="dialPlanName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
  *         &lt;element name="members">
  *           &lt;complexType>
  *             &lt;complexContent>
- *               &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *               &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XRouteFilterMember" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XRouteFilterMember" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/extension>
  *             &lt;/complexContent>
@@ -132,9 +132,9 @@ public class XRouteFilter {
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XRouteFilterMember" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XRouteFilterMember" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

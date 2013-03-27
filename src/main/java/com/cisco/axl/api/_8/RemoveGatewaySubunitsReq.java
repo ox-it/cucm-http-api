@@ -23,7 +23,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="gatewayUuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="gatewayUuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *           &lt;element name="domainName" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;/choice>
  *         &lt;element name="unit" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger"/>
@@ -37,7 +37,7 @@ import javax.xml.bind.annotation.XmlType;
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                           &lt;sequence minOccurs="0">
- *                             &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *                             &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *                           &lt;/sequence>
  *                         &lt;/restriction>
  *                       &lt;/complexContent>
@@ -213,7 +213,7 @@ public class RemoveGatewaySubunitsReq {
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                 &lt;sequence minOccurs="0">
-     *                   &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+     *                   &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
      *                 &lt;/sequence>
      *               &lt;/restriction>
      *             &lt;/complexContent>
@@ -276,7 +276,7 @@ public class RemoveGatewaySubunitsReq {
          *   &lt;complexContent>
          *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *       &lt;sequence minOccurs="0">
-         *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+         *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
          *       &lt;/sequence>
          *     &lt;/restriction>
          *   &lt;/complexContent>

@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddFixedMohAudioSourceReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="fixedMohAudioSource" type="{http://www.cisco.com/AXL/API/8.5}XFixedMohAudioSource"/>
+ *         &lt;element name="fixedMohAudioSource" type="{http://www.cisco.com/AXL/API/8.0}XFixedMohAudioSource"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

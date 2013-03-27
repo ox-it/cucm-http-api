@@ -19,13 +19,13 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="blfDest" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;choice minOccurs="0">
  *           &lt;sequence minOccurs="0">
- *             &lt;element name="blfDirn" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
+ *             &lt;element name="blfDirn" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
  *             &lt;element name="routePartition" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *           &lt;/sequence>
  *         &lt;/choice>
  *         &lt;element name="label" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="asciiLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

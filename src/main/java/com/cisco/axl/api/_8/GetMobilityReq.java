@@ -20,10 +20,10 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;sequence>
- *           &lt;element name="handoffNumber" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *           &lt;element name="DTMFNumber" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *           &lt;element name="handoffNumber" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *           &lt;element name="DTMFNumber" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *         &lt;/sequence>
- *         &lt;element name="returnedTags" type="{http://www.cisco.com/AXL/API/8.5}RMobility" minOccurs="0"/>
+ *         &lt;element name="returnedTags" type="{http://www.cisco.com/AXL/API/8.0}RMobility" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

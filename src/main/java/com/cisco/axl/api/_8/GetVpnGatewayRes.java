@@ -15,14 +15,14 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="GetVpnGatewayRes">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIResponse">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIResponse">
  *       &lt;sequence>
  *         &lt;element name="return">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="vpnGateway" type="{http://www.cisco.com/AXL/API/8.5}RVpnGateway"/>
+ *                   &lt;element name="vpnGateway" type="{http://www.cisco.com/AXL/API/8.0}RVpnGateway"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -82,7 +82,7 @@ public class GetVpnGatewayRes
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="vpnGateway" type="{http://www.cisco.com/AXL/API/8.5}RVpnGateway"/>
+     *         &lt;element name="vpnGateway" type="{http://www.cisco.com/AXL/API/8.0}RVpnGateway"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

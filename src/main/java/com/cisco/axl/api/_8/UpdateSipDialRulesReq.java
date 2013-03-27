@@ -18,18 +18,18 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateSipDialRulesReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;choice minOccurs="0">
  *           &lt;sequence minOccurs="0">
  *             &lt;element name="removePatterns" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -38,9 +38,9 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;element name="addPatterns" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -50,9 +50,9 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;element name="patterns" minOccurs="0">
  *             &lt;complexType>
  *               &lt;complexContent>
- *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+ *                     &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
  *                   &lt;/sequence>
  *                 &lt;/extension>
  *               &lt;/complexContent>
@@ -64,9 +64,9 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;element name="removePlars" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -75,9 +75,9 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;element name="addPlars" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -87,9 +87,9 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;element name="plars" minOccurs="0">
  *             &lt;complexType>
  *               &lt;complexContent>
- *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+ *                     &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
  *                   &lt;/sequence>
  *                 &lt;/extension>
  *               &lt;/complexContent>
@@ -330,9 +330,9 @@ public class UpdateSipDialRulesReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+     *         &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -391,9 +391,9 @@ public class UpdateSipDialRulesReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+     *         &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -452,9 +452,9 @@ public class UpdateSipDialRulesReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+     *         &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -513,9 +513,9 @@ public class UpdateSipDialRulesReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+     *         &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -574,9 +574,9 @@ public class UpdateSipDialRulesReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+     *         &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -635,9 +635,9 @@ public class UpdateSipDialRulesReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+     *         &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

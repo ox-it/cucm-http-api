@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;complexType name="XNameAttribute">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attribute name="name" type="{http://www.cisco.com/AXL/API/8.5}XProduct" />
+ *       &lt;attribute name="name" type="{http://www.cisco.com/AXL/API/8.0}XProduct" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>

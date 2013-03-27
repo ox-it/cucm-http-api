@@ -16,9 +16,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="feature" type="{http://www.cisco.com/AXL/API/8.5}XFeature"/>
- *         &lt;element name="label" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="buttonNumber" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="feature" type="{http://www.cisco.com/AXL/API/8.0}XFeature"/>
+ *         &lt;element name="label" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="buttonNumber" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

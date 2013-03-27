@@ -47,7 +47,6 @@ import com.cisco.axl.api._8.AddDhcpSubnetReq;
 import com.cisco.axl.api._8.AddDirectedCallParkReq;
 import com.cisco.axl.api._8.AddDirectoryLookupDialRulesReq;
 import com.cisco.axl.api._8.AddEndUserCapfProfileReq;
-import com.cisco.axl.api._8.AddEnterpriseFeatureAccessConfigurationReq;
 import com.cisco.axl.api._8.AddExternalCallControlProfileReq;
 import com.cisco.axl.api._8.AddFacInfoReq;
 import com.cisco.axl.api._8.AddFallbackProfileReq;
@@ -65,7 +64,6 @@ import com.cisco.axl.api._8.AddGeoLocationReq;
 import com.cisco.axl.api._8.AddH323GatewayReq;
 import com.cisco.axl.api._8.AddH323PhoneReq;
 import com.cisco.axl.api._8.AddH323TrunkReq;
-import com.cisco.axl.api._8.AddHandoffConfigurationReq;
 import com.cisco.axl.api._8.AddHuntListReq;
 import com.cisco.axl.api._8.AddHuntPilotReq;
 import com.cisco.axl.api._8.AddImeClientReq;
@@ -91,7 +89,6 @@ import com.cisco.axl.api._8.AddMeetMeReq;
 import com.cisco.axl.api._8.AddMessageWaitingReq;
 import com.cisco.axl.api._8.AddMlppDomainReq;
 import com.cisco.axl.api._8.AddMobileVoiceAccessReq;
-import com.cisco.axl.api._8.AddMobilityProfileReq;
 import com.cisco.axl.api._8.AddMobilityReq;
 import com.cisco.axl.api._8.AddMtpReq;
 import com.cisco.axl.api._8.AddPhoneButtonTemplateReq;
@@ -149,10 +146,6 @@ import com.cisco.axl.api._8.DoDeviceLogoutReq;
 import com.cisco.axl.api._8.DoDeviceLogoutRes;
 import com.cisco.axl.api._8.DoDeviceResetReq;
 import com.cisco.axl.api._8.DoDeviceResetRes;
-import com.cisco.axl.api._8.DoLdapSyncReq;
-import com.cisco.axl.api._8.DoLdapSyncRes;
-import com.cisco.axl.api._8.DoUpdateRemoteClusterReq;
-import com.cisco.axl.api._8.DoUpdateRemoteClusterRes;
 import com.cisco.axl.api._8.ExecuteSQLQueryReq;
 import com.cisco.axl.api._8.ExecuteSQLQueryRes;
 import com.cisco.axl.api._8.ExecuteSQLUpdateReq;
@@ -249,8 +242,6 @@ import com.cisco.axl.api._8.GetEmccFeatureConfigReq;
 import com.cisco.axl.api._8.GetEmccFeatureConfigRes;
 import com.cisco.axl.api._8.GetEndUserCapfProfileReq;
 import com.cisco.axl.api._8.GetEndUserCapfProfileRes;
-import com.cisco.axl.api._8.GetEnterpriseFeatureAccessConfigurationReq;
-import com.cisco.axl.api._8.GetEnterpriseFeatureAccessConfigurationRes;
 import com.cisco.axl.api._8.GetEnterprisePhoneConfigReq;
 import com.cisco.axl.api._8.GetEnterprisePhoneConfigRes;
 import com.cisco.axl.api._8.GetExternalCallControlProfileReq;
@@ -289,8 +280,6 @@ import com.cisco.axl.api._8.GetH323PhoneReq;
 import com.cisco.axl.api._8.GetH323PhoneRes;
 import com.cisco.axl.api._8.GetH323TrunkReq;
 import com.cisco.axl.api._8.GetH323TrunkRes;
-import com.cisco.axl.api._8.GetHandoffConfigurationReq;
-import com.cisco.axl.api._8.GetHandoffConfigurationRes;
 import com.cisco.axl.api._8.GetHuntListReq;
 import com.cisco.axl.api._8.GetHuntListRes;
 import com.cisco.axl.api._8.GetHuntPilotReq;
@@ -311,8 +300,6 @@ import com.cisco.axl.api._8.GetImeFeatureConfigReq;
 import com.cisco.axl.api._8.GetImeFeatureConfigRes;
 import com.cisco.axl.api._8.GetImeFirewallReq;
 import com.cisco.axl.api._8.GetImeFirewallRes;
-import com.cisco.axl.api._8.GetImeLearnedRoutesReq;
-import com.cisco.axl.api._8.GetImeLearnedRoutesRes;
 import com.cisco.axl.api._8.GetImeRouteFilterElementReq;
 import com.cisco.axl.api._8.GetImeRouteFilterElementRes;
 import com.cisco.axl.api._8.GetImeRouteFilterGroupReq;
@@ -331,8 +318,6 @@ import com.cisco.axl.api._8.GetLdapDirectoryReq;
 import com.cisco.axl.api._8.GetLdapDirectoryRes;
 import com.cisco.axl.api._8.GetLdapFilterReq;
 import com.cisco.axl.api._8.GetLdapFilterRes;
-import com.cisco.axl.api._8.GetLdapSyncStatusReq;
-import com.cisco.axl.api._8.GetLdapSyncStatusRes;
 import com.cisco.axl.api._8.GetLdapSystemReq;
 import com.cisco.axl.api._8.GetLdapSystemRes;
 import com.cisco.axl.api._8.GetLicenseCapabilitiesReq;
@@ -359,8 +344,6 @@ import com.cisco.axl.api._8.GetMobileSmartClientProfileReq;
 import com.cisco.axl.api._8.GetMobileSmartClientProfileRes;
 import com.cisco.axl.api._8.GetMobileVoiceAccessReq;
 import com.cisco.axl.api._8.GetMobileVoiceAccessRes;
-import com.cisco.axl.api._8.GetMobilityProfileReq;
-import com.cisco.axl.api._8.GetMobilityProfileRes;
 import com.cisco.axl.api._8.GetMobilityReq;
 import com.cisco.axl.api._8.GetMobilityRes;
 import com.cisco.axl.api._8.GetMohAudioSourceReq;
@@ -433,8 +416,6 @@ import com.cisco.axl.api._8.GetSipTrunkReq;
 import com.cisco.axl.api._8.GetSipTrunkRes;
 import com.cisco.axl.api._8.GetSipTrunkSecurityProfileReq;
 import com.cisco.axl.api._8.GetSipTrunkSecurityProfileRes;
-import com.cisco.axl.api._8.GetSoftKeySetReq;
-import com.cisco.axl.api._8.GetSoftKeySetRes;
 import com.cisco.axl.api._8.GetSoftKeyTemplateReq;
 import com.cisco.axl.api._8.GetSoftKeyTemplateRes;
 import com.cisco.axl.api._8.GetSrstReq;
@@ -555,8 +536,6 @@ import com.cisco.axl.api._8.ListDirectoryLookupDialRulesReq;
 import com.cisco.axl.api._8.ListDirectoryLookupDialRulesRes;
 import com.cisco.axl.api._8.ListEndUserCapfProfileReq;
 import com.cisco.axl.api._8.ListEndUserCapfProfileRes;
-import com.cisco.axl.api._8.ListEnterpriseFeatureAccessConfigurationReq;
-import com.cisco.axl.api._8.ListEnterpriseFeatureAccessConfigurationRes;
 import com.cisco.axl.api._8.ListExternalCallControlProfileReq;
 import com.cisco.axl.api._8.ListExternalCallControlProfileRes;
 import com.cisco.axl.api._8.ListFacInfoReq;
@@ -633,8 +612,6 @@ import com.cisco.axl.api._8.ListMlppDomainReq;
 import com.cisco.axl.api._8.ListMlppDomainRes;
 import com.cisco.axl.api._8.ListMobileSmartClientProfileReq;
 import com.cisco.axl.api._8.ListMobileSmartClientProfileRes;
-import com.cisco.axl.api._8.ListMobilityProfileReq;
-import com.cisco.axl.api._8.ListMobilityProfileRes;
 import com.cisco.axl.api._8.ListMohAudioSourceReq;
 import com.cisco.axl.api._8.ListMohAudioSourceRes;
 import com.cisco.axl.api._8.ListMohServerReq;
@@ -752,14 +729,11 @@ import com.cisco.axl.api._8.RemoveDhcpServerReq;
 import com.cisco.axl.api._8.RemoveDhcpSubnetReq;
 import com.cisco.axl.api._8.RemoveDirectedCallParkReq;
 import com.cisco.axl.api._8.RemoveEndUserCapfProfileReq;
-import com.cisco.axl.api._8.RemoveEnterpriseFeatureAccessConfigurationReq;
 import com.cisco.axl.api._8.RemoveGatewayReq;
 import com.cisco.axl.api._8.RemoveGatewaySubunitsReq;
-import com.cisco.axl.api._8.RemoveHandoffConfigurationReq;
 import com.cisco.axl.api._8.RemoveHuntPilotReq;
 import com.cisco.axl.api._8.RemoveImeEnrolledPatternReq;
 import com.cisco.axl.api._8.RemoveImeExclusionNumberReq;
-import com.cisco.axl.api._8.RemoveImeLearnedRoutesReq;
 import com.cisco.axl.api._8.RemoveIpPhoneServicesReq;
 import com.cisco.axl.api._8.RemoveIvrUserLocaleReq;
 import com.cisco.axl.api._8.RemoveLineReq;
@@ -825,7 +799,6 @@ import com.cisco.axl.api._8.UpdateDirectedCallParkReq;
 import com.cisco.axl.api._8.UpdateDirectoryLookupDialRulesReq;
 import com.cisco.axl.api._8.UpdateEmccFeatureConfigReq;
 import com.cisco.axl.api._8.UpdateEndUserCapfProfileReq;
-import com.cisco.axl.api._8.UpdateEnterpriseFeatureAccessConfigurationReq;
 import com.cisco.axl.api._8.UpdateEnterprisePhoneConfigReq;
 import com.cisco.axl.api._8.UpdateExternalCallControlProfileReq;
 import com.cisco.axl.api._8.UpdateFacInfoReq;
@@ -845,7 +818,6 @@ import com.cisco.axl.api._8.UpdateGeoLocationReq;
 import com.cisco.axl.api._8.UpdateH323GatewayReq;
 import com.cisco.axl.api._8.UpdateH323PhoneReq;
 import com.cisco.axl.api._8.UpdateH323TrunkReq;
-import com.cisco.axl.api._8.UpdateHandoffConfigurationReq;
 import com.cisco.axl.api._8.UpdateHuntListReq;
 import com.cisco.axl.api._8.UpdateHuntPilotReq;
 import com.cisco.axl.api._8.UpdateImeClientReq;
@@ -856,7 +828,6 @@ import com.cisco.axl.api._8.UpdateImeExclusionNumberGroupReq;
 import com.cisco.axl.api._8.UpdateImeExclusionNumberReq;
 import com.cisco.axl.api._8.UpdateImeFeatureConfigReq;
 import com.cisco.axl.api._8.UpdateImeFirewallReq;
-import com.cisco.axl.api._8.UpdateImeLearnedRoutesReq;
 import com.cisco.axl.api._8.UpdateImeRouteFilterElementReq;
 import com.cisco.axl.api._8.UpdateImeRouteFilterGroupReq;
 import com.cisco.axl.api._8.UpdateImeServerReq;
@@ -877,7 +848,6 @@ import com.cisco.axl.api._8.UpdateMeetMeReq;
 import com.cisco.axl.api._8.UpdateMessageWaitingReq;
 import com.cisco.axl.api._8.UpdateMlppDomainReq;
 import com.cisco.axl.api._8.UpdateMobileVoiceAccessReq;
-import com.cisco.axl.api._8.UpdateMobilityProfileReq;
 import com.cisco.axl.api._8.UpdateMobilityReq;
 import com.cisco.axl.api._8.UpdateMohAudioSourceReq;
 import com.cisco.axl.api._8.UpdateMohServerReq;
@@ -913,7 +883,6 @@ import com.cisco.axl.api._8.UpdateSipRealmReq;
 import com.cisco.axl.api._8.UpdateSipRoutePatternReq;
 import com.cisco.axl.api._8.UpdateSipTrunkReq;
 import com.cisco.axl.api._8.UpdateSipTrunkSecurityProfileReq;
-import com.cisco.axl.api._8.UpdateSoftKeySetReq;
 import com.cisco.axl.api._8.UpdateSoftKeyTemplateReq;
 import com.cisco.axl.api._8.UpdateSrstReq;
 import com.cisco.axl.api._8.UpdateTimePeriodReq;
@@ -954,10 +923,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addSipProfile")
-    @WebResult(name = "addSipProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addSipProfile")
+    @WebResult(name = "addSipProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addSipProfile(
-        @WebParam(name = "addSipProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addSipProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddSipProfileReq axlParams);
 
     /**
@@ -966,10 +935,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateSipProfile")
-    @WebResult(name = "updateSipProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateSipProfile")
+    @WebResult(name = "updateSipProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateSipProfile(
-        @WebParam(name = "updateSipProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateSipProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateSipProfileReq axlParams);
 
     /**
@@ -978,10 +947,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetSipProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getSipProfile")
-    @WebResult(name = "getSipProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getSipProfile")
+    @WebResult(name = "getSipProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetSipProfileRes getSipProfile(
-        @WebParam(name = "getSipProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getSipProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetSipProfileReq axlParams);
 
     /**
@@ -990,10 +959,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeSipProfile")
-    @WebResult(name = "removeSipProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeSipProfile")
+    @WebResult(name = "removeSipProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeSipProfile(
-        @WebParam(name = "removeSipProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeSipProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1002,10 +971,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListSipProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listSipProfile")
-    @WebResult(name = "listSipProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listSipProfile")
+    @WebResult(name = "listSipProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListSipProfileRes listSipProfile(
-        @WebParam(name = "listSipProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listSipProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListSipProfileReq axlParams);
 
     /**
@@ -1014,10 +983,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addSipTrunkSecurityProfile")
-    @WebResult(name = "addSipTrunkSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addSipTrunkSecurityProfile")
+    @WebResult(name = "addSipTrunkSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addSipTrunkSecurityProfile(
-        @WebParam(name = "addSipTrunkSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addSipTrunkSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddSipTrunkSecurityProfileReq axlParams);
 
     /**
@@ -1026,10 +995,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateSipTrunkSecurityProfile")
-    @WebResult(name = "updateSipTrunkSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateSipTrunkSecurityProfile")
+    @WebResult(name = "updateSipTrunkSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateSipTrunkSecurityProfile(
-        @WebParam(name = "updateSipTrunkSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateSipTrunkSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateSipTrunkSecurityProfileReq axlParams);
 
     /**
@@ -1038,10 +1007,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetSipTrunkSecurityProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getSipTrunkSecurityProfile")
-    @WebResult(name = "getSipTrunkSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getSipTrunkSecurityProfile")
+    @WebResult(name = "getSipTrunkSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetSipTrunkSecurityProfileRes getSipTrunkSecurityProfile(
-        @WebParam(name = "getSipTrunkSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getSipTrunkSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetSipTrunkSecurityProfileReq axlParams);
 
     /**
@@ -1050,10 +1019,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeSipTrunkSecurityProfile")
-    @WebResult(name = "removeSipTrunkSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeSipTrunkSecurityProfile")
+    @WebResult(name = "removeSipTrunkSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeSipTrunkSecurityProfile(
-        @WebParam(name = "removeSipTrunkSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeSipTrunkSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1062,10 +1031,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListSipTrunkSecurityProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listSipTrunkSecurityProfile")
-    @WebResult(name = "listSipTrunkSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listSipTrunkSecurityProfile")
+    @WebResult(name = "listSipTrunkSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListSipTrunkSecurityProfileRes listSipTrunkSecurityProfile(
-        @WebParam(name = "listSipTrunkSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listSipTrunkSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListSipTrunkSecurityProfileReq axlParams);
 
     /**
@@ -1074,10 +1043,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addTimePeriod")
-    @WebResult(name = "addTimePeriodResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addTimePeriod")
+    @WebResult(name = "addTimePeriodResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addTimePeriod(
-        @WebParam(name = "addTimePeriod", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addTimePeriod", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddTimePeriodReq axlParams);
 
     /**
@@ -1086,10 +1055,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateTimePeriod")
-    @WebResult(name = "updateTimePeriodResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateTimePeriod")
+    @WebResult(name = "updateTimePeriodResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateTimePeriod(
-        @WebParam(name = "updateTimePeriod", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateTimePeriod", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateTimePeriodReq axlParams);
 
     /**
@@ -1098,10 +1067,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetTimePeriodRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getTimePeriod")
-    @WebResult(name = "getTimePeriodResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getTimePeriod")
+    @WebResult(name = "getTimePeriodResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetTimePeriodRes getTimePeriod(
-        @WebParam(name = "getTimePeriod", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getTimePeriod", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetTimePeriodReq axlParams);
 
     /**
@@ -1110,10 +1079,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeTimePeriod")
-    @WebResult(name = "removeTimePeriodResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeTimePeriod")
+    @WebResult(name = "removeTimePeriodResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeTimePeriod(
-        @WebParam(name = "removeTimePeriod", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeTimePeriod", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1122,10 +1091,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListTimePeriodRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listTimePeriod")
-    @WebResult(name = "listTimePeriodResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listTimePeriod")
+    @WebResult(name = "listTimePeriodResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListTimePeriodRes listTimePeriod(
-        @WebParam(name = "listTimePeriod", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listTimePeriod", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListTimePeriodReq axlParams);
 
     /**
@@ -1134,10 +1103,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addTimeSchedule")
-    @WebResult(name = "addTimeScheduleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addTimeSchedule")
+    @WebResult(name = "addTimeScheduleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addTimeSchedule(
-        @WebParam(name = "addTimeSchedule", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addTimeSchedule", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddTimeScheduleReq axlParams);
 
     /**
@@ -1146,10 +1115,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateTimeSchedule")
-    @WebResult(name = "updateTimeScheduleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateTimeSchedule")
+    @WebResult(name = "updateTimeScheduleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateTimeSchedule(
-        @WebParam(name = "updateTimeSchedule", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateTimeSchedule", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateTimeScheduleReq axlParams);
 
     /**
@@ -1158,10 +1127,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetTimeScheduleRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getTimeSchedule")
-    @WebResult(name = "getTimeScheduleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getTimeSchedule")
+    @WebResult(name = "getTimeScheduleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetTimeScheduleRes getTimeSchedule(
-        @WebParam(name = "getTimeSchedule", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getTimeSchedule", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetTimeScheduleReq axlParams);
 
     /**
@@ -1170,10 +1139,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeTimeSchedule")
-    @WebResult(name = "removeTimeScheduleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeTimeSchedule")
+    @WebResult(name = "removeTimeScheduleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeTimeSchedule(
-        @WebParam(name = "removeTimeSchedule", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeTimeSchedule", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1182,10 +1151,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListTimeScheduleRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listTimeSchedule")
-    @WebResult(name = "listTimeScheduleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listTimeSchedule")
+    @WebResult(name = "listTimeScheduleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListTimeScheduleRes listTimeSchedule(
-        @WebParam(name = "listTimeSchedule", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listTimeSchedule", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListTimeScheduleReq axlParams);
 
     /**
@@ -1194,10 +1163,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addTodAccess")
-    @WebResult(name = "addTodAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addTodAccess")
+    @WebResult(name = "addTodAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addTodAccess(
-        @WebParam(name = "addTodAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addTodAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddTodAccessReq axlParams);
 
     /**
@@ -1206,10 +1175,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateTodAccess")
-    @WebResult(name = "updateTodAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateTodAccess")
+    @WebResult(name = "updateTodAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateTodAccess(
-        @WebParam(name = "updateTodAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateTodAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateTodAccessReq axlParams);
 
     /**
@@ -1218,10 +1187,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetTodAccessRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getTodAccess")
-    @WebResult(name = "getTodAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getTodAccess")
+    @WebResult(name = "getTodAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetTodAccessRes getTodAccess(
-        @WebParam(name = "getTodAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getTodAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetTodAccessReq axlParams);
 
     /**
@@ -1230,10 +1199,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeTodAccess")
-    @WebResult(name = "removeTodAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeTodAccess")
+    @WebResult(name = "removeTodAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeTodAccess(
-        @WebParam(name = "removeTodAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeTodAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1242,10 +1211,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListTodAccessRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listTodAccess")
-    @WebResult(name = "listTodAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listTodAccess")
+    @WebResult(name = "listTodAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListTodAccessRes listTodAccess(
-        @WebParam(name = "listTodAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listTodAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListTodAccessReq axlParams);
 
     /**
@@ -1254,10 +1223,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addVoiceMailPilot")
-    @WebResult(name = "addVoiceMailPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addVoiceMailPilot")
+    @WebResult(name = "addVoiceMailPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addVoiceMailPilot(
-        @WebParam(name = "addVoiceMailPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addVoiceMailPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddVoiceMailPilotReq axlParams);
 
     /**
@@ -1266,10 +1235,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateVoiceMailPilot")
-    @WebResult(name = "updateVoiceMailPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateVoiceMailPilot")
+    @WebResult(name = "updateVoiceMailPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateVoiceMailPilot(
-        @WebParam(name = "updateVoiceMailPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateVoiceMailPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateVoiceMailPilotReq axlParams);
 
     /**
@@ -1278,10 +1247,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetVoiceMailPilotRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getVoiceMailPilot")
-    @WebResult(name = "getVoiceMailPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getVoiceMailPilot")
+    @WebResult(name = "getVoiceMailPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetVoiceMailPilotRes getVoiceMailPilot(
-        @WebParam(name = "getVoiceMailPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getVoiceMailPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetVoiceMailPilotReq axlParams);
 
     /**
@@ -1290,10 +1259,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeVoiceMailPilot")
-    @WebResult(name = "removeVoiceMailPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeVoiceMailPilot")
+    @WebResult(name = "removeVoiceMailPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeVoiceMailPilot(
-        @WebParam(name = "removeVoiceMailPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeVoiceMailPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveVoiceMailPilotReq axlParams);
 
     /**
@@ -1302,10 +1271,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListVoiceMailPilotRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listVoiceMailPilot")
-    @WebResult(name = "listVoiceMailPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listVoiceMailPilot")
+    @WebResult(name = "listVoiceMailPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListVoiceMailPilotRes listVoiceMailPilot(
-        @WebParam(name = "listVoiceMailPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listVoiceMailPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListVoiceMailPilotReq axlParams);
 
     /**
@@ -1314,10 +1283,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addProcessNode")
-    @WebResult(name = "addProcessNodeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addProcessNode")
+    @WebResult(name = "addProcessNodeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addProcessNode(
-        @WebParam(name = "addProcessNode", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addProcessNode", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddProcessNodeReq axlParams);
 
     /**
@@ -1326,10 +1295,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateProcessNode")
-    @WebResult(name = "updateProcessNodeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateProcessNode")
+    @WebResult(name = "updateProcessNodeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateProcessNode(
-        @WebParam(name = "updateProcessNode", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateProcessNode", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateProcessNodeReq axlParams);
 
     /**
@@ -1338,10 +1307,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetProcessNodeRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getProcessNode")
-    @WebResult(name = "getProcessNodeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getProcessNode")
+    @WebResult(name = "getProcessNodeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetProcessNodeRes getProcessNode(
-        @WebParam(name = "getProcessNode", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getProcessNode", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetProcessNodeReq axlParams);
 
     /**
@@ -1350,10 +1319,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeProcessNode")
-    @WebResult(name = "removeProcessNodeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeProcessNode")
+    @WebResult(name = "removeProcessNodeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeProcessNode(
-        @WebParam(name = "removeProcessNode", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeProcessNode", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1362,10 +1331,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListProcessNodeRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listProcessNode")
-    @WebResult(name = "listProcessNodeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listProcessNode")
+    @WebResult(name = "listProcessNodeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListProcessNodeRes listProcessNode(
-        @WebParam(name = "listProcessNode", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listProcessNode", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListProcessNodeReq axlParams);
 
     /**
@@ -1374,10 +1343,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCallerFilterList")
-    @WebResult(name = "addCallerFilterListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCallerFilterList")
+    @WebResult(name = "addCallerFilterListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCallerFilterList(
-        @WebParam(name = "addCallerFilterList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCallerFilterList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCallerFilterListReq axlParams);
 
     /**
@@ -1386,10 +1355,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCallerFilterList")
-    @WebResult(name = "updateCallerFilterListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCallerFilterList")
+    @WebResult(name = "updateCallerFilterListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCallerFilterList(
-        @WebParam(name = "updateCallerFilterList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCallerFilterList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCallerFilterListReq axlParams);
 
     /**
@@ -1398,10 +1367,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCallerFilterListRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCallerFilterList")
-    @WebResult(name = "getCallerFilterListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCallerFilterList")
+    @WebResult(name = "getCallerFilterListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCallerFilterListRes getCallerFilterList(
-        @WebParam(name = "getCallerFilterList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCallerFilterList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCallerFilterListReq axlParams);
 
     /**
@@ -1410,10 +1379,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCallerFilterList")
-    @WebResult(name = "removeCallerFilterListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCallerFilterList")
+    @WebResult(name = "removeCallerFilterListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCallerFilterList(
-        @WebParam(name = "removeCallerFilterList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCallerFilterList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1422,10 +1391,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCallerFilterListRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCallerFilterList")
-    @WebResult(name = "listCallerFilterListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCallerFilterList")
+    @WebResult(name = "listCallerFilterListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCallerFilterListRes listCallerFilterList(
-        @WebParam(name = "listCallerFilterList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCallerFilterList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCallerFilterListReq axlParams);
 
     /**
@@ -1434,10 +1403,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addRoutePartition")
-    @WebResult(name = "addRoutePartitionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addRoutePartition")
+    @WebResult(name = "addRoutePartitionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addRoutePartition(
-        @WebParam(name = "addRoutePartition", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addRoutePartition", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddRoutePartitionReq axlParams);
 
     /**
@@ -1446,10 +1415,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateRoutePartition")
-    @WebResult(name = "updateRoutePartitionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateRoutePartition")
+    @WebResult(name = "updateRoutePartitionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateRoutePartition(
-        @WebParam(name = "updateRoutePartition", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateRoutePartition", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateRoutePartitionReq axlParams);
 
     /**
@@ -1458,10 +1427,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetRoutePartitionRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getRoutePartition")
-    @WebResult(name = "getRoutePartitionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getRoutePartition")
+    @WebResult(name = "getRoutePartitionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetRoutePartitionRes getRoutePartition(
-        @WebParam(name = "getRoutePartition", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getRoutePartition", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetRoutePartitionReq axlParams);
 
     /**
@@ -1470,10 +1439,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeRoutePartition")
-    @WebResult(name = "removeRoutePartitionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeRoutePartition")
+    @WebResult(name = "removeRoutePartitionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeRoutePartition(
-        @WebParam(name = "removeRoutePartition", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeRoutePartition", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1482,10 +1451,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListRoutePartitionRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listRoutePartition")
-    @WebResult(name = "listRoutePartitionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listRoutePartition")
+    @WebResult(name = "listRoutePartitionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListRoutePartitionRes listRoutePartition(
-        @WebParam(name = "listRoutePartition", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listRoutePartition", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListRoutePartitionReq axlParams);
 
     /**
@@ -1494,10 +1463,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCss")
-    @WebResult(name = "addCssResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCss")
+    @WebResult(name = "addCssResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCss(
-        @WebParam(name = "addCss", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCss", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCssReq axlParams);
 
     /**
@@ -1506,10 +1475,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCss")
-    @WebResult(name = "updateCssResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCss")
+    @WebResult(name = "updateCssResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCss(
-        @WebParam(name = "updateCss", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCss", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCssReq axlParams);
 
     /**
@@ -1518,10 +1487,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCssRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCss")
-    @WebResult(name = "getCssResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCss")
+    @WebResult(name = "getCssResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCssRes getCss(
-        @WebParam(name = "getCss", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCss", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCssReq axlParams);
 
     /**
@@ -1530,10 +1499,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCss")
-    @WebResult(name = "removeCssResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCss")
+    @WebResult(name = "removeCssResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCss(
-        @WebParam(name = "removeCss", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCss", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1542,10 +1511,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCssRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCss")
-    @WebResult(name = "listCssResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCss")
+    @WebResult(name = "listCssResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCssRes listCss(
-        @WebParam(name = "listCss", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCss", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCssReq axlParams);
 
     /**
@@ -1554,10 +1523,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCallManager")
-    @WebResult(name = "updateCallManagerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCallManager")
+    @WebResult(name = "updateCallManagerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCallManager(
-        @WebParam(name = "updateCallManager", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCallManager", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCallManagerReq axlParams);
 
     /**
@@ -1566,10 +1535,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCallManagerRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCallManager")
-    @WebResult(name = "getCallManagerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCallManager")
+    @WebResult(name = "getCallManagerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCallManagerRes getCallManager(
-        @WebParam(name = "getCallManager", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCallManager", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCallManagerReq axlParams);
 
     /**
@@ -1578,10 +1547,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCallManagerRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCallManager")
-    @WebResult(name = "listCallManagerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCallManager")
+    @WebResult(name = "listCallManagerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCallManagerRes listCallManager(
-        @WebParam(name = "listCallManager", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCallManager", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCallManagerReq axlParams);
 
     /**
@@ -1590,10 +1559,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addMediaResourceGroup")
-    @WebResult(name = "addMediaResourceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addMediaResourceGroup")
+    @WebResult(name = "addMediaResourceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addMediaResourceGroup(
-        @WebParam(name = "addMediaResourceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addMediaResourceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddMediaResourceGroupReq axlParams);
 
     /**
@@ -1602,10 +1571,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateMediaResourceGroup")
-    @WebResult(name = "updateMediaResourceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateMediaResourceGroup")
+    @WebResult(name = "updateMediaResourceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateMediaResourceGroup(
-        @WebParam(name = "updateMediaResourceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateMediaResourceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateMediaResourceGroupReq axlParams);
 
     /**
@@ -1614,10 +1583,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetMediaResourceGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getMediaResourceGroup")
-    @WebResult(name = "getMediaResourceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getMediaResourceGroup")
+    @WebResult(name = "getMediaResourceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetMediaResourceGroupRes getMediaResourceGroup(
-        @WebParam(name = "getMediaResourceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getMediaResourceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetMediaResourceGroupReq axlParams);
 
     /**
@@ -1626,10 +1595,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeMediaResourceGroup")
-    @WebResult(name = "removeMediaResourceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeMediaResourceGroup")
+    @WebResult(name = "removeMediaResourceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeMediaResourceGroup(
-        @WebParam(name = "removeMediaResourceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeMediaResourceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1638,10 +1607,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListMediaResourceGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listMediaResourceGroup")
-    @WebResult(name = "listMediaResourceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listMediaResourceGroup")
+    @WebResult(name = "listMediaResourceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListMediaResourceGroupRes listMediaResourceGroup(
-        @WebParam(name = "listMediaResourceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listMediaResourceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListMediaResourceGroupReq axlParams);
 
     /**
@@ -1650,10 +1619,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addMediaResourceList")
-    @WebResult(name = "addMediaResourceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addMediaResourceList")
+    @WebResult(name = "addMediaResourceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addMediaResourceList(
-        @WebParam(name = "addMediaResourceList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addMediaResourceList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddMediaResourceListReq axlParams);
 
     /**
@@ -1662,10 +1631,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateMediaResourceList")
-    @WebResult(name = "updateMediaResourceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateMediaResourceList")
+    @WebResult(name = "updateMediaResourceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateMediaResourceList(
-        @WebParam(name = "updateMediaResourceList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateMediaResourceList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateMediaResourceListReq axlParams);
 
     /**
@@ -1674,10 +1643,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetMediaResourceListRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getMediaResourceList")
-    @WebResult(name = "getMediaResourceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getMediaResourceList")
+    @WebResult(name = "getMediaResourceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetMediaResourceListRes getMediaResourceList(
-        @WebParam(name = "getMediaResourceList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getMediaResourceList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetMediaResourceListReq axlParams);
 
     /**
@@ -1686,10 +1655,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeMediaResourceList")
-    @WebResult(name = "removeMediaResourceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeMediaResourceList")
+    @WebResult(name = "removeMediaResourceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeMediaResourceList(
-        @WebParam(name = "removeMediaResourceList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeMediaResourceList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1698,10 +1667,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListMediaResourceListRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listMediaResourceList")
-    @WebResult(name = "listMediaResourceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listMediaResourceList")
+    @WebResult(name = "listMediaResourceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListMediaResourceListRes listMediaResourceList(
-        @WebParam(name = "listMediaResourceList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listMediaResourceList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListMediaResourceListReq axlParams);
 
     /**
@@ -1710,10 +1679,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addRegion")
-    @WebResult(name = "addRegionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addRegion")
+    @WebResult(name = "addRegionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addRegion(
-        @WebParam(name = "addRegion", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addRegion", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddRegionReq axlParams);
 
     /**
@@ -1722,10 +1691,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateRegion")
-    @WebResult(name = "updateRegionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateRegion")
+    @WebResult(name = "updateRegionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateRegion(
-        @WebParam(name = "updateRegion", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateRegion", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateRegionReq axlParams);
 
     /**
@@ -1734,10 +1703,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetRegionRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getRegion")
-    @WebResult(name = "getRegionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getRegion")
+    @WebResult(name = "getRegionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetRegionRes getRegion(
-        @WebParam(name = "getRegion", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getRegion", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetRegionReq axlParams);
 
     /**
@@ -1746,10 +1715,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeRegion")
-    @WebResult(name = "removeRegionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeRegion")
+    @WebResult(name = "removeRegionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeRegion(
-        @WebParam(name = "removeRegion", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeRegion", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1758,10 +1727,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListRegionRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listRegion")
-    @WebResult(name = "listRegionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listRegion")
+    @WebResult(name = "listRegionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListRegionRes listRegion(
-        @WebParam(name = "listRegion", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listRegion", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListRegionReq axlParams);
 
     /**
@@ -1770,10 +1739,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addAarGroup")
-    @WebResult(name = "addAarGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addAarGroup")
+    @WebResult(name = "addAarGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addAarGroup(
-        @WebParam(name = "addAarGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addAarGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddAarGroupReq axlParams);
 
     /**
@@ -1782,10 +1751,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateAarGroup")
-    @WebResult(name = "updateAarGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateAarGroup")
+    @WebResult(name = "updateAarGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateAarGroup(
-        @WebParam(name = "updateAarGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateAarGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateAarGroupReq axlParams);
 
     /**
@@ -1794,10 +1763,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetAarGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getAarGroup")
-    @WebResult(name = "getAarGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getAarGroup")
+    @WebResult(name = "getAarGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetAarGroupRes getAarGroup(
-        @WebParam(name = "getAarGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getAarGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetAarGroupReq axlParams);
 
     /**
@@ -1806,10 +1775,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeAarGroup")
-    @WebResult(name = "removeAarGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeAarGroup")
+    @WebResult(name = "removeAarGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeAarGroup(
-        @WebParam(name = "removeAarGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeAarGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1818,10 +1787,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListAarGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listAarGroup")
-    @WebResult(name = "listAarGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listAarGroup")
+    @WebResult(name = "listAarGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListAarGroupRes listAarGroup(
-        @WebParam(name = "listAarGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listAarGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListAarGroupReq axlParams);
 
     /**
@@ -1830,10 +1799,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addPhysicalLocation")
-    @WebResult(name = "addPhysicalLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addPhysicalLocation")
+    @WebResult(name = "addPhysicalLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addPhysicalLocation(
-        @WebParam(name = "addPhysicalLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addPhysicalLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddPhysicalLocationReq axlParams);
 
     /**
@@ -1842,10 +1811,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updatePhysicalLocation")
-    @WebResult(name = "updatePhysicalLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updatePhysicalLocation")
+    @WebResult(name = "updatePhysicalLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updatePhysicalLocation(
-        @WebParam(name = "updatePhysicalLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updatePhysicalLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdatePhysicalLocationReq axlParams);
 
     /**
@@ -1854,10 +1823,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetPhysicalLocationRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getPhysicalLocation")
-    @WebResult(name = "getPhysicalLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getPhysicalLocation")
+    @WebResult(name = "getPhysicalLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetPhysicalLocationRes getPhysicalLocation(
-        @WebParam(name = "getPhysicalLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getPhysicalLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetPhysicalLocationReq axlParams);
 
     /**
@@ -1866,10 +1835,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removePhysicalLocation")
-    @WebResult(name = "removePhysicalLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removePhysicalLocation")
+    @WebResult(name = "removePhysicalLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removePhysicalLocation(
-        @WebParam(name = "removePhysicalLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removePhysicalLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1878,10 +1847,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListPhysicalLocationRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listPhysicalLocation")
-    @WebResult(name = "listPhysicalLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listPhysicalLocation")
+    @WebResult(name = "listPhysicalLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListPhysicalLocationRes listPhysicalLocation(
-        @WebParam(name = "listPhysicalLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listPhysicalLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListPhysicalLocationReq axlParams);
 
     /**
@@ -1890,10 +1859,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addRouteGroup")
-    @WebResult(name = "addRouteGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addRouteGroup")
+    @WebResult(name = "addRouteGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addRouteGroup(
-        @WebParam(name = "addRouteGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addRouteGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddRouteGroupReq axlParams);
 
     /**
@@ -1902,10 +1871,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateRouteGroup")
-    @WebResult(name = "updateRouteGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateRouteGroup")
+    @WebResult(name = "updateRouteGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateRouteGroup(
-        @WebParam(name = "updateRouteGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateRouteGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateRouteGroupReq axlParams);
 
     /**
@@ -1914,10 +1883,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetRouteGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getRouteGroup")
-    @WebResult(name = "getRouteGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getRouteGroup")
+    @WebResult(name = "getRouteGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetRouteGroupRes getRouteGroup(
-        @WebParam(name = "getRouteGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getRouteGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetRouteGroupReq axlParams);
 
     /**
@@ -1926,10 +1895,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeRouteGroup")
-    @WebResult(name = "removeRouteGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeRouteGroup")
+    @WebResult(name = "removeRouteGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeRouteGroup(
-        @WebParam(name = "removeRouteGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeRouteGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1938,10 +1907,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListRouteGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listRouteGroup")
-    @WebResult(name = "listRouteGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listRouteGroup")
+    @WebResult(name = "listRouteGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListRouteGroupRes listRouteGroup(
-        @WebParam(name = "listRouteGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listRouteGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListRouteGroupReq axlParams);
 
     /**
@@ -1950,10 +1919,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addDevicePool")
-    @WebResult(name = "addDevicePoolResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addDevicePool")
+    @WebResult(name = "addDevicePoolResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addDevicePool(
-        @WebParam(name = "addDevicePool", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addDevicePool", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddDevicePoolReq axlParams);
 
     /**
@@ -1962,10 +1931,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateDevicePool")
-    @WebResult(name = "updateDevicePoolResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateDevicePool")
+    @WebResult(name = "updateDevicePoolResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateDevicePool(
-        @WebParam(name = "updateDevicePool", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateDevicePool", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateDevicePoolReq axlParams);
 
     /**
@@ -1974,10 +1943,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDevicePoolRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDevicePool")
-    @WebResult(name = "getDevicePoolResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDevicePool")
+    @WebResult(name = "getDevicePoolResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDevicePoolRes getDevicePool(
-        @WebParam(name = "getDevicePool", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDevicePool", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDevicePoolReq axlParams);
 
     /**
@@ -1986,10 +1955,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeDevicePool")
-    @WebResult(name = "removeDevicePoolResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeDevicePool")
+    @WebResult(name = "removeDevicePoolResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeDevicePool(
-        @WebParam(name = "removeDevicePool", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeDevicePool", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -1998,10 +1967,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDevicePoolRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDevicePool")
-    @WebResult(name = "listDevicePoolResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDevicePool")
+    @WebResult(name = "listDevicePoolResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDevicePoolRes listDevicePool(
-        @WebParam(name = "listDevicePool", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDevicePool", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDevicePoolReq axlParams);
 
     /**
@@ -2010,10 +1979,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addDeviceMobilityGroup")
-    @WebResult(name = "addDeviceMobilityGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addDeviceMobilityGroup")
+    @WebResult(name = "addDeviceMobilityGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addDeviceMobilityGroup(
-        @WebParam(name = "addDeviceMobilityGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addDeviceMobilityGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddDeviceMobilityGroupReq axlParams);
 
     /**
@@ -2022,10 +1991,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateDeviceMobilityGroup")
-    @WebResult(name = "updateDeviceMobilityGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateDeviceMobilityGroup")
+    @WebResult(name = "updateDeviceMobilityGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateDeviceMobilityGroup(
-        @WebParam(name = "updateDeviceMobilityGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateDeviceMobilityGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateDeviceMobilityGroupReq axlParams);
 
     /**
@@ -2034,10 +2003,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDeviceMobilityGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDeviceMobilityGroup")
-    @WebResult(name = "getDeviceMobilityGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDeviceMobilityGroup")
+    @WebResult(name = "getDeviceMobilityGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDeviceMobilityGroupRes getDeviceMobilityGroup(
-        @WebParam(name = "getDeviceMobilityGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDeviceMobilityGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDeviceMobilityGroupReq axlParams);
 
     /**
@@ -2046,10 +2015,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeDeviceMobilityGroup")
-    @WebResult(name = "removeDeviceMobilityGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeDeviceMobilityGroup")
+    @WebResult(name = "removeDeviceMobilityGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeDeviceMobilityGroup(
-        @WebParam(name = "removeDeviceMobilityGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeDeviceMobilityGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2058,10 +2027,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDeviceMobilityGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDeviceMobilityGroup")
-    @WebResult(name = "listDeviceMobilityGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDeviceMobilityGroup")
+    @WebResult(name = "listDeviceMobilityGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDeviceMobilityGroupRes listDeviceMobilityGroup(
-        @WebParam(name = "listDeviceMobilityGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDeviceMobilityGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDeviceMobilityGroupReq axlParams);
 
     /**
@@ -2070,10 +2039,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addLocation")
-    @WebResult(name = "addLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addLocation")
+    @WebResult(name = "addLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addLocation(
-        @WebParam(name = "addLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddLocationReq axlParams);
 
     /**
@@ -2082,10 +2051,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateLocation")
-    @WebResult(name = "updateLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateLocation")
+    @WebResult(name = "updateLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateLocation(
-        @WebParam(name = "updateLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateLocationReq axlParams);
 
     /**
@@ -2094,10 +2063,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetLocationRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getLocation")
-    @WebResult(name = "getLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getLocation")
+    @WebResult(name = "getLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetLocationRes getLocation(
-        @WebParam(name = "getLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetLocationReq axlParams);
 
     /**
@@ -2106,10 +2075,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeLocation")
-    @WebResult(name = "removeLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeLocation")
+    @WebResult(name = "removeLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeLocation(
-        @WebParam(name = "removeLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2118,10 +2087,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListLocationRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listLocation")
-    @WebResult(name = "listLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listLocation")
+    @WebResult(name = "listLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListLocationRes listLocation(
-        @WebParam(name = "listLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListLocationReq axlParams);
 
     /**
@@ -2130,10 +2099,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addSoftKeyTemplate")
-    @WebResult(name = "addSoftKeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addSoftKeyTemplate")
+    @WebResult(name = "addSoftKeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addSoftKeyTemplate(
-        @WebParam(name = "addSoftKeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addSoftKeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddSoftKeyTemplateReq axlParams);
 
     /**
@@ -2142,10 +2111,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateSoftKeyTemplate")
-    @WebResult(name = "updateSoftKeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateSoftKeyTemplate")
+    @WebResult(name = "updateSoftKeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateSoftKeyTemplate(
-        @WebParam(name = "updateSoftKeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateSoftKeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateSoftKeyTemplateReq axlParams);
 
     /**
@@ -2154,10 +2123,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetSoftKeyTemplateRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getSoftKeyTemplate")
-    @WebResult(name = "getSoftKeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getSoftKeyTemplate")
+    @WebResult(name = "getSoftKeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetSoftKeyTemplateRes getSoftKeyTemplate(
-        @WebParam(name = "getSoftKeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getSoftKeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetSoftKeyTemplateReq axlParams);
 
     /**
@@ -2166,10 +2135,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeSoftKeyTemplate")
-    @WebResult(name = "removeSoftKeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeSoftKeyTemplate")
+    @WebResult(name = "removeSoftKeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeSoftKeyTemplate(
-        @WebParam(name = "removeSoftKeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeSoftKeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2178,10 +2147,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListSoftKeyTemplateRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listSoftKeyTemplate")
-    @WebResult(name = "listSoftKeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listSoftKeyTemplate")
+    @WebResult(name = "listSoftKeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListSoftKeyTemplateRes listSoftKeyTemplate(
-        @WebParam(name = "listSoftKeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listSoftKeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListSoftKeyTemplateReq axlParams);
 
     /**
@@ -2190,10 +2159,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addTranscoder")
-    @WebResult(name = "addTranscoderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addTranscoder")
+    @WebResult(name = "addTranscoderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addTranscoder(
-        @WebParam(name = "addTranscoder", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addTranscoder", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddTranscoderReq axlParams);
 
     /**
@@ -2202,10 +2171,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateTranscoder")
-    @WebResult(name = "updateTranscoderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateTranscoder")
+    @WebResult(name = "updateTranscoderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateTranscoder(
-        @WebParam(name = "updateTranscoder", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateTranscoder", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateTranscoderReq axlParams);
 
     /**
@@ -2214,10 +2183,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetTranscoderRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getTranscoder")
-    @WebResult(name = "getTranscoderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getTranscoder")
+    @WebResult(name = "getTranscoderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetTranscoderRes getTranscoder(
-        @WebParam(name = "getTranscoder", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getTranscoder", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetTranscoderReq axlParams);
 
     /**
@@ -2226,10 +2195,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeTranscoder")
-    @WebResult(name = "removeTranscoderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeTranscoder")
+    @WebResult(name = "removeTranscoderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeTranscoder(
-        @WebParam(name = "removeTranscoder", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeTranscoder", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2238,10 +2207,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListTranscoderRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listTranscoder")
-    @WebResult(name = "listTranscoderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listTranscoder")
+    @WebResult(name = "listTranscoderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListTranscoderRes listTranscoder(
-        @WebParam(name = "listTranscoder", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listTranscoder", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListTranscoderReq axlParams);
 
     /**
@@ -2250,10 +2219,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCommonDeviceConfig")
-    @WebResult(name = "addCommonDeviceConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCommonDeviceConfig")
+    @WebResult(name = "addCommonDeviceConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCommonDeviceConfig(
-        @WebParam(name = "addCommonDeviceConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCommonDeviceConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCommonDeviceConfigReq axlParams);
 
     /**
@@ -2262,10 +2231,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCommonDeviceConfig")
-    @WebResult(name = "updateCommonDeviceConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCommonDeviceConfig")
+    @WebResult(name = "updateCommonDeviceConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCommonDeviceConfig(
-        @WebParam(name = "updateCommonDeviceConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCommonDeviceConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCommonDeviceConfigReq axlParams);
 
     /**
@@ -2274,10 +2243,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCommonDeviceConfigRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCommonDeviceConfig")
-    @WebResult(name = "getCommonDeviceConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCommonDeviceConfig")
+    @WebResult(name = "getCommonDeviceConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCommonDeviceConfigRes getCommonDeviceConfig(
-        @WebParam(name = "getCommonDeviceConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCommonDeviceConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCommonDeviceConfigReq axlParams);
 
     /**
@@ -2286,10 +2255,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCommonDeviceConfig")
-    @WebResult(name = "removeCommonDeviceConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCommonDeviceConfig")
+    @WebResult(name = "removeCommonDeviceConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCommonDeviceConfig(
-        @WebParam(name = "removeCommonDeviceConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCommonDeviceConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2298,10 +2267,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCommonDeviceConfigRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCommonDeviceConfig")
-    @WebResult(name = "listCommonDeviceConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCommonDeviceConfig")
+    @WebResult(name = "listCommonDeviceConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCommonDeviceConfigRes listCommonDeviceConfig(
-        @WebParam(name = "listCommonDeviceConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCommonDeviceConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCommonDeviceConfigReq axlParams);
 
     /**
@@ -2310,10 +2279,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addResourcePriorityNamespace")
-    @WebResult(name = "addResourcePriorityNamespaceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addResourcePriorityNamespace")
+    @WebResult(name = "addResourcePriorityNamespaceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addResourcePriorityNamespace(
-        @WebParam(name = "addResourcePriorityNamespace", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addResourcePriorityNamespace", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddResourcePriorityNamespaceReq axlParams);
 
     /**
@@ -2322,10 +2291,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateResourcePriorityNamespace")
-    @WebResult(name = "updateResourcePriorityNamespaceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateResourcePriorityNamespace")
+    @WebResult(name = "updateResourcePriorityNamespaceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateResourcePriorityNamespace(
-        @WebParam(name = "updateResourcePriorityNamespace", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateResourcePriorityNamespace", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateResourcePriorityNamespaceReq axlParams);
 
     /**
@@ -2334,10 +2303,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetResourcePriorityNamespaceRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getResourcePriorityNamespace")
-    @WebResult(name = "getResourcePriorityNamespaceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getResourcePriorityNamespace")
+    @WebResult(name = "getResourcePriorityNamespaceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetResourcePriorityNamespaceRes getResourcePriorityNamespace(
-        @WebParam(name = "getResourcePriorityNamespace", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getResourcePriorityNamespace", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetResourcePriorityNamespaceReq axlParams);
 
     /**
@@ -2346,10 +2315,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeResourcePriorityNamespace")
-    @WebResult(name = "removeResourcePriorityNamespaceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeResourcePriorityNamespace")
+    @WebResult(name = "removeResourcePriorityNamespaceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeResourcePriorityNamespace(
-        @WebParam(name = "removeResourcePriorityNamespace", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeResourcePriorityNamespace", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveResourcePriorityNamespaceReq axlParams);
 
     /**
@@ -2358,10 +2327,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListResourcePriorityNamespaceRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listResourcePriorityNamespace")
-    @WebResult(name = "listResourcePriorityNamespaceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listResourcePriorityNamespace")
+    @WebResult(name = "listResourcePriorityNamespaceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListResourcePriorityNamespaceRes listResourcePriorityNamespace(
-        @WebParam(name = "listResourcePriorityNamespace", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listResourcePriorityNamespace", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListResourcePriorityNamespaceReq axlParams);
 
     /**
@@ -2370,10 +2339,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addResourcePriorityNamespaceList")
-    @WebResult(name = "addResourcePriorityNamespaceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addResourcePriorityNamespaceList")
+    @WebResult(name = "addResourcePriorityNamespaceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addResourcePriorityNamespaceList(
-        @WebParam(name = "addResourcePriorityNamespaceList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addResourcePriorityNamespaceList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddResourcePriorityNamespaceListReq axlParams);
 
     /**
@@ -2382,10 +2351,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateResourcePriorityNamespaceList")
-    @WebResult(name = "updateResourcePriorityNamespaceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateResourcePriorityNamespaceList")
+    @WebResult(name = "updateResourcePriorityNamespaceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateResourcePriorityNamespaceList(
-        @WebParam(name = "updateResourcePriorityNamespaceList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateResourcePriorityNamespaceList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateResourcePriorityNamespaceListReq axlParams);
 
     /**
@@ -2394,10 +2363,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetResourcePriorityNamespaceListRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getResourcePriorityNamespaceList")
-    @WebResult(name = "getResourcePriorityNamespaceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getResourcePriorityNamespaceList")
+    @WebResult(name = "getResourcePriorityNamespaceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetResourcePriorityNamespaceListRes getResourcePriorityNamespaceList(
-        @WebParam(name = "getResourcePriorityNamespaceList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getResourcePriorityNamespaceList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetResourcePriorityNamespaceListReq axlParams);
 
     /**
@@ -2406,10 +2375,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeResourcePriorityNamespaceList")
-    @WebResult(name = "removeResourcePriorityNamespaceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeResourcePriorityNamespaceList")
+    @WebResult(name = "removeResourcePriorityNamespaceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeResourcePriorityNamespaceList(
-        @WebParam(name = "removeResourcePriorityNamespaceList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeResourcePriorityNamespaceList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2418,10 +2387,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListResourcePriorityNamespaceListRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listResourcePriorityNamespaceList")
-    @WebResult(name = "listResourcePriorityNamespaceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listResourcePriorityNamespaceList")
+    @WebResult(name = "listResourcePriorityNamespaceListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListResourcePriorityNamespaceListRes listResourcePriorityNamespaceList(
-        @WebParam(name = "listResourcePriorityNamespaceList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listResourcePriorityNamespaceList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListResourcePriorityNamespaceListReq axlParams);
 
     /**
@@ -2430,10 +2399,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addDeviceMobility")
-    @WebResult(name = "addDeviceMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addDeviceMobility")
+    @WebResult(name = "addDeviceMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addDeviceMobility(
-        @WebParam(name = "addDeviceMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addDeviceMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddDeviceMobilityReq axlParams);
 
     /**
@@ -2442,10 +2411,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateDeviceMobility")
-    @WebResult(name = "updateDeviceMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateDeviceMobility")
+    @WebResult(name = "updateDeviceMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateDeviceMobility(
-        @WebParam(name = "updateDeviceMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateDeviceMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateDeviceMobilityReq axlParams);
 
     /**
@@ -2454,10 +2423,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDeviceMobilityRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDeviceMobility")
-    @WebResult(name = "getDeviceMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDeviceMobility")
+    @WebResult(name = "getDeviceMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDeviceMobilityRes getDeviceMobility(
-        @WebParam(name = "getDeviceMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDeviceMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDeviceMobilityReq axlParams);
 
     /**
@@ -2466,10 +2435,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeDeviceMobility")
-    @WebResult(name = "removeDeviceMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeDeviceMobility")
+    @WebResult(name = "removeDeviceMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeDeviceMobility(
-        @WebParam(name = "removeDeviceMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeDeviceMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2478,10 +2447,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDeviceMobilityRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDeviceMobility")
-    @WebResult(name = "listDeviceMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDeviceMobility")
+    @WebResult(name = "listDeviceMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDeviceMobilityRes listDeviceMobility(
-        @WebParam(name = "listDeviceMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDeviceMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDeviceMobilityReq axlParams);
 
     /**
@@ -2490,10 +2459,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCmcInfo")
-    @WebResult(name = "addCmcInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCmcInfo")
+    @WebResult(name = "addCmcInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCmcInfo(
-        @WebParam(name = "addCmcInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCmcInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCmcInfoReq axlParams);
 
     /**
@@ -2502,10 +2471,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCmcInfo")
-    @WebResult(name = "updateCmcInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCmcInfo")
+    @WebResult(name = "updateCmcInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCmcInfo(
-        @WebParam(name = "updateCmcInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCmcInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCmcInfoReq axlParams);
 
     /**
@@ -2514,10 +2483,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCmcInfoRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCmcInfo")
-    @WebResult(name = "getCmcInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCmcInfo")
+    @WebResult(name = "getCmcInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCmcInfoRes getCmcInfo(
-        @WebParam(name = "getCmcInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCmcInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCmcInfoReq axlParams);
 
     /**
@@ -2526,10 +2495,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCmcInfo")
-    @WebResult(name = "removeCmcInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCmcInfo")
+    @WebResult(name = "removeCmcInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCmcInfo(
-        @WebParam(name = "removeCmcInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCmcInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveCmcInfoReq axlParams);
 
     /**
@@ -2538,10 +2507,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCmcInfoRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCmcInfo")
-    @WebResult(name = "listCmcInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCmcInfo")
+    @WebResult(name = "listCmcInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCmcInfoRes listCmcInfo(
-        @WebParam(name = "listCmcInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCmcInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCmcInfoReq axlParams);
 
     /**
@@ -2550,10 +2519,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCredentialPolicy")
-    @WebResult(name = "addCredentialPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCredentialPolicy")
+    @WebResult(name = "addCredentialPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCredentialPolicy(
-        @WebParam(name = "addCredentialPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCredentialPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCredentialPolicyReq axlParams);
 
     /**
@@ -2562,10 +2531,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCredentialPolicy")
-    @WebResult(name = "updateCredentialPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCredentialPolicy")
+    @WebResult(name = "updateCredentialPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCredentialPolicy(
-        @WebParam(name = "updateCredentialPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCredentialPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCredentialPolicyReq axlParams);
 
     /**
@@ -2574,10 +2543,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCredentialPolicyRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCredentialPolicy")
-    @WebResult(name = "getCredentialPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCredentialPolicy")
+    @WebResult(name = "getCredentialPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCredentialPolicyRes getCredentialPolicy(
-        @WebParam(name = "getCredentialPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCredentialPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCredentialPolicyReq axlParams);
 
     /**
@@ -2586,10 +2555,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCredentialPolicy")
-    @WebResult(name = "removeCredentialPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCredentialPolicy")
+    @WebResult(name = "removeCredentialPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCredentialPolicy(
-        @WebParam(name = "removeCredentialPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCredentialPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2598,10 +2567,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCredentialPolicyRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCredentialPolicy")
-    @WebResult(name = "listCredentialPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCredentialPolicy")
+    @WebResult(name = "listCredentialPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCredentialPolicyRes listCredentialPolicy(
-        @WebParam(name = "listCredentialPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCredentialPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCredentialPolicyReq axlParams);
 
     /**
@@ -2610,10 +2579,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addFacInfo")
-    @WebResult(name = "addFacInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addFacInfo")
+    @WebResult(name = "addFacInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addFacInfo(
-        @WebParam(name = "addFacInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addFacInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddFacInfoReq axlParams);
 
     /**
@@ -2622,10 +2591,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateFacInfo")
-    @WebResult(name = "updateFacInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateFacInfo")
+    @WebResult(name = "updateFacInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateFacInfo(
-        @WebParam(name = "updateFacInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateFacInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateFacInfoReq axlParams);
 
     /**
@@ -2634,10 +2603,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetFacInfoRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getFacInfo")
-    @WebResult(name = "getFacInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getFacInfo")
+    @WebResult(name = "getFacInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetFacInfoRes getFacInfo(
-        @WebParam(name = "getFacInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getFacInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetFacInfoReq axlParams);
 
     /**
@@ -2646,10 +2615,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeFacInfo")
-    @WebResult(name = "removeFacInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeFacInfo")
+    @WebResult(name = "removeFacInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeFacInfo(
-        @WebParam(name = "removeFacInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeFacInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2658,10 +2627,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListFacInfoRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listFacInfo")
-    @WebResult(name = "listFacInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listFacInfo")
+    @WebResult(name = "listFacInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListFacInfoRes listFacInfo(
-        @WebParam(name = "listFacInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listFacInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListFacInfoReq axlParams);
 
     /**
@@ -2670,10 +2639,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addHuntList")
-    @WebResult(name = "addHuntListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addHuntList")
+    @WebResult(name = "addHuntListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addHuntList(
-        @WebParam(name = "addHuntList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addHuntList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddHuntListReq axlParams);
 
     /**
@@ -2682,10 +2651,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateHuntList")
-    @WebResult(name = "updateHuntListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateHuntList")
+    @WebResult(name = "updateHuntListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateHuntList(
-        @WebParam(name = "updateHuntList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateHuntList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateHuntListReq axlParams);
 
     /**
@@ -2694,10 +2663,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetHuntListRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getHuntList")
-    @WebResult(name = "getHuntListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getHuntList")
+    @WebResult(name = "getHuntListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetHuntListRes getHuntList(
-        @WebParam(name = "getHuntList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getHuntList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetHuntListReq axlParams);
 
     /**
@@ -2706,10 +2675,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeHuntList")
-    @WebResult(name = "removeHuntListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeHuntList")
+    @WebResult(name = "removeHuntListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeHuntList(
-        @WebParam(name = "removeHuntList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeHuntList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2718,10 +2687,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListHuntListRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listHuntList")
-    @WebResult(name = "listHuntListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listHuntList")
+    @WebResult(name = "listHuntListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListHuntListRes listHuntList(
-        @WebParam(name = "listHuntList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listHuntList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListHuntListReq axlParams);
 
     /**
@@ -2730,10 +2699,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addIvrUserLocale")
-    @WebResult(name = "addIvrUserLocaleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addIvrUserLocale")
+    @WebResult(name = "addIvrUserLocaleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addIvrUserLocale(
-        @WebParam(name = "addIvrUserLocale", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addIvrUserLocale", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddIvrUserLocaleReq axlParams);
 
     /**
@@ -2742,10 +2711,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateIvrUserLocale")
-    @WebResult(name = "updateIvrUserLocaleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateIvrUserLocale")
+    @WebResult(name = "updateIvrUserLocaleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateIvrUserLocale(
-        @WebParam(name = "updateIvrUserLocale", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateIvrUserLocale", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateIvrUserLocaleReq axlParams);
 
     /**
@@ -2754,10 +2723,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetIvrUserLocaleRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getIvrUserLocale")
-    @WebResult(name = "getIvrUserLocaleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getIvrUserLocale")
+    @WebResult(name = "getIvrUserLocaleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetIvrUserLocaleRes getIvrUserLocale(
-        @WebParam(name = "getIvrUserLocale", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getIvrUserLocale", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetIvrUserLocaleReq axlParams);
 
     /**
@@ -2766,10 +2735,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeIvrUserLocale")
-    @WebResult(name = "removeIvrUserLocaleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeIvrUserLocale")
+    @WebResult(name = "removeIvrUserLocaleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeIvrUserLocale(
-        @WebParam(name = "removeIvrUserLocale", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeIvrUserLocale", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveIvrUserLocaleReq axlParams);
 
     /**
@@ -2778,10 +2747,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListIvrUserLocaleRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listIvrUserLocale")
-    @WebResult(name = "listIvrUserLocaleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listIvrUserLocale")
+    @WebResult(name = "listIvrUserLocaleResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListIvrUserLocaleRes listIvrUserLocale(
-        @WebParam(name = "listIvrUserLocale", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listIvrUserLocale", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListIvrUserLocaleReq axlParams);
 
     /**
@@ -2790,10 +2759,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addLineGroup")
-    @WebResult(name = "addLineGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addLineGroup")
+    @WebResult(name = "addLineGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addLineGroup(
-        @WebParam(name = "addLineGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addLineGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddLineGroupReq axlParams);
 
     /**
@@ -2802,10 +2771,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateLineGroup")
-    @WebResult(name = "updateLineGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateLineGroup")
+    @WebResult(name = "updateLineGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateLineGroup(
-        @WebParam(name = "updateLineGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateLineGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateLineGroupReq axlParams);
 
     /**
@@ -2814,10 +2783,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetLineGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getLineGroup")
-    @WebResult(name = "getLineGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getLineGroup")
+    @WebResult(name = "getLineGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetLineGroupRes getLineGroup(
-        @WebParam(name = "getLineGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getLineGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetLineGroupReq axlParams);
 
     /**
@@ -2826,10 +2795,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeLineGroup")
-    @WebResult(name = "removeLineGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeLineGroup")
+    @WebResult(name = "removeLineGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeLineGroup(
-        @WebParam(name = "removeLineGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeLineGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2838,10 +2807,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListLineGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listLineGroup")
-    @WebResult(name = "listLineGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listLineGroup")
+    @WebResult(name = "listLineGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListLineGroupRes listLineGroup(
-        @WebParam(name = "listLineGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listLineGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListLineGroupReq axlParams);
 
     /**
@@ -2850,10 +2819,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addRecordingProfile")
-    @WebResult(name = "addRecordingProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addRecordingProfile")
+    @WebResult(name = "addRecordingProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addRecordingProfile(
-        @WebParam(name = "addRecordingProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addRecordingProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddRecordingProfileReq axlParams);
 
     /**
@@ -2862,10 +2831,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateRecordingProfile")
-    @WebResult(name = "updateRecordingProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateRecordingProfile")
+    @WebResult(name = "updateRecordingProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateRecordingProfile(
-        @WebParam(name = "updateRecordingProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateRecordingProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateRecordingProfileReq axlParams);
 
     /**
@@ -2874,10 +2843,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetRecordingProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getRecordingProfile")
-    @WebResult(name = "getRecordingProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getRecordingProfile")
+    @WebResult(name = "getRecordingProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetRecordingProfileRes getRecordingProfile(
-        @WebParam(name = "getRecordingProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getRecordingProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetRecordingProfileReq axlParams);
 
     /**
@@ -2886,10 +2855,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeRecordingProfile")
-    @WebResult(name = "removeRecordingProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeRecordingProfile")
+    @WebResult(name = "removeRecordingProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeRecordingProfile(
-        @WebParam(name = "removeRecordingProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeRecordingProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2898,10 +2867,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListRecordingProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listRecordingProfile")
-    @WebResult(name = "listRecordingProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listRecordingProfile")
+    @WebResult(name = "listRecordingProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListRecordingProfileRes listRecordingProfile(
-        @WebParam(name = "listRecordingProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listRecordingProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListRecordingProfileReq axlParams);
 
     /**
@@ -2910,10 +2879,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addRouteFilter")
-    @WebResult(name = "addRouteFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addRouteFilter")
+    @WebResult(name = "addRouteFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addRouteFilter(
-        @WebParam(name = "addRouteFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addRouteFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddRouteFilterReq axlParams);
 
     /**
@@ -2922,10 +2891,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateRouteFilter")
-    @WebResult(name = "updateRouteFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateRouteFilter")
+    @WebResult(name = "updateRouteFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateRouteFilter(
-        @WebParam(name = "updateRouteFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateRouteFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateRouteFilterReq axlParams);
 
     /**
@@ -2934,10 +2903,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetRouteFilterRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getRouteFilter")
-    @WebResult(name = "getRouteFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getRouteFilter")
+    @WebResult(name = "getRouteFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetRouteFilterRes getRouteFilter(
-        @WebParam(name = "getRouteFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getRouteFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetRouteFilterReq axlParams);
 
     /**
@@ -2946,10 +2915,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeRouteFilter")
-    @WebResult(name = "removeRouteFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeRouteFilter")
+    @WebResult(name = "removeRouteFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeRouteFilter(
-        @WebParam(name = "removeRouteFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeRouteFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -2958,10 +2927,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListRouteFilterRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listRouteFilter")
-    @WebResult(name = "listRouteFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listRouteFilter")
+    @WebResult(name = "listRouteFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListRouteFilterRes listRouteFilter(
-        @WebParam(name = "listRouteFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listRouteFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListRouteFilterReq axlParams);
 
     /**
@@ -2970,10 +2939,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCallManagerGroup")
-    @WebResult(name = "addCallManagerGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCallManagerGroup")
+    @WebResult(name = "addCallManagerGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCallManagerGroup(
-        @WebParam(name = "addCallManagerGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCallManagerGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCallManagerGroupReq axlParams);
 
     /**
@@ -2982,10 +2951,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCallManagerGroup")
-    @WebResult(name = "updateCallManagerGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCallManagerGroup")
+    @WebResult(name = "updateCallManagerGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCallManagerGroup(
-        @WebParam(name = "updateCallManagerGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCallManagerGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCallManagerGroupReq axlParams);
 
     /**
@@ -2994,10 +2963,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCallManagerGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCallManagerGroup")
-    @WebResult(name = "getCallManagerGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCallManagerGroup")
+    @WebResult(name = "getCallManagerGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCallManagerGroupRes getCallManagerGroup(
-        @WebParam(name = "getCallManagerGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCallManagerGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCallManagerGroupReq axlParams);
 
     /**
@@ -3006,10 +2975,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCallManagerGroup")
-    @WebResult(name = "removeCallManagerGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCallManagerGroup")
+    @WebResult(name = "removeCallManagerGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCallManagerGroup(
-        @WebParam(name = "removeCallManagerGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCallManagerGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -3018,10 +2987,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCallManagerGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCallManagerGroup")
-    @WebResult(name = "listCallManagerGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCallManagerGroup")
+    @WebResult(name = "listCallManagerGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCallManagerGroupRes listCallManagerGroup(
-        @WebParam(name = "listCallManagerGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCallManagerGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCallManagerGroupReq axlParams);
 
     /**
@@ -3030,10 +2999,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addUserGroup")
-    @WebResult(name = "addUserGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addUserGroup")
+    @WebResult(name = "addUserGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addUserGroup(
-        @WebParam(name = "addUserGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addUserGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddUserGroupReq axlParams);
 
     /**
@@ -3042,10 +3011,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateUserGroup")
-    @WebResult(name = "updateUserGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateUserGroup")
+    @WebResult(name = "updateUserGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateUserGroup(
-        @WebParam(name = "updateUserGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateUserGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateUserGroupReq axlParams);
 
     /**
@@ -3054,10 +3023,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetUserGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getUserGroup")
-    @WebResult(name = "getUserGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getUserGroup")
+    @WebResult(name = "getUserGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetUserGroupRes getUserGroup(
-        @WebParam(name = "getUserGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getUserGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetUserGroupReq axlParams);
 
     /**
@@ -3066,10 +3035,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeUserGroup")
-    @WebResult(name = "removeUserGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeUserGroup")
+    @WebResult(name = "removeUserGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeUserGroup(
-        @WebParam(name = "removeUserGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeUserGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -3078,10 +3047,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListUserGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listUserGroup")
-    @WebResult(name = "listUserGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listUserGroup")
+    @WebResult(name = "listUserGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListUserGroupRes listUserGroup(
-        @WebParam(name = "listUserGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listUserGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListUserGroupReq axlParams);
 
     /**
@@ -3090,10 +3059,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDialPlanRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDialPlan")
-    @WebResult(name = "getDialPlanResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDialPlan")
+    @WebResult(name = "getDialPlanResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDialPlanRes getDialPlan(
-        @WebParam(name = "getDialPlan", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDialPlan", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDialPlanReq axlParams);
 
     /**
@@ -3102,10 +3071,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDialPlanRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDialPlan")
-    @WebResult(name = "listDialPlanResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDialPlan")
+    @WebResult(name = "listDialPlanResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDialPlanRes listDialPlan(
-        @WebParam(name = "listDialPlan", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDialPlan", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDialPlanReq axlParams);
 
     /**
@@ -3114,10 +3083,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDialPlanTagRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDialPlanTag")
-    @WebResult(name = "getDialPlanTagResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDialPlanTag")
+    @WebResult(name = "getDialPlanTagResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDialPlanTagRes getDialPlanTag(
-        @WebParam(name = "getDialPlanTag", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDialPlanTag", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDialPlanTagReq axlParams);
 
     /**
@@ -3126,10 +3095,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDialPlanTagRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDialPlanTag")
-    @WebResult(name = "listDialPlanTagResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDialPlanTag")
+    @WebResult(name = "listDialPlanTagResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDialPlanTagRes listDialPlanTag(
-        @WebParam(name = "listDialPlanTag", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDialPlanTag", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDialPlanTagReq axlParams);
 
     /**
@@ -3138,10 +3107,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDdiRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDdi")
-    @WebResult(name = "getDdiResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDdi")
+    @WebResult(name = "getDdiResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDdiRes getDdi(
-        @WebParam(name = "getDdi", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDdi", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDdiReq axlParams);
 
     /**
@@ -3150,10 +3119,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDdiRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDdi")
-    @WebResult(name = "listDdiResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDdi")
+    @WebResult(name = "listDdiResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDdiRes listDdi(
-        @WebParam(name = "listDdi", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDdi", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDdiReq axlParams);
 
     /**
@@ -3162,10 +3131,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetMobileSmartClientProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getMobileSmartClientProfile")
-    @WebResult(name = "getMobileSmartClientProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getMobileSmartClientProfile")
+    @WebResult(name = "getMobileSmartClientProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetMobileSmartClientProfileRes getMobileSmartClientProfile(
-        @WebParam(name = "getMobileSmartClientProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getMobileSmartClientProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetMobileSmartClientProfileReq axlParams);
 
     /**
@@ -3174,10 +3143,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListMobileSmartClientProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listMobileSmartClientProfile")
-    @WebResult(name = "listMobileSmartClientProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listMobileSmartClientProfile")
+    @WebResult(name = "listMobileSmartClientProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListMobileSmartClientProfileRes listMobileSmartClientProfile(
-        @WebParam(name = "listMobileSmartClientProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listMobileSmartClientProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListMobileSmartClientProfileReq axlParams);
 
     /**
@@ -3186,10 +3155,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateProcessNodeService")
-    @WebResult(name = "updateProcessNodeServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateProcessNodeService")
+    @WebResult(name = "updateProcessNodeServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateProcessNodeService(
-        @WebParam(name = "updateProcessNodeService", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateProcessNodeService", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateProcessNodeServiceReq axlParams);
 
     /**
@@ -3198,10 +3167,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetProcessNodeServiceRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getProcessNodeService")
-    @WebResult(name = "getProcessNodeServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getProcessNodeService")
+    @WebResult(name = "getProcessNodeServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetProcessNodeServiceRes getProcessNodeService(
-        @WebParam(name = "getProcessNodeService", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getProcessNodeService", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetProcessNodeServiceReq axlParams);
 
     /**
@@ -3210,10 +3179,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListProcessNodeServiceRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listProcessNodeService")
-    @WebResult(name = "listProcessNodeServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listProcessNodeService")
+    @WebResult(name = "listProcessNodeServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListProcessNodeServiceRes listProcessNodeService(
-        @WebParam(name = "listProcessNodeService", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listProcessNodeService", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListProcessNodeServiceReq axlParams);
 
     /**
@@ -3222,10 +3191,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateMohAudioSource")
-    @WebResult(name = "updateMohAudioSourceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateMohAudioSource")
+    @WebResult(name = "updateMohAudioSourceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateMohAudioSource(
-        @WebParam(name = "updateMohAudioSource", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateMohAudioSource", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateMohAudioSourceReq axlParams);
 
     /**
@@ -3234,10 +3203,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetMohAudioSourceRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getMohAudioSource")
-    @WebResult(name = "getMohAudioSourceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getMohAudioSource")
+    @WebResult(name = "getMohAudioSourceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetMohAudioSourceRes getMohAudioSource(
-        @WebParam(name = "getMohAudioSource", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getMohAudioSource", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetMohAudioSourceReq axlParams);
 
     /**
@@ -3246,10 +3215,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeMohAudioSource")
-    @WebResult(name = "removeMohAudioSourceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeMohAudioSource")
+    @WebResult(name = "removeMohAudioSourceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeMohAudioSource(
-        @WebParam(name = "removeMohAudioSource", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeMohAudioSource", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveMohAudioSourceReq axlParams);
 
     /**
@@ -3258,10 +3227,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListMohAudioSourceRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listMohAudioSource")
-    @WebResult(name = "listMohAudioSourceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listMohAudioSource")
+    @WebResult(name = "listMohAudioSourceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListMohAudioSourceRes listMohAudioSource(
-        @WebParam(name = "listMohAudioSource", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listMohAudioSource", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListMohAudioSourceReq axlParams);
 
     /**
@@ -3270,10 +3239,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addDhcpServer")
-    @WebResult(name = "addDhcpServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addDhcpServer")
+    @WebResult(name = "addDhcpServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addDhcpServer(
-        @WebParam(name = "addDhcpServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addDhcpServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddDhcpServerReq axlParams);
 
     /**
@@ -3282,10 +3251,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateDhcpServer")
-    @WebResult(name = "updateDhcpServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateDhcpServer")
+    @WebResult(name = "updateDhcpServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateDhcpServer(
-        @WebParam(name = "updateDhcpServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateDhcpServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateDhcpServerReq axlParams);
 
     /**
@@ -3294,10 +3263,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDhcpServerRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDhcpServer")
-    @WebResult(name = "getDhcpServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDhcpServer")
+    @WebResult(name = "getDhcpServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDhcpServerRes getDhcpServer(
-        @WebParam(name = "getDhcpServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDhcpServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDhcpServerReq axlParams);
 
     /**
@@ -3306,10 +3275,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeDhcpServer")
-    @WebResult(name = "removeDhcpServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeDhcpServer")
+    @WebResult(name = "removeDhcpServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeDhcpServer(
-        @WebParam(name = "removeDhcpServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeDhcpServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveDhcpServerReq axlParams);
 
     /**
@@ -3318,10 +3287,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDhcpServerRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDhcpServer")
-    @WebResult(name = "listDhcpServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDhcpServer")
+    @WebResult(name = "listDhcpServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDhcpServerRes listDhcpServer(
-        @WebParam(name = "listDhcpServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDhcpServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDhcpServerReq axlParams);
 
     /**
@@ -3330,10 +3299,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addDhcpSubnet")
-    @WebResult(name = "addDhcpSubnetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addDhcpSubnet")
+    @WebResult(name = "addDhcpSubnetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addDhcpSubnet(
-        @WebParam(name = "addDhcpSubnet", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addDhcpSubnet", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddDhcpSubnetReq axlParams);
 
     /**
@@ -3342,10 +3311,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateDhcpSubnet")
-    @WebResult(name = "updateDhcpSubnetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateDhcpSubnet")
+    @WebResult(name = "updateDhcpSubnetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateDhcpSubnet(
-        @WebParam(name = "updateDhcpSubnet", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateDhcpSubnet", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateDhcpSubnetReq axlParams);
 
     /**
@@ -3354,10 +3323,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDhcpSubnetRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDhcpSubnet")
-    @WebResult(name = "getDhcpSubnetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDhcpSubnet")
+    @WebResult(name = "getDhcpSubnetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDhcpSubnetRes getDhcpSubnet(
-        @WebParam(name = "getDhcpSubnet", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDhcpSubnet", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDhcpSubnetReq axlParams);
 
     /**
@@ -3366,10 +3335,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeDhcpSubnet")
-    @WebResult(name = "removeDhcpSubnetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeDhcpSubnet")
+    @WebResult(name = "removeDhcpSubnetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeDhcpSubnet(
-        @WebParam(name = "removeDhcpSubnet", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeDhcpSubnet", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveDhcpSubnetReq axlParams);
 
     /**
@@ -3378,10 +3347,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDhcpSubnetRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDhcpSubnet")
-    @WebResult(name = "listDhcpSubnetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDhcpSubnet")
+    @WebResult(name = "listDhcpSubnetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDhcpSubnetRes listDhcpSubnet(
-        @WebParam(name = "listDhcpSubnet", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDhcpSubnet", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDhcpSubnetReq axlParams);
 
     /**
@@ -3390,10 +3359,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCallPark")
-    @WebResult(name = "addCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCallPark")
+    @WebResult(name = "addCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCallPark(
-        @WebParam(name = "addCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCallParkReq axlParams);
 
     /**
@@ -3402,10 +3371,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCallPark")
-    @WebResult(name = "updateCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCallPark")
+    @WebResult(name = "updateCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCallPark(
-        @WebParam(name = "updateCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCallParkReq axlParams);
 
     /**
@@ -3414,10 +3383,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCallParkRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCallPark")
-    @WebResult(name = "getCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCallPark")
+    @WebResult(name = "getCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCallParkRes getCallPark(
-        @WebParam(name = "getCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCallParkReq axlParams);
 
     /**
@@ -3426,10 +3395,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCallPark")
-    @WebResult(name = "removeCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCallPark")
+    @WebResult(name = "removeCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCallPark(
-        @WebParam(name = "removeCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveCallParkReq axlParams);
 
     /**
@@ -3438,10 +3407,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCallParkRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCallPark")
-    @WebResult(name = "listCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCallPark")
+    @WebResult(name = "listCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCallParkRes listCallPark(
-        @WebParam(name = "listCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCallParkReq axlParams);
 
     /**
@@ -3450,10 +3419,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addDirectedCallPark")
-    @WebResult(name = "addDirectedCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addDirectedCallPark")
+    @WebResult(name = "addDirectedCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addDirectedCallPark(
-        @WebParam(name = "addDirectedCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addDirectedCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddDirectedCallParkReq axlParams);
 
     /**
@@ -3462,10 +3431,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateDirectedCallPark")
-    @WebResult(name = "updateDirectedCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateDirectedCallPark")
+    @WebResult(name = "updateDirectedCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateDirectedCallPark(
-        @WebParam(name = "updateDirectedCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateDirectedCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateDirectedCallParkReq axlParams);
 
     /**
@@ -3474,10 +3443,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDirectedCallParkRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDirectedCallPark")
-    @WebResult(name = "getDirectedCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDirectedCallPark")
+    @WebResult(name = "getDirectedCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDirectedCallParkRes getDirectedCallPark(
-        @WebParam(name = "getDirectedCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDirectedCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDirectedCallParkReq axlParams);
 
     /**
@@ -3486,10 +3455,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeDirectedCallPark")
-    @WebResult(name = "removeDirectedCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeDirectedCallPark")
+    @WebResult(name = "removeDirectedCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeDirectedCallPark(
-        @WebParam(name = "removeDirectedCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeDirectedCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveDirectedCallParkReq axlParams);
 
     /**
@@ -3498,10 +3467,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDirectedCallParkRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDirectedCallPark")
-    @WebResult(name = "listDirectedCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDirectedCallPark")
+    @WebResult(name = "listDirectedCallParkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDirectedCallParkRes listDirectedCallPark(
-        @WebParam(name = "listDirectedCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDirectedCallPark", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDirectedCallParkReq axlParams);
 
     /**
@@ -3510,10 +3479,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addMeetMe")
-    @WebResult(name = "addMeetMeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addMeetMe")
+    @WebResult(name = "addMeetMeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addMeetMe(
-        @WebParam(name = "addMeetMe", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addMeetMe", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddMeetMeReq axlParams);
 
     /**
@@ -3522,10 +3491,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateMeetMe")
-    @WebResult(name = "updateMeetMeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateMeetMe")
+    @WebResult(name = "updateMeetMeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateMeetMe(
-        @WebParam(name = "updateMeetMe", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateMeetMe", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateMeetMeReq axlParams);
 
     /**
@@ -3534,10 +3503,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetMeetMeRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getMeetMe")
-    @WebResult(name = "getMeetMeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getMeetMe")
+    @WebResult(name = "getMeetMeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetMeetMeRes getMeetMe(
-        @WebParam(name = "getMeetMe", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getMeetMe", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetMeetMeReq axlParams);
 
     /**
@@ -3546,10 +3515,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeMeetMe")
-    @WebResult(name = "removeMeetMeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeMeetMe")
+    @WebResult(name = "removeMeetMeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeMeetMe(
-        @WebParam(name = "removeMeetMe", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeMeetMe", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveMeetMeReq axlParams);
 
     /**
@@ -3558,10 +3527,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListMeetMeRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listMeetMe")
-    @WebResult(name = "listMeetMeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listMeetMe")
+    @WebResult(name = "listMeetMeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListMeetMeRes listMeetMe(
-        @WebParam(name = "listMeetMe", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listMeetMe", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListMeetMeReq axlParams);
 
     /**
@@ -3570,10 +3539,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addMobileVoiceAccess")
-    @WebResult(name = "addMobileVoiceAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addMobileVoiceAccess")
+    @WebResult(name = "addMobileVoiceAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addMobileVoiceAccess(
-        @WebParam(name = "addMobileVoiceAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addMobileVoiceAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddMobileVoiceAccessReq axlParams);
 
     /**
@@ -3582,10 +3551,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateMobileVoiceAccess")
-    @WebResult(name = "updateMobileVoiceAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateMobileVoiceAccess")
+    @WebResult(name = "updateMobileVoiceAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateMobileVoiceAccess(
-        @WebParam(name = "updateMobileVoiceAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateMobileVoiceAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateMobileVoiceAccessReq axlParams);
 
     /**
@@ -3594,10 +3563,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetMobileVoiceAccessRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getMobileVoiceAccess")
-    @WebResult(name = "getMobileVoiceAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getMobileVoiceAccess")
+    @WebResult(name = "getMobileVoiceAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetMobileVoiceAccessRes getMobileVoiceAccess(
-        @WebParam(name = "getMobileVoiceAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getMobileVoiceAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetMobileVoiceAccessReq axlParams);
 
     /**
@@ -3606,10 +3575,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeMobileVoiceAccess")
-    @WebResult(name = "removeMobileVoiceAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeMobileVoiceAccess")
+    @WebResult(name = "removeMobileVoiceAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeMobileVoiceAccess(
-        @WebParam(name = "removeMobileVoiceAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeMobileVoiceAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveMobileVoiceAccessReq axlParams);
 
     /**
@@ -3618,10 +3587,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addRouteList")
-    @WebResult(name = "addRouteListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addRouteList")
+    @WebResult(name = "addRouteListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addRouteList(
-        @WebParam(name = "addRouteList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addRouteList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddRouteListReq axlParams);
 
     /**
@@ -3630,10 +3599,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateRouteList")
-    @WebResult(name = "updateRouteListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateRouteList")
+    @WebResult(name = "updateRouteListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateRouteList(
-        @WebParam(name = "updateRouteList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateRouteList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateRouteListReq axlParams);
 
     /**
@@ -3642,10 +3611,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetRouteListRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getRouteList")
-    @WebResult(name = "getRouteListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getRouteList")
+    @WebResult(name = "getRouteListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetRouteListRes getRouteList(
-        @WebParam(name = "getRouteList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getRouteList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetRouteListReq axlParams);
 
     /**
@@ -3654,10 +3623,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeRouteList")
-    @WebResult(name = "removeRouteListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeRouteList")
+    @WebResult(name = "removeRouteListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeRouteList(
-        @WebParam(name = "removeRouteList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeRouteList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -3666,10 +3635,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListRouteListRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listRouteList")
-    @WebResult(name = "listRouteListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listRouteList")
+    @WebResult(name = "listRouteListResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListRouteListRes listRouteList(
-        @WebParam(name = "listRouteList", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listRouteList", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListRouteListReq axlParams);
 
     /**
@@ -3678,10 +3647,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addUser")
-    @WebResult(name = "addUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addUser")
+    @WebResult(name = "addUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addUser(
-        @WebParam(name = "addUser", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addUser", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddUserReq axlParams);
 
     /**
@@ -3690,10 +3659,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateUser")
-    @WebResult(name = "updateUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateUser")
+    @WebResult(name = "updateUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateUser(
-        @WebParam(name = "updateUser", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateUser", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateUserReq axlParams);
 
     /**
@@ -3702,10 +3671,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetUserRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getUser")
-    @WebResult(name = "getUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getUser")
+    @WebResult(name = "getUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetUserRes getUser(
-        @WebParam(name = "getUser", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getUser", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetUserReq axlParams);
 
     /**
@@ -3714,10 +3683,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeUser")
-    @WebResult(name = "removeUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeUser")
+    @WebResult(name = "removeUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeUser(
-        @WebParam(name = "removeUser", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeUser", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveUserReq axlParams);
 
     /**
@@ -3726,10 +3695,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListUserRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listUser")
-    @WebResult(name = "listUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listUser")
+    @WebResult(name = "listUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListUserRes listUser(
-        @WebParam(name = "listUser", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listUser", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListUserReq axlParams);
 
     /**
@@ -3738,10 +3707,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateLicenseCapabilities")
-    @WebResult(name = "updateLicenseCapabilitiesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateLicenseCapabilities")
+    @WebResult(name = "updateLicenseCapabilitiesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateLicenseCapabilities(
-        @WebParam(name = "updateLicenseCapabilities", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateLicenseCapabilities", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateLicenseCapabilitiesReq axlParams);
 
     /**
@@ -3750,10 +3719,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetLicenseCapabilitiesRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getLicenseCapabilities")
-    @WebResult(name = "getLicenseCapabilitiesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getLicenseCapabilities")
+    @WebResult(name = "getLicenseCapabilitiesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetLicenseCapabilitiesRes getLicenseCapabilities(
-        @WebParam(name = "getLicenseCapabilities", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getLicenseCapabilities", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetLicenseCapabilitiesReq axlParams);
 
     /**
@@ -3762,10 +3731,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListLicenseCapabilitiesRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listLicenseCapabilities")
-    @WebResult(name = "listLicenseCapabilitiesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listLicenseCapabilities")
+    @WebResult(name = "listLicenseCapabilitiesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListLicenseCapabilitiesRes listLicenseCapabilities(
-        @WebParam(name = "listLicenseCapabilities", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listLicenseCapabilities", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListLicenseCapabilitiesReq axlParams);
 
     /**
@@ -3774,10 +3743,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addAppUser")
-    @WebResult(name = "addAppUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addAppUser")
+    @WebResult(name = "addAppUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addAppUser(
-        @WebParam(name = "addAppUser", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addAppUser", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddAppUserReq axlParams);
 
     /**
@@ -3786,10 +3755,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateAppUser")
-    @WebResult(name = "updateAppUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateAppUser")
+    @WebResult(name = "updateAppUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateAppUser(
-        @WebParam(name = "updateAppUser", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateAppUser", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateAppUserReq axlParams);
 
     /**
@@ -3798,10 +3767,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetAppUserRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getAppUser")
-    @WebResult(name = "getAppUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getAppUser")
+    @WebResult(name = "getAppUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetAppUserRes getAppUser(
-        @WebParam(name = "getAppUser", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getAppUser", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetAppUserReq axlParams);
 
     /**
@@ -3810,10 +3779,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeAppUser")
-    @WebResult(name = "removeAppUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeAppUser")
+    @WebResult(name = "removeAppUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeAppUser(
-        @WebParam(name = "removeAppUser", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeAppUser", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveAppUserReq axlParams);
 
     /**
@@ -3822,10 +3791,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListAppUserRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listAppUser")
-    @WebResult(name = "listAppUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listAppUser")
+    @WebResult(name = "listAppUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListAppUserRes listAppUser(
-        @WebParam(name = "listAppUser", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listAppUser", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListAppUserReq axlParams);
 
     /**
@@ -3834,10 +3803,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addSipRealm")
-    @WebResult(name = "addSipRealmResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addSipRealm")
+    @WebResult(name = "addSipRealmResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addSipRealm(
-        @WebParam(name = "addSipRealm", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addSipRealm", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddSipRealmReq axlParams);
 
     /**
@@ -3846,10 +3815,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateSipRealm")
-    @WebResult(name = "updateSipRealmResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateSipRealm")
+    @WebResult(name = "updateSipRealmResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateSipRealm(
-        @WebParam(name = "updateSipRealm", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateSipRealm", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateSipRealmReq axlParams);
 
     /**
@@ -3858,10 +3827,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetSipRealmRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getSipRealm")
-    @WebResult(name = "getSipRealmResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getSipRealm")
+    @WebResult(name = "getSipRealmResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetSipRealmRes getSipRealm(
-        @WebParam(name = "getSipRealm", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getSipRealm", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetSipRealmReq axlParams);
 
     /**
@@ -3870,10 +3839,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeSipRealm")
-    @WebResult(name = "removeSipRealmResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeSipRealm")
+    @WebResult(name = "removeSipRealmResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeSipRealm(
-        @WebParam(name = "removeSipRealm", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeSipRealm", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveSipRealmReq axlParams);
 
     /**
@@ -3882,10 +3851,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListSipRealmRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listSipRealm")
-    @WebResult(name = "listSipRealmResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listSipRealm")
+    @WebResult(name = "listSipRealmResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListSipRealmRes listSipRealm(
-        @WebParam(name = "listSipRealm", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listSipRealm", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListSipRealmReq axlParams);
 
     /**
@@ -3894,10 +3863,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addPhoneNtp")
-    @WebResult(name = "addPhoneNtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addPhoneNtp")
+    @WebResult(name = "addPhoneNtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addPhoneNtp(
-        @WebParam(name = "addPhoneNtp", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addPhoneNtp", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddPhoneNtpReq axlParams);
 
     /**
@@ -3906,10 +3875,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updatePhoneNtp")
-    @WebResult(name = "updatePhoneNtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updatePhoneNtp")
+    @WebResult(name = "updatePhoneNtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updatePhoneNtp(
-        @WebParam(name = "updatePhoneNtp", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updatePhoneNtp", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdatePhoneNtpReq axlParams);
 
     /**
@@ -3918,10 +3887,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetPhoneNtpRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getPhoneNtp")
-    @WebResult(name = "getPhoneNtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getPhoneNtp")
+    @WebResult(name = "getPhoneNtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetPhoneNtpRes getPhoneNtp(
-        @WebParam(name = "getPhoneNtp", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getPhoneNtp", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetPhoneNtpReq axlParams);
 
     /**
@@ -3930,10 +3899,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removePhoneNtp")
-    @WebResult(name = "removePhoneNtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removePhoneNtp")
+    @WebResult(name = "removePhoneNtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removePhoneNtp(
-        @WebParam(name = "removePhoneNtp", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removePhoneNtp", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemovePhoneNtpReq axlParams);
 
     /**
@@ -3942,10 +3911,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListPhoneNtpRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listPhoneNtp")
-    @WebResult(name = "listPhoneNtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listPhoneNtp")
+    @WebResult(name = "listPhoneNtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListPhoneNtpRes listPhoneNtp(
-        @WebParam(name = "listPhoneNtp", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listPhoneNtp", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListPhoneNtpReq axlParams);
 
     /**
@@ -3954,10 +3923,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addDateTimeGroup")
-    @WebResult(name = "addDateTimeGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addDateTimeGroup")
+    @WebResult(name = "addDateTimeGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addDateTimeGroup(
-        @WebParam(name = "addDateTimeGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addDateTimeGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddDateTimeGroupReq axlParams);
 
     /**
@@ -3966,10 +3935,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateDateTimeGroup")
-    @WebResult(name = "updateDateTimeGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateDateTimeGroup")
+    @WebResult(name = "updateDateTimeGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateDateTimeGroup(
-        @WebParam(name = "updateDateTimeGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateDateTimeGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateDateTimeGroupReq axlParams);
 
     /**
@@ -3978,10 +3947,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDateTimeGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDateTimeGroup")
-    @WebResult(name = "getDateTimeGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDateTimeGroup")
+    @WebResult(name = "getDateTimeGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDateTimeGroupRes getDateTimeGroup(
-        @WebParam(name = "getDateTimeGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDateTimeGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDateTimeGroupReq axlParams);
 
     /**
@@ -3990,10 +3959,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeDateTimeGroup")
-    @WebResult(name = "removeDateTimeGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeDateTimeGroup")
+    @WebResult(name = "removeDateTimeGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeDateTimeGroup(
-        @WebParam(name = "removeDateTimeGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeDateTimeGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -4002,10 +3971,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDateTimeGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDateTimeGroup")
-    @WebResult(name = "listDateTimeGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDateTimeGroup")
+    @WebResult(name = "listDateTimeGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDateTimeGroupRes listDateTimeGroup(
-        @WebParam(name = "listDateTimeGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDateTimeGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDateTimeGroupReq axlParams);
 
     /**
@@ -4014,10 +3983,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addPresenceGroup")
-    @WebResult(name = "addPresenceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addPresenceGroup")
+    @WebResult(name = "addPresenceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addPresenceGroup(
-        @WebParam(name = "addPresenceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addPresenceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddPresenceGroupReq axlParams);
 
     /**
@@ -4026,10 +3995,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updatePresenceGroup")
-    @WebResult(name = "updatePresenceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updatePresenceGroup")
+    @WebResult(name = "updatePresenceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updatePresenceGroup(
-        @WebParam(name = "updatePresenceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updatePresenceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdatePresenceGroupReq axlParams);
 
     /**
@@ -4038,10 +4007,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetPresenceGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getPresenceGroup")
-    @WebResult(name = "getPresenceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getPresenceGroup")
+    @WebResult(name = "getPresenceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetPresenceGroupRes getPresenceGroup(
-        @WebParam(name = "getPresenceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getPresenceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetPresenceGroupReq axlParams);
 
     /**
@@ -4050,10 +4019,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removePresenceGroup")
-    @WebResult(name = "removePresenceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removePresenceGroup")
+    @WebResult(name = "removePresenceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removePresenceGroup(
-        @WebParam(name = "removePresenceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removePresenceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -4062,10 +4031,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListPresenceGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listPresenceGroup")
-    @WebResult(name = "listPresenceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listPresenceGroup")
+    @WebResult(name = "listPresenceGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListPresenceGroupRes listPresenceGroup(
-        @WebParam(name = "listPresenceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listPresenceGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListPresenceGroupReq axlParams);
 
     /**
@@ -4074,10 +4043,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addGeoLocation")
-    @WebResult(name = "addGeoLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addGeoLocation")
+    @WebResult(name = "addGeoLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addGeoLocation(
-        @WebParam(name = "addGeoLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addGeoLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddGeoLocationReq axlParams);
 
     /**
@@ -4086,10 +4055,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateGeoLocation")
-    @WebResult(name = "updateGeoLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateGeoLocation")
+    @WebResult(name = "updateGeoLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateGeoLocation(
-        @WebParam(name = "updateGeoLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateGeoLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateGeoLocationReq axlParams);
 
     /**
@@ -4098,10 +4067,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetGeoLocationRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getGeoLocation")
-    @WebResult(name = "getGeoLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getGeoLocation")
+    @WebResult(name = "getGeoLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetGeoLocationRes getGeoLocation(
-        @WebParam(name = "getGeoLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getGeoLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetGeoLocationReq axlParams);
 
     /**
@@ -4110,10 +4079,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeGeoLocation")
-    @WebResult(name = "removeGeoLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeGeoLocation")
+    @WebResult(name = "removeGeoLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeGeoLocation(
-        @WebParam(name = "removeGeoLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeGeoLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -4122,10 +4091,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListGeoLocationRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listGeoLocation")
-    @WebResult(name = "listGeoLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listGeoLocation")
+    @WebResult(name = "listGeoLocationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListGeoLocationRes listGeoLocation(
-        @WebParam(name = "listGeoLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listGeoLocation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListGeoLocationReq axlParams);
 
     /**
@@ -4134,10 +4103,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addSrst")
-    @WebResult(name = "addSrstResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addSrst")
+    @WebResult(name = "addSrstResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addSrst(
-        @WebParam(name = "addSrst", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addSrst", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddSrstReq axlParams);
 
     /**
@@ -4146,10 +4115,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateSrst")
-    @WebResult(name = "updateSrstResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateSrst")
+    @WebResult(name = "updateSrstResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateSrst(
-        @WebParam(name = "updateSrst", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateSrst", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateSrstReq axlParams);
 
     /**
@@ -4158,10 +4127,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetSrstRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getSrst")
-    @WebResult(name = "getSrstResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getSrst")
+    @WebResult(name = "getSrstResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetSrstRes getSrst(
-        @WebParam(name = "getSrst", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getSrst", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetSrstReq axlParams);
 
     /**
@@ -4170,10 +4139,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeSrst")
-    @WebResult(name = "removeSrstResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeSrst")
+    @WebResult(name = "removeSrstResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeSrst(
-        @WebParam(name = "removeSrst", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeSrst", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -4182,10 +4151,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListSrstRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listSrst")
-    @WebResult(name = "listSrstResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listSrst")
+    @WebResult(name = "listSrstResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListSrstRes listSrst(
-        @WebParam(name = "listSrst", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listSrst", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListSrstReq axlParams);
 
     /**
@@ -4194,10 +4163,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addMlppDomain")
-    @WebResult(name = "addMlppDomainResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addMlppDomain")
+    @WebResult(name = "addMlppDomainResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addMlppDomain(
-        @WebParam(name = "addMlppDomain", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addMlppDomain", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddMlppDomainReq axlParams);
 
     /**
@@ -4206,10 +4175,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateMlppDomain")
-    @WebResult(name = "updateMlppDomainResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateMlppDomain")
+    @WebResult(name = "updateMlppDomainResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateMlppDomain(
-        @WebParam(name = "updateMlppDomain", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateMlppDomain", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateMlppDomainReq axlParams);
 
     /**
@@ -4218,10 +4187,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetMlppDomainRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getMlppDomain")
-    @WebResult(name = "getMlppDomainResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getMlppDomain")
+    @WebResult(name = "getMlppDomainResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetMlppDomainRes getMlppDomain(
-        @WebParam(name = "getMlppDomain", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getMlppDomain", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetMlppDomainReq axlParams);
 
     /**
@@ -4230,10 +4199,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeMlppDomain")
-    @WebResult(name = "removeMlppDomainResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeMlppDomain")
+    @WebResult(name = "removeMlppDomainResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeMlppDomain(
-        @WebParam(name = "removeMlppDomain", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeMlppDomain", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveMlppDomainReq axlParams);
 
     /**
@@ -4242,10 +4211,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListMlppDomainRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listMlppDomain")
-    @WebResult(name = "listMlppDomainResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listMlppDomain")
+    @WebResult(name = "listMlppDomainResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListMlppDomainRes listMlppDomain(
-        @WebParam(name = "listMlppDomain", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listMlppDomain", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListMlppDomainReq axlParams);
 
     /**
@@ -4254,10 +4223,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCumaServerSecurityProfile")
-    @WebResult(name = "addCumaServerSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCumaServerSecurityProfile")
+    @WebResult(name = "addCumaServerSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCumaServerSecurityProfile(
-        @WebParam(name = "addCumaServerSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCumaServerSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCumaServerSecurityProfileReq axlParams);
 
     /**
@@ -4266,10 +4235,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCumaServerSecurityProfile")
-    @WebResult(name = "updateCumaServerSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCumaServerSecurityProfile")
+    @WebResult(name = "updateCumaServerSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCumaServerSecurityProfile(
-        @WebParam(name = "updateCumaServerSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCumaServerSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCumaServerSecurityProfileReq axlParams);
 
     /**
@@ -4278,10 +4247,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCumaServerSecurityProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCumaServerSecurityProfile")
-    @WebResult(name = "getCumaServerSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCumaServerSecurityProfile")
+    @WebResult(name = "getCumaServerSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCumaServerSecurityProfileRes getCumaServerSecurityProfile(
-        @WebParam(name = "getCumaServerSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCumaServerSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCumaServerSecurityProfileReq axlParams);
 
     /**
@@ -4290,10 +4259,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCumaServerSecurityProfile")
-    @WebResult(name = "removeCumaServerSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCumaServerSecurityProfile")
+    @WebResult(name = "removeCumaServerSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCumaServerSecurityProfile(
-        @WebParam(name = "removeCumaServerSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCumaServerSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -4302,10 +4271,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCumaServerSecurityProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCumaServerSecurityProfile")
-    @WebResult(name = "listCumaServerSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCumaServerSecurityProfile")
+    @WebResult(name = "listCumaServerSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCumaServerSecurityProfileRes listCumaServerSecurityProfile(
-        @WebParam(name = "listCumaServerSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCumaServerSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCumaServerSecurityProfileReq axlParams);
 
     /**
@@ -4314,10 +4283,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addApplicationServer")
-    @WebResult(name = "addApplicationServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addApplicationServer")
+    @WebResult(name = "addApplicationServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addApplicationServer(
-        @WebParam(name = "addApplicationServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addApplicationServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddApplicationServerReq axlParams);
 
     /**
@@ -4326,10 +4295,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateApplicationServer")
-    @WebResult(name = "updateApplicationServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateApplicationServer")
+    @WebResult(name = "updateApplicationServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateApplicationServer(
-        @WebParam(name = "updateApplicationServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateApplicationServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateApplicationServerReq axlParams);
 
     /**
@@ -4338,10 +4307,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetApplicationServerRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getApplicationServer")
-    @WebResult(name = "getApplicationServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getApplicationServer")
+    @WebResult(name = "getApplicationServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetApplicationServerRes getApplicationServer(
-        @WebParam(name = "getApplicationServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getApplicationServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetApplicationServerReq axlParams);
 
     /**
@@ -4350,10 +4319,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeApplicationServer")
-    @WebResult(name = "removeApplicationServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeApplicationServer")
+    @WebResult(name = "removeApplicationServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeApplicationServer(
-        @WebParam(name = "removeApplicationServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeApplicationServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveApplicationServerReq axlParams);
 
     /**
@@ -4362,10 +4331,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListApplicationServerRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listApplicationServer")
-    @WebResult(name = "listApplicationServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listApplicationServer")
+    @WebResult(name = "listApplicationServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListApplicationServerRes listApplicationServer(
-        @WebParam(name = "listApplicationServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listApplicationServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListApplicationServerReq axlParams);
 
     /**
@@ -4374,10 +4343,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addApplicationUserCapfProfile")
-    @WebResult(name = "addApplicationUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addApplicationUserCapfProfile")
+    @WebResult(name = "addApplicationUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addApplicationUserCapfProfile(
-        @WebParam(name = "addApplicationUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addApplicationUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddApplicationUserCapfProfileReq axlParams);
 
     /**
@@ -4386,10 +4355,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateApplicationUserCapfProfile")
-    @WebResult(name = "updateApplicationUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateApplicationUserCapfProfile")
+    @WebResult(name = "updateApplicationUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateApplicationUserCapfProfile(
-        @WebParam(name = "updateApplicationUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateApplicationUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateApplicationUserCapfProfileReq axlParams);
 
     /**
@@ -4398,10 +4367,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetApplicationUserCapfProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getApplicationUserCapfProfile")
-    @WebResult(name = "getApplicationUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getApplicationUserCapfProfile")
+    @WebResult(name = "getApplicationUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetApplicationUserCapfProfileRes getApplicationUserCapfProfile(
-        @WebParam(name = "getApplicationUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getApplicationUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetApplicationUserCapfProfileReq axlParams);
 
     /**
@@ -4410,10 +4379,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeApplicationUserCapfProfile")
-    @WebResult(name = "removeApplicationUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeApplicationUserCapfProfile")
+    @WebResult(name = "removeApplicationUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeApplicationUserCapfProfile(
-        @WebParam(name = "removeApplicationUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeApplicationUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveApplicationUserCapfProfileReq axlParams);
 
     /**
@@ -4422,10 +4391,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListApplicationUserCapfProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listApplicationUserCapfProfile")
-    @WebResult(name = "listApplicationUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listApplicationUserCapfProfile")
+    @WebResult(name = "listApplicationUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListApplicationUserCapfProfileRes listApplicationUserCapfProfile(
-        @WebParam(name = "listApplicationUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listApplicationUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListApplicationUserCapfProfileReq axlParams);
 
     /**
@@ -4434,10 +4403,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addEndUserCapfProfile")
-    @WebResult(name = "addEndUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addEndUserCapfProfile")
+    @WebResult(name = "addEndUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addEndUserCapfProfile(
-        @WebParam(name = "addEndUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addEndUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddEndUserCapfProfileReq axlParams);
 
     /**
@@ -4446,10 +4415,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateEndUserCapfProfile")
-    @WebResult(name = "updateEndUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateEndUserCapfProfile")
+    @WebResult(name = "updateEndUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateEndUserCapfProfile(
-        @WebParam(name = "updateEndUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateEndUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateEndUserCapfProfileReq axlParams);
 
     /**
@@ -4458,10 +4427,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetEndUserCapfProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getEndUserCapfProfile")
-    @WebResult(name = "getEndUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getEndUserCapfProfile")
+    @WebResult(name = "getEndUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetEndUserCapfProfileRes getEndUserCapfProfile(
-        @WebParam(name = "getEndUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getEndUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetEndUserCapfProfileReq axlParams);
 
     /**
@@ -4470,10 +4439,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeEndUserCapfProfile")
-    @WebResult(name = "removeEndUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeEndUserCapfProfile")
+    @WebResult(name = "removeEndUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeEndUserCapfProfile(
-        @WebParam(name = "removeEndUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeEndUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveEndUserCapfProfileReq axlParams);
 
     /**
@@ -4482,10 +4451,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListEndUserCapfProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listEndUserCapfProfile")
-    @WebResult(name = "listEndUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listEndUserCapfProfile")
+    @WebResult(name = "listEndUserCapfProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListEndUserCapfProfileRes listEndUserCapfProfile(
-        @WebParam(name = "listEndUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listEndUserCapfProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListEndUserCapfProfileReq axlParams);
 
     /**
@@ -4494,10 +4463,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateServiceParameter")
-    @WebResult(name = "updateServiceParameterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateServiceParameter")
+    @WebResult(name = "updateServiceParameterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateServiceParameter(
-        @WebParam(name = "updateServiceParameter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateServiceParameter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateServiceParameterReq axlParams);
 
     /**
@@ -4506,10 +4475,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetServiceParameterRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getServiceParameter")
-    @WebResult(name = "getServiceParameterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getServiceParameter")
+    @WebResult(name = "getServiceParameterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetServiceParameterRes getServiceParameter(
-        @WebParam(name = "getServiceParameter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getServiceParameter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetServiceParameterReq axlParams);
 
     /**
@@ -4518,10 +4487,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addUserPhoneAssociation")
-    @WebResult(name = "addUserPhoneAssociationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addUserPhoneAssociation")
+    @WebResult(name = "addUserPhoneAssociationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addUserPhoneAssociation(
-        @WebParam(name = "addUserPhoneAssociation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addUserPhoneAssociation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddUserPhoneAssociationReq axlParams);
 
     /**
@@ -4530,10 +4499,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addGeoLocationFilter")
-    @WebResult(name = "addGeoLocationFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addGeoLocationFilter")
+    @WebResult(name = "addGeoLocationFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addGeoLocationFilter(
-        @WebParam(name = "addGeoLocationFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addGeoLocationFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddGeoLocationFilterReq axlParams);
 
     /**
@@ -4542,10 +4511,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateGeoLocationFilter")
-    @WebResult(name = "updateGeoLocationFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateGeoLocationFilter")
+    @WebResult(name = "updateGeoLocationFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateGeoLocationFilter(
-        @WebParam(name = "updateGeoLocationFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateGeoLocationFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateGeoLocationFilterReq axlParams);
 
     /**
@@ -4554,10 +4523,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetGeoLocationFilterRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getGeoLocationFilter")
-    @WebResult(name = "getGeoLocationFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getGeoLocationFilter")
+    @WebResult(name = "getGeoLocationFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetGeoLocationFilterRes getGeoLocationFilter(
-        @WebParam(name = "getGeoLocationFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getGeoLocationFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetGeoLocationFilterReq axlParams);
 
     /**
@@ -4566,10 +4535,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeGeoLocationFilter")
-    @WebResult(name = "removeGeoLocationFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeGeoLocationFilter")
+    @WebResult(name = "removeGeoLocationFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeGeoLocationFilter(
-        @WebParam(name = "removeGeoLocationFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeGeoLocationFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -4578,10 +4547,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListGeoLocationFilterRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listGeoLocationFilter")
-    @WebResult(name = "listGeoLocationFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listGeoLocationFilter")
+    @WebResult(name = "listGeoLocationFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListGeoLocationFilterRes listGeoLocationFilter(
-        @WebParam(name = "listGeoLocationFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listGeoLocationFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListGeoLocationFilterReq axlParams);
 
     /**
@@ -4590,10 +4559,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addVoiceMailProfile")
-    @WebResult(name = "addVoiceMailProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addVoiceMailProfile")
+    @WebResult(name = "addVoiceMailProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addVoiceMailProfile(
-        @WebParam(name = "addVoiceMailProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addVoiceMailProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddVoiceMailProfileReq axlParams);
 
     /**
@@ -4602,10 +4571,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateVoiceMailProfile")
-    @WebResult(name = "updateVoiceMailProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateVoiceMailProfile")
+    @WebResult(name = "updateVoiceMailProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateVoiceMailProfile(
-        @WebParam(name = "updateVoiceMailProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateVoiceMailProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateVoiceMailProfileReq axlParams);
 
     /**
@@ -4614,10 +4583,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetVoiceMailProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getVoiceMailProfile")
-    @WebResult(name = "getVoiceMailProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getVoiceMailProfile")
+    @WebResult(name = "getVoiceMailProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetVoiceMailProfileRes getVoiceMailProfile(
-        @WebParam(name = "getVoiceMailProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getVoiceMailProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetVoiceMailProfileReq axlParams);
 
     /**
@@ -4626,10 +4595,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeVoiceMailProfile")
-    @WebResult(name = "removeVoiceMailProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeVoiceMailProfile")
+    @WebResult(name = "removeVoiceMailProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeVoiceMailProfile(
-        @WebParam(name = "removeVoiceMailProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeVoiceMailProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -4638,10 +4607,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListVoiceMailProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listVoiceMailProfile")
-    @WebResult(name = "listVoiceMailProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listVoiceMailProfile")
+    @WebResult(name = "listVoiceMailProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListVoiceMailProfileRes listVoiceMailProfile(
-        @WebParam(name = "listVoiceMailProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listVoiceMailProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListVoiceMailProfileReq axlParams);
 
     /**
@@ -4650,10 +4619,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addVoiceMailPort")
-    @WebResult(name = "addVoiceMailPortResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addVoiceMailPort")
+    @WebResult(name = "addVoiceMailPortResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addVoiceMailPort(
-        @WebParam(name = "addVoiceMailPort", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addVoiceMailPort", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddVoiceMailPortReq axlParams);
 
     /**
@@ -4662,10 +4631,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateVoiceMailPort")
-    @WebResult(name = "updateVoiceMailPortResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateVoiceMailPort")
+    @WebResult(name = "updateVoiceMailPortResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateVoiceMailPort(
-        @WebParam(name = "updateVoiceMailPort", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateVoiceMailPort", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateVoiceMailPortReq axlParams);
 
     /**
@@ -4674,10 +4643,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetVoiceMailPortRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getVoiceMailPort")
-    @WebResult(name = "getVoiceMailPortResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getVoiceMailPort")
+    @WebResult(name = "getVoiceMailPortResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetVoiceMailPortRes getVoiceMailPort(
-        @WebParam(name = "getVoiceMailPort", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getVoiceMailPort", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetVoiceMailPortReq axlParams);
 
     /**
@@ -4686,10 +4655,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeVoiceMailPort")
-    @WebResult(name = "removeVoiceMailPortResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeVoiceMailPort")
+    @WebResult(name = "removeVoiceMailPortResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeVoiceMailPort(
-        @WebParam(name = "removeVoiceMailPort", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeVoiceMailPort", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -4698,10 +4667,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListVoiceMailPortRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listVoiceMailPort")
-    @WebResult(name = "listVoiceMailPortResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listVoiceMailPort")
+    @WebResult(name = "listVoiceMailPortResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListVoiceMailPortRes listVoiceMailPort(
-        @WebParam(name = "listVoiceMailPort", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listVoiceMailPort", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListVoiceMailPortReq axlParams);
 
     /**
@@ -4710,10 +4679,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addGatekeeper")
-    @WebResult(name = "addGatekeeperResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addGatekeeper")
+    @WebResult(name = "addGatekeeperResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addGatekeeper(
-        @WebParam(name = "addGatekeeper", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addGatekeeper", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddGatekeeperReq axlParams);
 
     /**
@@ -4722,10 +4691,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateGatekeeper")
-    @WebResult(name = "updateGatekeeperResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateGatekeeper")
+    @WebResult(name = "updateGatekeeperResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateGatekeeper(
-        @WebParam(name = "updateGatekeeper", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateGatekeeper", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateGatekeeperReq axlParams);
 
     /**
@@ -4734,10 +4703,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetGatekeeperRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getGatekeeper")
-    @WebResult(name = "getGatekeeperResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getGatekeeper")
+    @WebResult(name = "getGatekeeperResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetGatekeeperRes getGatekeeper(
-        @WebParam(name = "getGatekeeper", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getGatekeeper", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetGatekeeperReq axlParams);
 
     /**
@@ -4746,10 +4715,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeGatekeeper")
-    @WebResult(name = "removeGatekeeperResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeGatekeeper")
+    @WebResult(name = "removeGatekeeperResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeGatekeeper(
-        @WebParam(name = "removeGatekeeper", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeGatekeeper", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -4758,10 +4727,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListGatekeeperRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listGatekeeper")
-    @WebResult(name = "listGatekeeperResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listGatekeeper")
+    @WebResult(name = "listGatekeeperResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListGatekeeperRes listGatekeeper(
-        @WebParam(name = "listGatekeeper", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listGatekeeper", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListGatekeeperReq axlParams);
 
     /**
@@ -4770,10 +4739,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addPhoneButtonTemplate")
-    @WebResult(name = "addPhoneButtonTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addPhoneButtonTemplate")
+    @WebResult(name = "addPhoneButtonTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addPhoneButtonTemplate(
-        @WebParam(name = "addPhoneButtonTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addPhoneButtonTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddPhoneButtonTemplateReq axlParams);
 
     /**
@@ -4782,10 +4751,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updatePhoneButtonTemplate")
-    @WebResult(name = "updatePhoneButtonTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updatePhoneButtonTemplate")
+    @WebResult(name = "updatePhoneButtonTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updatePhoneButtonTemplate(
-        @WebParam(name = "updatePhoneButtonTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updatePhoneButtonTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdatePhoneButtonTemplateReq axlParams);
 
     /**
@@ -4794,10 +4763,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetPhoneButtonTemplateRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getPhoneButtonTemplate")
-    @WebResult(name = "getPhoneButtonTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getPhoneButtonTemplate")
+    @WebResult(name = "getPhoneButtonTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetPhoneButtonTemplateRes getPhoneButtonTemplate(
-        @WebParam(name = "getPhoneButtonTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getPhoneButtonTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetPhoneButtonTemplateReq axlParams);
 
     /**
@@ -4806,10 +4775,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removePhoneButtonTemplate")
-    @WebResult(name = "removePhoneButtonTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removePhoneButtonTemplate")
+    @WebResult(name = "removePhoneButtonTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removePhoneButtonTemplate(
-        @WebParam(name = "removePhoneButtonTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removePhoneButtonTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -4818,10 +4787,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListPhoneButtonTemplateRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listPhoneButtonTemplate")
-    @WebResult(name = "listPhoneButtonTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listPhoneButtonTemplate")
+    @WebResult(name = "listPhoneButtonTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListPhoneButtonTemplateRes listPhoneButtonTemplate(
-        @WebParam(name = "listPhoneButtonTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listPhoneButtonTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListPhoneButtonTemplateReq axlParams);
 
     /**
@@ -4830,10 +4799,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCommonPhoneConfig")
-    @WebResult(name = "addCommonPhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCommonPhoneConfig")
+    @WebResult(name = "addCommonPhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCommonPhoneConfig(
-        @WebParam(name = "addCommonPhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCommonPhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCommonPhoneConfigReq axlParams);
 
     /**
@@ -4842,10 +4811,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCommonPhoneConfig")
-    @WebResult(name = "updateCommonPhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCommonPhoneConfig")
+    @WebResult(name = "updateCommonPhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCommonPhoneConfig(
-        @WebParam(name = "updateCommonPhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCommonPhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCommonPhoneConfigReq axlParams);
 
     /**
@@ -4854,10 +4823,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCommonPhoneConfigRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCommonPhoneConfig")
-    @WebResult(name = "getCommonPhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCommonPhoneConfig")
+    @WebResult(name = "getCommonPhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCommonPhoneConfigRes getCommonPhoneConfig(
-        @WebParam(name = "getCommonPhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCommonPhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCommonPhoneConfigReq axlParams);
 
     /**
@@ -4866,10 +4835,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCommonPhoneConfig")
-    @WebResult(name = "removeCommonPhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCommonPhoneConfig")
+    @WebResult(name = "removeCommonPhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCommonPhoneConfig(
-        @WebParam(name = "removeCommonPhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCommonPhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -4878,10 +4847,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCommonPhoneConfigRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCommonPhoneConfig")
-    @WebResult(name = "listCommonPhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCommonPhoneConfig")
+    @WebResult(name = "listCommonPhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCommonPhoneConfigRes listCommonPhoneConfig(
-        @WebParam(name = "listCommonPhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCommonPhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCommonPhoneConfigReq axlParams);
 
     /**
@@ -4890,10 +4859,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addMessageWaiting")
-    @WebResult(name = "addMessageWaitingResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addMessageWaiting")
+    @WebResult(name = "addMessageWaitingResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addMessageWaiting(
-        @WebParam(name = "addMessageWaiting", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addMessageWaiting", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddMessageWaitingReq axlParams);
 
     /**
@@ -4902,10 +4871,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateMessageWaiting")
-    @WebResult(name = "updateMessageWaitingResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateMessageWaiting")
+    @WebResult(name = "updateMessageWaitingResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateMessageWaiting(
-        @WebParam(name = "updateMessageWaiting", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateMessageWaiting", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateMessageWaitingReq axlParams);
 
     /**
@@ -4914,10 +4883,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetMessageWaitingRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getMessageWaiting")
-    @WebResult(name = "getMessageWaitingResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getMessageWaiting")
+    @WebResult(name = "getMessageWaitingResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetMessageWaitingRes getMessageWaiting(
-        @WebParam(name = "getMessageWaiting", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getMessageWaiting", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetMessageWaitingReq axlParams);
 
     /**
@@ -4926,10 +4895,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeMessageWaiting")
-    @WebResult(name = "removeMessageWaitingResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeMessageWaiting")
+    @WebResult(name = "removeMessageWaitingResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeMessageWaiting(
-        @WebParam(name = "removeMessageWaiting", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeMessageWaiting", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveMessageWaitingReq axlParams);
 
     /**
@@ -4938,10 +4907,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListMessageWaitingRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listMessageWaiting")
-    @WebResult(name = "listMessageWaitingResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listMessageWaiting")
+    @WebResult(name = "listMessageWaitingResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListMessageWaitingRes listMessageWaiting(
-        @WebParam(name = "listMessageWaiting", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listMessageWaiting", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListMessageWaitingReq axlParams);
 
     /**
@@ -4950,10 +4919,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addIpPhoneServices")
-    @WebResult(name = "addIpPhoneServicesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addIpPhoneServices")
+    @WebResult(name = "addIpPhoneServicesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addIpPhoneServices(
-        @WebParam(name = "addIpPhoneServices", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addIpPhoneServices", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddIpPhoneServicesReq axlParams);
 
     /**
@@ -4962,10 +4931,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateIpPhoneServices")
-    @WebResult(name = "updateIpPhoneServicesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateIpPhoneServices")
+    @WebResult(name = "updateIpPhoneServicesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateIpPhoneServices(
-        @WebParam(name = "updateIpPhoneServices", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateIpPhoneServices", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateIpPhoneServicesReq axlParams);
 
     /**
@@ -4974,10 +4943,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetIpPhoneServicesRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getIpPhoneServices")
-    @WebResult(name = "getIpPhoneServicesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getIpPhoneServices")
+    @WebResult(name = "getIpPhoneServicesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetIpPhoneServicesRes getIpPhoneServices(
-        @WebParam(name = "getIpPhoneServices", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getIpPhoneServices", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetIpPhoneServicesReq axlParams);
 
     /**
@@ -4986,10 +4955,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeIpPhoneServices")
-    @WebResult(name = "removeIpPhoneServicesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeIpPhoneServices")
+    @WebResult(name = "removeIpPhoneServicesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeIpPhoneServices(
-        @WebParam(name = "removeIpPhoneServices", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeIpPhoneServices", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveIpPhoneServicesReq axlParams);
 
     /**
@@ -4998,10 +4967,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListIpPhoneServicesRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listIpPhoneServices")
-    @WebResult(name = "listIpPhoneServicesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listIpPhoneServices")
+    @WebResult(name = "listIpPhoneServicesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListIpPhoneServicesRes listIpPhoneServices(
-        @WebParam(name = "listIpPhoneServices", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listIpPhoneServices", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListIpPhoneServicesReq axlParams);
 
     /**
@@ -5010,10 +4979,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCtiRoutePoint")
-    @WebResult(name = "addCtiRoutePointResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCtiRoutePoint")
+    @WebResult(name = "addCtiRoutePointResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCtiRoutePoint(
-        @WebParam(name = "addCtiRoutePoint", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCtiRoutePoint", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCtiRoutePointReq axlParams);
 
     /**
@@ -5022,10 +4991,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCtiRoutePoint")
-    @WebResult(name = "updateCtiRoutePointResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCtiRoutePoint")
+    @WebResult(name = "updateCtiRoutePointResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCtiRoutePoint(
-        @WebParam(name = "updateCtiRoutePoint", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCtiRoutePoint", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCtiRoutePointReq axlParams);
 
     /**
@@ -5034,10 +5003,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCtiRoutePointRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCtiRoutePoint")
-    @WebResult(name = "getCtiRoutePointResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCtiRoutePoint")
+    @WebResult(name = "getCtiRoutePointResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCtiRoutePointRes getCtiRoutePoint(
-        @WebParam(name = "getCtiRoutePoint", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCtiRoutePoint", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCtiRoutePointReq axlParams);
 
     /**
@@ -5046,10 +5015,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCtiRoutePoint")
-    @WebResult(name = "removeCtiRoutePointResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCtiRoutePoint")
+    @WebResult(name = "removeCtiRoutePointResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCtiRoutePoint(
-        @WebParam(name = "removeCtiRoutePoint", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCtiRoutePoint", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -5058,10 +5027,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCtiRoutePointRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCtiRoutePoint")
-    @WebResult(name = "listCtiRoutePointResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCtiRoutePoint")
+    @WebResult(name = "listCtiRoutePointResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCtiRoutePointRes listCtiRoutePoint(
-        @WebParam(name = "listCtiRoutePoint", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCtiRoutePoint", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCtiRoutePointReq axlParams);
 
     /**
@@ -5070,10 +5039,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addTransPattern")
-    @WebResult(name = "addTransPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addTransPattern")
+    @WebResult(name = "addTransPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addTransPattern(
-        @WebParam(name = "addTransPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addTransPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddTransPatternReq axlParams);
 
     /**
@@ -5082,10 +5051,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateTransPattern")
-    @WebResult(name = "updateTransPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateTransPattern")
+    @WebResult(name = "updateTransPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateTransPattern(
-        @WebParam(name = "updateTransPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateTransPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateTransPatternReq axlParams);
 
     /**
@@ -5094,10 +5063,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetTransPatternRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getTransPattern")
-    @WebResult(name = "getTransPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getTransPattern")
+    @WebResult(name = "getTransPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetTransPatternRes getTransPattern(
-        @WebParam(name = "getTransPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getTransPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetTransPatternReq axlParams);
 
     /**
@@ -5106,10 +5075,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeTransPattern")
-    @WebResult(name = "removeTransPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeTransPattern")
+    @WebResult(name = "removeTransPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeTransPattern(
-        @WebParam(name = "removeTransPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeTransPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveTransPatternReq axlParams);
 
     /**
@@ -5118,10 +5087,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListTransPatternRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listTransPattern")
-    @WebResult(name = "listTransPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listTransPattern")
+    @WebResult(name = "listTransPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListTransPatternRes listTransPattern(
-        @WebParam(name = "listTransPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listTransPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListTransPatternReq axlParams);
 
     /**
@@ -5130,10 +5099,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCallingPartyTransformationPattern")
-    @WebResult(name = "addCallingPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCallingPartyTransformationPattern")
+    @WebResult(name = "addCallingPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCallingPartyTransformationPattern(
-        @WebParam(name = "addCallingPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCallingPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCallingPartyTransformationPatternReq axlParams);
 
     /**
@@ -5142,10 +5111,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCallingPartyTransformationPattern")
-    @WebResult(name = "updateCallingPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCallingPartyTransformationPattern")
+    @WebResult(name = "updateCallingPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCallingPartyTransformationPattern(
-        @WebParam(name = "updateCallingPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCallingPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCallingPartyTransformationPatternReq axlParams);
 
     /**
@@ -5154,10 +5123,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCallingPartyTransformationPatternRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCallingPartyTransformationPattern")
-    @WebResult(name = "getCallingPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCallingPartyTransformationPattern")
+    @WebResult(name = "getCallingPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCallingPartyTransformationPatternRes getCallingPartyTransformationPattern(
-        @WebParam(name = "getCallingPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCallingPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCallingPartyTransformationPatternReq axlParams);
 
     /**
@@ -5166,10 +5135,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCallingPartyTransformationPattern")
-    @WebResult(name = "removeCallingPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCallingPartyTransformationPattern")
+    @WebResult(name = "removeCallingPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCallingPartyTransformationPattern(
-        @WebParam(name = "removeCallingPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCallingPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveCallingPartyTransformationPatternReq axlParams);
 
     /**
@@ -5178,10 +5147,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCallingPartyTransformationPatternRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCallingPartyTransformationPattern")
-    @WebResult(name = "listCallingPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCallingPartyTransformationPattern")
+    @WebResult(name = "listCallingPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCallingPartyTransformationPatternRes listCallingPartyTransformationPattern(
-        @WebParam(name = "listCallingPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCallingPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCallingPartyTransformationPatternReq axlParams);
 
     /**
@@ -5190,10 +5159,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addSipRoutePattern")
-    @WebResult(name = "addSipRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addSipRoutePattern")
+    @WebResult(name = "addSipRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addSipRoutePattern(
-        @WebParam(name = "addSipRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addSipRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddSipRoutePatternReq axlParams);
 
     /**
@@ -5202,10 +5171,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateSipRoutePattern")
-    @WebResult(name = "updateSipRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateSipRoutePattern")
+    @WebResult(name = "updateSipRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateSipRoutePattern(
-        @WebParam(name = "updateSipRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateSipRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateSipRoutePatternReq axlParams);
 
     /**
@@ -5214,10 +5183,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetSipRoutePatternRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getSipRoutePattern")
-    @WebResult(name = "getSipRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getSipRoutePattern")
+    @WebResult(name = "getSipRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetSipRoutePatternRes getSipRoutePattern(
-        @WebParam(name = "getSipRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getSipRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetSipRoutePatternReq axlParams);
 
     /**
@@ -5226,10 +5195,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeSipRoutePattern")
-    @WebResult(name = "removeSipRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeSipRoutePattern")
+    @WebResult(name = "removeSipRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeSipRoutePattern(
-        @WebParam(name = "removeSipRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeSipRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveSipRoutePatternReq axlParams);
 
     /**
@@ -5238,10 +5207,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListSipRoutePatternRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listSipRoutePattern")
-    @WebResult(name = "listSipRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listSipRoutePattern")
+    @WebResult(name = "listSipRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListSipRoutePatternRes listSipRoutePattern(
-        @WebParam(name = "listSipRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listSipRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListSipRoutePatternReq axlParams);
 
     /**
@@ -5250,10 +5219,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addHuntPilot")
-    @WebResult(name = "addHuntPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addHuntPilot")
+    @WebResult(name = "addHuntPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addHuntPilot(
-        @WebParam(name = "addHuntPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addHuntPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddHuntPilotReq axlParams);
 
     /**
@@ -5262,10 +5231,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateHuntPilot")
-    @WebResult(name = "updateHuntPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateHuntPilot")
+    @WebResult(name = "updateHuntPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateHuntPilot(
-        @WebParam(name = "updateHuntPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateHuntPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateHuntPilotReq axlParams);
 
     /**
@@ -5274,10 +5243,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetHuntPilotRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getHuntPilot")
-    @WebResult(name = "getHuntPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getHuntPilot")
+    @WebResult(name = "getHuntPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetHuntPilotRes getHuntPilot(
-        @WebParam(name = "getHuntPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getHuntPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetHuntPilotReq axlParams);
 
     /**
@@ -5286,10 +5255,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeHuntPilot")
-    @WebResult(name = "removeHuntPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeHuntPilot")
+    @WebResult(name = "removeHuntPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeHuntPilot(
-        @WebParam(name = "removeHuntPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeHuntPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveHuntPilotReq axlParams);
 
     /**
@@ -5298,10 +5267,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListHuntPilotRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listHuntPilot")
-    @WebResult(name = "listHuntPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listHuntPilot")
+    @WebResult(name = "listHuntPilotResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListHuntPilotRes listHuntPilot(
-        @WebParam(name = "listHuntPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listHuntPilot", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListHuntPilotReq axlParams);
 
     /**
@@ -5310,10 +5279,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addRoutePattern")
-    @WebResult(name = "addRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addRoutePattern")
+    @WebResult(name = "addRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addRoutePattern(
-        @WebParam(name = "addRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddRoutePatternReq axlParams);
 
     /**
@@ -5322,10 +5291,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateRoutePattern")
-    @WebResult(name = "updateRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateRoutePattern")
+    @WebResult(name = "updateRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateRoutePattern(
-        @WebParam(name = "updateRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateRoutePatternReq axlParams);
 
     /**
@@ -5334,10 +5303,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetRoutePatternRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getRoutePattern")
-    @WebResult(name = "getRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getRoutePattern")
+    @WebResult(name = "getRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetRoutePatternRes getRoutePattern(
-        @WebParam(name = "getRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetRoutePatternReq axlParams);
 
     /**
@@ -5346,10 +5315,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeRoutePattern")
-    @WebResult(name = "removeRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeRoutePattern")
+    @WebResult(name = "removeRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeRoutePattern(
-        @WebParam(name = "removeRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveRoutePatternReq axlParams);
 
     /**
@@ -5358,10 +5327,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListRoutePatternRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listRoutePattern")
-    @WebResult(name = "listRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listRoutePattern")
+    @WebResult(name = "listRoutePatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListRoutePatternRes listRoutePattern(
-        @WebParam(name = "listRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listRoutePattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListRoutePatternReq axlParams);
 
     /**
@@ -5370,10 +5339,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addApplicationDialRules")
-    @WebResult(name = "addApplicationDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addApplicationDialRules")
+    @WebResult(name = "addApplicationDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addApplicationDialRules(
-        @WebParam(name = "addApplicationDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addApplicationDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddApplicationDialRulesReq axlParams);
 
     /**
@@ -5382,10 +5351,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateApplicationDialRules")
-    @WebResult(name = "updateApplicationDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateApplicationDialRules")
+    @WebResult(name = "updateApplicationDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateApplicationDialRules(
-        @WebParam(name = "updateApplicationDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateApplicationDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateApplicationDialRulesReq axlParams);
 
     /**
@@ -5394,10 +5363,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetApplicationDialRulesRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getApplicationDialRules")
-    @WebResult(name = "getApplicationDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getApplicationDialRules")
+    @WebResult(name = "getApplicationDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetApplicationDialRulesRes getApplicationDialRules(
-        @WebParam(name = "getApplicationDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getApplicationDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetApplicationDialRulesReq axlParams);
 
     /**
@@ -5406,10 +5375,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeApplicationDialRules")
-    @WebResult(name = "removeApplicationDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeApplicationDialRules")
+    @WebResult(name = "removeApplicationDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeApplicationDialRules(
-        @WebParam(name = "removeApplicationDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeApplicationDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -5418,10 +5387,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListApplicationDialRulesRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listApplicationDialRules")
-    @WebResult(name = "listApplicationDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listApplicationDialRules")
+    @WebResult(name = "listApplicationDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListApplicationDialRulesRes listApplicationDialRules(
-        @WebParam(name = "listApplicationDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listApplicationDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListApplicationDialRulesReq axlParams);
 
     /**
@@ -5430,10 +5399,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addDirectoryLookupDialRules")
-    @WebResult(name = "addDirectoryLookupDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addDirectoryLookupDialRules")
+    @WebResult(name = "addDirectoryLookupDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addDirectoryLookupDialRules(
-        @WebParam(name = "addDirectoryLookupDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addDirectoryLookupDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddDirectoryLookupDialRulesReq axlParams);
 
     /**
@@ -5442,10 +5411,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateDirectoryLookupDialRules")
-    @WebResult(name = "updateDirectoryLookupDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateDirectoryLookupDialRules")
+    @WebResult(name = "updateDirectoryLookupDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateDirectoryLookupDialRules(
-        @WebParam(name = "updateDirectoryLookupDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateDirectoryLookupDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateDirectoryLookupDialRulesReq axlParams);
 
     /**
@@ -5454,10 +5423,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDirectoryLookupDialRulesRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDirectoryLookupDialRules")
-    @WebResult(name = "getDirectoryLookupDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDirectoryLookupDialRules")
+    @WebResult(name = "getDirectoryLookupDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDirectoryLookupDialRulesRes getDirectoryLookupDialRules(
-        @WebParam(name = "getDirectoryLookupDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDirectoryLookupDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDirectoryLookupDialRulesReq axlParams);
 
     /**
@@ -5466,10 +5435,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeDirectoryLookupDialRules")
-    @WebResult(name = "removeDirectoryLookupDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeDirectoryLookupDialRules")
+    @WebResult(name = "removeDirectoryLookupDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeDirectoryLookupDialRules(
-        @WebParam(name = "removeDirectoryLookupDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeDirectoryLookupDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -5478,10 +5447,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDirectoryLookupDialRulesRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDirectoryLookupDialRules")
-    @WebResult(name = "listDirectoryLookupDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDirectoryLookupDialRules")
+    @WebResult(name = "listDirectoryLookupDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDirectoryLookupDialRulesRes listDirectoryLookupDialRules(
-        @WebParam(name = "listDirectoryLookupDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDirectoryLookupDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDirectoryLookupDialRulesReq axlParams);
 
     /**
@@ -5490,10 +5459,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addPhoneSecurityProfile")
-    @WebResult(name = "addPhoneSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addPhoneSecurityProfile")
+    @WebResult(name = "addPhoneSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addPhoneSecurityProfile(
-        @WebParam(name = "addPhoneSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addPhoneSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddPhoneSecurityProfileReq axlParams);
 
     /**
@@ -5502,10 +5471,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updatePhoneSecurityProfile")
-    @WebResult(name = "updatePhoneSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updatePhoneSecurityProfile")
+    @WebResult(name = "updatePhoneSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updatePhoneSecurityProfile(
-        @WebParam(name = "updatePhoneSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updatePhoneSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdatePhoneSecurityProfileReq axlParams);
 
     /**
@@ -5514,10 +5483,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetPhoneSecurityProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getPhoneSecurityProfile")
-    @WebResult(name = "getPhoneSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getPhoneSecurityProfile")
+    @WebResult(name = "getPhoneSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetPhoneSecurityProfileRes getPhoneSecurityProfile(
-        @WebParam(name = "getPhoneSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getPhoneSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetPhoneSecurityProfileReq axlParams);
 
     /**
@@ -5526,10 +5495,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removePhoneSecurityProfile")
-    @WebResult(name = "removePhoneSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removePhoneSecurityProfile")
+    @WebResult(name = "removePhoneSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removePhoneSecurityProfile(
-        @WebParam(name = "removePhoneSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removePhoneSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -5538,10 +5507,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListPhoneSecurityProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listPhoneSecurityProfile")
-    @WebResult(name = "listPhoneSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listPhoneSecurityProfile")
+    @WebResult(name = "listPhoneSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListPhoneSecurityProfileRes listPhoneSecurityProfile(
-        @WebParam(name = "listPhoneSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listPhoneSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListPhoneSecurityProfileReq axlParams);
 
     /**
@@ -5550,10 +5519,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addSipDialRules")
-    @WebResult(name = "addSipDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addSipDialRules")
+    @WebResult(name = "addSipDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addSipDialRules(
-        @WebParam(name = "addSipDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addSipDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddSipDialRulesReq axlParams);
 
     /**
@@ -5562,10 +5531,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateSipDialRules")
-    @WebResult(name = "updateSipDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateSipDialRules")
+    @WebResult(name = "updateSipDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateSipDialRules(
-        @WebParam(name = "updateSipDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateSipDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateSipDialRulesReq axlParams);
 
     /**
@@ -5574,10 +5543,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetSipDialRulesRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getSipDialRules")
-    @WebResult(name = "getSipDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getSipDialRules")
+    @WebResult(name = "getSipDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetSipDialRulesRes getSipDialRules(
-        @WebParam(name = "getSipDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getSipDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetSipDialRulesReq axlParams);
 
     /**
@@ -5586,10 +5555,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeSipDialRules")
-    @WebResult(name = "removeSipDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeSipDialRules")
+    @WebResult(name = "removeSipDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeSipDialRules(
-        @WebParam(name = "removeSipDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeSipDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -5598,10 +5567,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListSipDialRulesRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listSipDialRules")
-    @WebResult(name = "listSipDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listSipDialRules")
+    @WebResult(name = "listSipDialRulesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListSipDialRulesRes listSipDialRules(
-        @WebParam(name = "listSipDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listSipDialRules", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListSipDialRulesReq axlParams);
 
     /**
@@ -5610,10 +5579,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addConferenceBridge")
-    @WebResult(name = "addConferenceBridgeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addConferenceBridge")
+    @WebResult(name = "addConferenceBridgeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addConferenceBridge(
-        @WebParam(name = "addConferenceBridge", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addConferenceBridge", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddConferenceBridgeReq axlParams);
 
     /**
@@ -5622,10 +5591,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateConferenceBridge")
-    @WebResult(name = "updateConferenceBridgeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateConferenceBridge")
+    @WebResult(name = "updateConferenceBridgeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateConferenceBridge(
-        @WebParam(name = "updateConferenceBridge", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateConferenceBridge", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateConferenceBridgeReq axlParams);
 
     /**
@@ -5634,10 +5603,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetConferenceBridgeRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getConferenceBridge")
-    @WebResult(name = "getConferenceBridgeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getConferenceBridge")
+    @WebResult(name = "getConferenceBridgeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetConferenceBridgeRes getConferenceBridge(
-        @WebParam(name = "getConferenceBridge", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getConferenceBridge", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetConferenceBridgeReq axlParams);
 
     /**
@@ -5646,10 +5615,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeConferenceBridge")
-    @WebResult(name = "removeConferenceBridgeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeConferenceBridge")
+    @WebResult(name = "removeConferenceBridgeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeConferenceBridge(
-        @WebParam(name = "removeConferenceBridge", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeConferenceBridge", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -5658,10 +5627,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListConferenceBridgeRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listConferenceBridge")
-    @WebResult(name = "listConferenceBridgeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listConferenceBridge")
+    @WebResult(name = "listConferenceBridgeResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListConferenceBridgeRes listConferenceBridge(
-        @WebParam(name = "listConferenceBridge", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listConferenceBridge", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListConferenceBridgeReq axlParams);
 
     /**
@@ -5670,10 +5639,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateAnnunciator")
-    @WebResult(name = "updateAnnunciatorResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateAnnunciator")
+    @WebResult(name = "updateAnnunciatorResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateAnnunciator(
-        @WebParam(name = "updateAnnunciator", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateAnnunciator", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateAnnunciatorReq axlParams);
 
     /**
@@ -5682,10 +5651,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetAnnunciatorRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getAnnunciator")
-    @WebResult(name = "getAnnunciatorResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getAnnunciator")
+    @WebResult(name = "getAnnunciatorResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetAnnunciatorRes getAnnunciator(
-        @WebParam(name = "getAnnunciator", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getAnnunciator", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetAnnunciatorReq axlParams);
 
     /**
@@ -5694,10 +5663,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListAnnunciatorRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listAnnunciator")
-    @WebResult(name = "listAnnunciatorResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listAnnunciator")
+    @WebResult(name = "listAnnunciatorResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListAnnunciatorRes listAnnunciator(
-        @WebParam(name = "listAnnunciator", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listAnnunciator", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListAnnunciatorReq axlParams);
 
     /**
@@ -5706,10 +5675,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addMtp")
-    @WebResult(name = "addMtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addMtp")
+    @WebResult(name = "addMtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addMtp(
-        @WebParam(name = "addMtp", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addMtp", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddMtpReq axlParams);
 
     /**
@@ -5718,10 +5687,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateMtp")
-    @WebResult(name = "updateMtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateMtp")
+    @WebResult(name = "updateMtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateMtp(
-        @WebParam(name = "updateMtp", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateMtp", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateMtpReq axlParams);
 
     /**
@@ -5730,10 +5699,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetMtpRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getMtp")
-    @WebResult(name = "getMtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getMtp")
+    @WebResult(name = "getMtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetMtpRes getMtp(
-        @WebParam(name = "getMtp", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getMtp", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetMtpReq axlParams);
 
     /**
@@ -5742,10 +5711,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeMtp")
-    @WebResult(name = "removeMtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeMtp")
+    @WebResult(name = "removeMtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeMtp(
-        @WebParam(name = "removeMtp", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeMtp", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -5754,10 +5723,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListMtpRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listMtp")
-    @WebResult(name = "listMtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listMtp")
+    @WebResult(name = "listMtpResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListMtpRes listMtp(
-        @WebParam(name = "listMtp", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listMtp", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListMtpReq axlParams);
 
     /**
@@ -5766,10 +5735,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateFixedMohAudioSource")
-    @WebResult(name = "updateFixedMohAudioSourceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateFixedMohAudioSource")
+    @WebResult(name = "updateFixedMohAudioSourceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateFixedMohAudioSource(
-        @WebParam(name = "updateFixedMohAudioSource", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateFixedMohAudioSource", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateFixedMohAudioSourceReq axlParams);
 
     /**
@@ -5778,10 +5747,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetFixedMohAudioSourceRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getFixedMohAudioSource")
-    @WebResult(name = "getFixedMohAudioSourceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getFixedMohAudioSource")
+    @WebResult(name = "getFixedMohAudioSourceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetFixedMohAudioSourceRes getFixedMohAudioSource(
-        @WebParam(name = "getFixedMohAudioSource", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getFixedMohAudioSource", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetFixedMohAudioSourceReq axlParams);
 
     /**
@@ -5790,10 +5759,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateAarGroupMatrix")
-    @WebResult(name = "updateAarGroupMatrixResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateAarGroupMatrix")
+    @WebResult(name = "updateAarGroupMatrixResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateAarGroupMatrix(
-        @WebParam(name = "updateAarGroupMatrix", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateAarGroupMatrix", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateAarGroupMatrixReq axlParams);
 
     /**
@@ -5802,10 +5771,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addRemoteDestinationProfile")
-    @WebResult(name = "addRemoteDestinationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addRemoteDestinationProfile")
+    @WebResult(name = "addRemoteDestinationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addRemoteDestinationProfile(
-        @WebParam(name = "addRemoteDestinationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addRemoteDestinationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddRemoteDestinationProfileReq axlParams);
 
     /**
@@ -5814,10 +5783,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateRemoteDestinationProfile")
-    @WebResult(name = "updateRemoteDestinationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateRemoteDestinationProfile")
+    @WebResult(name = "updateRemoteDestinationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateRemoteDestinationProfile(
-        @WebParam(name = "updateRemoteDestinationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateRemoteDestinationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateRemoteDestinationProfileReq axlParams);
 
     /**
@@ -5826,10 +5795,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetRemoteDestinationProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getRemoteDestinationProfile")
-    @WebResult(name = "getRemoteDestinationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getRemoteDestinationProfile")
+    @WebResult(name = "getRemoteDestinationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetRemoteDestinationProfileRes getRemoteDestinationProfile(
-        @WebParam(name = "getRemoteDestinationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getRemoteDestinationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetRemoteDestinationProfileReq axlParams);
 
     /**
@@ -5838,10 +5807,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeRemoteDestinationProfile")
-    @WebResult(name = "removeRemoteDestinationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeRemoteDestinationProfile")
+    @WebResult(name = "removeRemoteDestinationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeRemoteDestinationProfile(
-        @WebParam(name = "removeRemoteDestinationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeRemoteDestinationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -5850,10 +5819,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListRemoteDestinationProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listRemoteDestinationProfile")
-    @WebResult(name = "listRemoteDestinationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listRemoteDestinationProfile")
+    @WebResult(name = "listRemoteDestinationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListRemoteDestinationProfileRes listRemoteDestinationProfile(
-        @WebParam(name = "listRemoteDestinationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listRemoteDestinationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListRemoteDestinationProfileReq axlParams);
 
     /**
@@ -5862,10 +5831,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addLine")
-    @WebResult(name = "addLineResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addLine")
+    @WebResult(name = "addLineResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addLine(
-        @WebParam(name = "addLine", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addLine", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddLineReq axlParams);
 
     /**
@@ -5874,10 +5843,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateLine")
-    @WebResult(name = "updateLineResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateLine")
+    @WebResult(name = "updateLineResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateLine(
-        @WebParam(name = "updateLine", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateLine", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateLineReq axlParams);
 
     /**
@@ -5886,10 +5855,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetLineRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getLine")
-    @WebResult(name = "getLineResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getLine")
+    @WebResult(name = "getLineResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetLineRes getLine(
-        @WebParam(name = "getLine", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getLine", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetLineReq axlParams);
 
     /**
@@ -5898,10 +5867,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeLine")
-    @WebResult(name = "removeLineResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeLine")
+    @WebResult(name = "removeLineResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeLine(
-        @WebParam(name = "removeLine", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeLine", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveLineReq axlParams);
 
     /**
@@ -5910,10 +5879,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListLineRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listLine")
-    @WebResult(name = "listLineResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listLine")
+    @WebResult(name = "listLineResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListLineRes listLine(
-        @WebParam(name = "listLine", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listLine", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListLineReq axlParams);
 
     /**
@@ -5922,10 +5891,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addDefaultDeviceProfile")
-    @WebResult(name = "addDefaultDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addDefaultDeviceProfile")
+    @WebResult(name = "addDefaultDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addDefaultDeviceProfile(
-        @WebParam(name = "addDefaultDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addDefaultDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddDefaultDeviceProfileReq axlParams);
 
     /**
@@ -5934,10 +5903,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateDefaultDeviceProfile")
-    @WebResult(name = "updateDefaultDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateDefaultDeviceProfile")
+    @WebResult(name = "updateDefaultDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateDefaultDeviceProfile(
-        @WebParam(name = "updateDefaultDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateDefaultDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateDefaultDeviceProfileReq axlParams);
 
     /**
@@ -5946,10 +5915,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDefaultDeviceProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDefaultDeviceProfile")
-    @WebResult(name = "getDefaultDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDefaultDeviceProfile")
+    @WebResult(name = "getDefaultDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDefaultDeviceProfileRes getDefaultDeviceProfile(
-        @WebParam(name = "getDefaultDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDefaultDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDefaultDeviceProfileReq axlParams);
 
     /**
@@ -5958,10 +5927,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeDefaultDeviceProfile")
-    @WebResult(name = "removeDefaultDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeDefaultDeviceProfile")
+    @WebResult(name = "removeDefaultDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeDefaultDeviceProfile(
-        @WebParam(name = "removeDefaultDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeDefaultDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -5970,10 +5939,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDefaultDeviceProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDefaultDeviceProfile")
-    @WebResult(name = "listDefaultDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDefaultDeviceProfile")
+    @WebResult(name = "listDefaultDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDefaultDeviceProfileRes listDefaultDeviceProfile(
-        @WebParam(name = "listDefaultDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDefaultDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDefaultDeviceProfileReq axlParams);
 
     /**
@@ -5982,10 +5951,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addH323Phone")
-    @WebResult(name = "addH323PhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addH323Phone")
+    @WebResult(name = "addH323PhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addH323Phone(
-        @WebParam(name = "addH323Phone", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addH323Phone", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddH323PhoneReq axlParams);
 
     /**
@@ -5994,10 +5963,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateH323Phone")
-    @WebResult(name = "updateH323PhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateH323Phone")
+    @WebResult(name = "updateH323PhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateH323Phone(
-        @WebParam(name = "updateH323Phone", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateH323Phone", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateH323PhoneReq axlParams);
 
     /**
@@ -6006,10 +5975,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetH323PhoneRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getH323Phone")
-    @WebResult(name = "getH323PhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getH323Phone")
+    @WebResult(name = "getH323PhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetH323PhoneRes getH323Phone(
-        @WebParam(name = "getH323Phone", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getH323Phone", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetH323PhoneReq axlParams);
 
     /**
@@ -6018,10 +5987,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeH323Phone")
-    @WebResult(name = "removeH323PhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeH323Phone")
+    @WebResult(name = "removeH323PhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeH323Phone(
-        @WebParam(name = "removeH323Phone", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeH323Phone", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6030,10 +5999,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListH323PhoneRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listH323Phone")
-    @WebResult(name = "listH323PhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listH323Phone")
+    @WebResult(name = "listH323PhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListH323PhoneRes listH323Phone(
-        @WebParam(name = "listH323Phone", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listH323Phone", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListH323PhoneReq axlParams);
 
     /**
@@ -6042,10 +6011,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateMohServer")
-    @WebResult(name = "updateMohServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateMohServer")
+    @WebResult(name = "updateMohServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateMohServer(
-        @WebParam(name = "updateMohServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateMohServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateMohServerReq axlParams);
 
     /**
@@ -6054,10 +6023,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetMohServerRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getMohServer")
-    @WebResult(name = "getMohServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getMohServer")
+    @WebResult(name = "getMohServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetMohServerRes getMohServer(
-        @WebParam(name = "getMohServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getMohServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetMohServerReq axlParams);
 
     /**
@@ -6066,10 +6035,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListMohServerRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listMohServer")
-    @WebResult(name = "listMohServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listMohServer")
+    @WebResult(name = "listMohServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListMohServerRes listMohServer(
-        @WebParam(name = "listMohServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listMohServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListMohServerReq axlParams);
 
     /**
@@ -6078,10 +6047,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addH323Trunk")
-    @WebResult(name = "addH323TrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addH323Trunk")
+    @WebResult(name = "addH323TrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addH323Trunk(
-        @WebParam(name = "addH323Trunk", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addH323Trunk", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddH323TrunkReq axlParams);
 
     /**
@@ -6090,10 +6059,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateH323Trunk")
-    @WebResult(name = "updateH323TrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateH323Trunk")
+    @WebResult(name = "updateH323TrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateH323Trunk(
-        @WebParam(name = "updateH323Trunk", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateH323Trunk", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateH323TrunkReq axlParams);
 
     /**
@@ -6102,10 +6071,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetH323TrunkRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getH323Trunk")
-    @WebResult(name = "getH323TrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getH323Trunk")
+    @WebResult(name = "getH323TrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetH323TrunkRes getH323Trunk(
-        @WebParam(name = "getH323Trunk", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getH323Trunk", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetH323TrunkReq axlParams);
 
     /**
@@ -6114,10 +6083,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeH323Trunk")
-    @WebResult(name = "removeH323TrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeH323Trunk")
+    @WebResult(name = "removeH323TrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeH323Trunk(
-        @WebParam(name = "removeH323Trunk", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeH323Trunk", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6126,10 +6095,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListH323TrunkRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listH323Trunk")
-    @WebResult(name = "listH323TrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listH323Trunk")
+    @WebResult(name = "listH323TrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListH323TrunkRes listH323Trunk(
-        @WebParam(name = "listH323Trunk", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listH323Trunk", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListH323TrunkReq axlParams);
 
     /**
@@ -6138,10 +6107,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addPhone")
-    @WebResult(name = "addPhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addPhone")
+    @WebResult(name = "addPhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addPhone(
-        @WebParam(name = "addPhone", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addPhone", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddPhoneReq axlParams);
 
     /**
@@ -6150,10 +6119,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updatePhone")
-    @WebResult(name = "updatePhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updatePhone")
+    @WebResult(name = "updatePhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updatePhone(
-        @WebParam(name = "updatePhone", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updatePhone", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdatePhoneReq axlParams);
 
     /**
@@ -6162,10 +6131,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetPhoneRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getPhone")
-    @WebResult(name = "getPhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getPhone")
+    @WebResult(name = "getPhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetPhoneRes getPhone(
-        @WebParam(name = "getPhone", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getPhone", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetPhoneReq axlParams);
 
     /**
@@ -6174,10 +6143,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removePhone")
-    @WebResult(name = "removePhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removePhone")
+    @WebResult(name = "removePhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removePhone(
-        @WebParam(name = "removePhone", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removePhone", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6186,10 +6155,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListPhoneRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listPhone")
-    @WebResult(name = "listPhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listPhone")
+    @WebResult(name = "listPhoneResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListPhoneRes listPhone(
-        @WebParam(name = "listPhone", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listPhone", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListPhoneReq axlParams);
 
     /**
@@ -6198,10 +6167,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addH323Gateway")
-    @WebResult(name = "addH323GatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addH323Gateway")
+    @WebResult(name = "addH323GatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addH323Gateway(
-        @WebParam(name = "addH323Gateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addH323Gateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddH323GatewayReq axlParams);
 
     /**
@@ -6210,10 +6179,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateH323Gateway")
-    @WebResult(name = "updateH323GatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateH323Gateway")
+    @WebResult(name = "updateH323GatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateH323Gateway(
-        @WebParam(name = "updateH323Gateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateH323Gateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateH323GatewayReq axlParams);
 
     /**
@@ -6222,10 +6191,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetH323GatewayRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getH323Gateway")
-    @WebResult(name = "getH323GatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getH323Gateway")
+    @WebResult(name = "getH323GatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetH323GatewayRes getH323Gateway(
-        @WebParam(name = "getH323Gateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getH323Gateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetH323GatewayReq axlParams);
 
     /**
@@ -6234,10 +6203,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeH323Gateway")
-    @WebResult(name = "removeH323GatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeH323Gateway")
+    @WebResult(name = "removeH323GatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeH323Gateway(
-        @WebParam(name = "removeH323Gateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeH323Gateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6246,10 +6215,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListH323GatewayRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listH323Gateway")
-    @WebResult(name = "listH323GatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listH323Gateway")
+    @WebResult(name = "listH323GatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListH323GatewayRes listH323Gateway(
-        @WebParam(name = "listH323Gateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listH323Gateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListH323GatewayReq axlParams);
 
     /**
@@ -6258,10 +6227,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addDeviceProfile")
-    @WebResult(name = "addDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addDeviceProfile")
+    @WebResult(name = "addDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addDeviceProfile(
-        @WebParam(name = "addDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddDeviceProfileReq axlParams);
 
     /**
@@ -6270,10 +6239,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateDeviceProfile")
-    @WebResult(name = "updateDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateDeviceProfile")
+    @WebResult(name = "updateDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateDeviceProfile(
-        @WebParam(name = "updateDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateDeviceProfileReq axlParams);
 
     /**
@@ -6282,10 +6251,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetDeviceProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getDeviceProfile")
-    @WebResult(name = "getDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getDeviceProfile")
+    @WebResult(name = "getDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetDeviceProfileRes getDeviceProfile(
-        @WebParam(name = "getDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetDeviceProfileReq axlParams);
 
     /**
@@ -6294,10 +6263,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeDeviceProfile")
-    @WebResult(name = "removeDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeDeviceProfile")
+    @WebResult(name = "removeDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeDeviceProfile(
-        @WebParam(name = "removeDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6306,10 +6275,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListDeviceProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listDeviceProfile")
-    @WebResult(name = "listDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listDeviceProfile")
+    @WebResult(name = "listDeviceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListDeviceProfileRes listDeviceProfile(
-        @WebParam(name = "listDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listDeviceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListDeviceProfileReq axlParams);
 
     /**
@@ -6318,10 +6287,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addRemoteDestination")
-    @WebResult(name = "addRemoteDestinationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addRemoteDestination")
+    @WebResult(name = "addRemoteDestinationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addRemoteDestination(
-        @WebParam(name = "addRemoteDestination", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addRemoteDestination", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddRemoteDestinationReq axlParams);
 
     /**
@@ -6330,10 +6299,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateRemoteDestination")
-    @WebResult(name = "updateRemoteDestinationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateRemoteDestination")
+    @WebResult(name = "updateRemoteDestinationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateRemoteDestination(
-        @WebParam(name = "updateRemoteDestination", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateRemoteDestination", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateRemoteDestinationReq axlParams);
 
     /**
@@ -6342,10 +6311,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetRemoteDestinationRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getRemoteDestination")
-    @WebResult(name = "getRemoteDestinationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getRemoteDestination")
+    @WebResult(name = "getRemoteDestinationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetRemoteDestinationRes getRemoteDestination(
-        @WebParam(name = "getRemoteDestination", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getRemoteDestination", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetRemoteDestinationReq axlParams);
 
     /**
@@ -6354,10 +6323,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeRemoteDestination")
-    @WebResult(name = "removeRemoteDestinationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeRemoteDestination")
+    @WebResult(name = "removeRemoteDestinationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeRemoteDestination(
-        @WebParam(name = "removeRemoteDestination", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeRemoteDestination", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveRemoteDestinationReq axlParams);
 
     /**
@@ -6366,10 +6335,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListRemoteDestinationRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listRemoteDestination")
-    @WebResult(name = "listRemoteDestinationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listRemoteDestination")
+    @WebResult(name = "listRemoteDestinationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListRemoteDestinationRes listRemoteDestination(
-        @WebParam(name = "listRemoteDestination", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listRemoteDestination", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListRemoteDestinationReq axlParams);
 
     /**
@@ -6378,10 +6347,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addGateway")
-    @WebResult(name = "addGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addGateway")
+    @WebResult(name = "addGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addGateway(
-        @WebParam(name = "addGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddGatewayReq axlParams);
 
     /**
@@ -6390,10 +6359,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateGateway")
-    @WebResult(name = "updateGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateGateway")
+    @WebResult(name = "updateGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateGateway(
-        @WebParam(name = "updateGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateGatewayReq axlParams);
 
     /**
@@ -6402,10 +6371,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetGatewayRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getGateway")
-    @WebResult(name = "getGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getGateway")
+    @WebResult(name = "getGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetGatewayRes getGateway(
-        @WebParam(name = "getGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetGatewayReq axlParams);
 
     /**
@@ -6414,10 +6383,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeGateway")
-    @WebResult(name = "removeGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeGateway")
+    @WebResult(name = "removeGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeGateway(
-        @WebParam(name = "removeGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveGatewayReq axlParams);
 
     /**
@@ -6426,10 +6395,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListGatewayRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listGateway")
-    @WebResult(name = "listGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listGateway")
+    @WebResult(name = "listGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListGatewayRes listGateway(
-        @WebParam(name = "listGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListGatewayReq axlParams);
 
     /**
@@ -6438,10 +6407,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addGatewayEndpointAnalogAccess")
-    @WebResult(name = "addGatewayEndpointAnalogAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addGatewayEndpointAnalogAccess")
+    @WebResult(name = "addGatewayEndpointAnalogAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addGatewayEndpointAnalogAccess(
-        @WebParam(name = "addGatewayEndpointAnalogAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addGatewayEndpointAnalogAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddGatewayEndpointAnalogAccessReq axlParams);
 
     /**
@@ -6450,10 +6419,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateGatewayEndpointAnalogAccess")
-    @WebResult(name = "updateGatewayEndpointAnalogAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateGatewayEndpointAnalogAccess")
+    @WebResult(name = "updateGatewayEndpointAnalogAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateGatewayEndpointAnalogAccess(
-        @WebParam(name = "updateGatewayEndpointAnalogAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateGatewayEndpointAnalogAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateGatewayEndpointAnalogAccessReq axlParams);
 
     /**
@@ -6462,10 +6431,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetGatewayEndpointAnalogAccessRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getGatewayEndpointAnalogAccess")
-    @WebResult(name = "getGatewayEndpointAnalogAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getGatewayEndpointAnalogAccess")
+    @WebResult(name = "getGatewayEndpointAnalogAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetGatewayEndpointAnalogAccessRes getGatewayEndpointAnalogAccess(
-        @WebParam(name = "getGatewayEndpointAnalogAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getGatewayEndpointAnalogAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetGatewayEndpointAnalogAccessReq axlParams);
 
     /**
@@ -6474,10 +6443,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeGatewayEndpointAnalogAccess")
-    @WebResult(name = "removeGatewayEndpointAnalogAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeGatewayEndpointAnalogAccess")
+    @WebResult(name = "removeGatewayEndpointAnalogAccessResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeGatewayEndpointAnalogAccess(
-        @WebParam(name = "removeGatewayEndpointAnalogAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeGatewayEndpointAnalogAccess", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6486,10 +6455,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addGatewayEndpointDigitalAccessPri")
-    @WebResult(name = "addGatewayEndpointDigitalAccessPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addGatewayEndpointDigitalAccessPri")
+    @WebResult(name = "addGatewayEndpointDigitalAccessPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addGatewayEndpointDigitalAccessPri(
-        @WebParam(name = "addGatewayEndpointDigitalAccessPri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addGatewayEndpointDigitalAccessPri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddGatewayEndpointDigitalAccessPriReq axlParams);
 
     /**
@@ -6498,10 +6467,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateGatewayEndpointDigitalAccessPri")
-    @WebResult(name = "updateGatewayEndpointDigitalAccessPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateGatewayEndpointDigitalAccessPri")
+    @WebResult(name = "updateGatewayEndpointDigitalAccessPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateGatewayEndpointDigitalAccessPri(
-        @WebParam(name = "updateGatewayEndpointDigitalAccessPri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateGatewayEndpointDigitalAccessPri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateGatewayEndpointDigitalAccessPriReq axlParams);
 
     /**
@@ -6510,10 +6479,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetGatewayEndpointDigitalAccessPriRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getGatewayEndpointDigitalAccessPri")
-    @WebResult(name = "getGatewayEndpointDigitalAccessPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getGatewayEndpointDigitalAccessPri")
+    @WebResult(name = "getGatewayEndpointDigitalAccessPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetGatewayEndpointDigitalAccessPriRes getGatewayEndpointDigitalAccessPri(
-        @WebParam(name = "getGatewayEndpointDigitalAccessPri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getGatewayEndpointDigitalAccessPri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetGatewayEndpointDigitalAccessPriReq axlParams);
 
     /**
@@ -6522,10 +6491,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeGatewayEndpointDigitalAccessPri")
-    @WebResult(name = "removeGatewayEndpointDigitalAccessPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeGatewayEndpointDigitalAccessPri")
+    @WebResult(name = "removeGatewayEndpointDigitalAccessPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeGatewayEndpointDigitalAccessPri(
-        @WebParam(name = "removeGatewayEndpointDigitalAccessPri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeGatewayEndpointDigitalAccessPri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6534,10 +6503,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addGatewayEndpointDigitalAccessBri")
-    @WebResult(name = "addGatewayEndpointDigitalAccessBriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addGatewayEndpointDigitalAccessBri")
+    @WebResult(name = "addGatewayEndpointDigitalAccessBriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addGatewayEndpointDigitalAccessBri(
-        @WebParam(name = "addGatewayEndpointDigitalAccessBri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addGatewayEndpointDigitalAccessBri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddGatewayEndpointDigitalAccessBriReq axlParams);
 
     /**
@@ -6546,10 +6515,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateGatewayEndpointDigitalAccessBri")
-    @WebResult(name = "updateGatewayEndpointDigitalAccessBriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateGatewayEndpointDigitalAccessBri")
+    @WebResult(name = "updateGatewayEndpointDigitalAccessBriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateGatewayEndpointDigitalAccessBri(
-        @WebParam(name = "updateGatewayEndpointDigitalAccessBri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateGatewayEndpointDigitalAccessBri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateGatewayEndpointDigitalAccessBriReq axlParams);
 
     /**
@@ -6558,10 +6527,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetGatewayEndpointDigitalAccessBriRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getGatewayEndpointDigitalAccessBri")
-    @WebResult(name = "getGatewayEndpointDigitalAccessBriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getGatewayEndpointDigitalAccessBri")
+    @WebResult(name = "getGatewayEndpointDigitalAccessBriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetGatewayEndpointDigitalAccessBriRes getGatewayEndpointDigitalAccessBri(
-        @WebParam(name = "getGatewayEndpointDigitalAccessBri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getGatewayEndpointDigitalAccessBri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetGatewayEndpointDigitalAccessBriReq axlParams);
 
     /**
@@ -6570,10 +6539,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeGatewayEndpointDigitalAccessBri")
-    @WebResult(name = "removeGatewayEndpointDigitalAccessBriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeGatewayEndpointDigitalAccessBri")
+    @WebResult(name = "removeGatewayEndpointDigitalAccessBriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeGatewayEndpointDigitalAccessBri(
-        @WebParam(name = "removeGatewayEndpointDigitalAccessBri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeGatewayEndpointDigitalAccessBri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6582,10 +6551,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addGatewayEndpointDigitalAccessT1")
-    @WebResult(name = "addGatewayEndpointDigitalAccessT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addGatewayEndpointDigitalAccessT1")
+    @WebResult(name = "addGatewayEndpointDigitalAccessT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addGatewayEndpointDigitalAccessT1(
-        @WebParam(name = "addGatewayEndpointDigitalAccessT1", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addGatewayEndpointDigitalAccessT1", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddGatewayEndpointDigitalAccessT1Req axlParams);
 
     /**
@@ -6594,10 +6563,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateGatewayEndpointDigitalAccessT1")
-    @WebResult(name = "updateGatewayEndpointDigitalAccessT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateGatewayEndpointDigitalAccessT1")
+    @WebResult(name = "updateGatewayEndpointDigitalAccessT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateGatewayEndpointDigitalAccessT1(
-        @WebParam(name = "updateGatewayEndpointDigitalAccessT1", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateGatewayEndpointDigitalAccessT1", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateGatewayEndpointDigitalAccessT1Req axlParams);
 
     /**
@@ -6606,10 +6575,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetGatewayEndpointDigitalAccessT1Res
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getGatewayEndpointDigitalAccessT1")
-    @WebResult(name = "getGatewayEndpointDigitalAccessT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getGatewayEndpointDigitalAccessT1")
+    @WebResult(name = "getGatewayEndpointDigitalAccessT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetGatewayEndpointDigitalAccessT1Res getGatewayEndpointDigitalAccessT1(
-        @WebParam(name = "getGatewayEndpointDigitalAccessT1", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getGatewayEndpointDigitalAccessT1", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetGatewayEndpointDigitalAccessT1Req axlParams);
 
     /**
@@ -6618,10 +6587,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeGatewayEndpointDigitalAccessT1")
-    @WebResult(name = "removeGatewayEndpointDigitalAccessT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeGatewayEndpointDigitalAccessT1")
+    @WebResult(name = "removeGatewayEndpointDigitalAccessT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeGatewayEndpointDigitalAccessT1(
-        @WebParam(name = "removeGatewayEndpointDigitalAccessT1", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeGatewayEndpointDigitalAccessT1", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6630,10 +6599,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addVg224")
-    @WebResult(name = "addVg224Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addVg224")
+    @WebResult(name = "addVg224Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addVg224(
-        @WebParam(name = "addVg224", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addVg224", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddVg224Req axlParams);
 
     /**
@@ -6642,10 +6611,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateVg224")
-    @WebResult(name = "updateVg224Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateVg224")
+    @WebResult(name = "updateVg224Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateVg224(
-        @WebParam(name = "updateVg224", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateVg224", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateVg224Req axlParams);
 
     /**
@@ -6654,10 +6623,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetVg224Res
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getVg224")
-    @WebResult(name = "getVg224Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getVg224")
+    @WebResult(name = "getVg224Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetVg224Res getVg224(
-        @WebParam(name = "getVg224", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getVg224", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetVg224Req axlParams);
 
     /**
@@ -6666,10 +6635,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeVg224")
-    @WebResult(name = "removeVg224Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeVg224")
+    @WebResult(name = "removeVg224Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeVg224(
-        @WebParam(name = "removeVg224", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeVg224", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveVg224Req axlParams);
 
     /**
@@ -6678,10 +6647,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCiscoCatalyst600024PortFXSGateway")
-    @WebResult(name = "addCiscoCatalyst600024PortFXSGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCiscoCatalyst600024PortFXSGateway")
+    @WebResult(name = "addCiscoCatalyst600024PortFXSGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCiscoCatalyst600024PortFXSGateway(
-        @WebParam(name = "addCiscoCatalyst600024PortFXSGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCiscoCatalyst600024PortFXSGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCiscoCatalyst600024PortFXSGatewayReq axlParams);
 
     /**
@@ -6690,10 +6659,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCiscoCatalyst600024PortFXSGateway")
-    @WebResult(name = "updateCiscoCatalyst600024PortFXSGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCiscoCatalyst600024PortFXSGateway")
+    @WebResult(name = "updateCiscoCatalyst600024PortFXSGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCiscoCatalyst600024PortFXSGateway(
-        @WebParam(name = "updateCiscoCatalyst600024PortFXSGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCiscoCatalyst600024PortFXSGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCiscoCatalyst600024PortFXSGatewayReq axlParams);
 
     /**
@@ -6702,10 +6671,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCiscoCatalyst600024PortFXSGatewayRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCiscoCatalyst600024PortFXSGateway")
-    @WebResult(name = "getCiscoCatalyst600024PortFXSGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCiscoCatalyst600024PortFXSGateway")
+    @WebResult(name = "getCiscoCatalyst600024PortFXSGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCiscoCatalyst600024PortFXSGatewayRes getCiscoCatalyst600024PortFXSGateway(
-        @WebParam(name = "getCiscoCatalyst600024PortFXSGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCiscoCatalyst600024PortFXSGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCiscoCatalyst600024PortFXSGatewayReq axlParams);
 
     /**
@@ -6714,10 +6683,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCiscoCatalyst600024PortFXSGateway")
-    @WebResult(name = "removeCiscoCatalyst600024PortFXSGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCiscoCatalyst600024PortFXSGateway")
+    @WebResult(name = "removeCiscoCatalyst600024PortFXSGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCiscoCatalyst600024PortFXSGateway(
-        @WebParam(name = "removeCiscoCatalyst600024PortFXSGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCiscoCatalyst600024PortFXSGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6726,10 +6695,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCiscoCatalyst600024PortFXSGatewayRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCiscoCatalyst600024PortFXSGateway")
-    @WebResult(name = "listCiscoCatalyst600024PortFXSGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCiscoCatalyst600024PortFXSGateway")
+    @WebResult(name = "listCiscoCatalyst600024PortFXSGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCiscoCatalyst600024PortFXSGatewayRes listCiscoCatalyst600024PortFXSGateway(
-        @WebParam(name = "listCiscoCatalyst600024PortFXSGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCiscoCatalyst600024PortFXSGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCiscoCatalyst600024PortFXSGatewayReq axlParams);
 
     /**
@@ -6738,10 +6707,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCiscoCatalyst6000E1VoIPGateway")
-    @WebResult(name = "addCiscoCatalyst6000E1VoIPGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCiscoCatalyst6000E1VoIPGateway")
+    @WebResult(name = "addCiscoCatalyst6000E1VoIPGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCiscoCatalyst6000E1VoIPGateway(
-        @WebParam(name = "addCiscoCatalyst6000E1VoIPGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCiscoCatalyst6000E1VoIPGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCiscoCatalyst6000E1VoIPGatewayReq axlParams);
 
     /**
@@ -6750,10 +6719,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCiscoCatalyst6000E1VoIPGateway")
-    @WebResult(name = "updateCiscoCatalyst6000E1VoIPGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCiscoCatalyst6000E1VoIPGateway")
+    @WebResult(name = "updateCiscoCatalyst6000E1VoIPGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCiscoCatalyst6000E1VoIPGateway(
-        @WebParam(name = "updateCiscoCatalyst6000E1VoIPGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCiscoCatalyst6000E1VoIPGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCiscoCatalyst6000E1VoIPGatewayReq axlParams);
 
     /**
@@ -6762,10 +6731,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCiscoCatalyst6000E1VoIPGatewayRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCiscoCatalyst6000E1VoIPGateway")
-    @WebResult(name = "getCiscoCatalyst6000E1VoIPGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCiscoCatalyst6000E1VoIPGateway")
+    @WebResult(name = "getCiscoCatalyst6000E1VoIPGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCiscoCatalyst6000E1VoIPGatewayRes getCiscoCatalyst6000E1VoIPGateway(
-        @WebParam(name = "getCiscoCatalyst6000E1VoIPGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCiscoCatalyst6000E1VoIPGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCiscoCatalyst6000E1VoIPGatewayReq axlParams);
 
     /**
@@ -6774,10 +6743,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCiscoCatalyst6000E1VoIPGateway")
-    @WebResult(name = "removeCiscoCatalyst6000E1VoIPGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCiscoCatalyst6000E1VoIPGateway")
+    @WebResult(name = "removeCiscoCatalyst6000E1VoIPGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCiscoCatalyst6000E1VoIPGateway(
-        @WebParam(name = "removeCiscoCatalyst6000E1VoIPGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCiscoCatalyst6000E1VoIPGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6786,10 +6755,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCiscoCatalyst6000E1VoIPGatewayRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCiscoCatalyst6000E1VoIPGateway")
-    @WebResult(name = "listCiscoCatalyst6000E1VoIPGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCiscoCatalyst6000E1VoIPGateway")
+    @WebResult(name = "listCiscoCatalyst6000E1VoIPGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCiscoCatalyst6000E1VoIPGatewayRes listCiscoCatalyst6000E1VoIPGateway(
-        @WebParam(name = "listCiscoCatalyst6000E1VoIPGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCiscoCatalyst6000E1VoIPGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCiscoCatalyst6000E1VoIPGatewayReq axlParams);
 
     /**
@@ -6798,10 +6767,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCiscoCatalyst6000T1VoIPGatewayPri")
-    @WebResult(name = "addCiscoCatalyst6000T1VoIPGatewayPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCiscoCatalyst6000T1VoIPGatewayPri")
+    @WebResult(name = "addCiscoCatalyst6000T1VoIPGatewayPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCiscoCatalyst6000T1VoIPGatewayPri(
-        @WebParam(name = "addCiscoCatalyst6000T1VoIPGatewayPri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCiscoCatalyst6000T1VoIPGatewayPri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCiscoCatalyst6000T1VoIPGatewayPriReq axlParams);
 
     /**
@@ -6810,10 +6779,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCiscoCatalyst6000T1VoIPGatewayPri")
-    @WebResult(name = "updateCiscoCatalyst6000T1VoIPGatewayPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCiscoCatalyst6000T1VoIPGatewayPri")
+    @WebResult(name = "updateCiscoCatalyst6000T1VoIPGatewayPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCiscoCatalyst6000T1VoIPGatewayPri(
-        @WebParam(name = "updateCiscoCatalyst6000T1VoIPGatewayPri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCiscoCatalyst6000T1VoIPGatewayPri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCiscoCatalyst6000T1VoIPGatewayPriReq axlParams);
 
     /**
@@ -6822,10 +6791,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCiscoCatalyst6000T1VoIPGatewayPriRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCiscoCatalyst6000T1VoIPGatewayPri")
-    @WebResult(name = "getCiscoCatalyst6000T1VoIPGatewayPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCiscoCatalyst6000T1VoIPGatewayPri")
+    @WebResult(name = "getCiscoCatalyst6000T1VoIPGatewayPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCiscoCatalyst6000T1VoIPGatewayPriRes getCiscoCatalyst6000T1VoIPGatewayPri(
-        @WebParam(name = "getCiscoCatalyst6000T1VoIPGatewayPri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCiscoCatalyst6000T1VoIPGatewayPri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCiscoCatalyst6000T1VoIPGatewayPriReq axlParams);
 
     /**
@@ -6834,10 +6803,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCiscoCatalyst6000T1VoIPGatewayPri")
-    @WebResult(name = "removeCiscoCatalyst6000T1VoIPGatewayPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCiscoCatalyst6000T1VoIPGatewayPri")
+    @WebResult(name = "removeCiscoCatalyst6000T1VoIPGatewayPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCiscoCatalyst6000T1VoIPGatewayPri(
-        @WebParam(name = "removeCiscoCatalyst6000T1VoIPGatewayPri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCiscoCatalyst6000T1VoIPGatewayPri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6846,10 +6815,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCiscoCatalyst6000T1VoIPGatewayPriRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCiscoCatalyst6000T1VoIPGatewayPri")
-    @WebResult(name = "listCiscoCatalyst6000T1VoIPGatewayPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCiscoCatalyst6000T1VoIPGatewayPri")
+    @WebResult(name = "listCiscoCatalyst6000T1VoIPGatewayPriResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCiscoCatalyst6000T1VoIPGatewayPriRes listCiscoCatalyst6000T1VoIPGatewayPri(
-        @WebParam(name = "listCiscoCatalyst6000T1VoIPGatewayPri", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCiscoCatalyst6000T1VoIPGatewayPri", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCiscoCatalyst6000T1VoIPGatewayPriReq axlParams);
 
     /**
@@ -6858,10 +6827,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCiscoCatalyst6000T1VoIPGatewayT1")
-    @WebResult(name = "addCiscoCatalyst6000T1VoIPGatewayT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCiscoCatalyst6000T1VoIPGatewayT1")
+    @WebResult(name = "addCiscoCatalyst6000T1VoIPGatewayT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCiscoCatalyst6000T1VoIPGatewayT1(
-        @WebParam(name = "addCiscoCatalyst6000T1VoIPGatewayT1", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCiscoCatalyst6000T1VoIPGatewayT1", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCiscoCatalyst6000T1VoIPGatewayT1Req axlParams);
 
     /**
@@ -6870,10 +6839,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCiscoCatalyst6000T1VoIPGatewayT1")
-    @WebResult(name = "updateCiscoCatalyst6000T1VoIPGatewayT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCiscoCatalyst6000T1VoIPGatewayT1")
+    @WebResult(name = "updateCiscoCatalyst6000T1VoIPGatewayT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCiscoCatalyst6000T1VoIPGatewayT1(
-        @WebParam(name = "updateCiscoCatalyst6000T1VoIPGatewayT1", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCiscoCatalyst6000T1VoIPGatewayT1", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCiscoCatalyst6000T1VoIPGatewayT1Req axlParams);
 
     /**
@@ -6882,10 +6851,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCiscoCatalyst6000T1VoIPGatewayT1Res
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCiscoCatalyst6000T1VoIPGatewayT1")
-    @WebResult(name = "getCiscoCatalyst6000T1VoIPGatewayT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCiscoCatalyst6000T1VoIPGatewayT1")
+    @WebResult(name = "getCiscoCatalyst6000T1VoIPGatewayT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCiscoCatalyst6000T1VoIPGatewayT1Res getCiscoCatalyst6000T1VoIPGatewayT1(
-        @WebParam(name = "getCiscoCatalyst6000T1VoIPGatewayT1", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCiscoCatalyst6000T1VoIPGatewayT1", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCiscoCatalyst6000T1VoIPGatewayT1Req axlParams);
 
     /**
@@ -6894,10 +6863,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCiscoCatalyst6000T1VoIPGatewayT1")
-    @WebResult(name = "removeCiscoCatalyst6000T1VoIPGatewayT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCiscoCatalyst6000T1VoIPGatewayT1")
+    @WebResult(name = "removeCiscoCatalyst6000T1VoIPGatewayT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCiscoCatalyst6000T1VoIPGatewayT1(
-        @WebParam(name = "removeCiscoCatalyst6000T1VoIPGatewayT1", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCiscoCatalyst6000T1VoIPGatewayT1", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -6906,10 +6875,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCiscoCatalyst6000T1VoIPGatewayT1Res
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCiscoCatalyst6000T1VoIPGatewayT1")
-    @WebResult(name = "listCiscoCatalyst6000T1VoIPGatewayT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCiscoCatalyst6000T1VoIPGatewayT1")
+    @WebResult(name = "listCiscoCatalyst6000T1VoIPGatewayT1Response", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCiscoCatalyst6000T1VoIPGatewayT1Res listCiscoCatalyst6000T1VoIPGatewayT1(
-        @WebParam(name = "listCiscoCatalyst6000T1VoIPGatewayT1", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCiscoCatalyst6000T1VoIPGatewayT1", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCiscoCatalyst6000T1VoIPGatewayT1Req axlParams);
 
     /**
@@ -6918,10 +6887,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCallPickupGroup")
-    @WebResult(name = "addCallPickupGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCallPickupGroup")
+    @WebResult(name = "addCallPickupGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCallPickupGroup(
-        @WebParam(name = "addCallPickupGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCallPickupGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCallPickupGroupReq axlParams);
 
     /**
@@ -6930,10 +6899,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCallPickupGroup")
-    @WebResult(name = "updateCallPickupGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCallPickupGroup")
+    @WebResult(name = "updateCallPickupGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCallPickupGroup(
-        @WebParam(name = "updateCallPickupGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCallPickupGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCallPickupGroupReq axlParams);
 
     /**
@@ -6942,10 +6911,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCallPickupGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCallPickupGroup")
-    @WebResult(name = "getCallPickupGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCallPickupGroup")
+    @WebResult(name = "getCallPickupGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCallPickupGroupRes getCallPickupGroup(
-        @WebParam(name = "getCallPickupGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCallPickupGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCallPickupGroupReq axlParams);
 
     /**
@@ -6954,10 +6923,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCallPickupGroup")
-    @WebResult(name = "removeCallPickupGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCallPickupGroup")
+    @WebResult(name = "removeCallPickupGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCallPickupGroup(
-        @WebParam(name = "removeCallPickupGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCallPickupGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveCallPickupGroupReq axlParams);
 
     /**
@@ -6966,10 +6935,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCallPickupGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCallPickupGroup")
-    @WebResult(name = "listCallPickupGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCallPickupGroup")
+    @WebResult(name = "listCallPickupGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCallPickupGroupRes listCallPickupGroup(
-        @WebParam(name = "listCallPickupGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCallPickupGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCallPickupGroupReq axlParams);
 
     /**
@@ -6978,10 +6947,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListRoutePlanRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listRoutePlan")
-    @WebResult(name = "listRoutePlanResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listRoutePlan")
+    @WebResult(name = "listRoutePlanResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListRoutePlanRes listRoutePlan(
-        @WebParam(name = "listRoutePlan", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listRoutePlan", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListRoutePlanReq axlParams);
 
     /**
@@ -6990,10 +6959,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addGeoLocationPolicy")
-    @WebResult(name = "addGeoLocationPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addGeoLocationPolicy")
+    @WebResult(name = "addGeoLocationPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addGeoLocationPolicy(
-        @WebParam(name = "addGeoLocationPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addGeoLocationPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddGeoLocationPolicyReq axlParams);
 
     /**
@@ -7002,10 +6971,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateGeoLocationPolicy")
-    @WebResult(name = "updateGeoLocationPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateGeoLocationPolicy")
+    @WebResult(name = "updateGeoLocationPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateGeoLocationPolicy(
-        @WebParam(name = "updateGeoLocationPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateGeoLocationPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateGeoLocationPolicyReq axlParams);
 
     /**
@@ -7014,10 +6983,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetGeoLocationPolicyRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getGeoLocationPolicy")
-    @WebResult(name = "getGeoLocationPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getGeoLocationPolicy")
+    @WebResult(name = "getGeoLocationPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetGeoLocationPolicyRes getGeoLocationPolicy(
-        @WebParam(name = "getGeoLocationPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getGeoLocationPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetGeoLocationPolicyReq axlParams);
 
     /**
@@ -7026,10 +6995,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeGeoLocationPolicy")
-    @WebResult(name = "removeGeoLocationPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeGeoLocationPolicy")
+    @WebResult(name = "removeGeoLocationPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeGeoLocationPolicy(
-        @WebParam(name = "removeGeoLocationPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeGeoLocationPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -7038,10 +7007,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListGeoLocationPolicyRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listGeoLocationPolicy")
-    @WebResult(name = "listGeoLocationPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listGeoLocationPolicy")
+    @WebResult(name = "listGeoLocationPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListGeoLocationPolicyRes listGeoLocationPolicy(
-        @WebParam(name = "listGeoLocationPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listGeoLocationPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListGeoLocationPolicyReq axlParams);
 
     /**
@@ -7050,10 +7019,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addSipTrunk")
-    @WebResult(name = "addSipTrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addSipTrunk")
+    @WebResult(name = "addSipTrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addSipTrunk(
-        @WebParam(name = "addSipTrunk", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addSipTrunk", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddSipTrunkReq axlParams);
 
     /**
@@ -7062,10 +7031,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateSipTrunk")
-    @WebResult(name = "updateSipTrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateSipTrunk")
+    @WebResult(name = "updateSipTrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateSipTrunk(
-        @WebParam(name = "updateSipTrunk", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateSipTrunk", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateSipTrunkReq axlParams);
 
     /**
@@ -7074,10 +7043,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetSipTrunkRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getSipTrunk")
-    @WebResult(name = "getSipTrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getSipTrunk")
+    @WebResult(name = "getSipTrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetSipTrunkRes getSipTrunk(
-        @WebParam(name = "getSipTrunk", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getSipTrunk", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetSipTrunkReq axlParams);
 
     /**
@@ -7086,10 +7055,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeSipTrunk")
-    @WebResult(name = "removeSipTrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeSipTrunk")
+    @WebResult(name = "removeSipTrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeSipTrunk(
-        @WebParam(name = "removeSipTrunk", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeSipTrunk", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -7098,10 +7067,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListSipTrunkRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listSipTrunk")
-    @WebResult(name = "listSipTrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listSipTrunk")
+    @WebResult(name = "listSipTrunkResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListSipTrunkRes listSipTrunk(
-        @WebParam(name = "listSipTrunk", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listSipTrunk", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListSipTrunkReq axlParams);
 
     /**
@@ -7110,10 +7079,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateRegionMatrix")
-    @WebResult(name = "updateRegionMatrixResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateRegionMatrix")
+    @WebResult(name = "updateRegionMatrixResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateRegionMatrix(
-        @WebParam(name = "updateRegionMatrix", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateRegionMatrix", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateRegionMatrixReq axlParams);
 
     /**
@@ -7122,10 +7091,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCalledPartyTransformationPattern")
-    @WebResult(name = "addCalledPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCalledPartyTransformationPattern")
+    @WebResult(name = "addCalledPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCalledPartyTransformationPattern(
-        @WebParam(name = "addCalledPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCalledPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCalledPartyTransformationPatternReq axlParams);
 
     /**
@@ -7134,10 +7103,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCalledPartyTransformationPattern")
-    @WebResult(name = "updateCalledPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCalledPartyTransformationPattern")
+    @WebResult(name = "updateCalledPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCalledPartyTransformationPattern(
-        @WebParam(name = "updateCalledPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCalledPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCalledPartyTransformationPatternReq axlParams);
 
     /**
@@ -7146,10 +7115,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCalledPartyTransformationPatternRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCalledPartyTransformationPattern")
-    @WebResult(name = "getCalledPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCalledPartyTransformationPattern")
+    @WebResult(name = "getCalledPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCalledPartyTransformationPatternRes getCalledPartyTransformationPattern(
-        @WebParam(name = "getCalledPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCalledPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCalledPartyTransformationPatternReq axlParams);
 
     /**
@@ -7158,10 +7127,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCalledPartyTransformationPattern")
-    @WebResult(name = "removeCalledPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCalledPartyTransformationPattern")
+    @WebResult(name = "removeCalledPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCalledPartyTransformationPattern(
-        @WebParam(name = "removeCalledPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCalledPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveCalledPartyTransformationPatternReq axlParams);
 
     /**
@@ -7170,10 +7139,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCalledPartyTransformationPatternRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCalledPartyTransformationPattern")
-    @WebResult(name = "listCalledPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCalledPartyTransformationPattern")
+    @WebResult(name = "listCalledPartyTransformationPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCalledPartyTransformationPatternRes listCalledPartyTransformationPattern(
-        @WebParam(name = "listCalledPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCalledPartyTransformationPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCalledPartyTransformationPatternReq axlParams);
 
     /**
@@ -7182,10 +7151,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addExternalCallControlProfile")
-    @WebResult(name = "addExternalCallControlProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addExternalCallControlProfile")
+    @WebResult(name = "addExternalCallControlProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addExternalCallControlProfile(
-        @WebParam(name = "addExternalCallControlProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addExternalCallControlProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddExternalCallControlProfileReq axlParams);
 
     /**
@@ -7194,10 +7163,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateExternalCallControlProfile")
-    @WebResult(name = "updateExternalCallControlProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateExternalCallControlProfile")
+    @WebResult(name = "updateExternalCallControlProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateExternalCallControlProfile(
-        @WebParam(name = "updateExternalCallControlProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateExternalCallControlProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateExternalCallControlProfileReq axlParams);
 
     /**
@@ -7206,10 +7175,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetExternalCallControlProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getExternalCallControlProfile")
-    @WebResult(name = "getExternalCallControlProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getExternalCallControlProfile")
+    @WebResult(name = "getExternalCallControlProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetExternalCallControlProfileRes getExternalCallControlProfile(
-        @WebParam(name = "getExternalCallControlProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getExternalCallControlProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetExternalCallControlProfileReq axlParams);
 
     /**
@@ -7218,10 +7187,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeExternalCallControlProfile")
-    @WebResult(name = "removeExternalCallControlProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeExternalCallControlProfile")
+    @WebResult(name = "removeExternalCallControlProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeExternalCallControlProfile(
-        @WebParam(name = "removeExternalCallControlProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeExternalCallControlProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -7230,10 +7199,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListExternalCallControlProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listExternalCallControlProfile")
-    @WebResult(name = "listExternalCallControlProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listExternalCallControlProfile")
+    @WebResult(name = "listExternalCallControlProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListExternalCallControlProfileRes listExternalCallControlProfile(
-        @WebParam(name = "listExternalCallControlProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listExternalCallControlProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListExternalCallControlProfileReq axlParams);
 
     /**
@@ -7242,10 +7211,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addSafSecurityProfile")
-    @WebResult(name = "addSafSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addSafSecurityProfile")
+    @WebResult(name = "addSafSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addSafSecurityProfile(
-        @WebParam(name = "addSafSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addSafSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddSafSecurityProfileReq axlParams);
 
     /**
@@ -7254,10 +7223,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateSafSecurityProfile")
-    @WebResult(name = "updateSafSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateSafSecurityProfile")
+    @WebResult(name = "updateSafSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateSafSecurityProfile(
-        @WebParam(name = "updateSafSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateSafSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateSafSecurityProfileReq axlParams);
 
     /**
@@ -7266,10 +7235,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetSafSecurityProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getSafSecurityProfile")
-    @WebResult(name = "getSafSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getSafSecurityProfile")
+    @WebResult(name = "getSafSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetSafSecurityProfileRes getSafSecurityProfile(
-        @WebParam(name = "getSafSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getSafSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetSafSecurityProfileReq axlParams);
 
     /**
@@ -7278,10 +7247,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeSafSecurityProfile")
-    @WebResult(name = "removeSafSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeSafSecurityProfile")
+    @WebResult(name = "removeSafSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeSafSecurityProfile(
-        @WebParam(name = "removeSafSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeSafSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -7290,10 +7259,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListSafSecurityProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listSafSecurityProfile")
-    @WebResult(name = "listSafSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listSafSecurityProfile")
+    @WebResult(name = "listSafSecurityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListSafSecurityProfileRes listSafSecurityProfile(
-        @WebParam(name = "listSafSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listSafSecurityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListSafSecurityProfileReq axlParams);
 
     /**
@@ -7302,10 +7271,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addSafForwarder")
-    @WebResult(name = "addSafForwarderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addSafForwarder")
+    @WebResult(name = "addSafForwarderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addSafForwarder(
-        @WebParam(name = "addSafForwarder", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addSafForwarder", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddSafForwarderReq axlParams);
 
     /**
@@ -7314,10 +7283,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateSafForwarder")
-    @WebResult(name = "updateSafForwarderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateSafForwarder")
+    @WebResult(name = "updateSafForwarderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateSafForwarder(
-        @WebParam(name = "updateSafForwarder", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateSafForwarder", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateSafForwarderReq axlParams);
 
     /**
@@ -7326,10 +7295,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetSafForwarderRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getSafForwarder")
-    @WebResult(name = "getSafForwarderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getSafForwarder")
+    @WebResult(name = "getSafForwarderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetSafForwarderRes getSafForwarder(
-        @WebParam(name = "getSafForwarder", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getSafForwarder", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetSafForwarderReq axlParams);
 
     /**
@@ -7338,10 +7307,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeSafForwarder")
-    @WebResult(name = "removeSafForwarderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeSafForwarder")
+    @WebResult(name = "removeSafForwarderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeSafForwarder(
-        @WebParam(name = "removeSafForwarder", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeSafForwarder", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -7350,10 +7319,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListSafForwarderRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listSafForwarder")
-    @WebResult(name = "listSafForwarderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listSafForwarder")
+    @WebResult(name = "listSafForwarderResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListSafForwarderRes listSafForwarder(
-        @WebParam(name = "listSafForwarder", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listSafForwarder", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListSafForwarderReq axlParams);
 
     /**
@@ -7362,10 +7331,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCcdHostedDN")
-    @WebResult(name = "addCcdHostedDNResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCcdHostedDN")
+    @WebResult(name = "addCcdHostedDNResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCcdHostedDN(
-        @WebParam(name = "addCcdHostedDN", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCcdHostedDN", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCcdHostedDNReq axlParams);
 
     /**
@@ -7374,10 +7343,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCcdHostedDN")
-    @WebResult(name = "updateCcdHostedDNResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCcdHostedDN")
+    @WebResult(name = "updateCcdHostedDNResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCcdHostedDN(
-        @WebParam(name = "updateCcdHostedDN", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCcdHostedDN", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCcdHostedDNReq axlParams);
 
     /**
@@ -7386,10 +7355,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCcdHostedDNRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCcdHostedDN")
-    @WebResult(name = "getCcdHostedDNResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCcdHostedDN")
+    @WebResult(name = "getCcdHostedDNResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCcdHostedDNRes getCcdHostedDN(
-        @WebParam(name = "getCcdHostedDN", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCcdHostedDN", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCcdHostedDNReq axlParams);
 
     /**
@@ -7398,10 +7367,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCcdHostedDN")
-    @WebResult(name = "removeCcdHostedDNResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCcdHostedDN")
+    @WebResult(name = "removeCcdHostedDNResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCcdHostedDN(
-        @WebParam(name = "removeCcdHostedDN", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCcdHostedDN", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveCcdHostedDNReq axlParams);
 
     /**
@@ -7410,10 +7379,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCcdHostedDNRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCcdHostedDN")
-    @WebResult(name = "listCcdHostedDNResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCcdHostedDN")
+    @WebResult(name = "listCcdHostedDNResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCcdHostedDNRes listCcdHostedDN(
-        @WebParam(name = "listCcdHostedDN", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCcdHostedDN", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCcdHostedDNReq axlParams);
 
     /**
@@ -7422,10 +7391,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCcdHostedDNGroup")
-    @WebResult(name = "addCcdHostedDNGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCcdHostedDNGroup")
+    @WebResult(name = "addCcdHostedDNGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCcdHostedDNGroup(
-        @WebParam(name = "addCcdHostedDNGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCcdHostedDNGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCcdHostedDNGroupReq axlParams);
 
     /**
@@ -7434,10 +7403,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCcdHostedDNGroup")
-    @WebResult(name = "updateCcdHostedDNGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCcdHostedDNGroup")
+    @WebResult(name = "updateCcdHostedDNGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCcdHostedDNGroup(
-        @WebParam(name = "updateCcdHostedDNGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCcdHostedDNGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCcdHostedDNGroupReq axlParams);
 
     /**
@@ -7446,10 +7415,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCcdHostedDNGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCcdHostedDNGroup")
-    @WebResult(name = "getCcdHostedDNGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCcdHostedDNGroup")
+    @WebResult(name = "getCcdHostedDNGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCcdHostedDNGroupRes getCcdHostedDNGroup(
-        @WebParam(name = "getCcdHostedDNGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCcdHostedDNGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCcdHostedDNGroupReq axlParams);
 
     /**
@@ -7458,10 +7427,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCcdHostedDNGroup")
-    @WebResult(name = "removeCcdHostedDNGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCcdHostedDNGroup")
+    @WebResult(name = "removeCcdHostedDNGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCcdHostedDNGroup(
-        @WebParam(name = "removeCcdHostedDNGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCcdHostedDNGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -7470,10 +7439,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCcdHostedDNGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCcdHostedDNGroup")
-    @WebResult(name = "listCcdHostedDNGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCcdHostedDNGroup")
+    @WebResult(name = "listCcdHostedDNGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCcdHostedDNGroupRes listCcdHostedDNGroup(
-        @WebParam(name = "listCcdHostedDNGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCcdHostedDNGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCcdHostedDNGroupReq axlParams);
 
     /**
@@ -7482,10 +7451,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCcdRequestingService")
-    @WebResult(name = "addCcdRequestingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCcdRequestingService")
+    @WebResult(name = "addCcdRequestingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCcdRequestingService(
-        @WebParam(name = "addCcdRequestingService", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCcdRequestingService", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCcdRequestingServiceReq axlParams);
 
     /**
@@ -7494,10 +7463,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCcdRequestingService")
-    @WebResult(name = "updateCcdRequestingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCcdRequestingService")
+    @WebResult(name = "updateCcdRequestingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCcdRequestingService(
-        @WebParam(name = "updateCcdRequestingService", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCcdRequestingService", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCcdRequestingServiceReq axlParams);
 
     /**
@@ -7506,10 +7475,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCcdRequestingServiceRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCcdRequestingService")
-    @WebResult(name = "getCcdRequestingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCcdRequestingService")
+    @WebResult(name = "getCcdRequestingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCcdRequestingServiceRes getCcdRequestingService(
-        @WebParam(name = "getCcdRequestingService", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCcdRequestingService", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCcdRequestingServiceReq axlParams);
 
     /**
@@ -7518,10 +7487,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCcdRequestingService")
-    @WebResult(name = "removeCcdRequestingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCcdRequestingService")
+    @WebResult(name = "removeCcdRequestingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCcdRequestingService(
-        @WebParam(name = "removeCcdRequestingService", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCcdRequestingService", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -7530,10 +7499,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateInterClusterServiceProfile")
-    @WebResult(name = "updateInterClusterServiceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateInterClusterServiceProfile")
+    @WebResult(name = "updateInterClusterServiceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateInterClusterServiceProfile(
-        @WebParam(name = "updateInterClusterServiceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateInterClusterServiceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateInterClusterServiceProfileReq axlParams);
 
     /**
@@ -7542,10 +7511,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetInterClusterServiceProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getInterClusterServiceProfile")
-    @WebResult(name = "getInterClusterServiceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getInterClusterServiceProfile")
+    @WebResult(name = "getInterClusterServiceProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetInterClusterServiceProfileRes getInterClusterServiceProfile(
-        @WebParam(name = "getInterClusterServiceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getInterClusterServiceProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetInterClusterServiceProfileReq axlParams);
 
     /**
@@ -7554,10 +7523,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addRemoteCluster")
-    @WebResult(name = "addRemoteClusterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addRemoteCluster")
+    @WebResult(name = "addRemoteClusterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addRemoteCluster(
-        @WebParam(name = "addRemoteCluster", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addRemoteCluster", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddRemoteClusterReq axlParams);
 
     /**
@@ -7566,10 +7535,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateRemoteCluster")
-    @WebResult(name = "updateRemoteClusterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateRemoteCluster")
+    @WebResult(name = "updateRemoteClusterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateRemoteCluster(
-        @WebParam(name = "updateRemoteCluster", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateRemoteCluster", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateRemoteClusterReq axlParams);
 
     /**
@@ -7578,10 +7547,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetRemoteClusterRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getRemoteCluster")
-    @WebResult(name = "getRemoteClusterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getRemoteCluster")
+    @WebResult(name = "getRemoteClusterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetRemoteClusterRes getRemoteCluster(
-        @WebParam(name = "getRemoteCluster", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getRemoteCluster", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetRemoteClusterReq axlParams);
 
     /**
@@ -7590,10 +7559,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeRemoteCluster")
-    @WebResult(name = "removeRemoteClusterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeRemoteCluster")
+    @WebResult(name = "removeRemoteClusterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeRemoteCluster(
-        @WebParam(name = "removeRemoteCluster", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeRemoteCluster", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveRemoteClusterReq axlParams);
 
     /**
@@ -7602,10 +7571,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListRemoteClusterRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listRemoteCluster")
-    @WebResult(name = "listRemoteClusterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listRemoteCluster")
+    @WebResult(name = "listRemoteClusterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListRemoteClusterRes listRemoteCluster(
-        @WebParam(name = "listRemoteCluster", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listRemoteCluster", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListRemoteClusterReq axlParams);
 
     /**
@@ -7614,10 +7583,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addCcdAdvertisingService")
-    @WebResult(name = "addCcdAdvertisingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addCcdAdvertisingService")
+    @WebResult(name = "addCcdAdvertisingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addCcdAdvertisingService(
-        @WebParam(name = "addCcdAdvertisingService", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addCcdAdvertisingService", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddCcdAdvertisingServiceReq axlParams);
 
     /**
@@ -7626,10 +7595,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateCcdAdvertisingService")
-    @WebResult(name = "updateCcdAdvertisingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateCcdAdvertisingService")
+    @WebResult(name = "updateCcdAdvertisingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateCcdAdvertisingService(
-        @WebParam(name = "updateCcdAdvertisingService", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateCcdAdvertisingService", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateCcdAdvertisingServiceReq axlParams);
 
     /**
@@ -7638,10 +7607,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCcdAdvertisingServiceRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCcdAdvertisingService")
-    @WebResult(name = "getCcdAdvertisingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCcdAdvertisingService")
+    @WebResult(name = "getCcdAdvertisingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCcdAdvertisingServiceRes getCcdAdvertisingService(
-        @WebParam(name = "getCcdAdvertisingService", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCcdAdvertisingService", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCcdAdvertisingServiceReq axlParams);
 
     /**
@@ -7650,10 +7619,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeCcdAdvertisingService")
-    @WebResult(name = "removeCcdAdvertisingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeCcdAdvertisingService")
+    @WebResult(name = "removeCcdAdvertisingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeCcdAdvertisingService(
-        @WebParam(name = "removeCcdAdvertisingService", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeCcdAdvertisingService", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -7662,10 +7631,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListCcdAdvertisingServiceRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listCcdAdvertisingService")
-    @WebResult(name = "listCcdAdvertisingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listCcdAdvertisingService")
+    @WebResult(name = "listCcdAdvertisingServiceResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListCcdAdvertisingServiceRes listCcdAdvertisingService(
-        @WebParam(name = "listCcdAdvertisingService", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listCcdAdvertisingService", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListCcdAdvertisingServiceReq axlParams);
 
     /**
@@ -7674,10 +7643,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addUnitsToGateway")
-    @WebResult(name = "addUnitsToGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addUnitsToGateway")
+    @WebResult(name = "addUnitsToGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addUnitsToGateway(
-        @WebParam(name = "addUnitsToGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addUnitsToGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddUnitsToGatewayReq axlParams);
 
     /**
@@ -7686,10 +7655,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addGatewaySubunits")
-    @WebResult(name = "addGatewaySubunitsResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addGatewaySubunits")
+    @WebResult(name = "addGatewaySubunitsResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addGatewaySubunits(
-        @WebParam(name = "addGatewaySubunits", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addGatewaySubunits", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddGatewaySubunitsReq axlParams);
 
     /**
@@ -7698,10 +7667,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addLdapDirectory")
-    @WebResult(name = "addLdapDirectoryResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addLdapDirectory")
+    @WebResult(name = "addLdapDirectoryResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addLdapDirectory(
-        @WebParam(name = "addLdapDirectory", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addLdapDirectory", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddLdapDirectoryReq axlParams);
 
     /**
@@ -7710,10 +7679,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateLdapDirectory")
-    @WebResult(name = "updateLdapDirectoryResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateLdapDirectory")
+    @WebResult(name = "updateLdapDirectoryResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateLdapDirectory(
-        @WebParam(name = "updateLdapDirectory", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateLdapDirectory", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateLdapDirectoryReq axlParams);
 
     /**
@@ -7722,10 +7691,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetLdapDirectoryRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getLdapDirectory")
-    @WebResult(name = "getLdapDirectoryResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getLdapDirectory")
+    @WebResult(name = "getLdapDirectoryResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetLdapDirectoryRes getLdapDirectory(
-        @WebParam(name = "getLdapDirectory", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getLdapDirectory", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetLdapDirectoryReq axlParams);
 
     /**
@@ -7734,10 +7703,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeLdapDirectory")
-    @WebResult(name = "removeLdapDirectoryResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeLdapDirectory")
+    @WebResult(name = "removeLdapDirectoryResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeLdapDirectory(
-        @WebParam(name = "removeLdapDirectory", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeLdapDirectory", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -7746,10 +7715,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListLdapDirectoryRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listLdapDirectory")
-    @WebResult(name = "listLdapDirectoryResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listLdapDirectory")
+    @WebResult(name = "listLdapDirectoryResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListLdapDirectoryRes listLdapDirectory(
-        @WebParam(name = "listLdapDirectory", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listLdapDirectory", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListLdapDirectoryReq axlParams);
 
     /**
@@ -7758,10 +7727,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateEmccFeatureConfig")
-    @WebResult(name = "updateEmccFeatureConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateEmccFeatureConfig")
+    @WebResult(name = "updateEmccFeatureConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateEmccFeatureConfig(
-        @WebParam(name = "updateEmccFeatureConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateEmccFeatureConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateEmccFeatureConfigReq axlParams);
 
     /**
@@ -7770,10 +7739,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetEmccFeatureConfigRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getEmccFeatureConfig")
-    @WebResult(name = "getEmccFeatureConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getEmccFeatureConfig")
+    @WebResult(name = "getEmccFeatureConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetEmccFeatureConfigRes getEmccFeatureConfig(
-        @WebParam(name = "getEmccFeatureConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getEmccFeatureConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetEmccFeatureConfigReq axlParams);
 
     /**
@@ -7782,10 +7751,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addSafCcdPurgeBlockLearnedRoutes")
-    @WebResult(name = "addSafCcdPurgeBlockLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addSafCcdPurgeBlockLearnedRoutes")
+    @WebResult(name = "addSafCcdPurgeBlockLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addSafCcdPurgeBlockLearnedRoutes(
-        @WebParam(name = "addSafCcdPurgeBlockLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addSafCcdPurgeBlockLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddSafCcdPurgeBlockLearnedRoutesReq axlParams);
 
     /**
@@ -7794,10 +7763,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateSafCcdPurgeBlockLearnedRoutes")
-    @WebResult(name = "updateSafCcdPurgeBlockLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateSafCcdPurgeBlockLearnedRoutes")
+    @WebResult(name = "updateSafCcdPurgeBlockLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateSafCcdPurgeBlockLearnedRoutes(
-        @WebParam(name = "updateSafCcdPurgeBlockLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateSafCcdPurgeBlockLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateSafCcdPurgeBlockLearnedRoutesReq axlParams);
 
     /**
@@ -7806,10 +7775,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetSafCcdPurgeBlockLearnedRoutesRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getSafCcdPurgeBlockLearnedRoutes")
-    @WebResult(name = "getSafCcdPurgeBlockLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getSafCcdPurgeBlockLearnedRoutes")
+    @WebResult(name = "getSafCcdPurgeBlockLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetSafCcdPurgeBlockLearnedRoutesRes getSafCcdPurgeBlockLearnedRoutes(
-        @WebParam(name = "getSafCcdPurgeBlockLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getSafCcdPurgeBlockLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetSafCcdPurgeBlockLearnedRoutesReq axlParams);
 
     /**
@@ -7818,10 +7787,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeSafCcdPurgeBlockLearnedRoutes")
-    @WebResult(name = "removeSafCcdPurgeBlockLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeSafCcdPurgeBlockLearnedRoutes")
+    @WebResult(name = "removeSafCcdPurgeBlockLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeSafCcdPurgeBlockLearnedRoutes(
-        @WebParam(name = "removeSafCcdPurgeBlockLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeSafCcdPurgeBlockLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveSafCcdPurgeBlockLearnedRoutesReq axlParams);
 
     /**
@@ -7830,10 +7799,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListSafCcdPurgeBlockLearnedRoutesRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listSafCcdPurgeBlockLearnedRoutes")
-    @WebResult(name = "listSafCcdPurgeBlockLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listSafCcdPurgeBlockLearnedRoutes")
+    @WebResult(name = "listSafCcdPurgeBlockLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListSafCcdPurgeBlockLearnedRoutesRes listSafCcdPurgeBlockLearnedRoutes(
-        @WebParam(name = "listSafCcdPurgeBlockLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listSafCcdPurgeBlockLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListSafCcdPurgeBlockLearnedRoutesReq axlParams);
 
     /**
@@ -7842,10 +7811,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addVpnGateway")
-    @WebResult(name = "addVpnGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addVpnGateway")
+    @WebResult(name = "addVpnGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addVpnGateway(
-        @WebParam(name = "addVpnGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addVpnGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddVpnGatewayReq axlParams);
 
     /**
@@ -7854,10 +7823,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateVpnGateway")
-    @WebResult(name = "updateVpnGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateVpnGateway")
+    @WebResult(name = "updateVpnGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateVpnGateway(
-        @WebParam(name = "updateVpnGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateVpnGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateVpnGatewayReq axlParams);
 
     /**
@@ -7866,10 +7835,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetVpnGatewayRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getVpnGateway")
-    @WebResult(name = "getVpnGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getVpnGateway")
+    @WebResult(name = "getVpnGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetVpnGatewayRes getVpnGateway(
-        @WebParam(name = "getVpnGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getVpnGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetVpnGatewayReq axlParams);
 
     /**
@@ -7878,10 +7847,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeVpnGateway")
-    @WebResult(name = "removeVpnGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeVpnGateway")
+    @WebResult(name = "removeVpnGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeVpnGateway(
-        @WebParam(name = "removeVpnGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeVpnGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -7890,10 +7859,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListVpnGatewayRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listVpnGateway")
-    @WebResult(name = "listVpnGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listVpnGateway")
+    @WebResult(name = "listVpnGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListVpnGatewayRes listVpnGateway(
-        @WebParam(name = "listVpnGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listVpnGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListVpnGatewayReq axlParams);
 
     /**
@@ -7902,10 +7871,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addVpnGroup")
-    @WebResult(name = "addVpnGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addVpnGroup")
+    @WebResult(name = "addVpnGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addVpnGroup(
-        @WebParam(name = "addVpnGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addVpnGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddVpnGroupReq axlParams);
 
     /**
@@ -7914,10 +7883,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateVpnGroup")
-    @WebResult(name = "updateVpnGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateVpnGroup")
+    @WebResult(name = "updateVpnGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateVpnGroup(
-        @WebParam(name = "updateVpnGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateVpnGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateVpnGroupReq axlParams);
 
     /**
@@ -7926,10 +7895,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetVpnGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getVpnGroup")
-    @WebResult(name = "getVpnGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getVpnGroup")
+    @WebResult(name = "getVpnGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetVpnGroupRes getVpnGroup(
-        @WebParam(name = "getVpnGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getVpnGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetVpnGroupReq axlParams);
 
     /**
@@ -7938,10 +7907,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeVpnGroup")
-    @WebResult(name = "removeVpnGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeVpnGroup")
+    @WebResult(name = "removeVpnGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeVpnGroup(
-        @WebParam(name = "removeVpnGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeVpnGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -7950,10 +7919,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListVpnGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listVpnGroup")
-    @WebResult(name = "listVpnGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listVpnGroup")
+    @WebResult(name = "listVpnGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListVpnGroupRes listVpnGroup(
-        @WebParam(name = "listVpnGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listVpnGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListVpnGroupReq axlParams);
 
     /**
@@ -7962,10 +7931,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addVpnProfile")
-    @WebResult(name = "addVpnProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addVpnProfile")
+    @WebResult(name = "addVpnProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addVpnProfile(
-        @WebParam(name = "addVpnProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addVpnProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddVpnProfileReq axlParams);
 
     /**
@@ -7974,10 +7943,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateVpnProfile")
-    @WebResult(name = "updateVpnProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateVpnProfile")
+    @WebResult(name = "updateVpnProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateVpnProfile(
-        @WebParam(name = "updateVpnProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateVpnProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateVpnProfileReq axlParams);
 
     /**
@@ -7986,10 +7955,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetVpnProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getVpnProfile")
-    @WebResult(name = "getVpnProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getVpnProfile")
+    @WebResult(name = "getVpnProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetVpnProfileRes getVpnProfile(
-        @WebParam(name = "getVpnProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getVpnProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetVpnProfileReq axlParams);
 
     /**
@@ -7998,10 +7967,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeVpnProfile")
-    @WebResult(name = "removeVpnProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeVpnProfile")
+    @WebResult(name = "removeVpnProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeVpnProfile(
-        @WebParam(name = "removeVpnProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeVpnProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8010,10 +7979,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListVpnProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listVpnProfile")
-    @WebResult(name = "listVpnProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listVpnProfile")
+    @WebResult(name = "listVpnProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListVpnProfileRes listVpnProfile(
-        @WebParam(name = "listVpnProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listVpnProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListVpnProfileReq axlParams);
 
     /**
@@ -8022,10 +7991,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addImeServer")
-    @WebResult(name = "addImeServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addImeServer")
+    @WebResult(name = "addImeServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addImeServer(
-        @WebParam(name = "addImeServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addImeServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddImeServerReq axlParams);
 
     /**
@@ -8034,10 +8003,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateImeServer")
-    @WebResult(name = "updateImeServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateImeServer")
+    @WebResult(name = "updateImeServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateImeServer(
-        @WebParam(name = "updateImeServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateImeServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateImeServerReq axlParams);
 
     /**
@@ -8046,10 +8015,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetImeServerRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getImeServer")
-    @WebResult(name = "getImeServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getImeServer")
+    @WebResult(name = "getImeServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetImeServerRes getImeServer(
-        @WebParam(name = "getImeServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getImeServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetImeServerReq axlParams);
 
     /**
@@ -8058,10 +8027,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeImeServer")
-    @WebResult(name = "removeImeServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeImeServer")
+    @WebResult(name = "removeImeServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeImeServer(
-        @WebParam(name = "removeImeServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeImeServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8070,10 +8039,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListImeServerRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listImeServer")
-    @WebResult(name = "listImeServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listImeServer")
+    @WebResult(name = "listImeServerResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListImeServerRes listImeServer(
-        @WebParam(name = "listImeServer", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listImeServer", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListImeServerReq axlParams);
 
     /**
@@ -8082,10 +8051,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addImeRouteFilterGroup")
-    @WebResult(name = "addImeRouteFilterGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addImeRouteFilterGroup")
+    @WebResult(name = "addImeRouteFilterGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addImeRouteFilterGroup(
-        @WebParam(name = "addImeRouteFilterGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addImeRouteFilterGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddImeRouteFilterGroupReq axlParams);
 
     /**
@@ -8094,10 +8063,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateImeRouteFilterGroup")
-    @WebResult(name = "updateImeRouteFilterGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateImeRouteFilterGroup")
+    @WebResult(name = "updateImeRouteFilterGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateImeRouteFilterGroup(
-        @WebParam(name = "updateImeRouteFilterGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateImeRouteFilterGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateImeRouteFilterGroupReq axlParams);
 
     /**
@@ -8106,10 +8075,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetImeRouteFilterGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getImeRouteFilterGroup")
-    @WebResult(name = "getImeRouteFilterGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getImeRouteFilterGroup")
+    @WebResult(name = "getImeRouteFilterGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetImeRouteFilterGroupRes getImeRouteFilterGroup(
-        @WebParam(name = "getImeRouteFilterGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getImeRouteFilterGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetImeRouteFilterGroupReq axlParams);
 
     /**
@@ -8118,10 +8087,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeImeRouteFilterGroup")
-    @WebResult(name = "removeImeRouteFilterGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeImeRouteFilterGroup")
+    @WebResult(name = "removeImeRouteFilterGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeImeRouteFilterGroup(
-        @WebParam(name = "removeImeRouteFilterGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeImeRouteFilterGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8130,10 +8099,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListImeRouteFilterGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listImeRouteFilterGroup")
-    @WebResult(name = "listImeRouteFilterGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listImeRouteFilterGroup")
+    @WebResult(name = "listImeRouteFilterGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListImeRouteFilterGroupRes listImeRouteFilterGroup(
-        @WebParam(name = "listImeRouteFilterGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listImeRouteFilterGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListImeRouteFilterGroupReq axlParams);
 
     /**
@@ -8142,10 +8111,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addImeRouteFilterElement")
-    @WebResult(name = "addImeRouteFilterElementResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addImeRouteFilterElement")
+    @WebResult(name = "addImeRouteFilterElementResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addImeRouteFilterElement(
-        @WebParam(name = "addImeRouteFilterElement", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addImeRouteFilterElement", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddImeRouteFilterElementReq axlParams);
 
     /**
@@ -8154,10 +8123,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateImeRouteFilterElement")
-    @WebResult(name = "updateImeRouteFilterElementResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateImeRouteFilterElement")
+    @WebResult(name = "updateImeRouteFilterElementResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateImeRouteFilterElement(
-        @WebParam(name = "updateImeRouteFilterElement", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateImeRouteFilterElement", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateImeRouteFilterElementReq axlParams);
 
     /**
@@ -8166,10 +8135,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetImeRouteFilterElementRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getImeRouteFilterElement")
-    @WebResult(name = "getImeRouteFilterElementResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getImeRouteFilterElement")
+    @WebResult(name = "getImeRouteFilterElementResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetImeRouteFilterElementRes getImeRouteFilterElement(
-        @WebParam(name = "getImeRouteFilterElement", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getImeRouteFilterElement", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetImeRouteFilterElementReq axlParams);
 
     /**
@@ -8178,10 +8147,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeImeRouteFilterElement")
-    @WebResult(name = "removeImeRouteFilterElementResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeImeRouteFilterElement")
+    @WebResult(name = "removeImeRouteFilterElementResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeImeRouteFilterElement(
-        @WebParam(name = "removeImeRouteFilterElement", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeImeRouteFilterElement", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8190,10 +8159,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListImeRouteFilterElementRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listImeRouteFilterElement")
-    @WebResult(name = "listImeRouteFilterElementResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listImeRouteFilterElement")
+    @WebResult(name = "listImeRouteFilterElementResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListImeRouteFilterElementRes listImeRouteFilterElement(
-        @WebParam(name = "listImeRouteFilterElement", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listImeRouteFilterElement", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListImeRouteFilterElementReq axlParams);
 
     /**
@@ -8202,10 +8171,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addImeClient")
-    @WebResult(name = "addImeClientResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addImeClient")
+    @WebResult(name = "addImeClientResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addImeClient(
-        @WebParam(name = "addImeClient", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addImeClient", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddImeClientReq axlParams);
 
     /**
@@ -8214,10 +8183,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateImeClient")
-    @WebResult(name = "updateImeClientResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateImeClient")
+    @WebResult(name = "updateImeClientResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateImeClient(
-        @WebParam(name = "updateImeClient", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateImeClient", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateImeClientReq axlParams);
 
     /**
@@ -8226,10 +8195,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetImeClientRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getImeClient")
-    @WebResult(name = "getImeClientResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getImeClient")
+    @WebResult(name = "getImeClientResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetImeClientRes getImeClient(
-        @WebParam(name = "getImeClient", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getImeClient", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetImeClientReq axlParams);
 
     /**
@@ -8238,10 +8207,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeImeClient")
-    @WebResult(name = "removeImeClientResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeImeClient")
+    @WebResult(name = "removeImeClientResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeImeClient(
-        @WebParam(name = "removeImeClient", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeImeClient", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8250,10 +8219,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListImeClientRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listImeClient")
-    @WebResult(name = "listImeClientResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listImeClient")
+    @WebResult(name = "listImeClientResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListImeClientRes listImeClient(
-        @WebParam(name = "listImeClient", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listImeClient", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListImeClientReq axlParams);
 
     /**
@@ -8262,10 +8231,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addImeEnrolledPattern")
-    @WebResult(name = "addImeEnrolledPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addImeEnrolledPattern")
+    @WebResult(name = "addImeEnrolledPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addImeEnrolledPattern(
-        @WebParam(name = "addImeEnrolledPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addImeEnrolledPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddImeEnrolledPatternReq axlParams);
 
     /**
@@ -8274,10 +8243,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateImeEnrolledPattern")
-    @WebResult(name = "updateImeEnrolledPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateImeEnrolledPattern")
+    @WebResult(name = "updateImeEnrolledPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateImeEnrolledPattern(
-        @WebParam(name = "updateImeEnrolledPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateImeEnrolledPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateImeEnrolledPatternReq axlParams);
 
     /**
@@ -8286,10 +8255,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetImeEnrolledPatternRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getImeEnrolledPattern")
-    @WebResult(name = "getImeEnrolledPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getImeEnrolledPattern")
+    @WebResult(name = "getImeEnrolledPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetImeEnrolledPatternRes getImeEnrolledPattern(
-        @WebParam(name = "getImeEnrolledPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getImeEnrolledPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetImeEnrolledPatternReq axlParams);
 
     /**
@@ -8298,10 +8267,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeImeEnrolledPattern")
-    @WebResult(name = "removeImeEnrolledPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeImeEnrolledPattern")
+    @WebResult(name = "removeImeEnrolledPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeImeEnrolledPattern(
-        @WebParam(name = "removeImeEnrolledPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeImeEnrolledPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveImeEnrolledPatternReq axlParams);
 
     /**
@@ -8310,10 +8279,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListImeEnrolledPatternRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listImeEnrolledPattern")
-    @WebResult(name = "listImeEnrolledPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listImeEnrolledPattern")
+    @WebResult(name = "listImeEnrolledPatternResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListImeEnrolledPatternRes listImeEnrolledPattern(
-        @WebParam(name = "listImeEnrolledPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listImeEnrolledPattern", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListImeEnrolledPatternReq axlParams);
 
     /**
@@ -8322,10 +8291,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addImeEnrolledPatternGroup")
-    @WebResult(name = "addImeEnrolledPatternGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addImeEnrolledPatternGroup")
+    @WebResult(name = "addImeEnrolledPatternGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addImeEnrolledPatternGroup(
-        @WebParam(name = "addImeEnrolledPatternGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addImeEnrolledPatternGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddImeEnrolledPatternGroupReq axlParams);
 
     /**
@@ -8334,10 +8303,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateImeEnrolledPatternGroup")
-    @WebResult(name = "updateImeEnrolledPatternGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateImeEnrolledPatternGroup")
+    @WebResult(name = "updateImeEnrolledPatternGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateImeEnrolledPatternGroup(
-        @WebParam(name = "updateImeEnrolledPatternGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateImeEnrolledPatternGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateImeEnrolledPatternGroupReq axlParams);
 
     /**
@@ -8346,10 +8315,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetImeEnrolledPatternGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getImeEnrolledPatternGroup")
-    @WebResult(name = "getImeEnrolledPatternGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getImeEnrolledPatternGroup")
+    @WebResult(name = "getImeEnrolledPatternGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetImeEnrolledPatternGroupRes getImeEnrolledPatternGroup(
-        @WebParam(name = "getImeEnrolledPatternGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getImeEnrolledPatternGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetImeEnrolledPatternGroupReq axlParams);
 
     /**
@@ -8358,10 +8327,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeImeEnrolledPatternGroup")
-    @WebResult(name = "removeImeEnrolledPatternGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeImeEnrolledPatternGroup")
+    @WebResult(name = "removeImeEnrolledPatternGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeImeEnrolledPatternGroup(
-        @WebParam(name = "removeImeEnrolledPatternGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeImeEnrolledPatternGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8370,10 +8339,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListImeEnrolledPatternGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listImeEnrolledPatternGroup")
-    @WebResult(name = "listImeEnrolledPatternGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listImeEnrolledPatternGroup")
+    @WebResult(name = "listImeEnrolledPatternGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListImeEnrolledPatternGroupRes listImeEnrolledPatternGroup(
-        @WebParam(name = "listImeEnrolledPatternGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listImeEnrolledPatternGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListImeEnrolledPatternGroupReq axlParams);
 
     /**
@@ -8382,10 +8351,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addImeExclusionNumber")
-    @WebResult(name = "addImeExclusionNumberResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addImeExclusionNumber")
+    @WebResult(name = "addImeExclusionNumberResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addImeExclusionNumber(
-        @WebParam(name = "addImeExclusionNumber", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addImeExclusionNumber", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddImeExclusionNumberReq axlParams);
 
     /**
@@ -8394,10 +8363,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateImeExclusionNumber")
-    @WebResult(name = "updateImeExclusionNumberResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateImeExclusionNumber")
+    @WebResult(name = "updateImeExclusionNumberResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateImeExclusionNumber(
-        @WebParam(name = "updateImeExclusionNumber", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateImeExclusionNumber", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateImeExclusionNumberReq axlParams);
 
     /**
@@ -8406,10 +8375,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetImeExclusionNumberRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getImeExclusionNumber")
-    @WebResult(name = "getImeExclusionNumberResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getImeExclusionNumber")
+    @WebResult(name = "getImeExclusionNumberResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetImeExclusionNumberRes getImeExclusionNumber(
-        @WebParam(name = "getImeExclusionNumber", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getImeExclusionNumber", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetImeExclusionNumberReq axlParams);
 
     /**
@@ -8418,10 +8387,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeImeExclusionNumber")
-    @WebResult(name = "removeImeExclusionNumberResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeImeExclusionNumber")
+    @WebResult(name = "removeImeExclusionNumberResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeImeExclusionNumber(
-        @WebParam(name = "removeImeExclusionNumber", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeImeExclusionNumber", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveImeExclusionNumberReq axlParams);
 
     /**
@@ -8430,10 +8399,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListImeExclusionNumberRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listImeExclusionNumber")
-    @WebResult(name = "listImeExclusionNumberResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listImeExclusionNumber")
+    @WebResult(name = "listImeExclusionNumberResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListImeExclusionNumberRes listImeExclusionNumber(
-        @WebParam(name = "listImeExclusionNumber", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listImeExclusionNumber", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListImeExclusionNumberReq axlParams);
 
     /**
@@ -8442,10 +8411,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addImeExclusionNumberGroup")
-    @WebResult(name = "addImeExclusionNumberGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addImeExclusionNumberGroup")
+    @WebResult(name = "addImeExclusionNumberGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addImeExclusionNumberGroup(
-        @WebParam(name = "addImeExclusionNumberGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addImeExclusionNumberGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddImeExclusionNumberGroupReq axlParams);
 
     /**
@@ -8454,10 +8423,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateImeExclusionNumberGroup")
-    @WebResult(name = "updateImeExclusionNumberGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateImeExclusionNumberGroup")
+    @WebResult(name = "updateImeExclusionNumberGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateImeExclusionNumberGroup(
-        @WebParam(name = "updateImeExclusionNumberGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateImeExclusionNumberGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateImeExclusionNumberGroupReq axlParams);
 
     /**
@@ -8466,10 +8435,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetImeExclusionNumberGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getImeExclusionNumberGroup")
-    @WebResult(name = "getImeExclusionNumberGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getImeExclusionNumberGroup")
+    @WebResult(name = "getImeExclusionNumberGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetImeExclusionNumberGroupRes getImeExclusionNumberGroup(
-        @WebParam(name = "getImeExclusionNumberGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getImeExclusionNumberGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetImeExclusionNumberGroupReq axlParams);
 
     /**
@@ -8478,10 +8447,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeImeExclusionNumberGroup")
-    @WebResult(name = "removeImeExclusionNumberGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeImeExclusionNumberGroup")
+    @WebResult(name = "removeImeExclusionNumberGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeImeExclusionNumberGroup(
-        @WebParam(name = "removeImeExclusionNumberGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeImeExclusionNumberGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8490,10 +8459,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListImeExclusionNumberGroupRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listImeExclusionNumberGroup")
-    @WebResult(name = "listImeExclusionNumberGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listImeExclusionNumberGroup")
+    @WebResult(name = "listImeExclusionNumberGroupResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListImeExclusionNumberGroupRes listImeExclusionNumberGroup(
-        @WebParam(name = "listImeExclusionNumberGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listImeExclusionNumberGroup", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListImeExclusionNumberGroupReq axlParams);
 
     /**
@@ -8502,10 +8471,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addImeFirewall")
-    @WebResult(name = "addImeFirewallResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addImeFirewall")
+    @WebResult(name = "addImeFirewallResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addImeFirewall(
-        @WebParam(name = "addImeFirewall", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addImeFirewall", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddImeFirewallReq axlParams);
 
     /**
@@ -8514,10 +8483,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateImeFirewall")
-    @WebResult(name = "updateImeFirewallResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateImeFirewall")
+    @WebResult(name = "updateImeFirewallResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateImeFirewall(
-        @WebParam(name = "updateImeFirewall", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateImeFirewall", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateImeFirewallReq axlParams);
 
     /**
@@ -8526,10 +8495,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetImeFirewallRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getImeFirewall")
-    @WebResult(name = "getImeFirewallResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getImeFirewall")
+    @WebResult(name = "getImeFirewallResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetImeFirewallRes getImeFirewall(
-        @WebParam(name = "getImeFirewall", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getImeFirewall", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetImeFirewallReq axlParams);
 
     /**
@@ -8538,10 +8507,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeImeFirewall")
-    @WebResult(name = "removeImeFirewallResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeImeFirewall")
+    @WebResult(name = "removeImeFirewallResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeImeFirewall(
-        @WebParam(name = "removeImeFirewall", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeImeFirewall", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8550,10 +8519,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListImeFirewallRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listImeFirewall")
-    @WebResult(name = "listImeFirewallResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listImeFirewall")
+    @WebResult(name = "listImeFirewallResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListImeFirewallRes listImeFirewall(
-        @WebParam(name = "listImeFirewall", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listImeFirewall", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListImeFirewallReq axlParams);
 
     /**
@@ -8562,10 +8531,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addImeE164Transformation")
-    @WebResult(name = "addImeE164TransformationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addImeE164Transformation")
+    @WebResult(name = "addImeE164TransformationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addImeE164Transformation(
-        @WebParam(name = "addImeE164Transformation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addImeE164Transformation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddImeE164TransformationReq axlParams);
 
     /**
@@ -8574,10 +8543,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateImeE164Transformation")
-    @WebResult(name = "updateImeE164TransformationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateImeE164Transformation")
+    @WebResult(name = "updateImeE164TransformationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateImeE164Transformation(
-        @WebParam(name = "updateImeE164Transformation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateImeE164Transformation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateImeE164TransformationReq axlParams);
 
     /**
@@ -8586,10 +8555,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetImeE164TransformationRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getImeE164Transformation")
-    @WebResult(name = "getImeE164TransformationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getImeE164Transformation")
+    @WebResult(name = "getImeE164TransformationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetImeE164TransformationRes getImeE164Transformation(
-        @WebParam(name = "getImeE164Transformation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getImeE164Transformation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetImeE164TransformationReq axlParams);
 
     /**
@@ -8598,10 +8567,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeImeE164Transformation")
-    @WebResult(name = "removeImeE164TransformationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeImeE164Transformation")
+    @WebResult(name = "removeImeE164TransformationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeImeE164Transformation(
-        @WebParam(name = "removeImeE164Transformation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeImeE164Transformation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8610,10 +8579,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListImeE164TransformationRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listImeE164Transformation")
-    @WebResult(name = "listImeE164TransformationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listImeE164Transformation")
+    @WebResult(name = "listImeE164TransformationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListImeE164TransformationRes listImeE164Transformation(
-        @WebParam(name = "listImeE164Transformation", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listImeE164Transformation", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListImeE164TransformationReq axlParams);
 
     /**
@@ -8622,10 +8591,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addTransformationProfile")
-    @WebResult(name = "addTransformationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addTransformationProfile")
+    @WebResult(name = "addTransformationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addTransformationProfile(
-        @WebParam(name = "addTransformationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addTransformationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddTransformationProfileReq axlParams);
 
     /**
@@ -8634,10 +8603,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateTransformationProfile")
-    @WebResult(name = "updateTransformationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateTransformationProfile")
+    @WebResult(name = "updateTransformationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateTransformationProfile(
-        @WebParam(name = "updateTransformationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateTransformationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateTransformationProfileReq axlParams);
 
     /**
@@ -8646,10 +8615,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetTransformationProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getTransformationProfile")
-    @WebResult(name = "getTransformationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getTransformationProfile")
+    @WebResult(name = "getTransformationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetTransformationProfileRes getTransformationProfile(
-        @WebParam(name = "getTransformationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getTransformationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetTransformationProfileReq axlParams);
 
     /**
@@ -8658,10 +8627,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeTransformationProfile")
-    @WebResult(name = "removeTransformationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeTransformationProfile")
+    @WebResult(name = "removeTransformationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeTransformationProfile(
-        @WebParam(name = "removeTransformationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeTransformationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8670,10 +8639,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListTransformationProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listTransformationProfile")
-    @WebResult(name = "listTransformationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listTransformationProfile")
+    @WebResult(name = "listTransformationProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListTransformationProfileRes listTransformationProfile(
-        @WebParam(name = "listTransformationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listTransformationProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListTransformationProfileReq axlParams);
 
     /**
@@ -8682,10 +8651,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addFallbackProfile")
-    @WebResult(name = "addFallbackProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addFallbackProfile")
+    @WebResult(name = "addFallbackProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addFallbackProfile(
-        @WebParam(name = "addFallbackProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addFallbackProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddFallbackProfileReq axlParams);
 
     /**
@@ -8694,10 +8663,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateFallbackProfile")
-    @WebResult(name = "updateFallbackProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateFallbackProfile")
+    @WebResult(name = "updateFallbackProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateFallbackProfile(
-        @WebParam(name = "updateFallbackProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateFallbackProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateFallbackProfileReq axlParams);
 
     /**
@@ -8706,10 +8675,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetFallbackProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getFallbackProfile")
-    @WebResult(name = "getFallbackProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getFallbackProfile")
+    @WebResult(name = "getFallbackProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetFallbackProfileRes getFallbackProfile(
-        @WebParam(name = "getFallbackProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getFallbackProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetFallbackProfileReq axlParams);
 
     /**
@@ -8718,10 +8687,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeFallbackProfile")
-    @WebResult(name = "removeFallbackProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeFallbackProfile")
+    @WebResult(name = "removeFallbackProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeFallbackProfile(
-        @WebParam(name = "removeFallbackProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeFallbackProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8730,10 +8699,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListFallbackProfileRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listFallbackProfile")
-    @WebResult(name = "listFallbackProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listFallbackProfile")
+    @WebResult(name = "listFallbackProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListFallbackProfileRes listFallbackProfile(
-        @WebParam(name = "listFallbackProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listFallbackProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListFallbackProfileReq axlParams);
 
     /**
@@ -8742,10 +8711,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addLdapFilter")
-    @WebResult(name = "addLdapFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addLdapFilter")
+    @WebResult(name = "addLdapFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addLdapFilter(
-        @WebParam(name = "addLdapFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addLdapFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddLdapFilterReq axlParams);
 
     /**
@@ -8754,10 +8723,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateLdapFilter")
-    @WebResult(name = "updateLdapFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateLdapFilter")
+    @WebResult(name = "updateLdapFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateLdapFilter(
-        @WebParam(name = "updateLdapFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateLdapFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateLdapFilterReq axlParams);
 
     /**
@@ -8766,10 +8735,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetLdapFilterRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getLdapFilter")
-    @WebResult(name = "getLdapFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getLdapFilter")
+    @WebResult(name = "getLdapFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetLdapFilterRes getLdapFilter(
-        @WebParam(name = "getLdapFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getLdapFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetLdapFilterReq axlParams);
 
     /**
@@ -8778,10 +8747,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeLdapFilter")
-    @WebResult(name = "removeLdapFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeLdapFilter")
+    @WebResult(name = "removeLdapFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeLdapFilter(
-        @WebParam(name = "removeLdapFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeLdapFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8790,10 +8759,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListLdapFilterRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listLdapFilter")
-    @WebResult(name = "listLdapFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listLdapFilter")
+    @WebResult(name = "listLdapFilterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListLdapFilterRes listLdapFilter(
-        @WebParam(name = "listLdapFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listLdapFilter", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListLdapFilterReq axlParams);
 
     /**
@@ -8802,10 +8771,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addAppServerInfo")
-    @WebResult(name = "addAppServerInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addAppServerInfo")
+    @WebResult(name = "addAppServerInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addAppServerInfo(
-        @WebParam(name = "addAppServerInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addAppServerInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddAppServerInfoReq axlParams);
 
     /**
@@ -8814,10 +8783,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateAppServerInfo")
-    @WebResult(name = "updateAppServerInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateAppServerInfo")
+    @WebResult(name = "updateAppServerInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateAppServerInfo(
-        @WebParam(name = "updateAppServerInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateAppServerInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateAppServerInfoReq axlParams);
 
     /**
@@ -8826,10 +8795,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateTvsCertificate")
-    @WebResult(name = "updateTvsCertificateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateTvsCertificate")
+    @WebResult(name = "updateTvsCertificateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateTvsCertificate(
-        @WebParam(name = "updateTvsCertificate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateTvsCertificate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateTvsCertificateReq axlParams);
 
     /**
@@ -8838,10 +8807,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetTvsCertificateRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getTvsCertificate")
-    @WebResult(name = "getTvsCertificateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getTvsCertificate")
+    @WebResult(name = "getTvsCertificateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetTvsCertificateRes getTvsCertificate(
-        @WebParam(name = "getTvsCertificate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getTvsCertificate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetTvsCertificateReq axlParams);
 
     /**
@@ -8850,10 +8819,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListTvsCertificateRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listTvsCertificate")
-    @WebResult(name = "listTvsCertificateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listTvsCertificate")
+    @WebResult(name = "listTvsCertificateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListTvsCertificateRes listTvsCertificate(
-        @WebParam(name = "listTvsCertificate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listTvsCertificate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListTvsCertificateReq axlParams);
 
     /**
@@ -8862,10 +8831,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addFeatureControlPolicy")
-    @WebResult(name = "addFeatureControlPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addFeatureControlPolicy")
+    @WebResult(name = "addFeatureControlPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addFeatureControlPolicy(
-        @WebParam(name = "addFeatureControlPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addFeatureControlPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddFeatureControlPolicyReq axlParams);
 
     /**
@@ -8874,10 +8843,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateFeatureControlPolicy")
-    @WebResult(name = "updateFeatureControlPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateFeatureControlPolicy")
+    @WebResult(name = "updateFeatureControlPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateFeatureControlPolicy(
-        @WebParam(name = "updateFeatureControlPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateFeatureControlPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateFeatureControlPolicyReq axlParams);
 
     /**
@@ -8886,10 +8855,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetFeatureControlPolicyRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getFeatureControlPolicy")
-    @WebResult(name = "getFeatureControlPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getFeatureControlPolicy")
+    @WebResult(name = "getFeatureControlPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetFeatureControlPolicyRes getFeatureControlPolicy(
-        @WebParam(name = "getFeatureControlPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getFeatureControlPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetFeatureControlPolicyReq axlParams);
 
     /**
@@ -8898,10 +8867,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeFeatureControlPolicy")
-    @WebResult(name = "removeFeatureControlPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeFeatureControlPolicy")
+    @WebResult(name = "removeFeatureControlPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeFeatureControlPolicy(
-        @WebParam(name = "removeFeatureControlPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeFeatureControlPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         NameAndGUIDRequest axlParams);
 
     /**
@@ -8910,179 +8879,11 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ListFeatureControlPolicyRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 listFeatureControlPolicy")
-    @WebResult(name = "listFeatureControlPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 listFeatureControlPolicy")
+    @WebResult(name = "listFeatureControlPolicyResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ListFeatureControlPolicyRes listFeatureControlPolicy(
-        @WebParam(name = "listFeatureControlPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "listFeatureControlPolicy", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ListFeatureControlPolicyReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.StandardResponse
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 addMobilityProfile")
-    @WebResult(name = "addMobilityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public StandardResponse addMobilityProfile(
-        @WebParam(name = "addMobilityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        AddMobilityProfileReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.StandardResponse
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateMobilityProfile")
-    @WebResult(name = "updateMobilityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public StandardResponse updateMobilityProfile(
-        @WebParam(name = "updateMobilityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        UpdateMobilityProfileReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.GetMobilityProfileRes
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 getMobilityProfile")
-    @WebResult(name = "getMobilityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public GetMobilityProfileRes getMobilityProfile(
-        @WebParam(name = "getMobilityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        GetMobilityProfileReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.StandardResponse
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeMobilityProfile")
-    @WebResult(name = "removeMobilityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public StandardResponse removeMobilityProfile(
-        @WebParam(name = "removeMobilityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        NameAndGUIDRequest axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.ListMobilityProfileRes
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 listMobilityProfile")
-    @WebResult(name = "listMobilityProfileResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public ListMobilityProfileRes listMobilityProfile(
-        @WebParam(name = "listMobilityProfile", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        ListMobilityProfileReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.StandardResponse
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 addEnterpriseFeatureAccessConfiguration")
-    @WebResult(name = "addEnterpriseFeatureAccessConfigurationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public StandardResponse addEnterpriseFeatureAccessConfiguration(
-        @WebParam(name = "addEnterpriseFeatureAccessConfiguration", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        AddEnterpriseFeatureAccessConfigurationReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.StandardResponse
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateEnterpriseFeatureAccessConfiguration")
-    @WebResult(name = "updateEnterpriseFeatureAccessConfigurationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public StandardResponse updateEnterpriseFeatureAccessConfiguration(
-        @WebParam(name = "updateEnterpriseFeatureAccessConfiguration", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        UpdateEnterpriseFeatureAccessConfigurationReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.GetEnterpriseFeatureAccessConfigurationRes
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 getEnterpriseFeatureAccessConfiguration")
-    @WebResult(name = "getEnterpriseFeatureAccessConfigurationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public GetEnterpriseFeatureAccessConfigurationRes getEnterpriseFeatureAccessConfiguration(
-        @WebParam(name = "getEnterpriseFeatureAccessConfiguration", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        GetEnterpriseFeatureAccessConfigurationReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.StandardResponse
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeEnterpriseFeatureAccessConfiguration")
-    @WebResult(name = "removeEnterpriseFeatureAccessConfigurationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public StandardResponse removeEnterpriseFeatureAccessConfiguration(
-        @WebParam(name = "removeEnterpriseFeatureAccessConfiguration", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        RemoveEnterpriseFeatureAccessConfigurationReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.ListEnterpriseFeatureAccessConfigurationRes
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 listEnterpriseFeatureAccessConfiguration")
-    @WebResult(name = "listEnterpriseFeatureAccessConfigurationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public ListEnterpriseFeatureAccessConfigurationRes listEnterpriseFeatureAccessConfiguration(
-        @WebParam(name = "listEnterpriseFeatureAccessConfiguration", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        ListEnterpriseFeatureAccessConfigurationReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.StandardResponse
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 addHandoffConfiguration")
-    @WebResult(name = "addHandoffConfigurationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public StandardResponse addHandoffConfiguration(
-        @WebParam(name = "addHandoffConfiguration", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        AddHandoffConfigurationReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.StandardResponse
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateHandoffConfiguration")
-    @WebResult(name = "updateHandoffConfigurationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public StandardResponse updateHandoffConfiguration(
-        @WebParam(name = "updateHandoffConfiguration", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        UpdateHandoffConfigurationReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.GetHandoffConfigurationRes
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 getHandoffConfiguration")
-    @WebResult(name = "getHandoffConfigurationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public GetHandoffConfigurationRes getHandoffConfiguration(
-        @WebParam(name = "getHandoffConfiguration", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        GetHandoffConfigurationReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.StandardResponse
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeHandoffConfiguration")
-    @WebResult(name = "removeHandoffConfigurationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public StandardResponse removeHandoffConfiguration(
-        @WebParam(name = "removeHandoffConfiguration", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        RemoveHandoffConfigurationReq axlParams);
 
     /**
      * 
@@ -9090,10 +8891,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ExecuteSQLQueryRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 executeSQLQuery")
-    @WebResult(name = "executeSQLQueryResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 executeSQLQuery")
+    @WebResult(name = "executeSQLQueryResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ExecuteSQLQueryRes executeSQLQuery(
-        @WebParam(name = "executeSQLQuery", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "executeSQLQuery", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ExecuteSQLQueryReq axlParams);
 
     /**
@@ -9102,10 +8903,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.ExecuteSQLUpdateRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 executeSQLUpdate")
-    @WebResult(name = "executeSQLUpdateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 executeSQLUpdate")
+    @WebResult(name = "executeSQLUpdateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public ExecuteSQLUpdateRes executeSQLUpdate(
-        @WebParam(name = "executeSQLUpdate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "executeSQLUpdate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         ExecuteSQLUpdateReq axlParams);
 
     /**
@@ -9114,10 +8915,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.DoAuthenticateUserRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 doAuthenticateUser")
-    @WebResult(name = "doAuthenticateUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 doAuthenticateUser")
+    @WebResult(name = "doAuthenticateUserResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public DoAuthenticateUserRes doAuthenticateUser(
-        @WebParam(name = "doAuthenticateUser", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "doAuthenticateUser", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         DoAuthenticateUserReq axlParams);
 
     /**
@@ -9126,10 +8927,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.DoDeviceLoginRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 doDeviceLogin")
-    @WebResult(name = "doDeviceLoginResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 doDeviceLogin")
+    @WebResult(name = "doDeviceLoginResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public DoDeviceLoginRes doDeviceLogin(
-        @WebParam(name = "doDeviceLogin", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "doDeviceLogin", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         DoDeviceLoginReq axlParams);
 
     /**
@@ -9138,10 +8939,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.DoDeviceLogoutRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 doDeviceLogout")
-    @WebResult(name = "doDeviceLogoutResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 doDeviceLogout")
+    @WebResult(name = "doDeviceLogoutResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public DoDeviceLogoutRes doDeviceLogout(
-        @WebParam(name = "doDeviceLogout", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "doDeviceLogout", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         DoDeviceLogoutReq axlParams);
 
     /**
@@ -9150,10 +8951,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.DoDeviceResetRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 doDeviceReset")
-    @WebResult(name = "doDeviceResetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 doDeviceReset")
+    @WebResult(name = "doDeviceResetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public DoDeviceResetRes doDeviceReset(
-        @WebParam(name = "doDeviceReset", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "doDeviceReset", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         DoDeviceResetReq axlParams);
 
     /**
@@ -9162,10 +8963,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetOSVersionRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getOSVersion")
-    @WebResult(name = "getOSVersionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getOSVersion")
+    @WebResult(name = "getOSVersionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetOSVersionRes getOSVersion(
-        @WebParam(name = "getOSVersion", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getOSVersion", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetOSVersionReq axlParams);
 
     /**
@@ -9174,10 +8975,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetNumDevicesResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getNumDevices")
-    @WebResult(name = "getNumDevicesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getNumDevices")
+    @WebResult(name = "getNumDevicesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetNumDevicesResponse getNumDevices(
-        @WebParam(name = "getNumDevices", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getNumDevices", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetNumDevicesReq axlParams);
 
     /**
@@ -9186,10 +8987,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addMobility")
-    @WebResult(name = "addMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addMobility")
+    @WebResult(name = "addMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addMobility(
-        @WebParam(name = "addMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddMobilityReq axlParams);
 
     /**
@@ -9198,10 +8999,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateMobility")
-    @WebResult(name = "updateMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateMobility")
+    @WebResult(name = "updateMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateMobility(
-        @WebParam(name = "updateMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateMobilityReq axlParams);
 
     /**
@@ -9210,10 +9011,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetMobilityRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getMobility")
-    @WebResult(name = "getMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getMobility")
+    @WebResult(name = "getMobilityResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetMobilityRes getMobility(
-        @WebParam(name = "getMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getMobility", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetMobilityReq axlParams);
 
     /**
@@ -9222,10 +9023,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetEnterprisePhoneConfigRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getEnterprisePhoneConfig")
-    @WebResult(name = "getEnterprisePhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getEnterprisePhoneConfig")
+    @WebResult(name = "getEnterprisePhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetEnterprisePhoneConfigRes getEnterprisePhoneConfig(
-        @WebParam(name = "getEnterprisePhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getEnterprisePhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetEnterprisePhoneConfigReq axlParams);
 
     /**
@@ -9234,10 +9035,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateEnterprisePhoneConfig")
-    @WebResult(name = "updateEnterprisePhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateEnterprisePhoneConfig")
+    @WebResult(name = "updateEnterprisePhoneConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateEnterprisePhoneConfig(
-        @WebParam(name = "updateEnterprisePhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateEnterprisePhoneConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateEnterprisePhoneConfigReq axlParams);
 
     /**
@@ -9246,10 +9047,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetLicenseUnitReportRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getLicenseUnitReport")
-    @WebResult(name = "getLicenseUnitReportResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getLicenseUnitReport")
+    @WebResult(name = "getLicenseUnitReportResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetLicenseUnitReportRes getLicenseUnitReport(
-        @WebParam(name = "getLicenseUnitReport", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getLicenseUnitReport", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetLicenseUnitReportReq axlParams);
 
     /**
@@ -9258,10 +9059,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetLdapSystemRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getLdapSystem")
-    @WebResult(name = "getLdapSystemResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getLdapSystem")
+    @WebResult(name = "getLdapSystemResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetLdapSystemRes getLdapSystem(
-        @WebParam(name = "getLdapSystem", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getLdapSystem", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetLdapSystemReq axlParams);
 
     /**
@@ -9270,10 +9071,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateLdapSystem")
-    @WebResult(name = "updateLdapSystemResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateLdapSystem")
+    @WebResult(name = "updateLdapSystemResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateLdapSystem(
-        @WebParam(name = "updateLdapSystem", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateLdapSystem", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateLdapSystemReq axlParams);
 
     /**
@@ -9282,10 +9083,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetLdapAuthenticationRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getLdapAuthentication")
-    @WebResult(name = "getLdapAuthenticationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getLdapAuthentication")
+    @WebResult(name = "getLdapAuthenticationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetLdapAuthenticationRes getLdapAuthentication(
-        @WebParam(name = "getLdapAuthentication", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getLdapAuthentication", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetLdapAuthenticationReq axlParams);
 
     /**
@@ -9294,10 +9095,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateLdapAuthentication")
-    @WebResult(name = "updateLdapAuthenticationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateLdapAuthentication")
+    @WebResult(name = "updateLdapAuthenticationResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateLdapAuthentication(
-        @WebParam(name = "updateLdapAuthentication", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateLdapAuthentication", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateLdapAuthenticationReq axlParams);
 
     /**
@@ -9306,10 +9107,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 addApplicationToSoftkeyTemplate")
-    @WebResult(name = "addApplicationToSoftkeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 addApplicationToSoftkeyTemplate")
+    @WebResult(name = "addApplicationToSoftkeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse addApplicationToSoftkeyTemplate(
-        @WebParam(name = "addApplicationToSoftkeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "addApplicationToSoftkeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         AddApplicationToSoftkeyTemplateReq axlParams);
 
     /**
@@ -9318,10 +9119,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeApplicationToSoftkeyTemplate")
-    @WebResult(name = "removeApplicationToSoftkeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeApplicationToSoftkeyTemplate")
+    @WebResult(name = "removeApplicationToSoftkeyTemplateResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeApplicationToSoftkeyTemplate(
-        @WebParam(name = "removeApplicationToSoftkeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeApplicationToSoftkeyTemplate", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveApplicationToSoftkeyTemplateReq axlParams);
 
     /**
@@ -9330,10 +9131,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetCCMVersionRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getCCMVersion")
-    @WebResult(name = "getCCMVersionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getCCMVersion")
+    @WebResult(name = "getCCMVersionResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetCCMVersionRes getCCMVersion(
-        @WebParam(name = "getCCMVersion", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getCCMVersion", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetCCMVersionReq axlParams);
 
     /**
@@ -9342,10 +9143,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeUnitsToGateway")
-    @WebResult(name = "removeUnitsToGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeUnitsToGateway")
+    @WebResult(name = "removeUnitsToGatewayResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeUnitsToGateway(
-        @WebParam(name = "removeUnitsToGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeUnitsToGateway", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveUnitsToGatewayReq axlParams);
 
     /**
@@ -9354,10 +9155,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeGatewaySubunits")
-    @WebResult(name = "removeGatewaySubunitsResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeGatewaySubunits")
+    @WebResult(name = "removeGatewaySubunitsResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeGatewaySubunits(
-        @WebParam(name = "removeGatewaySubunits", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeGatewaySubunits", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveGatewaySubunitsReq axlParams);
 
     /**
@@ -9366,10 +9167,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateImeFeatureConfig")
-    @WebResult(name = "updateImeFeatureConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateImeFeatureConfig")
+    @WebResult(name = "updateImeFeatureConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateImeFeatureConfig(
-        @WebParam(name = "updateImeFeatureConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateImeFeatureConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateImeFeatureConfigReq axlParams);
 
     /**
@@ -9378,47 +9179,11 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateFallbackFeatureConfig")
-    @WebResult(name = "updateFallbackFeatureConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 updateFallbackFeatureConfig")
+    @WebResult(name = "updateFallbackFeatureConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse updateFallbackFeatureConfig(
-        @WebParam(name = "updateFallbackFeatureConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "updateFallbackFeatureConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         UpdateFallbackFeatureConfigReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.StandardResponse
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeImeLearnedRoutes")
-    @WebResult(name = "removeImeLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public StandardResponse removeImeLearnedRoutes(
-        @WebParam(name = "removeImeLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        RemoveImeLearnedRoutesReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.StandardResponse
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateImeLearnedRoutes")
-    @WebResult(name = "updateImeLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public StandardResponse updateImeLearnedRoutes(
-        @WebParam(name = "updateImeLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        UpdateImeLearnedRoutesReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.GetImeLearnedRoutesRes
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 getImeLearnedRoutes")
-    @WebResult(name = "getImeLearnedRoutesResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public GetImeLearnedRoutesRes getImeLearnedRoutes(
-        @WebParam(name = "getImeLearnedRoutes", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        GetImeLearnedRoutesReq axlParams);
 
     /**
      * 
@@ -9426,10 +9191,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetImeFeatureConfigRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getImeFeatureConfig")
-    @WebResult(name = "getImeFeatureConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getImeFeatureConfig")
+    @WebResult(name = "getImeFeatureConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetImeFeatureConfigRes getImeFeatureConfig(
-        @WebParam(name = "getImeFeatureConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getImeFeatureConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetImeFeatureConfigReq axlParams);
 
     /**
@@ -9438,10 +9203,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetFallbackFeatureConfigRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getFallbackFeatureConfig")
-    @WebResult(name = "getFallbackFeatureConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getFallbackFeatureConfig")
+    @WebResult(name = "getFallbackFeatureConfigResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetFallbackFeatureConfigRes getFallbackFeatureConfig(
-        @WebParam(name = "getFallbackFeatureConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getFallbackFeatureConfig", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetFallbackFeatureConfigReq axlParams);
 
     /**
@@ -9450,10 +9215,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.GetAppServerInfoRes
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 getAppServerInfo")
-    @WebResult(name = "getAppServerInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 getAppServerInfo")
+    @WebResult(name = "getAppServerInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public GetAppServerInfoRes getAppServerInfo(
-        @WebParam(name = "getAppServerInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "getAppServerInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         GetAppServerInfoReq axlParams);
 
     /**
@@ -9462,70 +9227,10 @@ public interface AXLPort {
      * @return
      *     returns com.cisco.axl.api._8.StandardResponse
      */
-    @WebMethod(action = "CUCM:DB ver=8.5 removeAppServerInfo")
-    @WebResult(name = "removeAppServerInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+    @WebMethod(action = "CUCM:DB ver=8.0 removeAppServerInfo")
+    @WebResult(name = "removeAppServerInfoResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
     public StandardResponse removeAppServerInfo(
-        @WebParam(name = "removeAppServerInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
+        @WebParam(name = "removeAppServerInfo", targetNamespace = "http://www.cisco.com/AXL/API/8.0", partName = "axlParams")
         RemoveAppServerInfoReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.DoLdapSyncRes
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 doLdapSync")
-    @WebResult(name = "doLdapSyncResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public DoLdapSyncRes doLdapSync(
-        @WebParam(name = "doLdapSync", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        DoLdapSyncReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.GetLdapSyncStatusRes
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 getLdapSyncStatus")
-    @WebResult(name = "getLdapSyncStatusResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public GetLdapSyncStatusRes getLdapSyncStatus(
-        @WebParam(name = "getLdapSyncStatus", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        GetLdapSyncStatusReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.StandardResponse
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 updateSoftKeySet")
-    @WebResult(name = "updateSoftKeySetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public StandardResponse updateSoftKeySet(
-        @WebParam(name = "updateSoftKeySet", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        UpdateSoftKeySetReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.GetSoftKeySetRes
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 getSoftKeySet")
-    @WebResult(name = "getSoftKeySetResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public GetSoftKeySetRes getSoftKeySet(
-        @WebParam(name = "getSoftKeySet", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        GetSoftKeySetReq axlParams);
-
-    /**
-     * 
-     * @param axlParams
-     * @return
-     *     returns com.cisco.axl.api._8.DoUpdateRemoteClusterRes
-     */
-    @WebMethod(action = "CUCM:DB ver=8.5 doUpdateRemoteCluster")
-    @WebResult(name = "doUpdateRemoteClusterResponse", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-    public DoUpdateRemoteClusterRes doUpdateRemoteCluster(
-        @WebParam(name = "doUpdateRemoteCluster", targetNamespace = "http://www.cisco.com/AXL/API/8.5", partName = "axlParams")
-        DoUpdateRemoteClusterReq axlParams);
 
 }

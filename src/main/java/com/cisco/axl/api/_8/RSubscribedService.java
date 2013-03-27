@@ -17,20 +17,20 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="telecasterServiceName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String100" minOccurs="0"/>
+ *         &lt;element name="telecasterServiceName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String100" minOccurs="0"/>
  *         &lt;element name="url" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="urlButtonIndex" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="urlLabel" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="urlLabelAscii" type="{http://www.cisco.com/AXL/API/8.5}String100" minOccurs="0"/>
- *         &lt;element name="serviceNameAscii" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="phoneService" type="{http://www.cisco.com/AXL/API/8.5}XPhoneService" minOccurs="0"/>
- *         &lt;element name="phoneServiceCategory" type="{http://www.cisco.com/AXL/API/8.5}XPhoneServiceCategory" minOccurs="0"/>
+ *         &lt;element name="urlButtonIndex" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="urlLabel" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="urlLabelAscii" type="{http://www.cisco.com/AXL/API/8.0}String100" minOccurs="0"/>
+ *         &lt;element name="serviceNameAscii" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="phoneService" type="{http://www.cisco.com/AXL/API/8.0}XPhoneService" minOccurs="0"/>
+ *         &lt;element name="phoneServiceCategory" type="{http://www.cisco.com/AXL/API/8.0}XPhoneServiceCategory" minOccurs="0"/>
  *         &lt;element name="vendor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="version" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="priority" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>

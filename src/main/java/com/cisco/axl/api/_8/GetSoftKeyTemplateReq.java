@@ -20,10 +20,10 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String100"/>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String100"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *         &lt;/choice>
- *         &lt;element name="returnedTags" type="{http://www.cisco.com/AXL/API/8.5}RSoftKeyTemplate" minOccurs="0"/>
+ *         &lt;element name="returnedTags" type="{http://www.cisco.com/AXL/API/8.0}RSoftKeyTemplate" minOccurs="0"/>
  *       &lt;/sequence>
  *       &lt;attribute name="sequence" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" />
  *     &lt;/restriction>

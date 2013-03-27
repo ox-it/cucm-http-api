@@ -21,15 +21,15 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="dialPattern" type="{http://www.cisco.com/AXL/API/8.5}XDialPattern"/>
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String50"/>
+ *         &lt;element name="dialPattern" type="{http://www.cisco.com/AXL/API/8.0}XDialPattern"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String50"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="patterns" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
- *               &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *               &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+ *                   &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/extension>
  *             &lt;/complexContent>
@@ -38,9 +38,9 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="plars" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
- *               &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *               &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+ *                   &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/extension>
  *             &lt;/complexContent>
@@ -201,9 +201,9 @@ public class XSipDialRules {
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+     *         &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -262,9 +262,9 @@ public class XSipDialRules {
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.5}XPatternMember" maxOccurs="unbounded"/>
+     *         &lt;element name="plar" type="{http://www.cisco.com/AXL/API/8.0}XPatternMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

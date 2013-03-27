@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="mobileSmartClient" type="{http://www.cisco.com/AXL/API/8.5}XMobileSmartClient"/>
+ *         &lt;element name="mobileSmartClient" type="{http://www.cisco.com/AXL/API/8.0}XMobileSmartClient"/>
  *         &lt;element name="enableSnrUri" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="enableCFAUri" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="handOffUri" type="{http://www.w3.org/2001/XMLSchema}string"/>

@@ -16,15 +16,15 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateImeEnrolledPatternReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
- *           &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.5}String16"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
+ *           &lt;element name="pattern" type="{http://www.cisco.com/AXL/API/8.0}String16"/>
  *         &lt;/choice>
- *         &lt;element name="newPattern" type="{http://www.cisco.com/AXL/API/8.5}String16" minOccurs="0"/>
+ *         &lt;element name="newPattern" type="{http://www.cisco.com/AXL/API/8.0}String16" minOccurs="0"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="imeEnrolledPatternGroupName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="imeEnrolledPatternGroupName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

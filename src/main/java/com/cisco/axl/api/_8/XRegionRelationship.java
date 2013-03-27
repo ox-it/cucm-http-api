@@ -17,10 +17,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="regionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="bandwidth" type="{http://www.cisco.com/AXL/API/8.5}XBandwidth"/>
- *         &lt;element name="videoBandwidth" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="lossyNetwork" type="{http://www.cisco.com/AXL/API/8.5}XLossyNetwork" minOccurs="0"/>
+ *         &lt;element name="regionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="bandwidth" type="{http://www.cisco.com/AXL/API/8.0}XBandwidth"/>
+ *         &lt;element name="videoBandwidth" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="lossyNetwork" type="{http://www.cisco.com/AXL/API/8.0}XLossyNetwork" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

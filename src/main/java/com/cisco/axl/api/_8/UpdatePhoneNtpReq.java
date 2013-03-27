@@ -15,15 +15,15 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdatePhoneNtpReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *           &lt;element name="ipAddress" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;/choice>
  *         &lt;element name="newIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="mode" type="{http://www.cisco.com/AXL/API/8.5}XZzntpmode" minOccurs="0"/>
+ *         &lt;element name="mode" type="{http://www.cisco.com/AXL/API/8.0}XZzntpmode" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

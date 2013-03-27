@@ -21,49 +21,49 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="label" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="asciiLabel" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="display" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="dirn" type="{http://www.cisco.com/AXL/API/8.5}RDirn" minOccurs="0"/>
- *         &lt;element name="displayAscii" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="e164Mask" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="dialPlanWizardId" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="maxNumCalls" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="busyTrigger" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="label" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="asciiLabel" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="display" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="dirn" type="{http://www.cisco.com/AXL/API/8.0}RDirn" minOccurs="0"/>
+ *         &lt;element name="displayAscii" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="e164Mask" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="dialPlanWizardId" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="maxNumCalls" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="busyTrigger" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *         &lt;element name="callInfoDisplay" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="callerName" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *                   &lt;element name="callerNumber" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *                   &lt;element name="redirectedNumber" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *                   &lt;element name="dialedNumber" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *                   &lt;element name="callerName" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *                   &lt;element name="callerNumber" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *                   &lt;element name="redirectedNumber" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *                   &lt;element name="dialedNumber" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="recordingProfileName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="monitoringCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="recordingFlag" type="{http://www.cisco.com/AXL/API/8.5}XRecordingFlag" minOccurs="0"/>
- *         &lt;element name="audibleMwi" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
+ *         &lt;element name="recordingProfileName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="monitoringCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="recordingFlag" type="{http://www.cisco.com/AXL/API/8.0}XRecordingFlag" minOccurs="0"/>
+ *         &lt;element name="audibleMwi" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
  *         &lt;element name="speedDial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="partitionUsage" type="{http://www.cisco.com/AXL/API/8.5}XPartitionUsage" minOccurs="0"/>
+ *         &lt;element name="partitionUsage" type="{http://www.cisco.com/AXL/API/8.0}XPartitionUsage" minOccurs="0"/>
  *         &lt;element name="associatedEndusers" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="enduser" type="{http://www.cisco.com/AXL/API/8.5}REnduserMember" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="enduser" type="{http://www.cisco.com/AXL/API/8.0}REnduserMember" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *       &lt;attribute name="ctiid" type="{http://www.w3.org/2001/XMLSchema}nonNegativeInteger" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -610,7 +610,7 @@ public class RH323Line {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="enduser" type="{http://www.cisco.com/AXL/API/8.5}REnduserMember" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="enduser" type="{http://www.cisco.com/AXL/API/8.0}REnduserMember" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -669,10 +669,10 @@ public class RH323Line {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="callerName" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
-     *         &lt;element name="callerNumber" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
-     *         &lt;element name="redirectedNumber" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
-     *         &lt;element name="dialedNumber" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+     *         &lt;element name="callerName" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+     *         &lt;element name="callerNumber" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+     *         &lt;element name="redirectedNumber" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+     *         &lt;element name="dialedNumber" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

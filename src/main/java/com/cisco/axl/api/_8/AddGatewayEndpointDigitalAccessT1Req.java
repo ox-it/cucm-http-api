@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddGatewayEndpointDigitalAccessT1Req">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="gatewayEndpointDigitalAccessT1" type="{http://www.cisco.com/AXL/API/8.5}XGatewayEndpointDigitalAccessT1"/>
+ *         &lt;element name="gatewayEndpointDigitalAccessT1" type="{http://www.cisco.com/AXL/API/8.0}XGatewayEndpointDigitalAccessT1"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

@@ -19,10 +19,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="authenticateEndUsers" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="distinguishedName" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="ldapPassword" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="userSearchBase" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
+ *         &lt;element name="authenticateEndUsers" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="distinguishedName" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="ldapPassword" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="userSearchBase" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
  *         &lt;element name="servers" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
@@ -33,9 +33,9 @@ import javax.xml.bind.annotation.XmlType;
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                           &lt;sequence minOccurs="0">
- *                             &lt;element name="hostName" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *                             &lt;element name="ldapPortNumber" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *                             &lt;element name="sslEnabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *                             &lt;element name="hostName" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *                             &lt;element name="ldapPortNumber" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *                             &lt;element name="sslEnabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *                           &lt;/sequence>
  *                         &lt;/restriction>
  *                       &lt;/complexContent>
@@ -47,7 +47,7 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;/complexType>
  *         &lt;/element>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -233,9 +233,9 @@ public class XLdapAuthentication {
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                 &lt;sequence minOccurs="0">
-     *                   &lt;element name="hostName" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
-     *                   &lt;element name="ldapPortNumber" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
-     *                   &lt;element name="sslEnabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+     *                   &lt;element name="hostName" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+     *                   &lt;element name="ldapPortNumber" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+     *                   &lt;element name="sslEnabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
      *                 &lt;/sequence>
      *               &lt;/restriction>
      *             &lt;/complexContent>
@@ -297,9 +297,9 @@ public class XLdapAuthentication {
          *   &lt;complexContent>
          *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *       &lt;sequence minOccurs="0">
-         *         &lt;element name="hostName" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
-         *         &lt;element name="ldapPortNumber" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
-         *         &lt;element name="sslEnabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+         *         &lt;element name="hostName" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+         *         &lt;element name="ldapPortNumber" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+         *         &lt;element name="sslEnabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
          *       &lt;/sequence>
          *     &lt;/restriction>
          *   &lt;/complexContent>

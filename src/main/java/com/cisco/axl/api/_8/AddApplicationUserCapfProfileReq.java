@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddApplicationUserCapfProfileReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="applicationUserCapfProfile" type="{http://www.cisco.com/AXL/API/8.5}XApplicationUserCapfProfile"/>
+ *         &lt;element name="applicationUserCapfProfile" type="{http://www.cisco.com/AXL/API/8.0}XApplicationUserCapfProfile"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

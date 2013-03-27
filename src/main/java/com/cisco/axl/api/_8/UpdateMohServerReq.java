@@ -19,21 +19,21 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateMohServerReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
  *         &lt;element name="newName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="devicePoolName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="locationName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="maxUnicastConnections" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="maxMulticastConnections" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *         &lt;element name="devicePoolName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="locationName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="maxUnicastConnections" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="maxMulticastConnections" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *         &lt;element name="fixedAudioSourceDevice" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="runFlag" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="useTrustedRelayPoint" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="isMultiCastEnabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *         &lt;element name="runFlag" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="useTrustedRelayPoint" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="isMultiCastEnabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *         &lt;element name="baseMulticastIpaddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="baseMulticastPort" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="multicastIncrementOnIp" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *         &lt;element name="baseMulticastPort" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="multicastIncrementOnIp" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *         &lt;element name="audioSources" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
@@ -44,8 +44,8 @@ import javax.xml.bind.annotation.XmlType;
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                           &lt;sequence minOccurs="0">
- *                             &lt;element name="sourceId" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *                             &lt;element name="maxHops" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *                             &lt;element name="sourceId" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *                             &lt;element name="maxHops" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *                           &lt;/sequence>
  *                         &lt;/restriction>
  *                       &lt;/complexContent>
@@ -460,8 +460,8 @@ public class UpdateMohServerReq
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                 &lt;sequence minOccurs="0">
-     *                   &lt;element name="sourceId" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
-     *                   &lt;element name="maxHops" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+     *                   &lt;element name="sourceId" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+     *                   &lt;element name="maxHops" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
      *                 &lt;/sequence>
      *               &lt;/restriction>
      *             &lt;/complexContent>
@@ -523,8 +523,8 @@ public class UpdateMohServerReq
          *   &lt;complexContent>
          *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *       &lt;sequence minOccurs="0">
-         *         &lt;element name="sourceId" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
-         *         &lt;element name="maxHops" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+         *         &lt;element name="sourceId" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+         *         &lt;element name="maxHops" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
          *       &lt;/sequence>
          *     &lt;/restriction>
          *   &lt;/complexContent>

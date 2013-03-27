@@ -17,21 +17,21 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}UniqueString50" minOccurs="0"/>
- *         &lt;element name="softkeyTemplateName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="userLocale" type="{http://www.cisco.com/AXL/API/8.5}XUserLocale" minOccurs="0"/>
- *         &lt;element name="networkHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.5}XMOHAudioSourceId" minOccurs="0"/>
- *         &lt;element name="userHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.5}XMOHAudioSourceId" minOccurs="0"/>
- *         &lt;element name="mlppDomainId" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="mlppIndicationStatus" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="useTrustedRelayPoint" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="preemption" type="{http://www.cisco.com/AXL/API/8.5}XPreemption" minOccurs="0"/>
- *         &lt;element name="ipAddressingMode" type="{http://www.cisco.com/AXL/API/8.5}XIPAddressingMode" minOccurs="0"/>
- *         &lt;element name="ipAddressingModePreferenceControl" type="{http://www.cisco.com/AXL/API/8.5}XIPAddressingModePrefControl" minOccurs="0"/>
- *         &lt;element name="allowAutoConfigurationForPhones" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
- *         &lt;element name="useImeForOutboundCalls" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}UniqueString50" minOccurs="0"/>
+ *         &lt;element name="softkeyTemplateName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="userLocale" type="{http://www.cisco.com/AXL/API/8.0}XUserLocale" minOccurs="0"/>
+ *         &lt;element name="networkHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.0}XMOHAudioSourceId" minOccurs="0"/>
+ *         &lt;element name="userHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.0}XMOHAudioSourceId" minOccurs="0"/>
+ *         &lt;element name="mlppDomainId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+ *         &lt;element name="mlppIndicationStatus" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="useTrustedRelayPoint" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="preemption" type="{http://www.cisco.com/AXL/API/8.0}XPreemption" minOccurs="0"/>
+ *         &lt;element name="ipAddressingMode" type="{http://www.cisco.com/AXL/API/8.0}XIPAddressingMode" minOccurs="0"/>
+ *         &lt;element name="ipAddressingModePreferenceControl" type="{http://www.cisco.com/AXL/API/8.0}XIPAddressingModePrefControl" minOccurs="0"/>
+ *         &lt;element name="allowAutoConfigurationForPhones" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
+ *         &lt;element name="useImeForOutboundCalls" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -62,7 +62,7 @@ public class RCommonDeviceConfig {
     protected String userLocale;
     protected String networkHoldMohAudioSourceId;
     protected String userHoldMohAudioSourceId;
-    protected String mlppDomainId;
+    protected Integer mlppDomainId;
     protected String mlppIndicationStatus;
     protected String useTrustedRelayPoint;
     protected String preemption;
@@ -198,10 +198,10 @@ public class RCommonDeviceConfig {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Integer }
      *     
      */
-    public String getMlppDomainId() {
+    public Integer getMlppDomainId() {
         return mlppDomainId;
     }
 
@@ -210,10 +210,10 @@ public class RCommonDeviceConfig {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Integer }
      *     
      */
-    public void setMlppDomainId(String value) {
+    public void setMlppDomainId(Integer value) {
         this.mlppDomainId = value;
     }
 

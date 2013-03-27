@@ -23,30 +23,29 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence minOccurs="0">
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="destination" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="answerTooSoonTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="answerTooLateTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="delayBeforeRingingCell" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="answerTooSoonTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="answerTooLateTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="delayBeforeRingingCell" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *         &lt;choice>
- *           &lt;element name="remoteDestinationProfileName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *           &lt;element name="dualModeDeviceName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
+ *           &lt;element name="remoteDestinationProfileName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *           &lt;element name="dualModeDeviceName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
  *         &lt;/choice>
- *         &lt;element name="isMobilePhone" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="enableMobileConnect" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *         &lt;element name="isMobilePhone" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="enableMobileConnect" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *         &lt;element name="lineAssociations" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="lineAssociation" type="{http://www.cisco.com/AXL/API/8.5}XLineAssociation" maxOccurs="unbounded"/>
+ *                   &lt;element name="lineAssociation" type="{http://www.cisco.com/AXL/API/8.0}XLineAssociation" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="timeZone" type="{http://www.cisco.com/AXL/API/8.5}XTimeZone" minOccurs="0"/>
- *         &lt;element name="todAccessName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="mobileSmartClientName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="mobilityProfileName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="timeZone" type="{http://www.cisco.com/AXL/API/8.0}XTimeZone" minOccurs="0"/>
+ *         &lt;element name="todAccessName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="mobileSmartClientName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -69,8 +68,7 @@ import javax.xml.bind.annotation.XmlType;
     "lineAssociations",
     "timeZone",
     "todAccessName",
-    "mobileSmartClientName",
-    "mobilityProfileName"
+    "mobileSmartClientName"
 })
 public class XRemoteDestination {
 
@@ -97,8 +95,6 @@ public class XRemoteDestination {
     protected JAXBElement<XFkType> todAccessName;
     @XmlElementRef(name = "mobileSmartClientName", type = JAXBElement.class)
     protected JAXBElement<XFkType> mobileSmartClientName;
-    @XmlElementRef(name = "mobilityProfileName", type = JAXBElement.class)
-    protected JAXBElement<XFkType> mobilityProfileName;
 
     /**
      * Gets the value of the name property.
@@ -412,30 +408,6 @@ public class XRemoteDestination {
         this.mobileSmartClientName = ((JAXBElement<XFkType> ) value);
     }
 
-    /**
-     * Gets the value of the mobilityProfileName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link XFkType }{@code >}
-     *     
-     */
-    public JAXBElement<XFkType> getMobilityProfileName() {
-        return mobilityProfileName;
-    }
-
-    /**
-     * Sets the value of the mobilityProfileName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link XFkType }{@code >}
-     *     
-     */
-    public void setMobilityProfileName(JAXBElement<XFkType> value) {
-        this.mobilityProfileName = ((JAXBElement<XFkType> ) value);
-    }
-
 
     /**
      * <p>Java class for anonymous complex type.
@@ -447,7 +419,7 @@ public class XRemoteDestination {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="lineAssociation" type="{http://www.cisco.com/AXL/API/8.5}XLineAssociation" maxOccurs="unbounded"/>
+     *         &lt;element name="lineAssociation" type="{http://www.cisco.com/AXL/API/8.0}XLineAssociation" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

@@ -15,16 +15,16 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateApplicationUserCapfProfileReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *           &lt;element name="instanceId" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;/choice>
- *         &lt;element name="certificateOperation" type="{http://www.cisco.com/AXL/API/8.5}XCertificateOperation" minOccurs="0"/>
- *         &lt;element name="authenticationMode" type="{http://www.cisco.com/AXL/API/8.5}XAuthenticationMode" minOccurs="0"/>
+ *         &lt;element name="certificateOperation" type="{http://www.cisco.com/AXL/API/8.0}XCertificateOperation" minOccurs="0"/>
+ *         &lt;element name="authenticationMode" type="{http://www.cisco.com/AXL/API/8.0}XAuthenticationMode" minOccurs="0"/>
  *         &lt;element name="authenticationString" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="keySize" type="{http://www.cisco.com/AXL/API/8.5}XKeySize" minOccurs="0"/>
+ *         &lt;element name="keySize" type="{http://www.cisco.com/AXL/API/8.0}XKeySize" minOccurs="0"/>
  *         &lt;element name="operationCompletion" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>

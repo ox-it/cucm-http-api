@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="enabled" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
+ *         &lt;element name="enabled" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

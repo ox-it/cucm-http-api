@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddLdapDirectoryReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="ldapDirectory" type="{http://www.cisco.com/AXL/API/8.5}XLdapDirectory"/>
+ *         &lt;element name="ldapDirectory" type="{http://www.cisco.com/AXL/API/8.0}XLdapDirectory"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddGatewayEndpointAnalogAccessReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="gatewayEndpointAnalogAccess" type="{http://www.cisco.com/AXL/API/8.5}XGatewayEndpointAnalogAccess"/>
+ *         &lt;element name="gatewayEndpointAnalogAccess" type="{http://www.cisco.com/AXL/API/8.0}XGatewayEndpointAnalogAccess"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

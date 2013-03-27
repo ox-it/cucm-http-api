@@ -34,7 +34,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="returnedTags" type="{http://www.cisco.com/AXL/API/8.5}LCallPark"/>
+ *         &lt;element name="returnedTags" type="{http://www.cisco.com/AXL/API/8.0}LCallPark"/>
  *         &lt;element name="skip" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/>
  *         &lt;element name="first" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/>
  *       &lt;/sequence>

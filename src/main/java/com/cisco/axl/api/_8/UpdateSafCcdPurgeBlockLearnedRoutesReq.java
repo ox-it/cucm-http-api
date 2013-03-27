@@ -14,21 +14,21 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateSafCcdPurgeBlockLearnedRoutesReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *           &lt;sequence>
- *             &lt;element name="learnedPattern" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *             &lt;element name="learnedPatternPrefix" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *             &lt;element name="callControlIdentity" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *             &lt;element name="ipAddress" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *             &lt;element name="learnedPattern" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *             &lt;element name="learnedPatternPrefix" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *             &lt;element name="callControlIdentity" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *             &lt;element name="ipAddress" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *           &lt;/sequence>
  *         &lt;/choice>
- *         &lt;element name="newLearnedPattern" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="newLearnedPatternPrefix" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="newCallControlIdentity" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="newIpAddress" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *         &lt;element name="newLearnedPattern" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="newLearnedPatternPrefix" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="newCallControlIdentity" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="newIpAddress" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

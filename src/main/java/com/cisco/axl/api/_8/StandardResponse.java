@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="StandardResponse">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIResponse">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIResponse">
  *       &lt;sequence>
  *         &lt;element name="return">
  *           &lt;simpleType>
@@ -40,10 +40,8 @@ import javax.xml.bind.annotation.XmlType;
     "_return"
 })
 @XmlSeeAlso({
-    DoLdapSyncRes.class,
     DoDeviceResetRes.class,
     DoDeviceLoginRes.class,
-    GetLdapSyncStatusRes.class,
     DoDeviceLogoutRes.class
 })
 public class StandardResponse

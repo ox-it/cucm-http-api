@@ -17,14 +17,14 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="ListCumaServerSecurityProfileRes">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIResponse">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIResponse">
  *       &lt;sequence>
  *         &lt;element name="return">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="cumaServerSecurityProfile" type="{http://www.cisco.com/AXL/API/8.5}LCumaServerSecurityProfile" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="cumaServerSecurityProfile" type="{http://www.cisco.com/AXL/API/8.0}LCumaServerSecurityProfile" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -84,7 +84,7 @@ public class ListCumaServerSecurityProfileRes
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="cumaServerSecurityProfile" type="{http://www.cisco.com/AXL/API/8.5}LCumaServerSecurityProfile" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="cumaServerSecurityProfile" type="{http://www.cisco.com/AXL/API/8.0}LCumaServerSecurityProfile" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

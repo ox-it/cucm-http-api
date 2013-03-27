@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddCiscoCatalyst6000T1VoIPGatewayPriReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="ciscoCatalyst6000T1VoIPGatewayPri" type="{http://www.cisco.com/AXL/API/8.5}XCiscoCatalyst6000T1VoIPGatewayPri"/>
+ *         &lt;element name="ciscoCatalyst6000T1VoIPGatewayPri" type="{http://www.cisco.com/AXL/API/8.0}XCiscoCatalyst6000T1VoIPGatewayPri"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

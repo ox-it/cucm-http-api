@@ -18,9 +18,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="syncEnabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="ldapServer" type="{http://www.cisco.com/AXL/API/8.5}XLdapServer" minOccurs="0"/>
- *         &lt;element name="userIdAttribute" type="{http://www.cisco.com/AXL/API/8.5}String64" minOccurs="0"/>
+ *         &lt;element name="syncEnabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="ldapServer" type="{http://www.cisco.com/AXL/API/8.0}XLdapServer" minOccurs="0"/>
+ *         &lt;element name="userIdAttribute" type="{http://www.cisco.com/AXL/API/8.0}String64" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

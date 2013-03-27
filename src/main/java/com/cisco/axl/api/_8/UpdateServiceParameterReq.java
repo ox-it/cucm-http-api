@@ -16,14 +16,14 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateServiceParameterReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *           &lt;sequence>
- *             &lt;element name="processNodeName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
+ *             &lt;element name="processNodeName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
  *             &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *             &lt;element name="service" type="{http://www.cisco.com/AXL/API/8.5}XService"/>
+ *             &lt;element name="service" type="{http://www.cisco.com/AXL/API/8.0}XService"/>
  *           &lt;/sequence>
  *         &lt;/choice>
  *         &lt;element name="value" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>

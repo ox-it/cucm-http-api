@@ -18,17 +18,16 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="preventImeCallsFromAnalogGateways" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="enableIntraDomain" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="allowMwiNotification" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="trunkConnectionTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="firewallConnectionTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="firewallTranscationTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="firewallIdleTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="failedCallAttemptThreshold" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="callFallbackAttemptThreshold" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="qualityTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="useImeForOutboundCalls" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *         &lt;element name="preventImeCallsFromAnalogGateways" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="enableIntraDomain" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="allowMwiNotification" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="trunkConnectionTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="firewallConnectionTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="firewallTranscationTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="firewallIdleTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="failedCallAttemptThreshold" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="callFallbackAttemptThreshold" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="qualityTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -48,8 +47,7 @@ import javax.xml.bind.annotation.XmlType;
     "firewallIdleTimer",
     "failedCallAttemptThreshold",
     "callFallbackAttemptThreshold",
-    "qualityTimer",
-    "useImeForOutboundCalls"
+    "qualityTimer"
 })
 public class UpdateImeFeatureConfigReq {
 
@@ -72,8 +70,6 @@ public class UpdateImeFeatureConfigReq {
     protected JAXBElement<String> callFallbackAttemptThreshold;
     @XmlElementRef(name = "qualityTimer", type = JAXBElement.class)
     protected JAXBElement<String> qualityTimer;
-    @XmlElementRef(name = "useImeForOutboundCalls", type = JAXBElement.class)
-    protected JAXBElement<String> useImeForOutboundCalls;
 
     /**
      * Gets the value of the preventImeCallsFromAnalogGateways property.
@@ -313,30 +309,6 @@ public class UpdateImeFeatureConfigReq {
      */
     public void setQualityTimer(JAXBElement<String> value) {
         this.qualityTimer = ((JAXBElement<String> ) value);
-    }
-
-    /**
-     * Gets the value of the useImeForOutboundCalls property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public JAXBElement<String> getUseImeForOutboundCalls() {
-        return useImeForOutboundCalls;
-    }
-
-    /**
-     * Sets the value of the useImeForOutboundCalls property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
-     *     
-     */
-    public void setUseImeForOutboundCalls(JAXBElement<String> value) {
-        this.useImeForOutboundCalls = ((JAXBElement<String> ) value);
     }
 
 }

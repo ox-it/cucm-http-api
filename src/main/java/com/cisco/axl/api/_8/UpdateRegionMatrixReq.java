@@ -15,18 +15,18 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateRegionMatrixReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *           &lt;sequence>
- *             &lt;element name="regionAName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *             &lt;element name="regionBName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
+ *             &lt;element name="regionAName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *             &lt;element name="regionBName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
  *           &lt;/sequence>
  *         &lt;/choice>
- *         &lt;element name="bandwidth" type="{http://www.cisco.com/AXL/API/8.5}XBandwidth" minOccurs="0"/>
- *         &lt;element name="videoBandwidth" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="lossyNetwork" type="{http://www.cisco.com/AXL/API/8.5}XLossyNetwork" minOccurs="0"/>
+ *         &lt;element name="bandwidth" type="{http://www.cisco.com/AXL/API/8.0}XBandwidth" minOccurs="0"/>
+ *         &lt;element name="videoBandwidth" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="lossyNetwork" type="{http://www.cisco.com/AXL/API/8.0}XLossyNetwork" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

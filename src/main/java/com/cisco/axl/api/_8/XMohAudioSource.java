@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="sourceId" type="{http://www.cisco.com/AXL/API/8.5}XMOHAudioSourceId"/>
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="sourceFile" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="multicast" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="repeat" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
+ *         &lt;element name="sourceId" type="{http://www.cisco.com/AXL/API/8.0}XMOHAudioSourceId"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="sourceFile" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="multicast" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="repeat" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

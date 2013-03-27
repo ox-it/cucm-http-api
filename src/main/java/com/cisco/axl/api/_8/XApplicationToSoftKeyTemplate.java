@@ -18,10 +18,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="softKeyTemplateName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="standardSoftKeyTemplateName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
+ *         &lt;element name="softKeyTemplateName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="standardSoftKeyTemplateName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>

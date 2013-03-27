@@ -20,12 +20,12 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *           &lt;sequence>
- *             &lt;element name="learnedPattern" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *             &lt;element name="learnedPatternPrefix" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *             &lt;element name="callControlIdentity" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *             &lt;element name="ipAddress" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *             &lt;element name="learnedPattern" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *             &lt;element name="learnedPatternPrefix" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *             &lt;element name="callControlIdentity" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *             &lt;element name="ipAddress" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *           &lt;/sequence>
  *         &lt;/choice>
  *       &lt;/sequence>

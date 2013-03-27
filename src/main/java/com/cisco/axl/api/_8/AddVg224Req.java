@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddVg224Req">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="vg224" type="{http://www.cisco.com/AXL/API/8.5}XVg224"/>
+ *         &lt;element name="vg224" type="{http://www.cisco.com/AXL/API/8.0}XVg224"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

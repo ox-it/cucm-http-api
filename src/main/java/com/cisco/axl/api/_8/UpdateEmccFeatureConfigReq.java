@@ -16,13 +16,13 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateEmccFeatureConfigReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
- *           &lt;element name="parameterName" type="{http://www.cisco.com/AXL/API/8.5}String50"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
+ *           &lt;element name="parameterName" type="{http://www.cisco.com/AXL/API/8.0}String50"/>
  *         &lt;/choice>
- *         &lt;element name="value" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
+ *         &lt;element name="value" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddLineReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="line" type="{http://www.cisco.com/AXL/API/8.5}XLine"/>
+ *         &lt;element name="line" type="{http://www.cisco.com/AXL/API/8.0}XLine"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

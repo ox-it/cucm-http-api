@@ -14,9 +14,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateGatewayEndpointDigitalAccessBriReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="endpoint" type="{http://www.cisco.com/AXL/API/8.5}UGatewayEndpointDigitalBri" minOccurs="0"/>
+ *         &lt;element name="endpoint" type="{http://www.cisco.com/AXL/API/8.0}UGatewayEndpointDigitalBri" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

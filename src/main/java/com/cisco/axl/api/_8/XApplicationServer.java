@@ -20,21 +20,21 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="appServerType" type="{http://www.cisco.com/AXL/API/8.5}XAppServer"/>
+ *         &lt;element name="appServerType" type="{http://www.cisco.com/AXL/API/8.0}XAppServer"/>
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="ipAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="appUsers" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
- *               &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *               &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                 &lt;sequence minOccurs="0">
  *                   &lt;element name="selectedAppUser" maxOccurs="unbounded">
  *                     &lt;complexType>
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                           &lt;sequence minOccurs="0">
- *                             &lt;element name="appUserName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *                             &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.5}XContent" minOccurs="0"/>
+ *                             &lt;element name="appUserName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *                             &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.0}XContent" minOccurs="0"/>
  *                           &lt;/sequence>
  *                         &lt;/restriction>
  *                       &lt;/complexContent>
@@ -47,19 +47,19 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;/element>
  *         &lt;element name="url" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="endUserUrl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="processNodeName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="processNodeName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *         &lt;element name="endUsers" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
- *               &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *               &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                 &lt;sequence minOccurs="0">
  *                   &lt;element name="selectedEndUser" maxOccurs="unbounded">
  *                     &lt;complexType>
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                           &lt;sequence minOccurs="0">
- *                             &lt;element name="endUserName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *                             &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.5}XContent" minOccurs="0"/>
+ *                             &lt;element name="endUserName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *                             &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.0}XContent" minOccurs="0"/>
  *                           &lt;/sequence>
  *                         &lt;/restriction>
  *                       &lt;/complexContent>
@@ -302,15 +302,15 @@ public class XApplicationServer {
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
      *         &lt;element name="selectedAppUser" maxOccurs="unbounded">
      *           &lt;complexType>
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                 &lt;sequence minOccurs="0">
-     *                   &lt;element name="appUserName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
-     *                   &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.5}XContent" minOccurs="0"/>
+     *                   &lt;element name="appUserName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+     *                   &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.0}XContent" minOccurs="0"/>
      *                 &lt;/sequence>
      *               &lt;/restriction>
      *             &lt;/complexContent>
@@ -374,8 +374,8 @@ public class XApplicationServer {
          *   &lt;complexContent>
          *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *       &lt;sequence minOccurs="0">
-         *         &lt;element name="appUserName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
-         *         &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.5}XContent" minOccurs="0"/>
+         *         &lt;element name="appUserName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+         *         &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.0}XContent" minOccurs="0"/>
          *       &lt;/sequence>
          *     &lt;/restriction>
          *   &lt;/complexContent>
@@ -456,15 +456,15 @@ public class XApplicationServer {
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
      *         &lt;element name="selectedEndUser" maxOccurs="unbounded">
      *           &lt;complexType>
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                 &lt;sequence minOccurs="0">
-     *                   &lt;element name="endUserName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
-     *                   &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.5}XContent" minOccurs="0"/>
+     *                   &lt;element name="endUserName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+     *                   &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.0}XContent" minOccurs="0"/>
      *                 &lt;/sequence>
      *               &lt;/restriction>
      *             &lt;/complexContent>
@@ -528,8 +528,8 @@ public class XApplicationServer {
          *   &lt;complexContent>
          *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *       &lt;sequence minOccurs="0">
-         *         &lt;element name="endUserName" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
-         *         &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.5}XContent" minOccurs="0"/>
+         *         &lt;element name="endUserName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+         *         &lt;element name="content" type="{http://www.cisco.com/AXL/API/8.0}XContent" minOccurs="0"/>
          *       &lt;/sequence>
          *     &lt;/restriction>
          *   &lt;/complexContent>

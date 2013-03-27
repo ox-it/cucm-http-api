@@ -26,31 +26,31 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="pwdCredPolicyName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *                   &lt;element name="pwdCredUserCantChange" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *                   &lt;element name="pwdCredUserMustChange" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *                   &lt;element name="pwdCredDoesNotExpire" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *                   &lt;element name="pwdCredPolicyName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *                   &lt;element name="pwdCredUserCantChange" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *                   &lt;element name="pwdCredUserMustChange" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *                   &lt;element name="pwdCredDoesNotExpire" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *                   &lt;element name="pwdCredTimeChanged" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *                   &lt;element name="pwdCredTimeAdminLockout" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="pwdCredLockedByAdministrator" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *                   &lt;element name="pwdCredLockedByAdministrator" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
  *         &lt;element name="digestCredentials" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="presenceGroupName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="acceptPresenceSubscription" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="acceptOutOfDialogRefer" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="acceptUnsolicitedNotification" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="allowReplaceHeader" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="isStandard" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *         &lt;element name="presenceGroupName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="acceptPresenceSubscription" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="acceptOutOfDialogRefer" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="acceptUnsolicitedNotification" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="allowReplaceHeader" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="isStandard" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *         &lt;element name="associatedDevices" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="device" type="{http://www.cisco.com/AXL/API/8.5}String50" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="device" type="{http://www.cisco.com/AXL/API/8.0}String50" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -66,13 +66,13 @@ import javax.xml.bind.annotation.XmlType;
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                           &lt;sequence minOccurs="0">
- *                             &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String100" minOccurs="0"/>
+ *                             &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String100" minOccurs="0"/>
  *                             &lt;element name="userRoles" minOccurs="0">
  *                               &lt;complexType>
  *                                 &lt;complexContent>
  *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                                     &lt;sequence minOccurs="0">
- *                                       &lt;element name="userRole" type="{http://www.cisco.com/AXL/API/8.5}String100" maxOccurs="unbounded" minOccurs="0"/>
+ *                                       &lt;element name="userRole" type="{http://www.cisco.com/AXL/API/8.0}String100" maxOccurs="unbounded" minOccurs="0"/>
  *                                     &lt;/sequence>
  *                                   &lt;/restriction>
  *                                 &lt;/complexContent>
@@ -93,7 +93,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="capfProfileInstanceId" type="{http://www.cisco.com/AXL/API/8.5}String128" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="capfProfileInstanceId" type="{http://www.cisco.com/AXL/API/8.0}String128" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -104,14 +104,14 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="deviceProfile" type="{http://www.cisco.com/AXL/API/8.5}String50" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="deviceProfile" type="{http://www.cisco.com/AXL/API/8.0}String50" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -526,7 +526,7 @@ public class RAppUser {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="capfProfileInstanceId" type="{http://www.cisco.com/AXL/API/8.5}String128" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="capfProfileInstanceId" type="{http://www.cisco.com/AXL/API/8.0}String128" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -585,7 +585,7 @@ public class RAppUser {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="device" type="{http://www.cisco.com/AXL/API/8.5}String50" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="device" type="{http://www.cisco.com/AXL/API/8.0}String50" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -649,13 +649,13 @@ public class RAppUser {
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                 &lt;sequence minOccurs="0">
-     *                   &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String100" minOccurs="0"/>
+     *                   &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String100" minOccurs="0"/>
      *                   &lt;element name="userRoles" minOccurs="0">
      *                     &lt;complexType>
      *                       &lt;complexContent>
      *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                           &lt;sequence minOccurs="0">
-     *                             &lt;element name="userRole" type="{http://www.cisco.com/AXL/API/8.5}String100" maxOccurs="unbounded" minOccurs="0"/>
+     *                             &lt;element name="userRole" type="{http://www.cisco.com/AXL/API/8.0}String100" maxOccurs="unbounded" minOccurs="0"/>
      *                           &lt;/sequence>
      *                         &lt;/restriction>
      *                       &lt;/complexContent>
@@ -722,13 +722,13 @@ public class RAppUser {
          *   &lt;complexContent>
          *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *       &lt;sequence minOccurs="0">
-         *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String100" minOccurs="0"/>
+         *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String100" minOccurs="0"/>
          *         &lt;element name="userRoles" minOccurs="0">
          *           &lt;complexType>
          *             &lt;complexContent>
          *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *                 &lt;sequence minOccurs="0">
-         *                   &lt;element name="userRole" type="{http://www.cisco.com/AXL/API/8.5}String100" maxOccurs="unbounded" minOccurs="0"/>
+         *                   &lt;element name="userRole" type="{http://www.cisco.com/AXL/API/8.0}String100" maxOccurs="unbounded" minOccurs="0"/>
          *                 &lt;/sequence>
          *               &lt;/restriction>
          *             &lt;/complexContent>
@@ -811,7 +811,7 @@ public class RAppUser {
              *   &lt;complexContent>
              *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
              *       &lt;sequence minOccurs="0">
-             *         &lt;element name="userRole" type="{http://www.cisco.com/AXL/API/8.5}String100" maxOccurs="unbounded" minOccurs="0"/>
+             *         &lt;element name="userRole" type="{http://www.cisco.com/AXL/API/8.0}String100" maxOccurs="unbounded" minOccurs="0"/>
              *       &lt;/sequence>
              *     &lt;/restriction>
              *   &lt;/complexContent>
@@ -874,7 +874,7 @@ public class RAppUser {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="deviceProfile" type="{http://www.cisco.com/AXL/API/8.5}String50" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="deviceProfile" type="{http://www.cisco.com/AXL/API/8.0}String50" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -933,13 +933,13 @@ public class RAppUser {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="pwdCredPolicyName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
-     *         &lt;element name="pwdCredUserCantChange" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
-     *         &lt;element name="pwdCredUserMustChange" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
-     *         &lt;element name="pwdCredDoesNotExpire" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+     *         &lt;element name="pwdCredPolicyName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+     *         &lt;element name="pwdCredUserCantChange" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+     *         &lt;element name="pwdCredUserMustChange" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+     *         &lt;element name="pwdCredDoesNotExpire" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
      *         &lt;element name="pwdCredTimeChanged" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
      *         &lt;element name="pwdCredTimeAdminLockout" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="pwdCredLockedByAdministrator" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+     *         &lt;element name="pwdCredLockedByAdministrator" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

@@ -17,17 +17,17 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateTimeScheduleReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *         &lt;choice minOccurs="0">
  *           &lt;sequence minOccurs="0">
  *             &lt;element name="removeMembers" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XTimeScheduleTimePeriod" maxOccurs="unbounded"/>
+ *                       &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XTimeScheduleTimePeriod" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -36,9 +36,9 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;element name="addMembers" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XTimeScheduleTimePeriod" maxOccurs="unbounded"/>
+ *                       &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XTimeScheduleTimePeriod" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -48,17 +48,17 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;element name="members" minOccurs="0">
  *             &lt;complexType>
  *               &lt;complexContent>
- *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XTimeScheduleTimePeriod" maxOccurs="unbounded"/>
+ *                     &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XTimeScheduleTimePeriod" maxOccurs="unbounded"/>
  *                   &lt;/sequence>
  *                 &lt;/extension>
  *               &lt;/complexContent>
  *             &lt;/complexType>
  *           &lt;/element>
  *         &lt;/choice>
- *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="timeScheduleCategory" type="{http://www.cisco.com/AXL/API/8.5}XTimeScheduleCategory" minOccurs="0"/>
+ *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="timeScheduleCategory" type="{http://www.cisco.com/AXL/API/8.0}XTimeScheduleCategory" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -241,9 +241,9 @@ public class UpdateTimeScheduleReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XTimeScheduleTimePeriod" maxOccurs="unbounded"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XTimeScheduleTimePeriod" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -302,9 +302,9 @@ public class UpdateTimeScheduleReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XTimeScheduleTimePeriod" maxOccurs="unbounded"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XTimeScheduleTimePeriod" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -363,9 +363,9 @@ public class UpdateTimeScheduleReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XTimeScheduleTimePeriod" maxOccurs="unbounded"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XTimeScheduleTimePeriod" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

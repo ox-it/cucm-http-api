@@ -19,26 +19,26 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateImeClientReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="domain" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="isActivated" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="sipTrunkName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="primaryImeServerName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="secondaryImeServerName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="learnedRouteFilterGroupName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="exclusionNumberGroupName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="firewallName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="domain" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="isActivated" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="sipTrunkName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="primaryImeServerName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="secondaryImeServerName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="learnedRouteFilterGroupName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="exclusionNumberGroupName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="firewallName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *         &lt;choice minOccurs="0">
  *           &lt;sequence minOccurs="0">
  *             &lt;element name="removeMembers" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XImeClientMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XImeClientMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -47,9 +47,9 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;element name="addMembers" minOccurs="0">
  *               &lt;complexType>
  *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XImeClientMember" maxOccurs="unbounded"/>
+ *                       &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XImeClientMember" maxOccurs="unbounded"/>
  *                     &lt;/sequence>
  *                   &lt;/extension>
  *                 &lt;/complexContent>
@@ -59,46 +59,9 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;element name="members" minOccurs="0">
  *             &lt;complexType>
  *               &lt;complexContent>
- *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XImeClientMember" maxOccurs="unbounded"/>
- *                   &lt;/sequence>
- *                 &lt;/extension>
- *               &lt;/complexContent>
- *             &lt;/complexType>
- *           &lt;/element>
- *         &lt;/choice>
- *         &lt;choice minOccurs="0">
- *           &lt;sequence minOccurs="0">
- *             &lt;element name="removeCcmExternalIpMaps" minOccurs="0">
- *               &lt;complexType>
- *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
- *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="ccmExternalIpMap" type="{http://www.cisco.com/AXL/API/8.5}XCcmExternalIpMap" maxOccurs="unbounded" minOccurs="0"/>
- *                     &lt;/sequence>
- *                   &lt;/extension>
- *                 &lt;/complexContent>
- *               &lt;/complexType>
- *             &lt;/element>
- *             &lt;element name="addCcmExternalIpMaps" minOccurs="0">
- *               &lt;complexType>
- *                 &lt;complexContent>
- *                   &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
- *                     &lt;sequence minOccurs="0">
- *                       &lt;element name="ccmExternalIpMap" type="{http://www.cisco.com/AXL/API/8.5}XCcmExternalIpMap" maxOccurs="unbounded" minOccurs="0"/>
- *                     &lt;/sequence>
- *                   &lt;/extension>
- *                 &lt;/complexContent>
- *               &lt;/complexType>
- *             &lt;/element>
- *           &lt;/sequence>
- *           &lt;element name="ccmExternalIpMaps" minOccurs="0">
- *             &lt;complexType>
- *               &lt;complexContent>
- *                 &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
- *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="ccmExternalIpMap" type="{http://www.cisco.com/AXL/API/8.5}XCcmExternalIpMap" maxOccurs="unbounded" minOccurs="0"/>
+ *                     &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XImeClientMember" maxOccurs="unbounded"/>
  *                   &lt;/sequence>
  *                 &lt;/extension>
  *               &lt;/complexContent>
@@ -127,10 +90,7 @@ import javax.xml.bind.annotation.XmlType;
     "firewallName",
     "removeMembers",
     "addMembers",
-    "members",
-    "removeCcmExternalIpMaps",
-    "addCcmExternalIpMaps",
-    "ccmExternalIpMaps"
+    "members"
 })
 public class UpdateImeClientReq
     extends NameAndGUIDRequest
@@ -154,9 +114,6 @@ public class UpdateImeClientReq
     protected UpdateImeClientReq.RemoveMembers removeMembers;
     protected UpdateImeClientReq.AddMembers addMembers;
     protected UpdateImeClientReq.Members members;
-    protected UpdateImeClientReq.RemoveCcmExternalIpMaps removeCcmExternalIpMaps;
-    protected UpdateImeClientReq.AddCcmExternalIpMaps addCcmExternalIpMaps;
-    protected UpdateImeClientReq.CcmExternalIpMaps ccmExternalIpMaps;
 
     /**
      * Gets the value of the newName property.
@@ -470,78 +427,6 @@ public class UpdateImeClientReq
         this.members = value;
     }
 
-    /**
-     * Gets the value of the removeCcmExternalIpMaps property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UpdateImeClientReq.RemoveCcmExternalIpMaps }
-     *     
-     */
-    public UpdateImeClientReq.RemoveCcmExternalIpMaps getRemoveCcmExternalIpMaps() {
-        return removeCcmExternalIpMaps;
-    }
-
-    /**
-     * Sets the value of the removeCcmExternalIpMaps property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UpdateImeClientReq.RemoveCcmExternalIpMaps }
-     *     
-     */
-    public void setRemoveCcmExternalIpMaps(UpdateImeClientReq.RemoveCcmExternalIpMaps value) {
-        this.removeCcmExternalIpMaps = value;
-    }
-
-    /**
-     * Gets the value of the addCcmExternalIpMaps property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UpdateImeClientReq.AddCcmExternalIpMaps }
-     *     
-     */
-    public UpdateImeClientReq.AddCcmExternalIpMaps getAddCcmExternalIpMaps() {
-        return addCcmExternalIpMaps;
-    }
-
-    /**
-     * Sets the value of the addCcmExternalIpMaps property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UpdateImeClientReq.AddCcmExternalIpMaps }
-     *     
-     */
-    public void setAddCcmExternalIpMaps(UpdateImeClientReq.AddCcmExternalIpMaps value) {
-        this.addCcmExternalIpMaps = value;
-    }
-
-    /**
-     * Gets the value of the ccmExternalIpMaps property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UpdateImeClientReq.CcmExternalIpMaps }
-     *     
-     */
-    public UpdateImeClientReq.CcmExternalIpMaps getCcmExternalIpMaps() {
-        return ccmExternalIpMaps;
-    }
-
-    /**
-     * Sets the value of the ccmExternalIpMaps property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UpdateImeClientReq.CcmExternalIpMaps }
-     *     
-     */
-    public void setCcmExternalIpMaps(UpdateImeClientReq.CcmExternalIpMaps value) {
-        this.ccmExternalIpMaps = value;
-    }
-
 
     /**
      * <p>Java class for anonymous complex type.
@@ -551,70 +436,9 @@ public class UpdateImeClientReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="ccmExternalIpMap" type="{http://www.cisco.com/AXL/API/8.5}XCcmExternalIpMap" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-        "ccmExternalIpMap"
-    })
-    public static class AddCcmExternalIpMaps
-        extends XCommonMembersExtension
-    {
-
-        protected List<XCcmExternalIpMap> ccmExternalIpMap;
-
-        /**
-         * Gets the value of the ccmExternalIpMap property.
-         * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the ccmExternalIpMap property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getCcmExternalIpMap().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link XCcmExternalIpMap }
-         * 
-         * 
-         */
-        public List<XCcmExternalIpMap> getCcmExternalIpMap() {
-            if (ccmExternalIpMap == null) {
-                ccmExternalIpMap = new ArrayList<XCcmExternalIpMap>();
-            }
-            return this.ccmExternalIpMap;
-        }
-
-    }
-
-
-    /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
-     *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XImeClientMember" maxOccurs="unbounded"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XImeClientMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -673,70 +497,9 @@ public class UpdateImeClientReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="ccmExternalIpMap" type="{http://www.cisco.com/AXL/API/8.5}XCcmExternalIpMap" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-        "ccmExternalIpMap"
-    })
-    public static class CcmExternalIpMaps
-        extends XCommonMembersExtension
-    {
-
-        protected List<XCcmExternalIpMap> ccmExternalIpMap;
-
-        /**
-         * Gets the value of the ccmExternalIpMap property.
-         * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the ccmExternalIpMap property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getCcmExternalIpMap().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link XCcmExternalIpMap }
-         * 
-         * 
-         */
-        public List<XCcmExternalIpMap> getCcmExternalIpMap() {
-            if (ccmExternalIpMap == null) {
-                ccmExternalIpMap = new ArrayList<XCcmExternalIpMap>();
-            }
-            return this.ccmExternalIpMap;
-        }
-
-    }
-
-
-    /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
-     *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XImeClientMember" maxOccurs="unbounded"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XImeClientMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
@@ -795,70 +558,9 @@ public class UpdateImeClientReq
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="ccmExternalIpMap" type="{http://www.cisco.com/AXL/API/8.5}XCcmExternalIpMap" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-        "ccmExternalIpMap"
-    })
-    public static class RemoveCcmExternalIpMaps
-        extends XCommonMembersExtension
-    {
-
-        protected List<XCcmExternalIpMap> ccmExternalIpMap;
-
-        /**
-         * Gets the value of the ccmExternalIpMap property.
-         * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the ccmExternalIpMap property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getCcmExternalIpMap().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link XCcmExternalIpMap }
-         * 
-         * 
-         */
-        public List<XCcmExternalIpMap> getCcmExternalIpMap() {
-            if (ccmExternalIpMap == null) {
-                ccmExternalIpMap = new ArrayList<XCcmExternalIpMap>();
-            }
-            return this.ccmExternalIpMap;
-        }
-
-    }
-
-
-    /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
-     *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XImeClientMember" maxOccurs="unbounded"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XImeClientMember" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

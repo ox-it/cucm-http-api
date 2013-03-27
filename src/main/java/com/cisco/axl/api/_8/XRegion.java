@@ -18,19 +18,19 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String50"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String50"/>
  *         &lt;element name="relatedRegions" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="relatedRegion" type="{http://www.cisco.com/AXL/API/8.5}XRegionRelationship" maxOccurs="unbounded"/>
+ *                   &lt;element name="relatedRegion" type="{http://www.cisco.com/AXL/API/8.0}XRegionRelationship" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="defaultCodec" type="{http://www.cisco.com/AXL/API/8.5}XBandwidth" minOccurs="0"/>
+ *         &lt;element name="defaultCodec" type="{http://www.cisco.com/AXL/API/8.0}XBandwidth" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -134,7 +134,7 @@ public class XRegion {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="relatedRegion" type="{http://www.cisco.com/AXL/API/8.5}XRegionRelationship" maxOccurs="unbounded"/>
+     *         &lt;element name="relatedRegion" type="{http://www.cisco.com/AXL/API/8.0}XRegionRelationship" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

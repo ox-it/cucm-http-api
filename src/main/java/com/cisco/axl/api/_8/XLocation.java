@@ -19,15 +19,15 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String50"/>
- *         &lt;element name="kbits" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="videoKbits" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String50"/>
+ *         &lt;element name="kbits" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="videoKbits" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *         &lt;element name="relatedLocations" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="relatedLocation" type="{http://www.cisco.com/AXL/API/8.5}XLocationRelationship" maxOccurs="unbounded"/>
+ *                   &lt;element name="relatedLocation" type="{http://www.cisco.com/AXL/API/8.0}XLocationRelationship" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -163,7 +163,7 @@ public class XLocation {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="relatedLocation" type="{http://www.cisco.com/AXL/API/8.5}XLocationRelationship" maxOccurs="unbounded"/>
+     *         &lt;element name="relatedLocation" type="{http://www.cisco.com/AXL/API/8.0}XLocationRelationship" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

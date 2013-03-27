@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddEmccFeatureConfigReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="emccFeatureConfig" type="{http://www.cisco.com/AXL/API/8.5}XEmccFeatureConfig"/>
+ *         &lt;element name="emccFeatureConfig" type="{http://www.cisco.com/AXL/API/8.0}XEmccFeatureConfig"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

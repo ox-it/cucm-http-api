@@ -16,24 +16,24 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="label" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *         &lt;element name="label" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *         &lt;choice>
- *           &lt;element name="directedCallParkId" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="directedCallParkId" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *           &lt;element name="directedCallParkDnAndPartition">
  *             &lt;complexType>
  *               &lt;complexContent>
  *                 &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                   &lt;sequence minOccurs="0">
- *                     &lt;element name="dnPattern" type="{http://www.cisco.com/AXL/API/8.5}String255"/>
- *                     &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *                     &lt;element name="dnPattern" type="{http://www.cisco.com/AXL/API/8.0}String255"/>
+ *                     &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *                   &lt;/sequence>
  *                 &lt;/restriction>
  *               &lt;/complexContent>
  *             &lt;/complexType>
  *           &lt;/element>
  *         &lt;/choice>
- *         &lt;element name="labelAscii" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="labelAscii" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -189,8 +189,8 @@ public class XBLFDirectedCallPark {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="dnPattern" type="{http://www.cisco.com/AXL/API/8.5}String255"/>
-     *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+     *         &lt;element name="dnPattern" type="{http://www.cisco.com/AXL/API/8.0}String255"/>
+     *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

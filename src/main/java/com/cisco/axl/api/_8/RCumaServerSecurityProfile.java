@@ -19,12 +19,12 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence minOccurs="0">
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="securityMode" type="{http://www.cisco.com/AXL/API/8.5}XDeviceSecurityMode" minOccurs="0"/>
- *         &lt;element name="transportType" type="{http://www.cisco.com/AXL/API/8.5}XTransport" minOccurs="0"/>
+ *         &lt;element name="securityMode" type="{http://www.cisco.com/AXL/API/8.0}XDeviceSecurityMode" minOccurs="0"/>
+ *         &lt;element name="transportType" type="{http://www.cisco.com/AXL/API/8.0}XTransport" minOccurs="0"/>
  *         &lt;element name="x509SubjectName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="serverIpHostName" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
+ *         &lt;element name="serverIpHostName" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>

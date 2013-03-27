@@ -16,17 +16,16 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="preventImeCallsFromAnalogGateways" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="enableIntraDomain" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="allowMwiNotification" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="trunkConnectionTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="firewallConnectionTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="firewallTranscationTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="firewallIdleTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="failedCallAttemptThreshold" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="callFallbackAttemptThreshold" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="qualityTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="useImeForOutboundCalls" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *         &lt;element name="preventImeCallsFromAnalogGateways" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="enableIntraDomain" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="allowMwiNotification" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="trunkConnectionTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="firewallConnectionTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="firewallTranscationTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="firewallIdleTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="failedCallAttemptThreshold" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="callFallbackAttemptThreshold" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="qualityTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -46,8 +45,7 @@ import javax.xml.bind.annotation.XmlType;
     "firewallIdleTimer",
     "failedCallAttemptThreshold",
     "callFallbackAttemptThreshold",
-    "qualityTimer",
-    "useImeForOutboundCalls"
+    "qualityTimer"
 })
 public class RImeFeatureConfig {
 
@@ -61,7 +59,6 @@ public class RImeFeatureConfig {
     protected String failedCallAttemptThreshold;
     protected String callFallbackAttemptThreshold;
     protected String qualityTimer;
-    protected String useImeForOutboundCalls;
 
     /**
      * Gets the value of the preventImeCallsFromAnalogGateways property.
@@ -301,30 +298,6 @@ public class RImeFeatureConfig {
      */
     public void setQualityTimer(String value) {
         this.qualityTimer = value;
-    }
-
-    /**
-     * Gets the value of the useImeForOutboundCalls property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUseImeForOutboundCalls() {
-        return useImeForOutboundCalls;
-    }
-
-    /**
-     * Sets the value of the useImeForOutboundCalls property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUseImeForOutboundCalls(String value) {
-        this.useImeForOutboundCalls = value;
     }
 
 }

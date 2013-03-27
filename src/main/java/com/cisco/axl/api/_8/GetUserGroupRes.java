@@ -15,14 +15,14 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="GetUserGroupRes">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIResponse">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIResponse">
  *       &lt;sequence>
  *         &lt;element name="return">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="userGroup" type="{http://www.cisco.com/AXL/API/8.5}RUserGroup"/>
+ *                   &lt;element name="userGroup" type="{http://www.cisco.com/AXL/API/8.0}RUserGroup"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -82,7 +82,7 @@ public class GetUserGroupRes
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="userGroup" type="{http://www.cisco.com/AXL/API/8.5}RUserGroup"/>
+     *         &lt;element name="userGroup" type="{http://www.cisco.com/AXL/API/8.0}RUserGroup"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

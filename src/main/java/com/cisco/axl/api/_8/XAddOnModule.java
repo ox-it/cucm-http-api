@@ -19,9 +19,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="loadInformation" type="{http://www.cisco.com/AXL/API/8.5}XLoadInformation"/>
- *         &lt;element name="model" type="{http://www.cisco.com/AXL/API/8.5}XModel"/>
- *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="loadInformation" type="{http://www.cisco.com/AXL/API/8.0}XLoadInformation"/>
+ *         &lt;element name="model" type="{http://www.cisco.com/AXL/API/8.0}XModel"/>
+ *         &lt;element name="index" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

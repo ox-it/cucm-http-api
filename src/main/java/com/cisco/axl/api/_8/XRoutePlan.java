@@ -18,9 +18,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="dnOrPattern" type="{http://www.cisco.com/AXL/API/8.5}String255"/>
- *         &lt;element name="partition" type="{http://www.cisco.com/AXL/API/8.5}XFkType"/>
- *         &lt;element name="type" type="{http://www.cisco.com/AXL/API/8.5}XPatternUsage"/>
+ *         &lt;element name="dnOrPattern" type="{http://www.cisco.com/AXL/API/8.0}String255"/>
+ *         &lt;element name="partition" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
+ *         &lt;element name="type" type="{http://www.cisco.com/AXL/API/8.0}XPatternUsage"/>
  *         &lt;element name="routeDetail" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

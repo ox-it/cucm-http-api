@@ -16,16 +16,15 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="DoAuthenticateUserRes">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIResponse">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIResponse">
  *       &lt;sequence>
  *         &lt;element name="return">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="userAuthenticated" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
+ *                   &lt;element name="userAuthenticated" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
  *                   &lt;element name="code" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *                   &lt;element name="daysToExpiry" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -85,9 +84,8 @@ public class DoAuthenticateUserRes
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="userAuthenticated" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
+     *         &lt;element name="userAuthenticated" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
      *         &lt;element name="code" type="{http://www.w3.org/2001/XMLSchema}integer"/>
-     *         &lt;element name="daysToExpiry" type="{http://www.w3.org/2001/XMLSchema}integer" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -99,8 +97,7 @@ public class DoAuthenticateUserRes
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
         "userAuthenticated",
-        "code",
-        "daysToExpiry"
+        "code"
     })
     public static class Return {
 
@@ -108,7 +105,6 @@ public class DoAuthenticateUserRes
         protected String userAuthenticated;
         @XmlElement(required = true)
         protected BigInteger code;
-        protected BigInteger daysToExpiry;
 
         /**
          * Gets the value of the userAuthenticated property.
@@ -156,30 +152,6 @@ public class DoAuthenticateUserRes
          */
         public void setCode(BigInteger value) {
             this.code = value;
-        }
-
-        /**
-         * Gets the value of the daysToExpiry property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link BigInteger }
-         *     
-         */
-        public BigInteger getDaysToExpiry() {
-            return daysToExpiry;
-        }
-
-        /**
-         * Sets the value of the daysToExpiry property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link BigInteger }
-         *     
-         */
-        public void setDaysToExpiry(BigInteger value) {
-            this.daysToExpiry = value;
         }
 
     }

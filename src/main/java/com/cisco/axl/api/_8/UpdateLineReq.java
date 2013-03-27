@@ -17,56 +17,56 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateLineReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
  *         &lt;choice>
- *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID"/>
+ *           &lt;element name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID"/>
  *           &lt;sequence>
  *             &lt;element name="pattern" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *             &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *             &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType"/>
  *           &lt;/sequence>
  *         &lt;/choice>
  *         &lt;element name="newPattern" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="newRoutePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="aarNeighborhoodName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="aarDestinationMask" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="aarKeepCallHistory" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="aarVoiceMailEnabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="callForwardAll" type="{http://www.cisco.com/AXL/API/8.5}XCallForwardAll" minOccurs="0"/>
- *         &lt;element name="callForwardBusy" type="{http://www.cisco.com/AXL/API/8.5}XCallForwardBusy" minOccurs="0"/>
- *         &lt;element name="callForwardBusyInt" type="{http://www.cisco.com/AXL/API/8.5}XCallForwardBusyInt" minOccurs="0"/>
- *         &lt;element name="callForwardNoAnswer" type="{http://www.cisco.com/AXL/API/8.5}XCallForwardNoAnswer" minOccurs="0"/>
- *         &lt;element name="callForwardNoAnswerInt" type="{http://www.cisco.com/AXL/API/8.5}XCallForwardNoAnswerInt" minOccurs="0"/>
- *         &lt;element name="callForwardNoCoverage" type="{http://www.cisco.com/AXL/API/8.5}XCallForwardNoCoverage" minOccurs="0"/>
- *         &lt;element name="callForwardNoCoverageInt" type="{http://www.cisco.com/AXL/API/8.5}XCallForwardNoCoverageInt" minOccurs="0"/>
- *         &lt;element name="callForwardOnFailure" type="{http://www.cisco.com/AXL/API/8.5}XCallForwardOnFailure" minOccurs="0"/>
- *         &lt;element name="callForwardAlternateParty" type="{http://www.cisco.com/AXL/API/8.5}XCallForwardAlternateParty" minOccurs="0"/>
- *         &lt;element name="callForwardNotRegistered" type="{http://www.cisco.com/AXL/API/8.5}XCallForwardNotRegistered" minOccurs="0"/>
- *         &lt;element name="callForwardNotRegisteredInt" type="{http://www.cisco.com/AXL/API/8.5}XCallForwardNotRegisteredInt" minOccurs="0"/>
- *         &lt;element name="callPickupGroupName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="autoAnswer" type="{http://www.cisco.com/AXL/API/8.5}XAutoAnswer" minOccurs="0"/>
- *         &lt;element name="networkHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.5}XMOHAudioSourceId" minOccurs="0"/>
- *         &lt;element name="userHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.5}XMOHAudioSourceId" minOccurs="0"/>
- *         &lt;element name="alertingName" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="asciiAlertingName" type="{http://www.cisco.com/AXL/API/8.5}String32" minOccurs="0"/>
- *         &lt;element name="presenceGroupName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="shareLineAppearanceCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="voiceMailProfileName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="patternPrecedence" type="{http://www.cisco.com/AXL/API/8.5}XPatternPrecedence" minOccurs="0"/>
- *         &lt;element name="releaseClause" type="{http://www.cisco.com/AXL/API/8.5}XReleaseCauseValue" minOccurs="0"/>
- *         &lt;element name="hrDuration" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="hrInterval" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="cfaCssPolicy" type="{http://www.cisco.com/AXL/API/8.5}XCFACSSActivationPolicy" minOccurs="0"/>
- *         &lt;element name="defaultActivatedDeviceName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="parkMonForwardNoRetrieveDn" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="parkMonForwardNoRetrieveIntDn" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="parkMonForwardNoRetrieveVmEnabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="parkMonForwardNoRetrieveIntVmEnabled" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="parkMonForwardNoRetrieveCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="parkMonForwardNoRetrieveIntCssName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="parkMonReversionTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="partyEntranceTone" type="{http://www.cisco.com/AXL/API/8.5}XStatus" minOccurs="0"/>
+ *         &lt;element name="newRoutePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="aarNeighborhoodName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="aarDestinationMask" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="aarKeepCallHistory" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="aarVoiceMailEnabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="callForwardAll" type="{http://www.cisco.com/AXL/API/8.0}XCallForwardAll" minOccurs="0"/>
+ *         &lt;element name="callForwardBusy" type="{http://www.cisco.com/AXL/API/8.0}XCallForwardBusy" minOccurs="0"/>
+ *         &lt;element name="callForwardBusyInt" type="{http://www.cisco.com/AXL/API/8.0}XCallForwardBusyInt" minOccurs="0"/>
+ *         &lt;element name="callForwardNoAnswer" type="{http://www.cisco.com/AXL/API/8.0}XCallForwardNoAnswer" minOccurs="0"/>
+ *         &lt;element name="callForwardNoAnswerInt" type="{http://www.cisco.com/AXL/API/8.0}XCallForwardNoAnswerInt" minOccurs="0"/>
+ *         &lt;element name="callForwardNoCoverage" type="{http://www.cisco.com/AXL/API/8.0}XCallForwardNoCoverage" minOccurs="0"/>
+ *         &lt;element name="callForwardNoCoverageInt" type="{http://www.cisco.com/AXL/API/8.0}XCallForwardNoCoverageInt" minOccurs="0"/>
+ *         &lt;element name="callForwardOnFailure" type="{http://www.cisco.com/AXL/API/8.0}XCallForwardOnFailure" minOccurs="0"/>
+ *         &lt;element name="callForwardAlternateParty" type="{http://www.cisco.com/AXL/API/8.0}XCallForwardAlternateParty" minOccurs="0"/>
+ *         &lt;element name="callForwardNotRegistered" type="{http://www.cisco.com/AXL/API/8.0}XCallForwardNotRegistered" minOccurs="0"/>
+ *         &lt;element name="callForwardNotRegisteredInt" type="{http://www.cisco.com/AXL/API/8.0}XCallForwardNotRegisteredInt" minOccurs="0"/>
+ *         &lt;element name="callPickupGroupName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="autoAnswer" type="{http://www.cisco.com/AXL/API/8.0}XAutoAnswer" minOccurs="0"/>
+ *         &lt;element name="networkHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.0}XMOHAudioSourceId" minOccurs="0"/>
+ *         &lt;element name="userHoldMohAudioSourceId" type="{http://www.cisco.com/AXL/API/8.0}XMOHAudioSourceId" minOccurs="0"/>
+ *         &lt;element name="alertingName" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="asciiAlertingName" type="{http://www.cisco.com/AXL/API/8.0}String32" minOccurs="0"/>
+ *         &lt;element name="presenceGroupName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="shareLineAppearanceCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="voiceMailProfileName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="patternPrecedence" type="{http://www.cisco.com/AXL/API/8.0}XPatternPrecedence" minOccurs="0"/>
+ *         &lt;element name="releaseClause" type="{http://www.cisco.com/AXL/API/8.0}XReleaseCauseValue" minOccurs="0"/>
+ *         &lt;element name="hrDuration" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="hrInterval" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="cfaCssPolicy" type="{http://www.cisco.com/AXL/API/8.0}XCFACSSActivationPolicy" minOccurs="0"/>
+ *         &lt;element name="defaultActivatedDeviceName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="parkMonForwardNoRetrieveDn" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="parkMonForwardNoRetrieveIntDn" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="parkMonForwardNoRetrieveVmEnabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="parkMonForwardNoRetrieveIntVmEnabled" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="parkMonForwardNoRetrieveCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="parkMonForwardNoRetrieveIntCssName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="parkMonReversionTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="partyEntranceTone" type="{http://www.cisco.com/AXL/API/8.0}XStatus" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

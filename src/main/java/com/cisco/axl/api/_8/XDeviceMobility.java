@@ -20,13 +20,13 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence minOccurs="0">
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="subNet" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="subNetMaskSz" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="subNetMaskSz" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *         &lt;element name="members">
  *           &lt;complexType>
  *             &lt;complexContent>
- *               &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *               &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XDevicePoolDeviceMobility" maxOccurs="unbounded"/>
+ *                   &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XDevicePoolDeviceMobility" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/extension>
  *             &lt;/complexContent>
@@ -159,9 +159,9 @@ public class XDeviceMobility {
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.5}XDevicePoolDeviceMobility" maxOccurs="unbounded"/>
+     *         &lt;element name="member" type="{http://www.cisco.com/AXL/API/8.0}XDevicePoolDeviceMobility" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>

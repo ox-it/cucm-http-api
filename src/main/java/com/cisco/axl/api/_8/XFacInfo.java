@@ -17,9 +17,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String50"/>
- *         &lt;element name="code" type="{http://www.cisco.com/AXL/API/8.5}String16"/>
- *         &lt;element name="authorizationLevel" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String50"/>
+ *         &lt;element name="code" type="{http://www.cisco.com/AXL/API/8.0}String16"/>
+ *         &lt;element name="authorizationLevel" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

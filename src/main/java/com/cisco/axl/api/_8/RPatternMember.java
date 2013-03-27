@@ -24,13 +24,13 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="dialParameter" type="{http://www.cisco.com/AXL/API/8.5}RParameterMember" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="dialParameter" type="{http://www.cisco.com/AXL/API/8.0}RParameterMember" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="selectionOrder" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *         &lt;element name="selectionOrder" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -134,7 +134,7 @@ public class RPatternMember {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="dialParameter" type="{http://www.cisco.com/AXL/API/8.5}RParameterMember" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="dialParameter" type="{http://www.cisco.com/AXL/API/8.0}RParameterMember" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

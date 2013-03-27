@@ -19,13 +19,13 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence minOccurs="0">
  *         &lt;choice minOccurs="0">
  *           &lt;element name="domainName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *           &lt;element name="gatewayUuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" minOccurs="0"/>
+ *           &lt;element name="gatewayUuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" minOccurs="0"/>
  *         &lt;/choice>
- *         &lt;element name="unit" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="subunit" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="endpoint" type="{http://www.cisco.com/AXL/API/8.5}LGatewayEndpointAnalog" minOccurs="0"/>
+ *         &lt;element name="unit" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="subunit" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="endpoint" type="{http://www.cisco.com/AXL/API/8.0}LGatewayEndpointAnalog" minOccurs="0"/>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>

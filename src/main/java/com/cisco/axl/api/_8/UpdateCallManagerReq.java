@@ -17,20 +17,20 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdateCallManagerReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
- *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
- *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *         &lt;element name="newName" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
+ *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *         &lt;element name="autoRegistration" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="startDn" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *                   &lt;element name="endDn" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *                   &lt;element name="nextDn" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *                   &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *                   &lt;element name="e164Mask" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+ *                   &lt;element name="startDn" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *                   &lt;element name="endDn" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *                   &lt;element name="nextDn" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *                   &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *                   &lt;element name="e164Mask" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -42,15 +42,15 @@ import javax.xml.bind.annotation.XmlType;
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
  *                   &lt;choice>
- *                     &lt;element name="ethernetPhonePort" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *                     &lt;element name="ethernetPhonePort" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *                   &lt;/choice>
  *                   &lt;element name="mgcpPorts">
  *                     &lt;complexType>
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                           &lt;sequence minOccurs="0">
- *                             &lt;element name="listen" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *                             &lt;element name="keepAlive" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *                             &lt;element name="listen" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *                             &lt;element name="keepAlive" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *                           &lt;/sequence>
  *                         &lt;/restriction>
  *                       &lt;/complexContent>
@@ -61,8 +61,8 @@ import javax.xml.bind.annotation.XmlType;
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                           &lt;sequence minOccurs="0">
- *                             &lt;element name="sipPhonePort" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *                             &lt;element name="sipPhoneSecurePort" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *                             &lt;element name="sipPhonePort" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *                             &lt;element name="sipPhoneSecurePort" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *                           &lt;/sequence>
  *                         &lt;/restriction>
  *                       &lt;/complexContent>
@@ -204,11 +204,11 @@ public class UpdateCallManagerReq
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="startDn" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
-     *         &lt;element name="endDn" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
-     *         &lt;element name="nextDn" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
-     *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
-     *         &lt;element name="e164Mask" type="{http://www.cisco.com/AXL/API/8.5}String50" minOccurs="0"/>
+     *         &lt;element name="startDn" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+     *         &lt;element name="endDn" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+     *         &lt;element name="nextDn" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+     *         &lt;element name="routePartitionName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+     *         &lt;element name="e164Mask" type="{http://www.cisco.com/AXL/API/8.0}String50" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -372,15 +372,15 @@ public class UpdateCallManagerReq
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
      *         &lt;choice>
-     *           &lt;element name="ethernetPhonePort" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+     *           &lt;element name="ethernetPhonePort" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
      *         &lt;/choice>
      *         &lt;element name="mgcpPorts">
      *           &lt;complexType>
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                 &lt;sequence minOccurs="0">
-     *                   &lt;element name="listen" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
-     *                   &lt;element name="keepAlive" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+     *                   &lt;element name="listen" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+     *                   &lt;element name="keepAlive" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
      *                 &lt;/sequence>
      *               &lt;/restriction>
      *             &lt;/complexContent>
@@ -391,8 +391,8 @@ public class UpdateCallManagerReq
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                 &lt;sequence minOccurs="0">
-     *                   &lt;element name="sipPhonePort" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
-     *                   &lt;element name="sipPhoneSecurePort" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+     *                   &lt;element name="sipPhonePort" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+     *                   &lt;element name="sipPhoneSecurePort" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
      *                 &lt;/sequence>
      *               &lt;/restriction>
      *             &lt;/complexContent>
@@ -502,8 +502,8 @@ public class UpdateCallManagerReq
          *   &lt;complexContent>
          *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *       &lt;sequence minOccurs="0">
-         *         &lt;element name="listen" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
-         *         &lt;element name="keepAlive" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+         *         &lt;element name="listen" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+         *         &lt;element name="keepAlive" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
          *       &lt;/sequence>
          *     &lt;/restriction>
          *   &lt;/complexContent>
@@ -585,8 +585,8 @@ public class UpdateCallManagerReq
          *   &lt;complexContent>
          *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *       &lt;sequence minOccurs="0">
-         *         &lt;element name="sipPhonePort" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
-         *         &lt;element name="sipPhoneSecurePort" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+         *         &lt;element name="sipPhonePort" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+         *         &lt;element name="sipPhoneSecurePort" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
          *       &lt;/sequence>
          *     &lt;/restriction>
          *   &lt;/complexContent>

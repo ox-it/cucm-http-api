@@ -19,21 +19,20 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence minOccurs="0">
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="destination" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="answerTooSoonTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="answerTooLateTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="delayBeforeRingingCell" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *         &lt;element name="answerTooSoonTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="answerTooLateTimer" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="delayBeforeRingingCell" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
  *         &lt;choice minOccurs="0">
- *           &lt;element name="remoteDestinationProfileName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *           &lt;element name="dualModeDeviceName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *           &lt;element name="remoteDestinationProfileName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *           &lt;element name="dualModeDeviceName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *         &lt;/choice>
- *         &lt;element name="isMobilePhone" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="enableMobileConnect" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="timeZone" type="{http://www.cisco.com/AXL/API/8.5}XTimeZone" minOccurs="0"/>
- *         &lt;element name="todAccessName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="mobileSmartClientName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="mobilityProfileName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
+ *         &lt;element name="isMobilePhone" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="enableMobileConnect" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="timeZone" type="{http://www.cisco.com/AXL/API/8.0}XTimeZone" minOccurs="0"/>
+ *         &lt;element name="todAccessName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="mobileSmartClientName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
  *       &lt;/sequence>
- *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.5}XUUID" />
+ *       &lt;attribute name="uuid" type="{http://www.cisco.com/AXL/API/8.0}XUUID" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -54,8 +53,7 @@ import javax.xml.bind.annotation.XmlType;
     "enableMobileConnect",
     "timeZone",
     "todAccessName",
-    "mobileSmartClientName",
-    "mobilityProfileName"
+    "mobileSmartClientName"
 })
 public class LRemoteDestination {
 
@@ -71,7 +69,6 @@ public class LRemoteDestination {
     protected String timeZone;
     protected XFkType todAccessName;
     protected XFkType mobileSmartClientName;
-    protected XFkType mobilityProfileName;
     @XmlAttribute
     protected String uuid;
 
@@ -361,30 +358,6 @@ public class LRemoteDestination {
      */
     public void setMobileSmartClientName(XFkType value) {
         this.mobileSmartClientName = value;
-    }
-
-    /**
-     * Gets the value of the mobilityProfileName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XFkType }
-     *     
-     */
-    public XFkType getMobilityProfileName() {
-        return mobilityProfileName;
-    }
-
-    /**
-     * Sets the value of the mobilityProfileName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XFkType }
-     *     
-     */
-    public void setMobilityProfileName(XFkType value) {
-        this.mobilityProfileName = value;
     }
 
     /**

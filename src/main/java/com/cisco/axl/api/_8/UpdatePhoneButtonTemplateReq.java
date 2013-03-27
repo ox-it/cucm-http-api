@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="UpdatePhoneButtonTemplateReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}NameAndGUIDRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}NameAndGUIDRequest">
  *       &lt;sequence>
  *         &lt;element name="newName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="buttons" minOccurs="0">
@@ -24,7 +24,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="button" type="{http://www.cisco.com/AXL/API/8.5}XButton" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="button" type="{http://www.cisco.com/AXL/API/8.0}XButton" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -109,7 +109,7 @@ public class UpdatePhoneButtonTemplateReq
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="button" type="{http://www.cisco.com/AXL/API/8.5}XButton" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="button" type="{http://www.cisco.com/AXL/API/8.0}XButton" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddH323GatewayReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="h323Gateway" type="{http://www.cisco.com/AXL/API/8.5}XH323Gateway"/>
+ *         &lt;element name="h323Gateway" type="{http://www.cisco.com/AXL/API/8.0}XH323Gateway"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddCallerFilterListReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="callerFilterList" type="{http://www.cisco.com/AXL/API/8.5}XCallerFilterList"/>
+ *         &lt;element name="callerFilterList" type="{http://www.cisco.com/AXL/API/8.0}XCallerFilterList"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

@@ -21,60 +21,52 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String50"/>
- *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.5}String100" minOccurs="0"/>
- *         &lt;element name="defaultTelephonyEventPayloadType" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="redirectByApplication" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="ringing180" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="timerInvite" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="timerRegisterDelta" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="timerRegister" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="timerT1" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="timerT2" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="retryInvite" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="retryNotInvite" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="startMediaPort" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="stopMediaPort" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="callpickupUri" type="{http://www.cisco.com/AXL/API/8.5}Name128" minOccurs="0"/>
- *         &lt;element name="callpickupListUri" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="callpickupGroupUri" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="meetmeServiceUrl" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="userInfo" type="{http://www.cisco.com/AXL/API/8.5}XZzuserInfo" minOccurs="0"/>
- *         &lt;element name="dtmfDbLevel" type="{http://www.cisco.com/AXL/API/8.5}XZzdtmfDbLevel" minOccurs="0"/>
- *         &lt;element name="callHoldRingback" type="{http://www.cisco.com/AXL/API/8.5}XZzpreff" minOccurs="0"/>
- *         &lt;element name="anonymousCallBlock" type="{http://www.cisco.com/AXL/API/8.5}XZzpreff" minOccurs="0"/>
- *         &lt;element name="callerIdBlock" type="{http://www.cisco.com/AXL/API/8.5}XZzpreff" minOccurs="0"/>
- *         &lt;element name="dndControl" type="{http://www.cisco.com/AXL/API/8.5}XZzdndcontrol" minOccurs="0"/>
- *         &lt;element name="telnetLevel" type="{http://www.cisco.com/AXL/API/8.5}XTelnetLevel" minOccurs="0"/>
- *         &lt;element name="timerKeepAlive" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="timerSubscribe" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="timerSubscribeDelta" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="maxRedirects" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="timerOffHookToFirstDigit" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="callForwardUri" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="abbreviatedDialUri" type="{http://www.cisco.com/AXL/API/8.5}String128" minOccurs="0"/>
- *         &lt;element name="confJointEnable" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="rfc2543Hold" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="semiAttendedTransfer" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="enableVad" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="stutterMsgWaiting" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="callStats" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="t38Invite" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="rerouteIncomingRequest" type="{http://www.cisco.com/AXL/API/8.5}XSIPReroute" minOccurs="0"/>
- *         &lt;element name="resourcePriorityNamespaceListName" type="{http://www.cisco.com/AXL/API/8.5}XFkType" minOccurs="0"/>
- *         &lt;element name="enableAnatForEarlyOfferCalls" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="rsvpOverSip" type="{http://www.cisco.com/AXL/API/8.5}XRSVPOverSIP" minOccurs="0"/>
- *         &lt;element name="fallbackToLocalRsvp" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="sipRe11XxEnabled" type="{http://www.cisco.com/AXL/API/8.5}XSIPRel1XXOptions" minOccurs="0"/>
- *         &lt;element name="gClear" type="{http://www.cisco.com/AXL/API/8.5}XGClear" minOccurs="0"/>
- *         &lt;element name="earlyOfferSupportForVoiceCall" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="sendRecvSDPInMidCallInvite" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="enableOutboundOptionsPing" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="optionsPingIntervalWhenStatusOK" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="optionsPingIntervalWhenStatusNotOK" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="deliverConferenceBridgeIdentifier" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="sipOptionsRetryCount" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="sipOptionsRetryTimer" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String50"/>
+ *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.0}String100" minOccurs="0"/>
+ *         &lt;element name="defaultTelephonyEventPayloadType" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="redirectByApplication" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="ringing180" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="timerInvite" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="timerRegisterDelta" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="timerRegister" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="timerT1" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="timerT2" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="retryInvite" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="retryNotInvite" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="startMediaPort" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="stopMediaPort" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="callpickupUri" type="{http://www.cisco.com/AXL/API/8.0}Name128" minOccurs="0"/>
+ *         &lt;element name="callpickupListUri" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="callpickupGroupUri" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="meetmeServiceUrl" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="userInfo" type="{http://www.cisco.com/AXL/API/8.0}XZzuserInfo" minOccurs="0"/>
+ *         &lt;element name="dtmfDbLevel" type="{http://www.cisco.com/AXL/API/8.0}XZzdtmfDbLevel" minOccurs="0"/>
+ *         &lt;element name="callHoldRingback" type="{http://www.cisco.com/AXL/API/8.0}XZzpreff" minOccurs="0"/>
+ *         &lt;element name="anonymousCallBlock" type="{http://www.cisco.com/AXL/API/8.0}XZzpreff" minOccurs="0"/>
+ *         &lt;element name="callerIdBlock" type="{http://www.cisco.com/AXL/API/8.0}XZzpreff" minOccurs="0"/>
+ *         &lt;element name="dndControl" type="{http://www.cisco.com/AXL/API/8.0}XZzdndcontrol" minOccurs="0"/>
+ *         &lt;element name="telnetLevel" type="{http://www.cisco.com/AXL/API/8.0}XTelnetLevel" minOccurs="0"/>
+ *         &lt;element name="timerKeepAlive" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="timerSubscribe" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="timerSubscribeDelta" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="maxRedirects" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="timerOffHookToFirstDigit" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="callForwardUri" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="abbreviatedDialUri" type="{http://www.cisco.com/AXL/API/8.0}String128" minOccurs="0"/>
+ *         &lt;element name="confJointEnable" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="rfc2543Hold" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="semiAttendedTransfer" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="enableVad" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="stutterMsgWaiting" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="callStats" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="t38Invite" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="rerouteIncomingRequest" type="{http://www.cisco.com/AXL/API/8.0}XSIPReroute" minOccurs="0"/>
+ *         &lt;element name="resourcePriorityNamespaceListName" type="{http://www.cisco.com/AXL/API/8.0}XFkType" minOccurs="0"/>
+ *         &lt;element name="enableAnatForEarlyOfferCalls" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="rsvpOverSip" type="{http://www.cisco.com/AXL/API/8.0}XRSVPOverSIP" minOccurs="0"/>
+ *         &lt;element name="fallbackToLocalRsvp" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="sipRe11XxEnabled" type="{http://www.cisco.com/AXL/API/8.0}XSIPRel1XXOptions" minOccurs="0"/>
+ *         &lt;element name="gClear" type="{http://www.cisco.com/AXL/API/8.0}XGClear" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -130,15 +122,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
     "rsvpOverSip",
     "fallbackToLocalRsvp",
     "sipRe11XxEnabled",
-    "gClear",
-    "earlyOfferSupportForVoiceCall",
-    "sendRecvSDPInMidCallInvite",
-    "enableOutboundOptionsPing",
-    "optionsPingIntervalWhenStatusOK",
-    "optionsPingIntervalWhenStatusNotOK",
-    "deliverConferenceBridgeIdentifier",
-    "sipOptionsRetryCount",
-    "sipOptionsRetryTimer"
+    "gClear"
 })
 public class XSipProfile {
 
@@ -234,21 +218,6 @@ public class XSipProfile {
     protected String sipRe11XxEnabled;
     @XmlElement(defaultValue = "Disabled")
     protected String gClear;
-    @XmlElement(defaultValue = "false")
-    protected String earlyOfferSupportForVoiceCall;
-    @XmlElement(defaultValue = "false")
-    protected String sendRecvSDPInMidCallInvite;
-    @XmlElement(defaultValue = "false")
-    protected String enableOutboundOptionsPing;
-    @XmlElement(defaultValue = "60")
-    protected String optionsPingIntervalWhenStatusOK;
-    @XmlElement(defaultValue = "120")
-    protected String optionsPingIntervalWhenStatusNotOK;
-    protected String deliverConferenceBridgeIdentifier;
-    @XmlElement(defaultValue = "6")
-    protected String sipOptionsRetryCount;
-    @XmlElement(defaultValue = "500")
-    protected String sipOptionsRetryTimer;
 
     /**
      * Gets the value of the name property.
@@ -1352,198 +1321,6 @@ public class XSipProfile {
      */
     public void setGClear(String value) {
         this.gClear = value;
-    }
-
-    /**
-     * Gets the value of the earlyOfferSupportForVoiceCall property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getEarlyOfferSupportForVoiceCall() {
-        return earlyOfferSupportForVoiceCall;
-    }
-
-    /**
-     * Sets the value of the earlyOfferSupportForVoiceCall property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setEarlyOfferSupportForVoiceCall(String value) {
-        this.earlyOfferSupportForVoiceCall = value;
-    }
-
-    /**
-     * Gets the value of the sendRecvSDPInMidCallInvite property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSendRecvSDPInMidCallInvite() {
-        return sendRecvSDPInMidCallInvite;
-    }
-
-    /**
-     * Sets the value of the sendRecvSDPInMidCallInvite property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSendRecvSDPInMidCallInvite(String value) {
-        this.sendRecvSDPInMidCallInvite = value;
-    }
-
-    /**
-     * Gets the value of the enableOutboundOptionsPing property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getEnableOutboundOptionsPing() {
-        return enableOutboundOptionsPing;
-    }
-
-    /**
-     * Sets the value of the enableOutboundOptionsPing property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setEnableOutboundOptionsPing(String value) {
-        this.enableOutboundOptionsPing = value;
-    }
-
-    /**
-     * Gets the value of the optionsPingIntervalWhenStatusOK property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOptionsPingIntervalWhenStatusOK() {
-        return optionsPingIntervalWhenStatusOK;
-    }
-
-    /**
-     * Sets the value of the optionsPingIntervalWhenStatusOK property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOptionsPingIntervalWhenStatusOK(String value) {
-        this.optionsPingIntervalWhenStatusOK = value;
-    }
-
-    /**
-     * Gets the value of the optionsPingIntervalWhenStatusNotOK property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOptionsPingIntervalWhenStatusNotOK() {
-        return optionsPingIntervalWhenStatusNotOK;
-    }
-
-    /**
-     * Sets the value of the optionsPingIntervalWhenStatusNotOK property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOptionsPingIntervalWhenStatusNotOK(String value) {
-        this.optionsPingIntervalWhenStatusNotOK = value;
-    }
-
-    /**
-     * Gets the value of the deliverConferenceBridgeIdentifier property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDeliverConferenceBridgeIdentifier() {
-        return deliverConferenceBridgeIdentifier;
-    }
-
-    /**
-     * Sets the value of the deliverConferenceBridgeIdentifier property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDeliverConferenceBridgeIdentifier(String value) {
-        this.deliverConferenceBridgeIdentifier = value;
-    }
-
-    /**
-     * Gets the value of the sipOptionsRetryCount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSipOptionsRetryCount() {
-        return sipOptionsRetryCount;
-    }
-
-    /**
-     * Sets the value of the sipOptionsRetryCount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSipOptionsRetryCount(String value) {
-        this.sipOptionsRetryCount = value;
-    }
-
-    /**
-     * Gets the value of the sipOptionsRetryTimer property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSipOptionsRetryTimer() {
-        return sipOptionsRetryTimer;
-    }
-
-    /**
-     * Sets the value of the sipOptionsRetryTimer property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSipOptionsRetryTimer(String value) {
-        this.sipOptionsRetryTimer = value;
     }
 
 }

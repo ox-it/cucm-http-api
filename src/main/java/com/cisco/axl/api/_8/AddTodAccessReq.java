@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddTodAccessReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="todAccess" type="{http://www.cisco.com/AXL/API/8.5}XTodAccess"/>
+ *         &lt;element name="todAccess" type="{http://www.cisco.com/AXL/API/8.0}XTodAccess"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

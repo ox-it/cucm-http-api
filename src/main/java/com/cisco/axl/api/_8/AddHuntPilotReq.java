@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddHuntPilotReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="huntPilot" type="{http://www.cisco.com/AXL/API/8.5}XHuntPilot"/>
+ *         &lt;element name="huntPilot" type="{http://www.cisco.com/AXL/API/8.0}XHuntPilot"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

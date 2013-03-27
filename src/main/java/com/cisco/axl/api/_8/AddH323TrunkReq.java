@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="AddH323TrunkReq">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}APIRequest">
+ *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}APIRequest">
  *       &lt;sequence>
- *         &lt;element name="h323Trunk" type="{http://www.cisco.com/AXL/API/8.5}XH323Trunk"/>
+ *         &lt;element name="h323Trunk" type="{http://www.cisco.com/AXL/API/8.0}XH323Trunk"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

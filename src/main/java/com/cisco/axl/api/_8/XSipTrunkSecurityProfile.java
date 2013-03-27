@@ -19,21 +19,21 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.5}String64"/>
- *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.5}String100" minOccurs="0"/>
- *         &lt;element name="securityMode" type="{http://www.cisco.com/AXL/API/8.5}XDeviceSecurityMode" minOccurs="0"/>
- *         &lt;element name="incomingTransport" type="{http://www.cisco.com/AXL/API/8.5}XTransport" minOccurs="0"/>
- *         &lt;element name="outgoingTransport" type="{http://www.cisco.com/AXL/API/8.5}XTransport" minOccurs="0"/>
- *         &lt;element name="digestAuthentication" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="noncePolicyTime" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="x509SubjectName" type="{http://www.cisco.com/AXL/API/8.5}String4096" minOccurs="0"/>
- *         &lt;element name="incomingPort" type="{http://www.cisco.com/AXL/API/8.5}XInteger" minOccurs="0"/>
- *         &lt;element name="applLevelAuthentication" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="acceptPresenceSubscription" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="acceptOutOfDialogRefer" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="acceptUnsolicitedNotification" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="allowReplaceHeader" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="transmitSecurityStatus" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
+ *         &lt;element name="name" type="{http://www.cisco.com/AXL/API/8.0}String64"/>
+ *         &lt;element name="description" type="{http://www.cisco.com/AXL/API/8.0}String100" minOccurs="0"/>
+ *         &lt;element name="securityMode" type="{http://www.cisco.com/AXL/API/8.0}XDeviceSecurityMode" minOccurs="0"/>
+ *         &lt;element name="incomingTransport" type="{http://www.cisco.com/AXL/API/8.0}XTransport" minOccurs="0"/>
+ *         &lt;element name="outgoingTransport" type="{http://www.cisco.com/AXL/API/8.0}XTransport" minOccurs="0"/>
+ *         &lt;element name="digestAuthentication" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="noncePolicyTime" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="x509SubjectName" type="{http://www.cisco.com/AXL/API/8.0}String4096" minOccurs="0"/>
+ *         &lt;element name="incomingPort" type="{http://www.cisco.com/AXL/API/8.0}XInteger" minOccurs="0"/>
+ *         &lt;element name="applLevelAuthentication" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="acceptPresenceSubscription" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="acceptOutOfDialogRefer" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="acceptUnsolicitedNotification" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="allowReplaceHeader" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="transmitSecurityStatus" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

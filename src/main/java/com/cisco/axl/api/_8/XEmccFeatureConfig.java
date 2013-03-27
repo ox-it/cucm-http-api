@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="parameterName" type="{http://www.cisco.com/AXL/API/8.5}String50"/>
- *         &lt;element name="value" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
+ *         &lt;element name="parameterName" type="{http://www.cisco.com/AXL/API/8.0}String50"/>
+ *         &lt;element name="value" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

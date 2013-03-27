@@ -21,18 +21,18 @@ import javax.xml.bind.annotation.XmlValue;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
- *         &lt;element name="portNumber" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="attendantDn" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="unattendedPort" type="{http://www.cisco.com/AXL/API/8.5}boolean" minOccurs="0"/>
- *         &lt;element name="callerIdDn" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="callerIdEnable" type="{http://www.cisco.com/AXL/API/8.5}boolean"/>
- *         &lt;element name="callingPartySelection" type="{http://www.cisco.com/AXL/API/8.5}XCallingPartySelection" minOccurs="0"/>
- *         &lt;element name="digitSending" type="{http://www.cisco.com/AXL/API/8.5}XDigitSending" minOccurs="0"/>
- *         &lt;element name="expectedDigits" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="portNumber" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="attendantDn" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="unattendedPort" type="{http://www.cisco.com/AXL/API/8.0}boolean" minOccurs="0"/>
+ *         &lt;element name="callerIdDn" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="callerIdEnable" type="{http://www.cisco.com/AXL/API/8.0}boolean"/>
+ *         &lt;element name="callingPartySelection" type="{http://www.cisco.com/AXL/API/8.0}XCallingPartySelection" minOccurs="0"/>
+ *         &lt;element name="digitSending" type="{http://www.cisco.com/AXL/API/8.0}XDigitSending" minOccurs="0"/>
+ *         &lt;element name="expectedDigits" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *         &lt;element name="sigDigits">
  *           &lt;complexType>
  *             &lt;simpleContent>
- *               &lt;extension base="&lt;http://www.cisco.com/AXL/API/8.5>XInteger">
+ *               &lt;extension base="&lt;http://www.cisco.com/AXL/API/8.0>XInteger">
  *                 &lt;attribute name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean" />
  *               &lt;/extension>
  *             &lt;/simpleContent>
@@ -43,30 +43,30 @@ import javax.xml.bind.annotation.XmlValue;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;choice>
- *                   &lt;element name="line" type="{http://www.cisco.com/AXL/API/8.5}XPhoneLine"/>
- *                   &lt;element name="lineIdentifier" type="{http://www.cisco.com/AXL/API/8.5}XNumplanIdentifier"/>
+ *                   &lt;element name="line" type="{http://www.cisco.com/AXL/API/8.0}XPhoneLine"/>
+ *                   &lt;element name="lineIdentifier" type="{http://www.cisco.com/AXL/API/8.0}XNumplanIdentifier"/>
  *                 &lt;/choice>
  *               &lt;/restriction>
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="prefixDn" type="{http://www.cisco.com/AXL/API/8.5}String255" minOccurs="0"/>
- *         &lt;element name="presentationBit" type="{http://www.cisco.com/AXL/API/8.5}XPresentationBit" minOccurs="0"/>
- *         &lt;element name="silenceSuppressionThreshold" type="{http://www.cisco.com/AXL/API/8.5}XSilenceSuppressionThreshold" minOccurs="0"/>
- *         &lt;element name="smdiPortNumber" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="startDialProtocol" type="{http://www.cisco.com/AXL/API/8.5}XStartDialProtocol" minOccurs="0"/>
- *         &lt;element name="trunk" type="{http://www.cisco.com/AXL/API/8.5}XTrunk" minOccurs="0"/>
- *         &lt;element name="trunkDirection" type="{http://www.cisco.com/AXL/API/8.5}XTrunkDirection"/>
- *         &lt;element name="trunkLevel" type="{http://www.cisco.com/AXL/API/8.5}XTrunkLevel" minOccurs="0"/>
- *         &lt;element name="trunkPadRx" type="{http://www.cisco.com/AXL/API/8.5}XTrunkPad" minOccurs="0"/>
- *         &lt;element name="trunkPadTx" type="{http://www.cisco.com/AXL/API/8.5}XTrunkPad" minOccurs="0"/>
- *         &lt;element name="vendorConfig" type="{http://www.cisco.com/AXL/API/8.5}XVendorConfig" minOccurs="0"/>
- *         &lt;element name="timer1" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="timer2" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="timer3" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="timer4" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="timer5" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
- *         &lt;element name="timer6" type="{http://www.cisco.com/AXL/API/8.5}XInteger"/>
+ *         &lt;element name="prefixDn" type="{http://www.cisco.com/AXL/API/8.0}String255" minOccurs="0"/>
+ *         &lt;element name="presentationBit" type="{http://www.cisco.com/AXL/API/8.0}XPresentationBit" minOccurs="0"/>
+ *         &lt;element name="silenceSuppressionThreshold" type="{http://www.cisco.com/AXL/API/8.0}XSilenceSuppressionThreshold" minOccurs="0"/>
+ *         &lt;element name="smdiPortNumber" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="startDialProtocol" type="{http://www.cisco.com/AXL/API/8.0}XStartDialProtocol" minOccurs="0"/>
+ *         &lt;element name="trunk" type="{http://www.cisco.com/AXL/API/8.0}XTrunk" minOccurs="0"/>
+ *         &lt;element name="trunkDirection" type="{http://www.cisco.com/AXL/API/8.0}XTrunkDirection"/>
+ *         &lt;element name="trunkLevel" type="{http://www.cisco.com/AXL/API/8.0}XTrunkLevel" minOccurs="0"/>
+ *         &lt;element name="trunkPadRx" type="{http://www.cisco.com/AXL/API/8.0}XTrunkPad" minOccurs="0"/>
+ *         &lt;element name="trunkPadTx" type="{http://www.cisco.com/AXL/API/8.0}XTrunkPad" minOccurs="0"/>
+ *         &lt;element name="vendorConfig" type="{http://www.cisco.com/AXL/API/8.0}XVendorConfig" minOccurs="0"/>
+ *         &lt;element name="timer1" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="timer2" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="timer3" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="timer4" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="timer5" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
+ *         &lt;element name="timer6" type="{http://www.cisco.com/AXL/API/8.0}XInteger"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -801,8 +801,8 @@ public class XAnalogPort {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;choice>
-     *         &lt;element name="line" type="{http://www.cisco.com/AXL/API/8.5}XPhoneLine"/>
-     *         &lt;element name="lineIdentifier" type="{http://www.cisco.com/AXL/API/8.5}XNumplanIdentifier"/>
+     *         &lt;element name="line" type="{http://www.cisco.com/AXL/API/8.0}XPhoneLine"/>
+     *         &lt;element name="lineIdentifier" type="{http://www.cisco.com/AXL/API/8.0}XNumplanIdentifier"/>
      *       &lt;/choice>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -880,7 +880,7 @@ public class XAnalogPort {
      * <pre>
      * &lt;complexType>
      *   &lt;simpleContent>
-     *     &lt;extension base="&lt;http://www.cisco.com/AXL/API/8.5>XInteger">
+     *     &lt;extension base="&lt;http://www.cisco.com/AXL/API/8.0>XInteger">
      *       &lt;attribute name="enable" type="{http://www.w3.org/2001/XMLSchema}boolean" />
      *     &lt;/extension>
      *   &lt;/simpleContent>

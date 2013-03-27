@@ -20,16 +20,16 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence minOccurs="0">
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="timeZone" type="{http://www.cisco.com/AXL/API/8.5}XTimeZone"/>
+ *         &lt;element name="timeZone" type="{http://www.cisco.com/AXL/API/8.0}XTimeZone"/>
  *         &lt;element name="separator" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="dateformat" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="timeFormat" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="phoneNtpReferences" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
- *               &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+ *               &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
  *                 &lt;sequence minOccurs="0">
- *                   &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.5}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
+ *                   &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.0}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/extension>
  *             &lt;/complexContent>
@@ -215,9 +215,9 @@ public class XDateTimeGroup {
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
-     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.5}XCommonMembersExtension">
+     *     &lt;extension base="{http://www.cisco.com/AXL/API/8.0}XCommonMembersExtension">
      *       &lt;sequence minOccurs="0">
-     *         &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.5}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
+     *         &lt;element name="selectedPhoneNtpReference" type="{http://www.cisco.com/AXL/API/8.0}XDateTimeGroupNtpReference" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/extension>
      *   &lt;/complexContent>
