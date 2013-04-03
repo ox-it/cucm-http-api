@@ -14,15 +14,14 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
-import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 import javax.xml.ws.soap.SOAPFaultException;
 import org.w3c.dom.Node;
 import uk.ac.ox.it.cha.auth.User;
 import uk.ac.ox.it.cha.representations.Phone;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.sun.org.apache.xerces.internal.dom.ElementNSImpl;
 
 /**
  * Phone resource
@@ -71,9 +70,10 @@ public class PhoneResource {
                     + "' AND DNPMap.fkNumPlan = NP.pkid AND D.pkid = DNPMap.fkDevice");
 
             ExecuteSQLQueryRes res = this.axlService.executeSQLQuery(sql);
+            ElementNSImpl element;
+            Node n;
             for(Object o : res.getReturn().getRow()) {
-                com.sun.org.apache.xerces.internal.dom.ElementNSImpl element = (com.sun.org.apache.xerces.internal.dom.ElementNSImpl) o;
-                Node n;
+                element = (ElementNSImpl) o;
                 for(int i = 0; i < element.getChildNodes().getLength(); i++) {
                     n = element.getChildNodes().item(i);
                     phones.add(n.getTextContent());
