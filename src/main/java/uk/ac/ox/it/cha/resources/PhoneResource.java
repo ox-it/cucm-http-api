@@ -21,6 +21,8 @@ import javax.xml.ws.soap.SOAPFaultException;
 import org.w3c.dom.Node;
 import uk.ac.ox.it.cha.auth.User;
 import uk.ac.ox.it.cha.representations.Phone;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Phone resource
@@ -31,7 +33,9 @@ import uk.ac.ox.it.cha.representations.Phone;
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class PhoneResource {
-    
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(PhoneResource.class);
+
     private final AXLPort axlService;
     
     public PhoneResource(AXLPort axlService) {
@@ -79,6 +83,7 @@ public class PhoneResource {
                 }
             }
         } catch (SOAPFaultException sfe) {
+            LOGGER.error("Exception when reaching upstream service", sfe);
         }
         return phones;
     }
