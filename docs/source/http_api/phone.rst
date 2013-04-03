@@ -53,5 +53,4 @@ All these calls require basic auth.
     :query dirn: directory number to search for
     :type dirn: int
 
-    :statuscode 200: resource found
-    :statuscode 404: no resource found
+    :statuscode 200: list of phones matching the directory number (empty list if no phone)

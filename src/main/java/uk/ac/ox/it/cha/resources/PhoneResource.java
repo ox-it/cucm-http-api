@@ -51,9 +51,6 @@ public class PhoneResource {
     @GET
     public List<Phone> get(@QueryParam("dirn") IntParam dirn, @Auth User user) {
         List<String> phoneNames = this.findPhonesByDirN(dirn.get());
-        if(phoneNames.isEmpty()) {
-            throw new WebApplicationException(Response.Status.NOT_FOUND);
-        }
         List<Phone> phones = new ArrayList<Phone>();
         for(String phoneName : phoneNames) {
             phones.add(getPhoneInfo(phoneName));
