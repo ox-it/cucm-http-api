@@ -17,3 +17,7 @@ src/main/resources/configuration.yml
 
 # Docs
 docs/build/
+
+# IntelliJ files
+.idea/
+cucm-http-api.iml
