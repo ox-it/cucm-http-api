@@ -35,6 +35,11 @@ public class Phone {
     @JsonProperty
     private List<Speeddial> speeddials;
 
+    @JsonProperty
+    private String buttonsNumber;
+
+    @JsonProperty
+    private String softKeyTemplateName;
 
     public Phone() {
         
@@ -61,6 +66,8 @@ public class Phone {
         for (RSpeeddial sd : sds.getSpeeddial()) {
             this.speeddials.add(new Speeddial(sd));
         }
+        this.buttonsNumber = phone.getNumberOfButtons();
+        this.softKeyTemplateName = phone.getSoftkeyTemplateName().getValue();
     }
 
     @Override
@@ -149,5 +156,21 @@ public class Phone {
 
     public void setSpeeddials(List<Speeddial> speeddials) {
         this.speeddials = speeddials;
+    }
+
+    public String getButtonsNumber() {
+        return buttonsNumber;
+    }
+
+    public void setButtonsNumber(String buttonsNumber) {
+        this.buttonsNumber = buttonsNumber;
+    }
+
+    public String getSoftKeyTemplateName() {
+        return softKeyTemplateName;
+    }
+
+    public void setSoftKeyTemplateName(String softKeyTemplateName) {
+        this.softKeyTemplateName = softKeyTemplateName;
     }
 }
